@@ -7,9 +7,10 @@ title: "Happy Jekylling!"
 
 To get going with Kojo, use the [Getting Started](http://wiki.kogics.net/kojo-codeactive-books#getting-started) book.
 This book will help you learn:
-* the basic turtle graphics commands in Kojo
-* how to write programs to draw using these commands
-* how to analyze patterns and recreate them via programs.
+* the basic turtle graphics commands available in Kojo.
+* how to write programs using these commands to draw on the canvas.
+* how to make geometric patterns.
+* how to analyze given geometric patterns - and to recreate them in a structured way via programs that you write.
 
 ## Turtle graphics reference
 As you go through the Getting Started book, it's useful to be able to see all the [basic turtle commands](reference/turtle.md) in one place.
