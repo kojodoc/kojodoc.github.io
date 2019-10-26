@@ -64,30 +64,31 @@ forward(200
 Example:  
 ```scala
 clear()
-// hop forward by 100 steps
 hop(10)
-// move forward by 100 steps
 forward(10)
-// hop forward by 100 steps
 hop(10)
-// move forward by 100 steps
 forward(10)
 ```
 
 ### right
-Todo
+right comes in two variants:  
+`right(angle)` - turns the direction of the turtle's nose (i.e. the turtle's heading) right by the given angle.  
+`right(angle, radius)` - makes the turtle move right on the boundary of a circle with the given radius, till the turtle's nose 
+has turned through the given angle. If the pen is down, the turtle draws an arc with the given angular extent and radius.
 
 ### left
-Todo
+left also comes in two variants, and is very similar to right, except that it turns the turtle left.
 
 ### setPenColor
-Todo
+`setPenColor(color)` - sets the color of the turtle's pen. From this point on in the program, any lines drawn by the turtle have this color.
 
 ### setFillColor
-Todo
+`setFillColor(color)` - sets the color of the fill area of the turtle's pen. From this point on in the program, any areas drawn by the turtle have this fill color.
+
 
 ### setPenThickness
-Todo
+`setPenThickness(width)` - sets the thickness of the turtle's pen. From this point on in the program, any lines drawn by the turtle have this thickness.
+
 
 ### setBackground
 Todo
