@@ -14,7 +14,10 @@ numbers - the x coordinate and the y coordinate. As you move the mouse pointer w
 * **pen thickness** - the thickness of the lines drawn by the pen.
 * **fill color** - the color that fills areas enclosed by the lines drawn by the pen.
 
-## Commands
+## Basic Commands
+*Click on a command below to go to its description.  
+Most descriptions include sample code. Copy & paste and then run the sample code for a command in Kojo for a better understanding of that command.*
+
 [clear](#clear)  
 [forward](#forward)  
 [penUp and penDown](#penup-and-pendown)  
@@ -27,6 +30,9 @@ numbers - the x coordinate and the y coordinate. As you move the mouse pointer w
 [setBackground](#setbackground)  
 [savePosHe](#saveposhe)  
 [restorePosHe](#restoreposhe)  
+[write](#write)  
+[setPenFontSize](#setpenfontsize)  
+[setPenFont](#setpenfont)  
 [repeat](#repeat)  
 [def](#def)  
 
@@ -42,9 +48,7 @@ numbers - the x coordinate and the y coordinate. As you move the mouse pointer w
 * speed becomes slow.
 
 ### forward
-`forward(numSteps)` - Moves the turtle forward in the direction of its nose - by the given number of steps. The turtle draws a line as it moves **if its pen is down**. The pen is down by default after a [clear()](#clear).
-
-Example:
+`forward(numSteps)` - Moves the turtle forward in the direction of its nose - by the given number of steps. The turtle draws a line as it moves **if its pen is down**. The pen is down by default after a [clear()](#clear). See example below:
 ```scala
 clear()
 // draw a line that is 100 steps long
@@ -59,9 +63,7 @@ forward(200
 `penDown()` - Puts the turtle's pen down.
 
 ### hop
-`hop(numSteps)` - Moves the turtle forward by the given number of steps with the pen up, so that no line is drawn. The pen is put down after the hop.
-
-Example:  
+`hop(numSteps)` - Moves the turtle forward by the given number of steps with the pen up, so that no line is drawn. The pen is put down after the hop. See example below:
 ```scala
 clear()
 hop(10)
@@ -91,17 +93,57 @@ left also comes in two variants, and is very similar to right, except that it tu
 
 
 ### setBackground
-Todo
+`setBackground(color)` - paints the background of the canvas the specified color.
 
 ### savePosHe
-Todo
+`savePosHe()` - saves the position and heading of the turtle. At a later point in the program, the turtle can be brought to the saved position and heading using the `restorePosHe()` command.
 
 ### restorePosHe
-Todo
+`restorePosHe` - restores the position and heading of the turtle based on the most recent `savePosHe()`
+
+### write
+`write("text")` - writes the given text at the turtle's current position, oriented as per the turtle's current heading.
+
+### setPenFontSize
+`setPenFontSize(size)` - sets the size of the font used for writing text.
+
+### setPenFont
+`setPenFont(font)` - sets the font used for writing text. See example below:
+```scala
+clear()
+setPenFont(Font("Consolas", 30))
+hop(50)
+right(45)
+write("Hello World")
+```
 
 ### repeat
-Todo
+`repeat(n) { code }` - repeats the given code n number of times.
 
 ### def
-Todo
+`def newCommand(inputs) { code }` - creates a new command that takes the specified inputs and carries out commands as defined in the given code. See example below:
+```scala
+// create a new command named square1 that 
+// always draws squares of size 100
+def square1() {
+    repeat(4) {
+        forward(100)
+        right(90)
+    }
+}
 
+// create a new command named square2 that 
+// draws squares of the given size
+def square2(size: Int) {
+    repeat(4) {
+        forward(size)
+        right(90)
+    }
+}
+
+clear()
+// now use the newly defined commands
+square1()
+square2(50)
+square2(25)
+```
