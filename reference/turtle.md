@@ -76,10 +76,21 @@ forward(10)
 right comes in two variants:  
 `right(angle)` - turns the direction of the turtle's nose (i.e. the turtle's heading) right by the given angle.  
 `right(angle, radius)` - makes the turtle move right on the boundary of a circle with the given radius, till the turtle's nose 
-has turned through the given angle. If the pen is down, the turtle draws an arc with the given angular extent and radius.
+has turned through the given angle. If the pen is down, the turtle draws an arc with the given angular extent and radius. See example below:
+```scala
+clear()
+// turn the turtle right by 90° at its current position
+right(90)
+// make the turtle draw a blue quarter circle of radius 100 to the right
+setPenColor(blue)
+right(90, 100)
+// make the turtle draw a green semi circle of radius 150 to the right
+setPenColor(green)
+right(180, 150)
+```
 
 ### left
-left also comes in two variants, and is very similar to right, except that it turns the turtle left.
+left also comes in two variants, and is very similar to right, except that it turns the turtle to the left.
 
 ### setPenColor
 `setPenColor(color)` - sets the color of the turtle's pen. From this point on in the program, any lines drawn by the turtle have this color.
@@ -96,16 +107,46 @@ left also comes in two variants, and is very similar to right, except that it tu
 `setBackground(color)` - paints the background of the canvas the specified color.
 
 ### savePosHe
-`savePosHe()` - saves the position and heading of the turtle. At a later point in the program, the turtle can be brought to the saved position and heading using the `restorePosHe()` command.
+`savePosHe()` - saves the position and heading of the turtle. At a later point in the program, the turtle can be brought to the saved position and heading using the `restorePosHe()` command. See example below:
+```scala
+clear()
+// draw a square with lines at the corners
+repeat(4) {
+    // draw a side of the square
+    forward(100)
+    // save position and heading
+    savePosHe()
+    // draw a corner line
+    left(45)
+    forward(30)
+    // restore position and heading to draw the rest of the square
+    restorePosHe()
+    right(90)
+}
+```
 
 ### restorePosHe
 `restorePosHe` - restores the position and heading of the turtle based on the most recent `savePosHe()`
 
 ### write
-`write("text")` - writes the given text at the turtle's current position, oriented as per the turtle's current heading.
+`write("text")` - writes the given text at the turtle's current position, oriented as per the turtle's current heading. See example below:
+```scala
+clear()
+hop(50)
+right(45)
+write("Hello World")
+```
 
 ### setPenFontSize
-`setPenFontSize(size)` - sets the size of the font used for writing text.
+`setPenFontSize(size)` - sets the size of the font used for writing text. See example below:
+```scala
+clear()
+setPenFontSize(30)
+hop(50)
+right(45)
+write("Hello World")
+```
+
 
 ### setPenFont
 `setPenFont(font)` - sets the font used for writing text. See example below:
