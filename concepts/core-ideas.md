@@ -10,7 +10,7 @@ Making drawings and art in Kojo with the help of the turtle is easy. You just ne
   * use the `hop(numSteps)` command.
   * do a `penUp()`, do forwards, rights, etc. as desired, and then do a `penDown()`.
   * do a `setPosition(x, y)`.
-* You need to know just a handful of turtle commands to make great drawings. These commands are [listed on the commands reference](/reference/turtle.html) page.
+* You need to know just a handful of turtle commands to make great drawings. These commands are [listed on the commands reference](../reference/turtle.html) page.
 * You can use the `repeat` command to run a bunch of commands many times. This can make your programs shorter and easier to understand.
 * If your program does a particular thing many times, you can give this thing a name and teach Kojo a new command with this name - using the `def` instruction.
 * To draw colorful lines, use the `setPenColor(color)` command.
