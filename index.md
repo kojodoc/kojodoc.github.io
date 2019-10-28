@@ -22,5 +22,5 @@ It's also useful to be able to see all the [core concepts](concepts/core-ideas.h
 To spice things up as you go along, here are a bunch of art ideas.
 
 ## Colors
-What's art without colors? Kojo has great support for colors, and it's good for you to know the details.
+What's art without colors? Kojo has great support for colors, and it's good for you [to know the details](concepts/colors.html).
 

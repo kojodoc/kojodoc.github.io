@@ -18,7 +18,7 @@ Making drawings and art in Kojo with the help of the turtle is easy. You just ne
 * The above couple of commands need you to give them colors as inputs. You can do this in the following ways:
   * Use the `randomColor` or `randomColor.fadeOut(fraction)` functions to let Kojo choose a random color for you.
   * Use the `ColorMaker` (abbreviation - `cm`) - in the following ways:
-    * Wherever a color is needed in your program, type `cm.` (or `ColorMaker.`) in the script editor and then type `Ctrl+Space`. This will pop-up a list of around 80 pre-defined colors. Select a color from this list and hit enter to get that color into your program.
+    * Wherever a color is needed in your program, type `cm.` (or `ColorMaker.`) in the script editor and then type `Ctrl+Space`. This will pop-up a list of around [150 pre-defined colors](colors.html). Select a color from this list and hit enter to get that color into your program.
     * `Ctrl+Click` on any color in your program to bring up a color chooser. Inside the color chooser, you can visually select a color, or manually modify the hue, saturation, lightness, and/or transparency of your desired color.
 * To draw thick or thin lines, use the `setPenThickness(thickness)` command.
 
