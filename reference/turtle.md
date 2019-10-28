@@ -1,6 +1,6 @@
-## Turtle Graphcis Reference
+This page contains descriptions of the basic turtle commands available in Kojo.
 
-While looking at turtle commands, it is helpful to remember that a turtle has the following properties related to 
+While looking at the turtle commands, it is helpful to remember that a turtle has the following properties related to 
 how it moves and draws:
 * **position** - the location on the canvas where the turtle is sitting. This location is specified by two 
 numbers - the x coordinate and the y coordinate. As you move the mouse pointer within the drawing canvas, you will see these two numbers at the bottom-left of the Kojo window.
