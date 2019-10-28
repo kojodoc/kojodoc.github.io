@@ -55,7 +55,7 @@ clear()
 forward(100) 
           
 // and another line that is 200 steps long
-forward(200
+forward(200)
 ```
 
 ### penUp and penDown
