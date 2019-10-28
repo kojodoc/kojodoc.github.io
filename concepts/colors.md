@@ -1,5 +1,11 @@
 More information coming soon...  
-For now, here's a list of the ColorMaker pre-defined colors:
+For now, a list of the pre-defined ColorMaker colors is shown below. Any of these colors can be used like this:
+```scala
+// draw an aliceBlue line
+setPenColor(cm.aliceBlue)
+forward(100)
+```
+### Pre-defined ColorMaker colors
 
 aliceBlue  
 ![aliceBlue](cm-colors/aliceBlue.png)
