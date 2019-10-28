@@ -4,12 +4,12 @@ While looking at the turtle commands, it is helpful to remember that a turtle ha
 how it moves and draws:
 * **position** - the location on the canvas where the turtle is sitting. This location is specified by two 
 numbers - the x coordinate and the y coordinate. As you move the mouse pointer within the drawing canvas, you will see these two numbers at the bottom-left of the Kojo window.
-* **heading** - the direction in which the turtle's nose is pointing.
+* **heading** - the direction in which the turtle's nose is pointing:
   * East (at the right of the screen) is at 0°
   * North (at the top of the screen) is at 90°
   * West (at the left of the screen) is at 180°
   * South (at the bottom of the screen) is at 270°
-* **pen up/down** state - whether the turtle's pen is down (for drawing as it moves) or up (for just moveing without drawing).
+* **pen up/down** state - whether the turtle's pen is down (for drawing as it moves) or up (for just moving without drawing).
 * **pen color** - the color of the lines drawn by the pen.
 * **pen thickness** - the thickness of the lines drawn by the pen.
 * **fill color** - the color that fills areas enclosed by the lines drawn by the pen.
