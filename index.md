@@ -13,10 +13,10 @@ This book will help you learn:
 * how to analyze given geometric patterns - and to recreate them in a structured way via programs that you write.
 
 ## Turtle graphics reference
-As you go through the Getting Started book, it's useful to be able to see all the [basic turtle commands](reference/turtle.md) in one place.
+As you go through the Getting Started book, it's useful to be able to see all the [basic turtle commands](reference/turtle.html) in one place.
 
 ## Core concepts
-It's also useful to be able to see all the [core concepts](concepts/core-ideas.md) in one place.
+It's also useful to be able to see all the [core concepts](concepts/core-ideas.html) in one place.
 
 ## Art Ideas
 To spice things up as you go along, here are a bunch of art ideas.
