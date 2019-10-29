@@ -1,5 +1,5 @@
 ## The Shape/Block method
-The shape/block method builds upon the forty patterns at the end of the getting started book. 
+The shape/block method builds upon the ideas in the forty-patterns section at the end of the [Getting Started](http://wiki.kogics.net/kojo-codeactive-books#getting-started) book. 
 
 There, you had focused on analysing a given pattern, determining the shape and the block present in the pattern, and then drawing the pattern in a structured and systematic way.
 
