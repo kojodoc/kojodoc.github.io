@@ -12,7 +12,7 @@ The basic idea with pictures is simple:
   * You can detect collisions with other pictures
   
 
-Here, we are only interested in the drawing and the alignment part. Here is some sample code showing this in action:
+Here, we are only interested in the drawing and the alignment part. Below is some sample code showing this in action:
 ```scala
 // clear the canvas and make the trurtle invisible
 cleari()
