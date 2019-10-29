@@ -44,5 +44,5 @@ Content contributions to this website are [very welcome](contribute.html).
   <img src="kojo-tree.png" width="400">
   <br/>
   <br/>
-  Fractal tree above was made in Kojo
+  The fractal tree above was made in Kojo
 </div>
