@@ -36,3 +36,13 @@ Pictures build upon turtle graphics to let you create more intricate art, learn 
 
 ## Contribute
 Content contributions to this website are [very welcome](contribute.html).
+
+<div style="text-align:center">
+  <br/>
+  <br/>
+  <br/>
+  <img src="kojo-tree.png" width="400">
+  <br/>
+  <br/>
+  Fractal tree above was made in Kojo
+</div>
