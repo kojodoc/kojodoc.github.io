@@ -18,23 +18,25 @@ numbers - the x coordinate and the y coordinate. As you move the mouse pointer w
 *Click on a command below to go to its description.  
 Most descriptions include sample code. Copy & paste and then run the sample code for a command in Kojo for a better understanding of that command.*
 
-[clear](#clear)  
-[forward](#forward)  
-[penUp and penDown](#penup-and-pendown)  
-[hop](#hop)  
-[right](#right)  
-[left](#left)  
-[setPenColor](#setpencolor)  
-[setFillColor](#setfillcolor)  
-[setPenThickness](#setpenthickness)  
-[setBackground](#setbackground)  
-[savePosHe](#saveposhe)  
-[restorePosHe](#restoreposhe)  
-[write](#write)  
-[setPenFontSize](#setpenfontsize)  
-[setPenFont](#setpenfont)  
-[repeat](#repeat)  
-[def](#def)  
+* [clear](#clear)  
+* [forward](#forward)  
+* [penUp and penDown](#penup-and-pendown)  
+* [hop](#hop)  
+* [right](#right)  
+* [left](#left)  
+* [setPenColor](#setpencolor)  
+* [setFillColor](#setfillcolor)  
+* [setPenThickness](#setpenthickness)  
+* [setBackground](#setbackground)  
+* [savePosHe](#saveposhe)  
+* [restorePosHe](#restoreposhe)  
+* [write](#write)  
+* [setPenFontSize](#setpenfontsize)  
+* [setPenFont](#setpenfont)  
+* [setPosition](#setposition)
+* [setSpeed](#setspeed)
+* [repeat](#repeat)  
+* [def](#def)  
 
 
 ### clear
@@ -157,6 +159,12 @@ hop(50)
 right(45)
 write("Hello World")
 ```
+
+### setPosition
+`setPosition(x, y)` - sets the turtle's position to the given x and y.
+
+### setSpeed
+`setSpeed(speed)` - sets the turtle's speed to the given speed, which can be one of `slow`, `medium`, `fast`, or `superFast`.
 
 ### repeat
 `repeat(n) { code }` - repeats the given code n number of times.
