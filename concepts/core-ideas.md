@@ -3,6 +3,7 @@
 Making drawings and art in Kojo with the help of the turtle is easy. You just need to be familiar with the following core ideas:
 * Your program (to make a drawing) contains a sequence of lines containing commands. When you run your program, it does its job line by line, carrying out the commands from the top of the program to the bottom.
 * As your program runs (line by line, from top to bottom), it draws stuff on the canvas by giving commands to the turtle.
+* The [`clear()`](../reference/turtle.html#clear) command is used at the beginning of a program to clean out the canvas before drawing on it.
 * All straight lines on the canvas are made by the [`forward(numSteps)`](../reference/turtle.html#forward) command, which draws a (straight) line in the direction of the turtle's nose.
 * The [`right(angle)`](../reference/turtle.html#right) and [`left(angle)`](../reference/turtle.html#left) commands change the direction of the turtle's nose.
 * All curved lines on the canvas are made by the [`right(angle, radius)`](../reference/turtle.html#right) and [`left(angle, radius)`](../reference/turtle.html#left) commands.
@@ -22,7 +23,7 @@ Making drawings and art in Kojo with the help of the turtle is easy. You just ne
     * `Ctrl+Click` on any color in your program to bring up a color chooser. Inside the color chooser, you can visually select a color, or manually modify the hue, saturation, lightness, and/or transparency of your desired color.
 * To draw thick or thin lines, use the [`setPenThickness(thickness)`](../reference/turtle.html#setpenthickness) command.
 
-Here are some examples showing the above ideas in action:
+Here is an examples showing some of the above ideas in action:
 * * *
 Code:
 ```scala
