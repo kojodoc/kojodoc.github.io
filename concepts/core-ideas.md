@@ -3,7 +3,7 @@
 Making drawings and art in Kojo with the help of the turtle is easy. You just need to be familiar with the following core ideas:
 * Your program (to make a drawing) contains a sequence of lines containing commands. When you run your program, it does its job line by line, carrying out the commands from the top of the program to the bottom.
 * As your program runs (line by line, from top to bottom), it draws stuff on the canvas by giving commands to the turtle.
-* All straight lines on the canvas are made by the `forward(numSteps)` command, which draws a (straight) line in the direction of the turtle's nose.
+* All straight lines on the canvas are made by the [`forward(numSteps)`](../reference/turtle.html#forward) command, which draws a (straight) line in the direction of the turtle's nose.
 * The [`right(angle)`](../reference/turtle.html#right) and [`left(angle)`](../reference/turtle.html#left) commands change the direction of the turtle's nose.
 * All curved lines on the canvas are made by the [`right(angle, radius)`](../reference/turtle.html#right) and [`left(angle, radius)`](../reference/turtle.html#left) commands.
 * If you want to move the turtle around the canvas without drawing lines, you have the following options:
