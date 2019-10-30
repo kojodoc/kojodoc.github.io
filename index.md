@@ -26,7 +26,7 @@ As you go through the Getting Started book, it's useful to be able to see all th
 It's also useful to be able to see all the [core concepts](concepts/core-ideas.html) in one place.
 
 ## Art Ideas
-To spice things up as you go along, [here are a bunch of art ideas](art-ideas/shape-block.html).
+To spice things up as you go along, [here are a bunch of art ideas](art/ideas.html).
 
 ## Colors
 What's art without colors? Kojo has great support for colors, and it's good for you [to know the details](concepts/colors.html).
