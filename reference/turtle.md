@@ -19,6 +19,7 @@ numbers - the x coordinate and the y coordinate. As you move the mouse pointer w
 Most descriptions include sample code. Copy & paste and then run the sample code for a command in Kojo for a better understanding of that command.*
 
 * [clear](#clear)  
+* [cleari](#cleari)  
 * [forward](#forward)  
 * [penUp and penDown](#penup-and-pendown)  
 * [hop](#hop)  
@@ -48,6 +49,9 @@ Most descriptions include sample code. Copy & paste and then run the sample code
 * pen thickness becomes 2.
 * fill color becomes null (no fill).
 * speed becomes slow.
+
+### cleari
+`cleari()` - clears the drawing canvas as described above, and then hides the turtle (i.e. makes it invisible).
 
 ### forward
 `forward(numSteps)` - Moves the turtle forward in the direction of its nose - by the given number of steps. The turtle draws a line as it moves **if its pen is down**. The pen is down by default after a [clear()](#clear). See example below:
@@ -92,13 +96,24 @@ right(180, 150)
 ```
 
 ### left
-left also comes in two variants, and is very similar to right, except that it turns the turtle to the left.
+left also comes in two variants, and is very similar to right, except that it turns the turtle to the left. See example below:
+```scala
+clear()
+// turn the turtle left by 90° at its current position
+left(90)
+// make the turtle draw a blue quarter circle of radius 100 to the left
+setPenColor(blue)
+left(90, 100)
+// make the turtle draw a green semi circle of radius 150 to the left
+setPenColor(green)
+left(180, 150)
+```
 
 ### setPenColor
-`setPenColor(color)` - sets the color of the turtle's pen. From this point on in the program, any lines drawn by the turtle have this color.
+`setPenColor(color)` - sets the [color](../concepts/colors.html) of the turtle's pen. From this point on in the program, any lines drawn by the turtle have this [color](../concepts/colors.html).  
 
 ### setFillColor
-`setFillColor(color)` - sets the color of the fill area of the turtle's pen. From this point on in the program, any areas drawn by the turtle have this fill color.
+`setFillColor(color)` - sets the [color](../concepts/colors.html) of the fill area of the turtle's pen. From this point on in the program, any areas drawn by the turtle have this fill [color](../concepts/colors.html).
 
 
 ### setPenThickness
@@ -106,7 +121,7 @@ left also comes in two variants, and is very similar to right, except that it tu
 
 
 ### setBackground
-`setBackground(color)` - paints the background of the canvas the specified color.
+`setBackground(color)` - paints the background of the canvas the specified [color](../concepts/colors.html).
 
 ### savePosHe
 `savePosHe()` - saves the position and heading of the turtle. At a later point in the program, the turtle can be brought to the saved position and heading using the `restorePosHe()` command. See example below:

@@ -3,6 +3,7 @@ You can use colors in Kojo in the following ways:
 * [Random Colors](#random-colors)  
 * [Predefined Colors](#predefined-colors)  
 * [Custom Colors](#custom-colors)
+* [Color Gradients](#color-gradients)
 
 ### Random Colors
 Wherever a color is needed in your program, you can use the `randomColor` function. For example:
@@ -53,3 +54,6 @@ In the color chooser, you can adjust the hue, saturation, lightness, and transpa
 * Add gray to this color via the **Saturation** slider. 100 is the pure color; 50 is half color and half gray; 0 is fully gray.
 * Add white or black to the color via the **Lightness** slider. 50 is the pure color; numbers greater than 50 add more and more white. Numbers less than 50 add more and more black.
 * Increse the transparency of the color via the **Transparency** slider.
+
+### Color Gradients
+Todo
