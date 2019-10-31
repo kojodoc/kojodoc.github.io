@@ -1,6 +1,6 @@
 These pages describe the Gaming facility within Kojo.  
 
-> *This section of the website is currently under development*.
+> <img src="man-at-work.png"/> <br/> *This section of the website is currently under development*.
 
 For now, here are some simple animations leading up to a *Lunar Lander* game:
 

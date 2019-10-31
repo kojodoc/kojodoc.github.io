@@ -1,6 +1,6 @@
 ## Scala Essentials
 
-> *This section of the website is currently under development*.
+> <img src="man-at-work.png"/> <br/> *This section of the website is currently under development*.
 
 For now, here are some links to Scala learning material that is available online:
 
