@@ -2,23 +2,21 @@
 layout: default
 title: "Happy Jekylling!"
 ---
-This is the documentation wiki for the [Kojo Learning Environment](http://www.kogics.net/kojo).  
-Kojo has four major activity areas, as shown below. Click on an area to view its documentation.
 <div style="text-align:center">
+    This is the documentation wiki for <a href="http://www.kogics.net/kojo">The Kojo Learning Environment</a>.<br/> 
     <hr/>
+    Kojo has four major activity areas, as shown below. Click on an area to view its documentation. <br/><br/>
     <a href="turtle-index.html"><img src="turtle-graphics.png"/></a>
-    <hr/>
     <a href="picture-index.html"><img src="picture-graphics.png"/></a>
-    <hr/>
     <a href="gaming-index.html"><img src="gaming.png"/></a>
-    <hr/>
     <a href="robotics-index.html"><img src="robotics.png"/></a>
-    <hr/>
 </div>
+<hr/>
 <div style="text-align:center">
-    <hr/>
+    Here's another way to look at the documentation: <br/><br/>
     <a href="fundamentals-index.html"><img src="fundamentals.png"/></a> <br/>
     <a href="references-index.html"><img src="references.png"/></a> <br/>
-    <a href="contribute.html"><img src="contribute.png"/></a> <br/>
-    All artwork on this site has been done in <a href="http://www.kogics.net/kojo">Kojo</a>
+    <hr/>
+    <a href="contribute.html">Contribute Content</a> <br/>
+    All the artwork on this site has been done in <a href="http://www.kogics.net/kojo">Kojo</a>
 </div>
