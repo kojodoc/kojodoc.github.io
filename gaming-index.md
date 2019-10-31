@@ -10,7 +10,7 @@ For now, here are some simple animations leading up to a *Lunar Lander* game:
 * [Lunar Lander](#lunar-lander)
 * [A video of a Platformer game](https://www.youtube.com/watch?v=QytErHlrUpY) built using Kojo. The game can be run from the Showcase menu in Kojo.
 
-> *Note* - computer programs in Kojo are written using the [Scala](http://scala-lang.org) programming language. For [turtle graphics](turtle-index.html), very little knowledge of Scala is required, and you can get by very well with a good knowledge of [some core concepts](concepts/core-ideas.html) and the [basic turtle commands](reference/turtle.html). Gaming gives you an opportunity to [learn more of Scala](concepts/scala-essentials.html), and you will need to know a little bit  of Scala to understand the programs below.
+> *Note* - computer programs in Kojo are written using the [Scala](http://scala-lang.org) programming language. For [turtle graphics](turtle-index.html), very little knowledge of Scala is required, and you can get by very well with a good knowledge of [some core concepts](concepts/turtle-core-ideas.html) and the [basic turtle commands](reference/turtle.html). Gaming gives you an opportunity to [learn more of Scala](concepts/scala-essentials.html), and you will need to know a little bit  of Scala to understand the programs below.
 
 You can copy the programs below and paste them into Kojo to run them.
 

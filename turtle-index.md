@@ -20,7 +20,7 @@ This book will help you learn:
 As you go through the Getting Started book, it's useful to be able to see all the [basic turtle commands](reference/turtle.html) in one place.
 
 ## Core Concepts
-It's also useful to be able to see all the [core concepts](concepts/core-ideas.html) in one place.
+It's also useful to be able to see all the [core concepts](concepts/turtle-core-ideas.html) in one place.
 
 ## Art Ideas
 To spice things up as you go along, [here are a bunch of art ideas](art/ideas.html).
@@ -29,7 +29,7 @@ To spice things up as you go along, [here are a bunch of art ideas](art/ideas.ht
 What's art without colors? Kojo has great support for colors, and it's good for you [to know the details](concepts/colors.html).
 
 ## Picture Basics
-Pictures build upon turtle graphics to let you create more intricate art, learn deeper ideas in programming and computer science, and also build animations and games. For now, it's good for you to [learn enough about Pictures](concepts/picture-turtle-basics.html) to help you import and align multiple turtle drawings into one composition.
+Pictures build upon turtle graphics to let you create more intricate art, learn deeper ideas in programming and computer science, and also build animations and games. For now, it's good for you to [learn enough about Pictures](concepts/turtle-picture-basics.html) to help you import and align multiple turtle drawings into one composition.
 
 ## Contribute
 Content contributions to this website are [very welcome](contribute.html).
