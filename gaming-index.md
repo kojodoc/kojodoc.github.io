@@ -14,4 +14,4 @@ For now, here are links to some very simple animations leading up to a version o
 
 [Bringing everything together in a simple Lunar Lander](https://github.com/litan/mm/blob/master/animation/lunar-lander.kojo).
 
-
+[A video of a Platformer game](https://www.youtube.com/watch?v=QytErHlrUpY) built using Kojo. The game can be run from the Showcase menu in Kojo.

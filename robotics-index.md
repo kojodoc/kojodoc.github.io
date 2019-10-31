@@ -10,4 +10,4 @@ For now, here are some links:
 
 [Some more electronics examples](https://github.com/litan/kojo-arduino/tree/master/starterkit).
 
-[A Kojo Robot](https://www.youtube.com/watch?v=atNDPTig2_Y&feature=youtu.be) built using [The Kojo-Arduino Bridge](https://github.com/litan/kojo-arduino).
+[A video of a Kojo Robot](https://www.youtube.com/watch?v=atNDPTig2_Y&feature=youtu.be) built using [The Kojo-Arduino Bridge](https://github.com/litan/kojo-arduino).
