@@ -6,10 +6,10 @@ title: "Happy Jekylling!"
     This is the documentation wiki for <a href="http://www.kogics.net/kojo">The Kojo Learning Environment</a>.<br/> 
     <hr/>
     Kojo has four major activity areas, as shown below. Click on an area to view its documentation. <br/><br/>
-    <a href="turtle-index.html"><img src="turtle-graphics.png"/></a>
-    <a href="picture-index.html"><img src="picture-graphics.png"/></a>
-    <a href="gaming-index.html"><img src="gaming.png"/></a>
-    <a href="robotics-index.html"><img src="robotics.png"/></a>
+    <a href="turtle-index.html"><img src="turtle-graphics.png" width="600"/></a>
+    <a href="picture-index.html"><img src="picture-graphics.png" width="600"/></a>
+    <a href="gaming-index.html"><img src="gaming.png" width="600"/></a>
+    <a href="robotics-index.html"><img src="robotics.png" width="600"/></a>
 </div>
 <hr/>
 <div style="text-align:center">
