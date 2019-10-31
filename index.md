@@ -2,47 +2,17 @@
 layout: default
 title: "Happy Jekylling!"
 ---
-This is the documentation wiki for the [Kojo Learning Environment](http://www.kogics.net/kojo).
-* [Getting Started](#getting-started)
-* [Turtle Graphics Reference](#turtle-graphics-reference)
-* [Core Concepts](#core-concepts)
-* [Art Ideas](#art-ideas)
-* [Colors](#colors)
-* [Picture Basics](#picture-basics)
-* [Contribute](#contribute)
+This is the documentation wiki for the [Kojo Learning Environment](http://www.kogics.net/kojo).  
+Kojo has four major activity areas, as shown below. Click on an area to view its documentation.
 
-## Getting Started
-To get going with Kojo, use the [Getting Started](http://wiki.kogics.net/kojo-codeactive-books#getting-started) book.
-This book will help you learn:
-* the basic turtle graphics commands available in Kojo.
-* how to write programs using these commands - to draw on the canvas.
-* how to make geometric patterns.
-* how to analyze given geometric patterns, and to recreate these patterns in a structured way - via programs that you write.
-
-## Turtle Graphics Reference
-As you go through the Getting Started book, it's useful to be able to see all the [basic turtle commands](reference/turtle.html) in one place.
-
-## Core Concepts
-It's also useful to be able to see all the [core concepts](concepts/core-ideas.html) in one place.
-
-## Art Ideas
-To spice things up as you go along, [here are a bunch of art ideas](art/ideas.html).
-
-## Colors
-What's art without colors? Kojo has great support for colors, and it's good for you [to know the details](concepts/colors.html).
-
-## Picture Basics
-Pictures build upon turtle graphics to let you create more intricate art, learn deeper ideas in programming and computer science, and also build animations and games. For now, it's good for you to [learn enough about Pictures](concepts/pictures.html) to help you import and align multiple turtle drawings into one composition.
-
-## Contribute
-Content contributions to this website are [very welcome](contribute.html).
+[<img src="turtle-graphics.png">](turtle-index.html)
+* * * 
+[<img src="picture-graphics.png">](picture-index.html)
+* * * 
+[<img src="gaming.png">](gaming-index.html)
+* * * 
+[<img src="robotics.png">](robotics-index.html)
 
 <div style="text-align:center">
-  <br/>
-  <br/>
-  <br/>
-  <img src="kojo-tree.png" width="400">
-  <br/>
-  <br/>
-  The fractal tree above was made in Kojo
+  All artwork on this site has been done in <a href="http://www.kogics.net/kojo">Kojo</a>
 </div>
