@@ -1,4 +1,6 @@
-These pages describe the Pictures facility within Kojo.  
+These pages describe the Pictures facility within Kojo.
+
+Pictures build upon turtle graphics to let you create more intricate art, learn deeper ideas in programming and computer science, and also build animations and games.
 
 > <img src="man-at-work.png"/> <br/> *This section of the website is currently under development*.
 
