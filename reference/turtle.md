@@ -18,25 +18,27 @@ numbers - the x coordinate and the y coordinate. As you move the mouse pointer w
 *Click on a command below to go to its description.  
 Most descriptions include sample code. Copy & paste and then run the sample code for a command in Kojo for a better understanding of that command.*
 
-* [clear](#clear)  
-* [cleari](#cleari)  
-* [forward](#forward)  
-* [penUp and penDown](#penup-and-pendown)  
-* [hop](#hop)  
-* [right](#right)  
-* [left](#left)  
-* [setPenColor](#setpencolor)  
-* [setFillColor](#setfillcolor)  
-* [setPenThickness](#setpenthickness)  
-* [setBackground](#setbackground)  
-* [savePosHe](#saveposhe)  
-* [restorePosHe](#restoreposhe)  
-* [write](#write)  
-* [setPenFontSize](#setpenfontsize)  
-* [setPenFont](#setpenfont)  
+* [clear](#clear)
+* [cleari](#cleari)
+* [forward](#forward)
+* [penUp and penDown](#penup-and-pendown)
+* [hop](#hop)
+* [right](#right)
+* [left](#left)
+* [setPenColor](#setpencolor)
+* [setFillColor](#setfillcolor)
+* [setPenThickness](#setpenthickness)
+* [setBackground](#setbackground)
+* [savePosHe](#saveposhe)
+* [restorePosHe](#restoreposhe)
+* [write](#write)
+* [setPenFontSize](#setpenfontsize)
+* [setPenFont](#setpenfont)
 * [setPosition](#setposition)
 * [setSpeed](#setspeed)
-* [repeat](#repeat)  
+* [invisible and visible](#invisible-and-visible)
+* [repeat](#repeat)
+* [repeatFor](#repeatfor)
 * [def](#def)  
 
 
@@ -181,8 +183,30 @@ write("Hello World")
 ### setSpeed
 `setSpeed(speed)` - sets the turtle's speed to the given speed, which can be one of `slow`, `medium`, `fast`, or `superFast`.
 
+### invisible and visible
+`invisible()` - hides the turtle.  
+`visible()` - makes a hidden turtle visible again.
+
 ### repeat
-`repeat(n) { code }` - repeats the given code n number of times.
+`repeat(n) { code }` - repeats the given code n number of times. This helps you to do the same thing over and over again.
+```scala
+clear()
+repeat(4) {
+    forward(100)
+    right(90)
+}
+```
+
+### repeatFor
+`repeatFor(sequence) { element => code }` - repeats the given code multiple times, once for each element of the given sequence. The current sequence element is available to your code - to help you do something slightly different based on the current element.
+```scala
+clear()
+setSpeed(fast)
+repeatFor(10 to 100) { n =>
+    forward(n)
+    right(91)
+}
+```
 
 ### def
 `def newCommand(inputs) { code }` - creates a new command that takes the specified inputs and carries out commands as defined in the given code. See example below:
