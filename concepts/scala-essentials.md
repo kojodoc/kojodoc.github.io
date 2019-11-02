@@ -10,6 +10,7 @@ Here's the absolute minimum amount of programming theory and Scala information t
 * [Gaming Primitives](#gaming-primitives)
 * [Means of composition in Scala](#means-of-composition-in-scala)
 * [An Example](#an-example)
+* [How-tos](../howtos/gaming.html)
 
 ### Program Structure
 * A program is a sequence of lines of text.
