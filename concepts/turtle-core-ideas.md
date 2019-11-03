@@ -1,3 +1,7 @@
+<div class="nav">
+  <a href="../index.html">Home</a> | <a href="../turtle-index.html">Turtle Graphics</a> | <a href="../fundamentals-index.html">Fundamentals</a>
+</div>
+
 ## Core Ideas
 
 Making drawings and art in Kojo with the help of the turtle is easy. You just need to be familiar with the following core ideas:

@@ -1,3 +1,7 @@
+<div class="nav">
+  <a href="index.html">Home</a> | <a href="reference/turtle.html">Turtle Reference</a>
+</div>
+
 These pages describe the Turtle Graphics facility within Kojo.
 
 * [Getting Started](#getting-started)

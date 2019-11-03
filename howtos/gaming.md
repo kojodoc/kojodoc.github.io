@@ -1,3 +1,7 @@
+<div class="nav">
+  <a href="../index.html">Home</a> | <a href="../gaming-index.html">Gaming</a> | <a href="../concepts/scala-essentials">Scala Essentials</a>
+</div>
+
 ## Gaming How-to code snippets
 * [On picture click - draw a new picture](#on-picture-click---draw-a-new-picture)
 * [Pictures with hotspots for collision checking](#pictures-with-hotspots-for-collision-checking)

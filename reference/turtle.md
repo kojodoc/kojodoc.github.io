@@ -1,3 +1,7 @@
+<div class="nav">
+  <a href="../index.html">Home</a> | <a href="../turtle-index.html">Turtle Graphics</a> | <a href="../references-index.html">References</a>
+</div>
+
 This page contains descriptions of the basic turtle commands available in Kojo.
 
 While looking at the turtle commands, it is helpful to remember that a turtle has the following properties related to 

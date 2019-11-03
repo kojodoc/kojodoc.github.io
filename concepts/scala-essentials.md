@@ -1,3 +1,7 @@
+<div class="nav">
+  <a href="../index.html">Home</a> | <a href="../gaming-index.html">Gaming</a> | <a href="../fundamentals-index.html">Fundamentals</a>
+</div>
+
 ## Scala essentials for Kojo gaming
 
 > <img src="../man-at-work.png"/> <br/> *This section of the website is currently under development*.
