@@ -1,3 +1,7 @@
+<div class="nav">
+  <a href="index.html">Home</a>
+</div>
+
 These pages describe the Robotics facility within Kojo.  
 
 > <img src="man-at-work.png"/> <br/> *This section of the website is currently under development*.

@@ -1,3 +1,8 @@
+<div class="nav">
+  <a href="index.html">Home</a>
+</div>
+
+
 These pages describe the Pictures facility within Kojo.
 
 Pictures build upon turtle graphics to let you create more intricate art, learn deeper ideas in programming and computer science, and also build animations and games.
