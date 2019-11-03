@@ -1,3 +1,7 @@
+<div class="nav">
+  <a href="../index.html">Home</a> | <a href="../turtle-index.html">Turtle Graphics</a>
+</div>
+
 ## The Shape/Block method
 The shape/block method builds upon the ideas in the forty-patterns section at the end of the [Getting Started](http://wiki.kogics.net/kojo-codeactive-books#getting-started) book. 
 

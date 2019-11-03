@@ -1,3 +1,7 @@
+<div class="nav">
+  <a href="../index.html">Home</a> | <a href="../fundamentals-index.html">Fundamentals</a>
+</div>
+
 You can use colors in Kojo in the following ways:
 
 * [Random Colors](#random-colors)  

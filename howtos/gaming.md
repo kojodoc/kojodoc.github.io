@@ -1,5 +1,5 @@
 <div class="nav">
-  <a href="../index.html">Home</a> | <a href="../gaming-index.html">Gaming</a> | <a href="../concepts/scala-essentials">Scala Essentials</a>
+  <a href="../index.html">Home</a> | <a href="../gaming-index.html">Gaming</a>
 </div>
 
 ## Gaming How-to code snippets

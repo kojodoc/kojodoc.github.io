@@ -1,5 +1,5 @@
 <div class="nav">
-  <a href="index.html">Home</a> | <a href="reference/turtle.html">Turtle Reference</a>
+  <a href="index.html">Home</a>
 </div>
 
 These pages describe the Turtle Graphics facility within Kojo.

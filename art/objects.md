@@ -1,3 +1,7 @@
+<div class="nav">
+  <a href="../index.html">Home</a> | <a href="../turtle-index.html">Turtle Graphics</a>
+</div>
+
 ## Objects from the real world
 
 ### Diya

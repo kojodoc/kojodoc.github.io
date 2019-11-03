@@ -1,5 +1,5 @@
 <div class="nav">
-  <a href="index.html">Home</a> | <a href="../concepts/scala-essentials">Scala Essentials</a>
+  <a href="index.html">Home</a>
 </div>
 
 These pages describe the Gaming facility within Kojo.  
