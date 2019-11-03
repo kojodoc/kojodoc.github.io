@@ -10,7 +10,7 @@ For now, here are some simple animations leading up to a *Lunar Lander* game:
 * [Lunar Lander](#lunar-lander)
 * [A video of a Platformer game](https://www.youtube.com/watch?v=QytErHlrUpY) built using Kojo. The game can be run from the Showcase menu in Kojo.
 
-> *Note* - computer programs in Kojo are written using the [Scala](http://scala-lang.org) programming language. You will need to know [a little bit of Scala](concepts/scala-essentials.html) to understand the programs below.
+> *Note* - computer programs in Kojo are written using the [Scala](http://scala-lang.org) programming language. You will need to know the [Basics of Scala](concepts/scala-essentials.html) to understand the programs below.
 
 You can copy the programs below and paste them into Kojo to run them.
 
