@@ -1,9 +1,15 @@
+<div class="nav">
+  <a href="../index.html">Home</a> | <a href="../fundamentals-index.html">Fundamentals</a>
+</div>
+
 A list of the pre-defined ColorMaker colors is shown below. Any of these colors can be used like this:
 ```scala
 // draw an aliceBlue line
 setPenColor(cm.aliceBlue)
 forward(100)
 ```
+
+An easy way to use these colors in your programs is via the *code-completion* feature. Type `cm.` (or `ColorMaker.`) in the script editor and then type `Ctrl+Space`. This will pop-up a list of the predefined colors shown below. Select a color from this list and hit enter to get that color into your program.
 
 ### Predefined colors
 
