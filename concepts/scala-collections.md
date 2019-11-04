@@ -11,7 +11,7 @@ The Scala collections are predefined data-structures that are available to you t
 * [HashMap](#hashmap)
 
 ### ArrayBuffer
-An ArrayBuffer is a modifiable, indexed sequence of elements of a given type. [More info](https://alvinalexander.com/scala/arraybuffer-class-methods-syntax-examples-reference).
+An ArrayBuffer is a mutable (modifiable), indexed sequence of elements of a given type. [More info](https://alvinalexander.com/scala/arraybuffer-class-methods-syntax-examples-reference).
 
 Example usage:
 ```scala
@@ -51,7 +51,7 @@ println(ab3)
 ```
 
 ### HashSet
-A HashSet is a set of elements of a given type. A set is also an unordered sequence.
+A HashSet is a mutable set of elements of a given type. A set is an unordered sequence. [More info](https://alvinalexander.com/scala/scala-set-class-how-to-add-elements-cookbook-recipes).
 
 Example Usage:
 ```scala
@@ -78,8 +78,9 @@ repeatFor(hs) { x =>
 
 // test for membership; this is mostly why you want to use a set
 println("---")
-println(hs.contains(11))
-println(hs.contains(12))
+val c = hs.contains(11)
+val c2 = hs.contains(12) 
+println(c, c2)
 
 // filter and map (below) work the same for all sequences.
 
@@ -101,5 +102,26 @@ println(hs3)
 ```
 
 ### HashMap
-A HashMap is a map/dictionary of associations between keys and values.  
-Todo
+A HashMap is a mutable map/dictionary of associations between keys and values. [More info](https://alvinalexander.com/scala/how-to-add-update-remove-mutable-map-elements-scala-cookbook).
+
+Example:
+```scala
+clearOutput()
+// create an empty hashmap
+val hs = HashMap.empty[Int, Int]
+// add a key, value pair to it
+hs(10) = 2
+
+// add another key, value pair to it
+hs(11) = 5
+
+// get the value for a key
+println("---")
+val k = hs(10)
+val k2 = hs(11)
+println(k, k2)
+
+// To guard against a key not being present, use getOrElse
+val k3 = hs.getOrElse(12, 0)
+println(k3)
+```
