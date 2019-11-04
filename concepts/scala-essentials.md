@@ -10,7 +10,7 @@ Here's the absolute minimum amount of programming theory and Scala information t
 * [Program Structure](#program-structure)
 * [Program Operation](#program-operation)
 * [Program Development](#program-development)
-* [Scala Facts](#scala-facts)
+* [Scala Introduction](#scala-introduction)
 * [Gaming Primitives](#gaming-primitives)
 * [Means of composition in Scala](#means-of-composition-in-scala)
 * [An Example](#an-example)
@@ -42,7 +42,7 @@ You use three important ideas while writing a program:
 * Composition - these are the ways in which your programming language allows you to combine the primitives to do useful things. The [means of composition](#means-of-composition-in-scala) that you will use for now are given below.
 * Abstraction - this is the process of giving names to useful compositions, so that they become available as primitives in your program. The [Scala facts](#scala-facts) section below describes the means of abstraction that you will use.
 
-### Scala Facts
+### Scala Introduction
 * Every data value is an object. An object combines data with functions/commands. The functions/commands attached to an object are called its methods.
   * Every object has a type.
   * A type determines a set of possible values and the operations that can be done with these values.
@@ -52,7 +52,7 @@ You use three important ideas while writing a program:
 * The `var` keyword instruction allows you to bind a name to a value; e.g. `var x = 10`. This name can be bound to a different value later on in your program. This is a form of abstraction.
 * The `def` keyword instruction allows you to define a new command or function. This is a means of abstraction.
 * The `class` keyword instruction lets you create a new class. A class is a description for a new type of object. The class can contain `vals`, `vars`, and `defs`. This is a powerful means of abstraction.
-  * Once you create a class, let's say X, you can create an object of type X (also called a new instace of X) like this: `new X()`.
+  * Once you create a class, let's say X, you can create an object of type X (also called a new instace of X) like this: `new X()`, or `new X(inputs)` if X takes inputs.
 * The `if-else` keyword lets you check the result of a condition and choose between two alternative code paths based on the result of the condition. This is a means of composition.
   * A condition is an expression that evaluates to a Boolean (true or false).
 
@@ -91,7 +91,7 @@ clear()
 drawStage(ColorMaker.black)
 val cb = canvasBounds
 
-class Shape {
+class Shape(xOffset: Int, yOffset: Int) {
     val pic = Picture {
         setFillColor(red)
         repeat(4) {
@@ -99,7 +99,7 @@ class Shape {
             right(90)
         }
     }
-    pic.setPosition(cb.x + 20, cb.y + 20)
+    pic.setPosition(cb.x + xOffset, cb.y + yOffset)
     var vel = Vector2D(2, 10)
     val gravity = Vector2D(0, -0.2)
 
@@ -116,7 +116,7 @@ class Shape {
     }
 }
 
-val shape = new Shape()
+val shape = new Shape(20, 20)
 shape.draw()
 
 animate {
