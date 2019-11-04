@@ -11,7 +11,7 @@ The Scala collections are predefined data-structures that are available to you t
 * [HashMap](#hashmap)
 
 ### ArrayBuffer
-An ArrayBuffer is a mutable (modifiable), indexed sequence of elements of a given type. [More info](https://alvinalexander.com/scala/arraybuffer-class-methods-syntax-examples-reference).
+An ArrayBuffer is a mutable (modifiable), indexed sequence of elements of a given type. Elements are located in the ArrayBuffer in the order in which they were added to the buffer. [More info](https://alvinalexander.com/scala/arraybuffer-class-methods-syntax-examples-reference).
 
 Example usage:
 ```scala
@@ -33,6 +33,12 @@ repeatFor(ab) { x =>
     println(x)
 }
 
+// use indexing to access an element
+println("---")
+val e = ab(0)
+val e2 = ab(1)
+println(e, e2)
+
 // convert ab to a new arraybuffer via a rule for how each element 
 // is to be changed
 val ab2 = ab.map { x =>
@@ -51,7 +57,7 @@ println(ab3)
 ```
 
 ### HashSet
-A HashSet is a mutable set of elements of a given type. A set is an unordered sequence. [More info](https://alvinalexander.com/scala/scala-set-class-how-to-add-elements-cookbook-recipes).
+A HashSet is a mutable set of elements of a given type. A set is an unordered sequence. Use a set when you don't care about the order of elements inside it, but care only about whether an element is present in the set or not. [More info](https://alvinalexander.com/scala/scala-set-class-how-to-add-elements-cookbook-recipes).
 
 Example Usage:
 ```scala
@@ -102,26 +108,26 @@ println(hs3)
 ```
 
 ### HashMap
-A HashMap is a mutable map/dictionary of associations between keys and values. [More info](https://alvinalexander.com/scala/how-to-add-update-remove-mutable-map-elements-scala-cookbook).
+A HashMap is a mutable map/dictionary of associations between keys and values. You add (key, value) pairs to the map, and can then look up values based on keys. [More info](https://alvinalexander.com/scala/how-to-add-update-remove-mutable-map-elements-scala-cookbook).
 
 Example:
 ```scala
 clearOutput()
 // create an empty hashmap
-val hs = HashMap.empty[Int, Int]
+val hm = HashMap.empty[Int, Int]
 // add a key, value pair to it
-hs(10) = 2
+hm(10) = 2
 
 // add another key, value pair to it
-hs(11) = 5
+hm(11) = 5
 
 // get the value for a key
 println("---")
-val k = hs(10)
-val k2 = hs(11)
+val k = hm(10)
+val k2 = hm(11)
 println(k, k2)
 
 // To guard against a key not being present, use getOrElse
-val k3 = hs.getOrElse(12, 0)
+val k3 = hm.getOrElse(12, 0)
 println(k3)
 ```
