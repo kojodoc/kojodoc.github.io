@@ -14,6 +14,7 @@ Here's the absolute minimum amount of programming theory and Scala information t
 * [Gaming Primitives](#gaming-primitives)
 * [Means of composition in Scala](#means-of-composition-in-scala)
 * [An Example](#an-example)
+* [Scala Collections](scala-collections.html)
 * [How-tos](../howtos/gaming.html)
 
 ### Program Structure
@@ -65,8 +66,11 @@ The [example below](#an-example) will make these ideas concrete.
 * `Picture.image(fileName)` - creates a picture from an image file.
 * `pic.draw()` - draws the given picture on the canvas. Just creating a picture does not draw it. The creation via a function and the drawing via a command are separate operations.
 * `pic.translate(x, y)` - moves the picture named `pic` on the canvas by the given amount.
+* `pic.rotate(angle)` - rotates the picture around its origin by the given angle.
+* `pic.rotateAboutPoint(x, y, angle)` - rotates the picture by the given angle around the given (x, y) in the local coordinate system of the picture.
 * `pic.setPosition(x, y)` - sets the position of the picture named `pic` to be the given (x, y) on the canvas.
 * `pic.collidesWith(otherPic)` - checks to see if `pic` is in collision with `otherPic`.
+* `pic.onMouseClick { { (x, y) => code }` - runs the given code when the mouse is clicked on the picture. The code has access to the (x, y) of the mouse click.
 * `bouncePicVectorOffStage(pic, vel)` - computes a new velocity for `pic` moving with `velocity` that collides with the stage border.
 * `Vector2D(x, y)` - creates a vector with the two given components. The vector specifies a magnitude and a direction.
 * `animate { code }` - schedules your code to be called approximately fifty times per second.
