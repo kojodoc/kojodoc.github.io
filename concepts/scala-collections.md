@@ -6,7 +6,7 @@
 
 The Scala collections are predefined data-structures that are available to you to structure and organize the data in your programs. A full [description of the Scala collections](https://docs.scala-lang.org/overviews/collections/overview.html) is available on the Scala website. Also, [this post on Java Collections](https://lalitpant.blogspot.com/2007/07/java-collections-quickref.html) provides useful background information.
 
-Here, we are going to look at just that collections that we are going to use to begin with:
+Here, we are going to look at just the collections that we will use to begin with:
 
 * [ArrayBuffer](#arraybuffer)
 * [HashSet](#hashset)
