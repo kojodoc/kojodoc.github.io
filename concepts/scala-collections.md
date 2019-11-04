@@ -11,7 +11,7 @@ The Scala collections are predefined data-structures that are available to you t
 * [HashMap](#hashmap)
 
 ### ArrayBuffer
-An ArrayBuffer is a mutable (modifiable), indexed sequence of elements of a given type. Elements are located in the ArrayBuffer in the order in which they were added to the buffer. [More info](https://alvinalexander.com/scala/arraybuffer-class-methods-syntax-examples-reference).
+An ArrayBuffer is a mutable (modifiable), indexed sequence of elements of a given type. An element's location in the ArrayBuffer (its index) is based on the order in which it was added to the buffer. [More info](https://alvinalexander.com/scala/arraybuffer-class-methods-syntax-examples-reference).
 
 Example usage:
 ```scala
@@ -57,7 +57,7 @@ println(ab3)
 ```
 
 ### HashSet
-A HashSet is a mutable set of elements of a given type. A set is an unordered sequence. Use a set when you don't care about the order of elements inside it, but care only about whether an element is present in the set or not. [More info](https://alvinalexander.com/scala/scala-set-class-how-to-add-elements-cookbook-recipes).
+A HashSet is a mutable set of elements of a given type. A set is an unordered sequence. Use a set when you don't care about the order of the elements inside, but care only about whether an element is present inside or not. [More info](https://alvinalexander.com/scala/scala-set-class-how-to-add-elements-cookbook-recipes).
 
 Example Usage:
 ```scala
