@@ -4,5 +4,5 @@
 
 ## References
 * [Turtle Graphics Reference](reference/turtle.html)
-* [Functional Graphics Reference](). *Coming Soon*.
-* [Gaming Reference](). *Coming Soon*.
+* [Picture Graphics Reference](reference/picture.html)
+* [Gaming Reference](reference/gaming.html)

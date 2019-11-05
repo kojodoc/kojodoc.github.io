@@ -9,4 +9,6 @@ Pictures build upon turtle graphics to let you create more intricate art, learn 
 
 > <img src="man-at-work.png"/> <br/> *This section of the website is currently under development*.
 
-For now, you can refer to [Picture Basics](concepts/turtle-picture-basics.html) page in the [Turtle Graphics](turtle-index.html) section.
+For now, you can refer to:
+* The [Picture Basics](concepts/turtle-picture-basics.html) page in the [Turtle Graphics](turtle-index.html) section.
+* The [Picture Graphics Reference](reference/picture.html) page.
