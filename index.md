@@ -18,5 +18,5 @@ title: "Happy Jekylling!"
     <a href="references-index.html"><img src="references.png" width="260"/></a> <br/>
     <hr/>
     <a href="contribute.html">Contribute Content</a> <br/>
-    All the artwork on this site has been done in <a href="http://www.kogics.net/kojo">Kojo</a>
+    All the artwork on this site has been done in <a href="http://www.kogics.net/kojo">Kojo</a>.
 </div>
