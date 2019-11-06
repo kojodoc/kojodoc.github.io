@@ -20,7 +20,7 @@ Here's a brief answer:
       * Security (cameras, sensors, social feeds).
 
     The above ideas are meant to highlight why it is important to learn about **computation** if you hope to understand the world around you at a non-superficial level.
-2. You get good brain **exercise** (with reinforcement, given the goal oriented and interactive nature of programming).
+2. To get good brain **exercise** (with reinforcement, given the goal oriented and interactive nature of programming).
   * The exercise is in the areas of logical, creative, and critical thinking.
 3. To have a new way to learn **subjects** like mathematics, art, music, and science.
   * For deeper understanding and exploring synergies.
