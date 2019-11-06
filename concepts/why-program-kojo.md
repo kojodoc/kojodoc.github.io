@@ -6,18 +6,22 @@
 
 Here's a brief answer:
 
-1. To better understand the world around us.
+1. To better understand the world around you.
   * By providing a deeper knowledge of **computation** - the foundation of the digital world that’s augmenting the physical world. Here are some examples related to computation and its effect on the world:
-    * How is computation delivered to the world?
-      * Via (web)apps – Google search, Google maps, Amazon/Flipkart, Ola/Uber, Netflix, Banking, etc.
-    * Smart cities - an example that can help us think about how computation is (going to) playing a bigger and bigger role in the world:
-      * IoT, AI, Systems.
+    * What are computations that we consume every day? 
+      * Google search, Google maps, Amazon/Flipkart, Ola/Uber, Netflix, Banking, etc.
+    * How are these computations delivered to us?
+      * Via (web)apps.
+    * Computations are getting more and more prevalent. Smart cities provide a good context to think about this:
+      * IoT, AI, Robots, Systems.
       * Transportation (e.g. smart traffic lights).
       * Health (linked body sensors ↔ transportation ↔ hospitals).
       * Energy (smart buildings, smart road lighting).
       * Security (cameras, sensors, social feeds).
-2. Brain **exercise** (with reinforcement).
-  * Creative, logical, and critical thinking.
+
+    The above ideas are meant to highlight why it is important to learn about **computation** if you hope to understand the world around you at a non-superficial level.
+2. You get good brain **exercise** (with reinforcement, given the goal oriented and interactive nature of programming).
+  * The exercise is in the areas of logical, creative, and critical thinking.
 3. To have a new way to learn **subjects** like mathematics, art, music, and science.
   * For deeper understanding and exploring synergies.
 4. As a medium to understand *processes* and learn problem solving.
@@ -25,7 +29,7 @@ Here's a brief answer:
   * In our education systems, there's a lot of emphasis on acquiring information, but very little emphasis on doing anything with that information. A **process** is about doing things, and regular practice with processes is very important for children.
 6. As a rich medium for **communication** and **collaboration**.
 7. To build up a scalable world changing skill.
-  * **Inventor** mindset.
+  * And cultivate an **inventor** mindset.
   * Or get a job and earn a decent (or great) living.
 
 
