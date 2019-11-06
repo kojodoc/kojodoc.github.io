@@ -11,7 +11,8 @@ Here, we will use the shape/block method to design new patterns.
 * [Quick Recap](#quick-recap)
 * [Block rotates in place](#block-rotates-in-place)
 * [Block rotates around circle](#block-rotates-around-circle)
-* [Block moves around grid](block-moves-around-grid)
+* [Block rotates around spiral](#block-rotates-around-spiral)
+* [Block moves around grid](#block-moves-around-grid)
 
 ### Quick Recap
 * In any pattern, the **shape** is the core shape that makes up the pattern.
