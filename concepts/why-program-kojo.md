@@ -6,25 +6,25 @@
 
 Here's a brief answer:
 
-* To better understand the world around us.
+1. To better understand the world around us.
   * By providing a deeper knowledge of **computation** - the foundation of the digital world that’s augmenting the physical world. Here are some examples related to computation and its effect on the world:
     * How is computation delivered to the world?
-      * Via (web)apps – google search, google maps, amazon/flipkart, ola/uber, netflix, banking.
-    * Smart cities - a computation rich scenario:
-      * IoT, AI, Systems
-      * Transportation (e.g. smart traffic lights)
-      * Health (linked body sensors ↔ transportation ↔ hospitals)
-      * Energy (smart buildings, smart road lighting)
-      * Security (cameras, sensors, social feeds)
-* Brain **exercise** (with reinforcement).
+      * Via (web)apps – Google search, Google maps, Amazon/Flipkart, Ola/Uber, Netflix, Banking, etc.
+    * Smart cities - an example that can help us think about how computation is (going to) playing a bigger and bigger role in the world:
+      * IoT, AI, Systems.
+      * Transportation (e.g. smart traffic lights).
+      * Health (linked body sensors ↔ transportation ↔ hospitals).
+      * Energy (smart buildings, smart road lighting).
+      * Security (cameras, sensors, social feeds).
+2. Brain **exercise** (with reinforcement).
   * Creative, logical, and critical thinking.
-* To have a new way to learn **subjects** like mathematics, art, music, and science.
+3. To have a new way to learn **subjects** like mathematics, art, music, and science.
   * For deeper understanding and exploring synergies.
-* As a medium to understand *processes* and learn problem solving.
-* To provide practice with the **process** of creation, analysis, and design.
+4. As a medium to understand *processes* and learn problem solving.
+5. To provide practice with the **process** of creation, analysis, and design.
   * In our education systems, there's a lot of emphasis on acquiring information, but very little emphasis on doing anything with that information. A **process** is about doing things, and regular practice with processes is very important for children.
-* As a rich medium for **communication** and **collaboration**.
-* To build up a scalable world changing skill.
+6. As a rich medium for **communication** and **collaboration**.
+7. To build up a scalable world changing skill.
   * **Inventor** mindset.
   * Or get a job and earn a decent (or great) living.
 
