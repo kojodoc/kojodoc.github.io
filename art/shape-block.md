@@ -19,6 +19,8 @@ Here, we will use the shape/block method to design new patterns.
   * Note - after the turtle draws a shape, its position and heading should be the same as they were before drawing the shape - so that the block can easily combine multiple shapes. The `savePosHe()` and `restorePosHe()` commands can be used at the beginning and the end respectively of the `shape()` command to help accomplish this.
 * Once the shape and the block are in place, the pattern is drawn by repeating the block the desired number of times.
 
+To implement the above ideas, it's good to know [how defs work](../reference/turtle.html#def).
+
 Here's a drawning based on the above idea:
 ```scala
 def shape() {
@@ -45,6 +47,7 @@ repeat(18) {
 ![shape-block](shape-block.png)
 
 ### Block rotates in place
+In this approach, the block just rotates the shape around a point.
 ```scala
 def shape() {
     savePosHe()
@@ -72,6 +75,7 @@ repeat(18) {
 ![block-rotate-in-place](block-rotate-in-place.png)
 
 ### Block rotates around circle
+In this approach, the block rotates the shape around the boundary of a circle.
 ```scala
 def shape() {
     savePosHe()
@@ -100,5 +104,62 @@ repeat(18) {
 ```
 ![block-rotate-around-circle](block-rotate-around-circle.png)
 
+### Block rotates around spiral
+In this approach, the block moves the shape around the boundary of a spiral.
+```scala
+clear()
+setSpeed(fast)
+setPenColor(darkGray)
+
+def shape() {
+    circle(10)
+}
+
+def block(n: Int) {
+    setFillColor(randomColor.fadeOut(0.2))
+    shape()
+    penUp()
+    right(15, n*2)
+    penDown()
+}
+
+repeatFor(1 to 150) { n =>
+    block(n)
+}
+```
+![block-rotate-around-spiral](block-rotate-around-spiral.png)
+
 ### Block moves around grid
-Todo
+In this approach, the block moves the shape around a grid that spans the canvas
+```scala
+clear()
+setSpeed(superFast)
+setPenColor(cm.gray)
+
+def shape() {
+    val len = 10 + random(30)
+    repeat(4) {
+        forward(len)
+        right(90)
+    }
+}
+
+val nx = 20
+val ny = 20
+val cb = canvasBounds
+val dx = cb.width / (nx + 1)
+val dy = cb.height / (ny + 1)
+
+def block(x: Int, y: Int) {
+    setPosition(cb.x + x * dx, cb.y + y * dy)
+    setFillColor(randomColor.fadeOut(0.3))
+    shape()
+}
+
+repeatFor(1 to nx) { x =>
+    repeatFor(1 to ny) { y =>
+        block(x, y)
+    }
+}
+```
+![block-move-around-grid](block-move-around-grid.png)

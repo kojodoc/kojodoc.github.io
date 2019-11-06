@@ -3,6 +3,6 @@
 </div>
 
 ## Art Ideas
-* [Stylistic real world objects](objects.html)
 * [Shape/block patterns](shape-block.html)
+* [Stylistic real world objects](objects.html)
 * [Other computational patterns](computational.html)
