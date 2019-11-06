@@ -22,7 +22,7 @@ Here, we will use the shape/block method to design new patterns.
 
 To implement the above ideas, it's good to know [how defs work](../reference/turtle.html#def).
 
-Here's a drawning based on the above idea:
+Here's a drawning based on the above ideas:
 ```scala
 def shape() {
     // savePosHe() not needed here as turtle ends up at its starting state
@@ -131,7 +131,7 @@ repeatFor(1 to 150) { n =>
 ![block-rotate-around-spiral](block-rotate-around-spiral.png)
 
 ### Block moves around grid
-In this approach, the block moves the shape around a grid that spans the canvas
+In this approach, the block moves the shape around a grid that spans the canvas.
 ```scala
 clear()
 setSpeed(superFast)
