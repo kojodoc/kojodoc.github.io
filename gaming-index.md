@@ -128,7 +128,7 @@ class Lander {
     val thruster = fillColor(orange) -> Picture.rectangle(20, 35)
     thruster.setPosition(body.position.x + 10, body.position.y - 20)
 
-    var gravity = Vector2D(0, -0.1)
+    val gravity = Vector2D(0, -0.1)
     var velocity = Vector2D(0, 0)
     var thrust = Vector2D(0, 0)
 
@@ -145,8 +145,8 @@ class Lander {
         else {
             noThrust()
         }
-        velocity += gravity
-        velocity += thrust
+        velocity = velocity + gravity
+        velocity = velocity + thrust
 
         body.translate(velocity)
         thruster.setPosition(body.position.x + 10, body.position.y - 20)

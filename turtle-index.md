@@ -5,12 +5,11 @@
 These pages describe the Turtle Graphics facility within Kojo.
 
 * [Getting Started](#getting-started)
-* [Turtle Graphics Reference](#turtle-graphics-reference)
-* [Core Concepts](#core-concepts)
-* [Art Ideas](#art-ideas)
-* [Colors](#colors)
+* [Turtle Graphics Reference](reference/turtle.html)
+* [Core Concepts](concepts/turtle-core-ideas.html)
+* [Art Ideas](art/ideas.html)
+* [Colors](concepts/colors.html)
 * [Picture Basics](#picture-basics)
-* [Contribute](#contribute)
 
 ## Getting Started
 To get going with Kojo, use the [Getting Started](http://wiki.kogics.net/kojo-codeactive-books#getting-started) book.
@@ -34,9 +33,6 @@ What's art without colors? Kojo has great support for colors, and it's good for 
 
 ## Picture Basics
 Pictures build upon turtle graphics to let you create more intricate art, learn deeper ideas in programming and computer science, and also build animations and games. For now, it's good for you to [learn enough about Pictures](concepts/turtle-picture-basics.html) to help you import and align multiple turtle drawings into one composition.
-
-## Contribute
-Content contributions to this website are [very welcome](contribute.html).
 
 <div style="text-align:center">
   <br/>
