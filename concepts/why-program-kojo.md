@@ -6,12 +6,12 @@
 
 Here's a brief answer:
 
-1. To better understand the world around you.
-  * By providing a deeper knowledge of **computation** - the foundation of the digital world that’s augmenting the physical world. Here are some examples related to computation and its effect on the world:
-    * What are computations that we consume every day? 
-      * Google search, Google maps, Amazon/Flipkart, Ola/Uber, Netflix, Banking, etc.
+1. To better understand the world around you - by gaining a deeper knowledge of **computation**, the foundation of the digital world that’s augmenting the physical world.  
+To make this idea more concrete, here are some examples related to computation, it's delivery, and its effect on the world:
+    * What are examples of computations that we consume every day? 
+        * Google search, Google maps, Amazon/Flipkart, Ola/Uber, Netflix, Banking, etc., etc.
     * How are these computations delivered to us?
-      * Via (web)apps.
+        * Via (web)apps.
     * Computations are getting more and more prevalent. Smart cities provide a good context to think about this:
       * IoT, AI, Robots, Systems.
       * Transportation (e.g. smart traffic lights).
