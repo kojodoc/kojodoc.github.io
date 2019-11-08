@@ -27,6 +27,8 @@ pic.onMouseClick { (x, y) =>
         forward(100)
     }
     newPic.setPosition(x, y)
+    // note `newPic` will be drawn over `pic`. So mouse clicks 
+    // within the bounds of `newPic` will not reach `pic`
     draw(newPic)
 }
 draw(pic)
