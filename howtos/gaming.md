@@ -3,8 +3,9 @@
 </div>
 
 ## Gaming How-to code snippets
-* [On picture click - draw a new picture](#on-picture-click---draw-a-new-picture)
-* [Pictures with hotspots for collision checking](#pictures-with-hotspots-for-collision-checking)
+* [On picture click - draw a new picture](#on-picture-click---draw-a-new-picture).
+* [Check if two pictures have the same orientation](#check-if-two-pictures-have-the-same-orientation).
+* [Pictures with hotspots for collision checking](#pictures-with-hotspots-for-collision-checking).
 
 ### On picture click - draw a new picture
 ```scala
@@ -30,6 +31,52 @@ pic.onMouseClick { (x, y) =>
 }
 draw(pic)
 ```
+
+### Check if two pictures have the same orientation
+```scala
+cleari()
+val pic1 = Picture {
+    repeat(4) {
+        forward(100)
+        right(90)
+    }
+}
+
+val pic2 = Picture {
+    repeat(4) {
+        forward(100)
+        right(90)
+    }
+}
+
+pic2.setPosition(200, 0)
+pic2.rotate(-45)
+
+draw(pic1, pic2)
+println(pic1.heading)
+
+def headingsSame(pic1: Picture, pic2: Picture) = {
+    pic2.heading % 360 == pic1.heading % 360
+}
+animate {
+    if (isKeyPressed(Kc.VK_LEFT)) {
+        pic2.rotate(1)
+        println(pic2.heading)
+    }
+
+    if (isKeyPressed(Kc.VK_RIGHT)) {
+        pic2.rotate(-1)
+        println(pic2.heading)
+    }
+
+    if (headingsSame(pic1, pic2)) {
+        drawCenteredMessage("You Win", green, 30)
+        stopAnimation()
+    }
+}
+activateCanvas()
+```
+
 
 ### Pictures with hotspots for collision checking
 This one is a little tricky due to the need to keep track of the global coordinate system and the hotspot's local coordinate system while rotating a picture with a hotspot.
