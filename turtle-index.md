@@ -39,7 +39,4 @@ Pictures build upon turtle graphics to let you create more intricate art, learn 
   <br/>
   <br/>
   <img src="kojo-tree.png" width="400">
-  <br/>
-  <br/>
-  The fractal tree above was made in Kojo
 </div>
