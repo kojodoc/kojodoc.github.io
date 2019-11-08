@@ -34,7 +34,7 @@ Here's a brief answer:
 
 
 ## Why Kojo
-Kojo is a modern programming environment with a powerful programming language ([Scala](http://scala-lang.org)).
+Kojo is a modern programming environment with a [powerful programming language](http://scala-lang.org) and [rich areas](../index.html) that one can program in. This provides fertile ground for empowered exploration, discovery, creation, innovation, and learning.
 
 The motto in Kojo is – **Play**. **Create**. **Learn**.
 
