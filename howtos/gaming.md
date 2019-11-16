@@ -5,6 +5,7 @@
 ## Gaming How-to code snippets
 * [On picture click - draw a new picture](#on-picture-click---draw-a-new-picture).
 * [Check if two pictures have the same orientation](#check-if-two-pictures-have-the-same-orientation).
+* [Fire Bullets](#fire-bullets).
 * [Pictures with hotspots for collision checking](#pictures-with-hotspots-for-collision-checking).
 
 ### On picture click - draw a new picture
@@ -79,6 +80,40 @@ animate {
 activateCanvas()
 ```
 
+### Fire Bullets
+```scala
+cleari()
+drawStage(white)
+val cb = canvasBounds
+
+def newBullet = {
+    fillColor(red) -> Picture.rectangle(2, 5)
+}
+
+val bullets = HashSet.empty[Picture]
+
+timer(1000) {
+    val b = newBullet
+    bullets.add(b)
+    draw(b)
+    b.setPosition(cb.x + 20, cb.y + 5)
+    b.setHeading(- random(45))
+}
+
+
+animate {
+    bullets.foreach { b =>
+        b.translate(0, 5)
+    }
+
+    bullets.foreach { b =>
+        if (b.collidesWith(stageBorder)) {
+            bullets.remove(b)
+            b.erase()
+        }
+    }
+}
+```
 
 ### Pictures with hotspots for collision checking
 This one is a little tricky due to the need to keep track of the global coordinate system and the hotspot's local coordinate system while rotating a picture with a hotspot.
