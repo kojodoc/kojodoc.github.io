@@ -26,21 +26,24 @@ Here's the absolute minimum amount of programming theory and Scala information t
     * Literals - which evaluate to themselves (e.g. `9`, `7.1`, `blue`, `"hello"`, `List(1, 2, 3)`).
   * Keyword instructions - which have special meaning in Scala, and which let you structure your programs by combining existing instructions (e.g. `val`, `var`, `def`). At the end of the day, keyword instructions behave like commands or expressions.
   * Queries - which let you access (potentially changing) values in the program's environment (e.g. `position`, `heading`, `readInt("Enter a number")`, `random(10`). A query is like a function in that it returns a value, but is different from a function in that it returns a different output value each time it is used with the same input. For the rest of this document, we will (mostly) refer to a query as a function.
-* The instructions in your program make use of data values to do their jobs.
+* The instructions in your program make use of data values to do their jobs. More on this in the *program operation* section below.
 * You **use** a command or function in your program by **calling** it with (optional) input data.
 
 ### Program Operation
-A program is made out of data and code (code refers to the instructions that make up the program). A program's job is to:
-1. Start out with some intial data values. These initial data values can be hard-coded inside the program, or can be read from the outside via a query.
-2. Compute some new values from its current values - via the use of functions.
-3. Show you some outputs based on the new current values - via the use of commands.
-4. Optionally go back to step 2 above.
+A program is made out of data and code. Code refers to the instructions that make up the program. A program's job is to:
+1. A program starts out with some intial data values. 
+  * These initial data values can be hard-coded inside the program, or can be read from the outside via a query.
+2. The program then (optionally) computes new values from its current values.
+  * This computation is done via **functions**.
+3. The program then shows you outputs based on its (new) current values.
+  * The showing of outputs is done via **commands**.
+4. The program then (optionally) goes back to step 2 above.
 
 ### Program Development
 You use three important ideas while writing a program:
 * Primitives - these are the commands, functions, and data types provided to you by your programming language/environment. See below for the [gaming primitives](#gaming-primitives) that you will use.
 * Composition - these are the ways in which your programming language allows you to combine the primitives to do useful things. The [means of composition](#means-of-composition-in-scala) that you will use for now are given below.
-* Abstraction - this is the process of giving names to useful compositions, so that they become available as primitives in your program. The [Scala facts](#scala-facts) section below describes the means of abstraction that you will use.
+* Abstraction - this is the process of giving names to useful compositions, so that they become available as primitives in your program. The [Scala introduction](#scala-introduction) section below describes the means of abstraction that you will use.
 
 ### Scala Introduction
 * Every data value is an object. An object combines data with functions/commands. The functions/commands attached to an object are called its methods.
