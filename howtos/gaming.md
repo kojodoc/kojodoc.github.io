@@ -6,6 +6,7 @@
 * [On picture click - draw a new picture](#on-picture-click---draw-a-new-picture).
 * [Check if two pictures have the same orientation](#check-if-two-pictures-have-the-same-orientation).
 * [Fire Bullets](#fire-bullets).
+* [Click on a button to start a game](#click-on-a-button-to-start-a-game).
 * [Pictures with hotspots for collision checking](#pictures-with-hotspots-for-collision-checking).
 
 ### On picture click - draw a new picture
@@ -112,6 +113,52 @@ animate {
             b.erase()
         }
     }
+}
+```
+
+### Click on a button to start a game
+```scala
+cleari()
+drawStage(black)
+val player = Picture.rectangle(100, 60)
+player.setPosition(100, 100)
+draw(player)
+var vel = Vector2D(2, 3)
+var active = false
+animate {
+    if (active) {
+        realAnimate()
+    }
+}
+
+def realAnimate() {
+    player.translate(vel)
+    if (player.collidesWith(stageBorder)) {
+        vel = bouncePicVectorOffStage(player, vel)
+    }
+}
+
+val startButton = Picture {
+    // there are easier ways to do this
+    // but let's stick with turtle graphics for now
+    setFillColor(green)
+    setPenColor(blue)
+    repeat(2) {
+        forward(60)
+        right(90)
+        forward(130)
+        right(90)
+    }
+    setPosition(30, 50)
+    setPenFontSize(30)
+    setPenColor(black)
+    write("Start")
+}
+
+draw(startButton)
+startButton.onMouseClick { (x, y) =>
+    active = true
+    startButton.erase()
 }
 ```
 
