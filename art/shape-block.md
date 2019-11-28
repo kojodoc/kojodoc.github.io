@@ -134,15 +134,19 @@ repeatFor(1 to 150) { n =>
 In this approach, the block moves the shape around a grid that spans the canvas.
 ```scala
 clear()
+setBackground(white)
 setSpeed(superFast)
 setPenColor(cm.gray)
 
 def shape() {
-    val len = 10 + random(30)
+    savePosHe()
+    right(random(-5, 5))
+    val len = 15 + random(40)
     repeat(4) {
         forward(len)
         right(90)
     }
+    restorePosHe()
 }
 
 val nx = 20
@@ -151,9 +155,12 @@ val cb = canvasBounds
 val dx = cb.width / (nx + 1)
 val dy = cb.height / (ny + 1)
 
-def block(x: Int, y: Int) {
-    setPosition(cb.x + x * dx, cb.y + y * dy)
-    setFillColor(randomColor.fadeOut(0.3))
+def posx(gx: Int) = cb.x + gx * dx - dx / 2
+def posy(gy: Int) = cb.y + gy * dy - dy / 2
+
+def block(gx: Int, gy: Int) {
+    setPosition(posx(gx), posy(gy))
+    setFillColor(randomColor.fadeOut(0.2))
     shape()
 }
 
