@@ -21,4 +21,4 @@ Scala, the programming language used in Kojo, has great (arguably better than an
 ### Product development opportunities
 Kojo has great support for generative art, which can be used to create exciting designs that can be printed on t-shirts, carry bags, back-packs, cups, caps, etc.  Here is a sample t-shirt design done in Kojo:
 
-![genpact](genpact.png)
+![code-for-good](code-for-good.png)
