@@ -34,7 +34,7 @@ To make this idea more concrete, here are some examples related to computation, 
 
 
 ## Why Kojo
-Kojo is a [modern programming environment](../reference/kojo-modern-env.html) with a [powerful programming language](http://scala-lang.org) and [rich areas](../index.html) that you can program in. This provides fertile ground for empowered exploration, discovery, creation, innovation, and learning.
+Kojo is a [modern programming environment](../reference/kojo-env-strengths.html) with a [powerful programming language](http://scala-lang.org) that has good support for all the [essential ideas in computing](../reference/kojo-env-strengths.html#a-powerful-language). Kojo has [rich activity areas](../index.html) that you can program in, and provides exciting opportunities for [real-world product design and development](../reference/kojo-env-strengths.html#product-development-opportunities). All of this enables Kojo to provide a fertile space for empowered exploration, discovery, creation, innovation, and learning.
 
 The motto in Kojo is – **Play**. **Create**. **Learn**.
 
@@ -43,7 +43,6 @@ In Kojo, children play with small Scala programs. They create drawings, animatio
 Take a look at the Kojo Showcase (from the *Showcase* menu inside Kojo) to get a feel for what is possible with Kojo.
 
 One of the major foundational goals of the Kojo project is for kids to learn how to **learn with understanding** – given the opportunity to apply learned ideas to many different situations, and the exploration, discovery, and creation involved in this process. All of this fosters in them a mindset of experimentation, innovation, self-reliance, growth, mental discipline, and teamwork – with Kojo as the enabler.
-      
 
-All of this relates well to the goals of education that were enunciated very nicely by Shri Auribindo:  
-*Learn to know*, *Learn to do*, *Learn to be*, *Learn to live together*. More on that some other day.
+The above thoughts relates well to the *fundamental goals of education* that were enunciated very nicely by Shri Auribindo: 
+*Learn to know*, *Learn to do*, *Learn to be*, *Learn to live together*.
