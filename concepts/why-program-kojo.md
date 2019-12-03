@@ -34,7 +34,13 @@ To make this idea more concrete, here are some examples related to computation, 
 
 
 ## Why Kojo
-Kojo is a [modern programming environment](../reference/kojo-env-strengths.html) with a [powerful programming language](http://scala-lang.org) that has good support for all the [essential ideas in computing](../reference/kojo-env-strengths.html#a-powerful-language). Kojo has [rich activity areas](../index.html) that you can program in, and provides exciting opportunities for [real-world product design and development](../reference/kojo-env-strengths.html#product-development-opportunities). All of this enables Kojo to provide a fertile space for empowered exploration, discovery, creation, innovation, and learning.
+Kojo has the following things going for it:
+* It is a [modern programming environment](../reference/kojo-env-strengths.html).
+* It uses a powerful programming language that has good support for all the [essential ideas in computing](../reference/kojo-env-strengths.html#a-powerful-language). 
+* It has [rich activity areas](../index.html) that you can program in.
+* It provides exciting opportunities for [physical product design and development](../reference/kojo-env-strengths.html#physical-product-development-opportunities).
+
+Individually, each of the above features is very useful to have in a programming environment. Collectively, these features enable Kojo to provide a very fertile space for empowered exploration, discovery, creation, innovation, and learning.
 
 The motto in Kojo is – **Play**. **Create**. **Learn**.
 
@@ -44,5 +50,5 @@ Take a look at the Kojo Showcase (from the *Showcase* menu inside Kojo) to get a
 
 One of the major foundational goals of the Kojo project is for kids to learn how to **learn with understanding** – given the opportunity to apply learned ideas to many different situations, and the exploration, discovery, and creation involved in this process. All of this fosters in them a mindset of experimentation, innovation, self-reliance, growth, mental discipline, and teamwork – with Kojo as the enabler.
 
-The above thoughts relates well to the *fundamental goals of education* that were enunciated very nicely by Shri Auribindo: 
+The above ideas (and their implementions in Kojo) relate well to the *fundamental goals of education* that were enunciated very nicely by Shri Auribindo: 
 *Learn to know*, *Learn to do*, *Learn to be*, *Learn to live together*.
