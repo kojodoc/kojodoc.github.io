@@ -30,8 +30,8 @@ Here's the absolute minimum amount of programming theory and Scala information t
 * You **use** a command or function in your program by **calling** it with (optional) input data.
 
 ### Program Operation
-A program is made out of data and code. Code refers to the instructions that make up the program. A program's job is to:
-1. A program starts out with some intial data values. 
+A program is made out of data and code. Code refers to the instructions that make up the program. A program does the following as it starts up and runs:
+1. The program starts out with some intial data values. 
   * These initial data values can be hard-coded inside the program, or can be read from the outside via a query.
 2. The program then (optionally) computes new values from its current values.
   * This computation is done via **functions**.
