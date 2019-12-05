@@ -207,6 +207,7 @@ repeat(4) {
 clear()
 setSpeed(fast)
 repeatFor(10 to 100) { n =>
+    // n is the current element of the sequence that you are going through
     forward(n)
     right(91)
 }
