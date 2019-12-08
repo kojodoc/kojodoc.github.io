@@ -20,11 +20,12 @@ Here's the absolute minimum amount of programming theory and Scala information t
 ### Program Structure
 * A program is a sequence of lines of text.
 * Each line contains instructions for the computer. These instructions can be of the following kinds:
-  * Commands - which let you take output actions that can be sensed in the external world (e.g. `forward(100)`, `println(10)`), or indirectly affect future actions (e.g. `setPenColor(blue)`).
+  * Commands - which let you take output actions that can be sensed in the external world (e.g. `forward(100)`, `println(10)`), or indirectly affect future actions (e.g. `setPenColor(blue)`).  
+  Note - a couple of other words are also used for what we are calling commands - *statements* and *procedures*.
   * Expressions - which are portions of your program text that can be evaluated to produce a value. Expressions are of two kinds:
     * Functions - which take input values and compute output or return values from these inputs (e.g. `math.round(11.1)`, `math.pow(2, 3)`).
     * Literals - which evaluate to themselves (e.g. `9`, `7.1`, `blue`, `"hello"`, `List(1, 2, 3)`).
-  * Keyword instructions - which have special meaning in Scala, and which let you structure your programs by combining existing instructions (e.g. `val`, `var`, `def`). At the end of the day, keyword instructions behave like commands or expressions.
+  * Keyword instructions - which have special meaning in Scala, and which let you structure your programs by combining existing instructions (e.g. `val`, `var`, `def`). At the end of the day, keyword instructions behave mostly like commands (and are called statements in this context).
   * Queries - which let you access (potentially changing) values in the program's environment (e.g. `position`, `heading`, `readInt("Enter a number")`, `random(10`). A query is like a function in that it returns a value, but is different from a function in that it returns a different output value each time it is used with the same input. For the rest of this document, we will (mostly) refer to a query as a function.
 * The instructions in your program make use of data values to do their jobs. More on this in the *program operation* section below.
 * You **use** a command or function in your program by **calling** it with (optional) input data.
