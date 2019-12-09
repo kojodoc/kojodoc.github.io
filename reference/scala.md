@@ -37,6 +37,14 @@ To best understand the content below, it us useful for you to be familiar with t
 
 ---
 
+* [3 Abstraction / Naming](#abstraction)
+* [3.1 val](#abstraction-val)
+* [3.2 var](#abstraction-var)
+* [3.3 def](#abstraction-def)
+* [3.4 class](#abstraction-class)
+* [3.5 case class](#abstraction-case-class)
+
+
 <a name="data">
 **1. Data Types**
 
@@ -557,20 +565,100 @@ val d = diag(50, 100)
 forward(d)
 ```
 
+<a name="abstraction">
 **3 Abstraction / Naming**
 
+As you write programs, abstraction (along with primitives and composition) is a core idea [as described here](../concepts/scala-essentials#program-development). Abstraction lets you give names to useful things in your program that you need to use multiple times (or even once, if that makes your program clearer to read and understand).
+
+Scala provides the following means of abstraction. Each of these uses a keyword instruction (or statement):
+
+<a name="abstraction-val">
 **3.1 val**
 
-Todo
+The val keyword instruction allows you to associate a name with a value.
 
+`val name1 = value1` - associates name1 with value1. The right hand side is an expression, while the left hand side contains the name to be associated with the value of the expression.
+
+```scala
+val x = 10
+val y = "Hi there"
+```
+
+<a name="abstraction-var">
 **3.2 var**
 
-Todo
+The var keyword instruction allows you to bind a name to a value. This name can be bound to a different value later on in your program.
 
+`var name2 = value2` - binds name2 to value2. The right hand side is an expression, while the left hand side contains the name to be bound to the value of the expression.
+
+```scala
+var cnt = 0
+while (cnt < 10) {
+    println(cnt, cnt * cnt)
+    cnt += 1
+}
+```
+
+<a name="abstraction-def">
 **3.3 def**
 
-Todo
+The def keyword instruction allows you to define a new command or function.
 
+`def newCommand(inputs) { code }` - creates a new command that takes the specified inputs and carries out the commands specified in the given code block.
+
+```scala
+def square1() {
+    repeat(4) {
+        forward(100)
+        right(90)
+    }
+}
+
+def square2(size: Int) {
+    repeat(4) {
+        forward(size)
+        right(90)
+    }
+}
+
+def rectangle(h: Int, w: Int) {
+    repeat(2) {
+        forward(h)
+        right(90)
+        forward(w)
+        right(90)
+    }
+}
+
+clear()
+setSpeed(fast)
+square1()
+square2(50)
+square2(25)
+rectangle(200, 75)
+```
+
+`def newFunction(inputs) = { code }` - creates a new function that takes the specified inputs, carries out the statements specified in the given code block, and returns the value of the last expression in the code block.
+
+```scala
+def double(n: Int) = n * 2 
+def someLongCalculation(n1: Int, n2: Int) = {
+    val t1 = n1 * n2
+    val t2 = math.sqrt(t1)
+    t2 / 2
+} 
+
+double(4) //> res4: Int = 8
+someLongCalculation(10, 20) //> res5: Double = 7.0710678118654755
+```
+
+<a name="abstraction-class">
 **3.4 class**
+
+The class keyword instruction lets you create a new class. A class is a description for a new type of object. The class can contain vals, vars, and defs. This is a powerful means of abstraction.
+* Once you create a class, let’s say `X`, you can create an object of type `X` (also called a new instace of `X`) like this: `new X()`, or `new X(inputs)` if `X` takes inputs.
+
+<a name="abstraction-case-class">
+**3.5 case class**
 
 Todo
