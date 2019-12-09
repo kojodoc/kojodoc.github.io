@@ -25,14 +25,15 @@ To best understand the content below, it us useful for you to be familiar with t
 
 * [2. Control Flow](#control)
 * [2.1 Sequencing](#control-sequencing)
+* [2.2 Blocks](#control-blocks)
 
-* [2.2 Loops](#control-loops)
-* [2.2.1 repeat](#control-repeat)
-* [2.2.2 repeatFor](#control-repeatFor)
-* [2.2.3 for](#control-for)
+* [2.3 Loops](#control-loops)
+* [2.3.1 repeat](#control-repeat)
+* [2.3.2 repeatFor](#control-repeatFor)
+* [2.3.3 for](#control-for)
 
-* [2.3 Selection](#control-selection)
-* [2.4 Calls](#control-calls)
+* [2.4 Selection](#control-selection)
+* [2.5 Calls](#control-calls)
 
 ---
 
@@ -55,7 +56,7 @@ The following are some of the different types of data supported by Scala.
 **1.1 Int**
 
 Ints represent integral data. e.g. `1`, `3`, `5`, `-4`, `-9`.  
-The usual math operations/functions (`+`, `-`, `*`, `/`, `>`, `>=`, `<`, `<=`, `==`, `!=`) are supported for integers.  
+The usual math operators/functions (`+`, `-`, `*`, `/`, `>`, `>=`, `<`, `<=`, `==`, `!=`) are supported for integers.  
 Note that some of the above functions return Int values, while others return Boolean values.
 ```scala
 2 + 3 //> res23: Int = 5
@@ -68,7 +69,7 @@ The above code shows some operations on integers after running (in Kojo) in *Wor
 **1.2 Double**
 
 Doubles represent fractional data. e.g. `1.5`, `3.2`, `5.3`, `-4.1`, `-9.8`.  
-The usual math operations/functions (`+`, `-`, `*`, `/`, `>`, `>=`, `<`, `<=`, `==`, `!=`) are supported for doubles.  
+The usual math operators/functions (`+`, `-`, `*`, `/`, `>`, `>=`, `<`, `<=`, `==`, `!=`) are supported for doubles.  
 Note that some of the above functions return Double values, while others return Boolean values.
 ```scala
 2.1 + 3.2 //> res40: Double = 5.300000000000001
@@ -80,7 +81,7 @@ Note that some of the above functions return Double values, while others return 
 **1.3 Boolean**
 
 Booleans represent true/false data.  
-The usual math operations/functions (`&&`, `||`, `==`, `!=`, `!`, `^`) are supported for booleans.
+The usual math operators/functions (`&&`, `||`, `==`, `!=`, `!`, `^`) are supported for booleans.
 ```scala
 2 > 10 //> res34: Boolean = false
 (10 > 2) && (3 > 11) //> res35: Boolean = false
@@ -313,11 +314,49 @@ val x = 200
 forward(x)
 ```
 
+<a name="control-blocks">
+**2.2 Blocks**
+
+Scala is a block structured language (like C, Java, or JavaScript). A block is anything between `{` and `}`. In Scala, a block has the following important functions:
+
+* Wherever a single expression (or statement) is expected, you can put in multiple sequential statements (or expressions) by enclosing them within a block. The value of this block is the value of the last expression in the block. Recall that statements are expressions that evaluate to `()`.
+
+```scala
+val x = {
+    val a = 10
+    val b = a * 3
+    b + 2
+}
+println(x)
+```
+This prints
+```scala
+32
+```
+
+* It introduces a new scope for naming. A name introduced within a block is visible only within that block, and shadows names from enclosing scopes.
+
+```scala
+val x = 10
+
+{
+    val x = 20
+    println(x)
+}
+
+println(x)
+```
+This prints
+```scala
+20
+10
+```
+
 <a name="control-loops">
-**2.2 Loops**
+**2.3 Loops**
 
 <a name="control-repeat">
-**2.2.1 repeat**
+**2.3.1 repeat**
 
 `repeat(n) { code }` - repeats the given code n number of times. This helps you to do the same thing over and over again.
 ```scala
@@ -329,7 +368,7 @@ repeat(4) {
 ```
 
 <a name="control-repeatFor">
-**2.2.2 repeatFor**
+**2.3.2 repeatFor**
 
 `repeatFor(sequence) { element => code }` - repeats the given code multiple times, once for each element of the given sequence. The current sequence element is available to your code - to help you do something slightly different based on the current element.
 ```scala
@@ -342,7 +381,7 @@ repeatFor(10 to 100) { n =>
 }
 ```
 
-Now let's look at a particular problem and multiple ways of solving the problem. Let's say we want to draw five rectangles (width = 20, height = 100) as shown below:
+Now let's look at a particular problem and multiple ways of solving the problem (to give you deeper insights into ideas related to loops). Let's say we want to draw five rectangles (width = 20, height = 100) as shown below:
 
 ![five-rects](five-rects.png)
 
@@ -397,7 +436,7 @@ draw(pics)
 ```
 
 <a name="control-for">
-**2.2.3 for**
+**2.3.3 for**
 
 `repeat` and `repeatFor` are looping methods provided by Kojo. Scala itself has multiple looping methods like - `for`, `while`, and `do-while`. Here we will just mention the scala `for` loop.
 
@@ -428,15 +467,59 @@ draw(pics)
 ```
 
 <a name="control-selection">
-**2.3 Selection**
+**2.4 Selection**
 
-**2.3.1 if-else**
+Selection involves chosing from amongst multiple paths of execution for carrying out commands or evaluating expressions.
 
-**2.3.2 switch: pattern-matching**
+**2.4.1 if-else**
+
+`if (condition) path1 else path2`
+* if the condition is true, `path1` is taken, else `path2` is taken.
+* `path1` and `path2` can have multiple statements/expressions enclosed in a block.
+* the whole `if expression` evaluates to `path1` or `path2`.
+
+Let's see a couple of examples:
+
+Command oriented example (where the paths evaluate to `()`):
+```scala
+def square(n: Int) {
+    if (n > 100) {
+        setPenColor(yellow)
+        setFillColor(brown)
+    }
+    else {
+        setPenColor(brown)
+        setFillColor(yellow)
+    }
+    repeat(4) {
+        forward(n)
+        right(90)
+    }
+}
+```
+
+Expression oriented example:
+```scala
+def absolute(n: Int) = {
+    if (n < 0) -n else n
+}
+```
+
+For effective use of `if-else`, it's important to understand conditions. 
+
+A condition is any function that returns a Boolean. Some examples of such functions are:
+* `>`, `>=`, `<`, `<=`, `==`, `!=` for numeric values.
+* Any function that you write that returns a Boolean.
+* The Boolean binary operators - `&&`, `||`, `==`, and `!=` - which take two Booleans and return a Boolean. These let you combine Booleans in your `if (condition)`.
+* The Boolean binary operators - `!` and `^` - which take a Boolean and return a Boolean.
+
+
+**2.4.2 switch: pattern-matching**
+
 Todo
 
 <a name="control-calls">
-**2.4 Calls**
+**2.5 Calls**
 
 ```scala
 clear()
@@ -452,42 +535,6 @@ forward(d)
 ```
 
 **3 Abstraction / Naming**
-
-**3.0 Blocks**
-
-Scala is a block structured language (like C, Java, or JavaScript). A block is anything between `{` and `}`. In Scala, a block has the following important functions:
-* It introduces a new scope for naming. A name introduced within a block is visible only within that block, and shadows names from enclosing scopes.
-
-```scala
-val x = 10
-
-{
-    val x = 20
-    println(x)
-}
-
-println(x)
-```
-This prints
-```scala
-20
-10
-```
-
-* Wherever a single expression (or statement) is expected, you can put in multiple expressions (or statements) by enclosing them within a block. The value of this block is the value of the last expression in the block. Recall that statements are expressions that evaluate to `()`.
-
-```scala
-val x = {
-    val a = 10
-    val b = a * 3
-    b + 2
-}
-println(x)
-```
-This prints
-```scala
-32
-```
 
 **3.1 val**
 
