@@ -48,7 +48,7 @@ To best understand the content below, it us useful for you to be familiar with t
 <a name="data">
 **1. Data Types**
 
-A program is nothing without data. It starts out with some data values, and computes new values from old values as it runs ([as explained elsewhere](./concepts/scala-essentials#program-operation)). So learning about data is important.
+A program is nothing without data. It starts out with some data values, and computes new values from old values as it runs ([as explained elsewhere](../concepts/scala-essentials#program-operation)). So learning about data is important.
 
 Here is some background information before we start looking at different types of data:
 
@@ -301,6 +301,11 @@ Todo
 
 <a name="control">
 **2 Control Flow**
+
+As a program runs, [it computes new data from old data and shows this new data to the user](../concepts/scala-essentials#program-operation) as required - with the help of the functions and commands available to it. How these functions and commands are strung together in the program is the subject matter of control flow.
+
+At a high level:
+
 * When a program runs, it carries out the instructions inside it one after the other, in sequence.
 * The following constructs change the above default mode of execution:
   * Loops (repeat, repeatFor, for, while, etc)
