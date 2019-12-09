@@ -42,8 +42,6 @@ To best understand the content below, it us useful for you to be familiar with t
 * [3.2 var](#abstraction-var)
 * [3.3 def](#abstraction-def)
 * [3.4 class](#abstraction-class)
-* [3.5 case class](#abstraction-case-class)
-
 
 <a name="data">
 **1. Data Types**
@@ -660,10 +658,42 @@ someLongCalculation(10, 20) //> res5: Double = 7.0710678118654755
 <a name="abstraction-class">
 **3.4 class**
 
-The class keyword instruction lets you create a new class. A class is a description for a new type of object. The class can contain vals, vars, and defs. This is a powerful means of abstraction.
-* Once you create a class, let’s say `X`, you can create an object of type `X` (also called a new instace of `X`) like this: `new X()`, or `new X(inputs)` if `X` takes inputs.
+The `class` keyword instruction lets you create a new class. A class is a description for a new type of object. The class can contain `vals`, `vars`, and `defs`. 
 
-<a name="abstraction-case-class">
-**3.5 case class**
+The basic idea behind a class is to bring together related data and behavior in your program to create a useful abstraction. You want to do this if it makes your program easier to write and read. Once you have a good abstraction, the rest of your program can use it to good effect without worrying about how it is implemented. In the best case, your program becomes a choreography of the abstractions available within it.
 
-Todo
+* Once you create a class, let’s say `X`, you can create an object of type `X` (also called an instace of `X`) like this: `new X()`, or `new X(inputs)`.
+
+Here's an example:
+
+```scala
+clear()
+drawStage(ColorMaker.black)
+
+class BouncingRect(x: Int, y: Int) {
+    val pic = Picture.rectangle(40, 40)
+    pic.setFillColor(red)
+    pic.setPosition(x, y)
+    var vel = Vector2D(2, 10)
+    val gravity = Vector2D(0, -0.2)
+
+    def draw() {
+        pic.draw()
+    }
+
+    def step() {
+        vel = vel + gravity
+        pic.translate(vel)
+        if (pic.collidesWith(stageBorder)) {
+            vel = bouncePicVectorOffStage(pic, vel)
+        }
+    }
+}
+
+val br = new BouncingRect(-100, -100)
+br.draw()
+
+animate {
+    br.step()
+}
+```
