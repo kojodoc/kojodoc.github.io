@@ -305,7 +305,8 @@ Let's look at the above in a little more detail.
 <a name="control-sequencing">
 **2.1 Sequencing**
 
-This is the default mode of execution of a program - instructions are run one after the other.
+This is the default mode of execution of a program - instructions are run one after the other. Here is an example:
+
 ```scala
 clear()
 forward(100)
@@ -317,7 +318,9 @@ forward(x)
 <a name="control-blocks">
 **2.2 Blocks**
 
-Scala is a block structured language (like C, Java, or JavaScript). A block is anything between `{` and `}`. In Scala, a block has the following important functions:
+A block is a chunk of code. It can be used in looping (to specify what to do multiple times) or selection (to specify the alternative code paths) or while defining a new function or command (as the body of the function or command). So it is important to learn about blocks before we move any further.
+
+A block is any code between `{` and `}`. In Scala, a block has the following important functions:
 
 * Wherever a single expression (or statement) is expected, you can put in multiple sequential statements (or expressions) by enclosing them within a block. The value of this block is the value of the last expression in the block. Recall that statements are expressions that evaluate to `()`.
 
@@ -334,7 +337,7 @@ This prints
 32
 ```
 
-* It introduces a new scope for naming. A name introduced within a block is visible only within that block, and shadows names from enclosing scopes.
+* A block introduces a new scope for naming. A name introduced within a block is visible only within that block, and shadows names from enclosing scopes.
 
 ```scala
 val x = 10
@@ -354,6 +357,8 @@ This prints
 
 <a name="control-loops">
 **2.3 Loops**
+
+A loop takes some code, and runs it over and over again. There are many kinds of loops. Let's look at a few.
 
 <a name="control-repeat">
 **2.3.1 repeat**
@@ -505,7 +510,7 @@ def absolute(n: Int) = {
 }
 ```
 
-For effective use of `if-else`, it's important to understand conditions. 
+For effective use of `if-else`, it's important to understand conditions, because it is a condition that determines which path in an `if-else` is chosen.
 
 A condition is any function that returns a Boolean. Some examples of such functions are:
 * `>`, `>=`, `<`, `<=`, `==`, `!=` for numeric values.
@@ -513,14 +518,32 @@ A condition is any function that returns a Boolean. Some examples of such functi
 * The Boolean binary operators - `&&`, `||`, `==`, and `!=` - which take two Booleans and return a Boolean. These let you combine Booleans in your `if (condition)`.
 * The Boolean binary operators - `!` and `^` - which take a Boolean and return a Boolean.
 
-
-**2.4.2 switch: pattern-matching**
-
-Todo
-
 <a name="control-calls">
 **2.5 Calls**
 
+A call makes your program jump to a new location, do what is defined there, and then come back and carry on from where it jumped off.
+
+If the call is to a command, a `()` is returned to the caller, and can be safely ignored (because it contains no information).
+
+If the call is to a function, the output value of the function is returned to the caller. The caller then needs to figure out how to use this value later on in the program. One way to do this is to store the return value in a `val`.
+
+Example of calls to a command:
+
+```scala
+def square() {
+    repeat(4) {
+        forward(100)
+        right(90)
+    }
+}
+
+clear()
+square()
+right(45)
+square()
+```
+
+Example of a call to a function:
 ```scala
 clear()
 def diag(b: Double, h: Double) =
