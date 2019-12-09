@@ -2,10 +2,12 @@
   <a href="../index.html">Home</a> | <a href="../references-index.html">References</a>
 </div>
 
-To best understand the content below, it us useful for you to be familiar with the following ideas:
+To best understand the Scala quick-reference below, it us useful for you to be familiar with the following ideas:
 * [Program Structure](../concepts/scala-essentials#program-structure)
 * [Program Operation](../concepts/scala-essentials#program-operation)
 * [Program Development](../concepts/scala-essentials#program-development)
+
+Also, to complement the contents of this page (and for a good introduction to Scala), make sure you check out the freely available version of [Scala for the Impatient](Scala for the Impatient.pdf) by Cay Horstmamm.
 
 
 ## Scala Quick Reference
