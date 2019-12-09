@@ -451,7 +451,43 @@ val d = diag(50, 100)
 forward(d)
 ```
 
-**3 Abstraction**
+**3 Abstraction / Naming**
+
+**3.0 Blocks**
+
+Scala is a block structured language (like C, Java, or JavaScript). A block is anything between `{` and `}`. In Scala, a block has the following important functions:
+* It introduces a new scope for naming. A name introduced within a block is visible only within that block, and shadows names from enclosing scopes.
+
+```scala
+val x = 10
+
+{
+    val x = 20
+    println(x)
+}
+
+println(x)
+```
+This prints
+```scala
+20
+10
+```
+
+* Wherever a single expression (or statement) is expected, you can put in multiple expressions (or statements) by enclosing them within a block. The value of this block is the value of the last expression in the block. Recall that statements are expressions that evaluate to `()`.
+
+```scala
+val x = {
+    val a = 10
+    val b = a * 3
+    b + 2
+}
+println(x)
+```
+This prints
+```scala
+32
+```
 
 **3.1 val**
 
