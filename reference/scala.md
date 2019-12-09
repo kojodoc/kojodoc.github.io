@@ -1,3 +1,7 @@
+<div class="nav">
+  <a href="../index.html">Home</a> | <a href="../references-index.html">References</a>
+</div>
+
 To best understand the content below, it us useful for you to be familiar with the following ideas:
 * [Program Structure](../concepts/scala-essentials#program-structure)
 * [Program Operation](../concepts/scala-essentials#program-operation)

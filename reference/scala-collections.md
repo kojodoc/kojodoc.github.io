@@ -1,5 +1,5 @@
 <div class="nav">
-  <a href="../index.html">Home</a> | <a href="../gaming-index.html">Gaming</a> | <a href="../fundamentals-index.html">Fundamentals</a>
+  <a href="../index.html">Home</a> | <a href="../references-index.html">References</a>
 </div>
 
 ## Scala Collections

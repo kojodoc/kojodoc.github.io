@@ -4,13 +4,12 @@
 
 ## Scala essentials for Kojo gaming
 
-> <img src="../man-at-work.png"/> <br/> *This section of the website is currently under development*.
-
 Here's the absolute minimum amount of programming theory and Scala information that you need to know - to be able to effectively write games in Kojo.
 * [Program Structure](#program-structure)
 * [Program Operation](#program-operation)
 * [Program Development](#program-development)
 * [Scala Introduction](#scala-introduction)
+* [Scala Quickref](../reference/scala.html)
 * [Gaming Primitives](#gaming-primitives)
 * [Means of composition in Scala](#means-of-composition-in-scala)
 * [An Example](#an-example)
@@ -64,7 +63,7 @@ You use three important ideas while writing a program:
 * The `if-else` keyword lets you check the result of a condition and choose between two alternative code paths based on the result of the condition. This is a means of composition.
   * A condition is an expression that evaluates to a Boolean (true or false).
 
-The [example below](#an-example) will make these ideas concrete.
+The [example below](#an-example) will make these ideas concrete. And much more information about Scala is available on the [Scala Quickref page](../reference/scala.html).
 
 ### Gaming Primitives
 * `drawStage(color)` - draws a stage on the canvas with the given color. The stage border can be used for collision detection with game objects to keep them within the canvas.
