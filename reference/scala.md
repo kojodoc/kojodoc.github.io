@@ -2,7 +2,7 @@
   <a href="../index.html">Home</a> | <a href="../references-index.html">References</a>
 </div>
 
-To best understand the Scala quick-reference below, it us useful for you to be familiar with the following ideas:
+To best understand the Scala quick-reference below, it is useful for you to be familiar with the following ideas:
 * [Program Structure](../concepts/scala-essentials#program-structure)
 * [Program Operation](../concepts/scala-essentials#program-operation)
 * [Program Development](../concepts/scala-essentials#program-development)
@@ -39,6 +39,9 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 * [2.3.3 for](#control-for)
 
 * [2.4 Selection](#control-selection)
+* [2.4.1 if-else](#control-if-else)
+
+
 * [2.5 Calls](#control-calls)
 
 ---
@@ -70,21 +73,27 @@ The following are some of the different types of data supported by Scala.
 **1.1 Int**
 
 Ints represent integral data. e.g. `1`, `3`, `5`, `-4`, `-9`.  
-The usual math operators/functions (`+`, `-`, `*`, `/`, `>`, `>=`, `<`, `<=`, `==`, `!=`) are supported for integers.  
+The usual math operators/functions (`+`, `-`, `*`, `/`, `>`, `>=`, `<`, `<=`, `==`, `!=`) are supported for Ints.  
 Note that some of the above functions return Int values, while others return Boolean values.
+
+Here are some examples of the use of Ints:
+
 ```scala
 2 + 3 //> res23: Int = 5
 3 + (2 * 5) - (10 * 2) //> res24: Int = -7
 2 > 10 //> res25: Boolean = false
 ```
-The above code shows some operations on integers after running (in Kojo) in *Worksheet* mode via `Shift+Enter`. Each expression in the above code is followed by `//>` and then `name: type = value`, where name is a Kojo assigned name for the value of the expression.
+The above code shows some operations on integers after it is run (in Kojo) in *Worksheet* mode via `Shift+Enter`. Each expression in the above code is followed by `//>` and then `name: type = value`, where name is a Kojo assigned name for the value of the expression.
 
 <a name="data-double">
 **1.2 Double**
 
 Doubles represent fractional data. e.g. `1.5`, `3.2`, `5.3`, `-4.1`, `-9.8`.  
-The usual math operators/functions (`+`, `-`, `*`, `/`, `>`, `>=`, `<`, `<=`, `==`, `!=`) are supported for doubles.  
+The usual math operators/functions (`+`, `-`, `*`, `/`, `>`, `>=`, `<`, `<=`, `==`, `!=`) are supported for Doubles.  
 Note that some of the above functions return Double values, while others return Boolean values.
+
+Here are some examples of the use of Doubles:
+
 ```scala
 2.1 + 3.2 //> res40: Double = 5.300000000000001
 3.1 + (2.2 * 5.05) - (10 * 2) //> res41: Double = -5.789999999999999
@@ -95,7 +104,10 @@ Note that some of the above functions return Double values, while others return 
 **1.3 Boolean**
 
 Booleans represent true/false data.  
-The usual math operators/functions (`&&`, `||`, `==`, `!=`, `!`, `^`) are supported for booleans.
+The usual math operators/functions (`&&`, `||`, `==`, `!=`, `!`, `^`) are supported for Booleans.
+
+Here are some examples of the use of Booleans:
+
 ```scala
 2 > 10 //> res34: Boolean = false
 (10 > 2) && (3 > 11) //> res35: Boolean = false
@@ -104,12 +116,15 @@ The usual math operators/functions (`&&`, `||`, `==`, `!=`, `!`, `^`) are suppor
 true ^ false //> res38: Boolean = true
 true ^ true //> res39: Boolean = false
 ```
-Booleans are important because they are used in conditions.
+Booleans are important because they are used in [conditions](#control-if-else).
 
 <a name="data-string">
 **1.4 String**
 
-Strings are used to communicate textual information to/from a program. e.g. "Hello World", s"Your score is $score".
+Strings are used to communicate textual information to/from a program. Examples of strings are: "Hello World", s"Your score is $score".
+
+Here is an examples of the use of Strings to get data into and out of a program:
+
 ```scala
 val n = readInt("Enter a number")
 val n2 = 2 * n
@@ -120,6 +135,9 @@ println(s"Twice the number you entered is $n2")
 **1.5 Color**
 
 Colors are used to represent visual colors in drawings, games, etc. e.g. blue, green, red.
+
+Here is an example of the use of Colors:
+
 ```scala
 clear()
 setPenColor(cm.brown)
@@ -174,12 +192,13 @@ animate {
 <a name="data-collections">
 **1.7 Collections**
 
-Collections let you organise the data in your program in particular ways (depending on the nature of the collection). Some useful collections are:
+A collection lets you organise the data in your program in a particular way (depending on the nature of the collection). Some useful collections are:
 
 <a name="data-sequence">
 **1.7.1 Sequence (Seq)**
 
-A sequence is a bunch of data values arranged one after the other with a well defined order of elements. e.g. `Seq(1, 5, 3)`.  
+A sequence is a bunch of data values arranged one after the other with a well defined order of elements. e.g. `Seq(1, 5, 3)`.
+
 If you want to arrange some data in your program in a sequence, and the sequence is fixed, you can use `Seq` to construct the sequence.
 ```scala
 val names = Seq("name1", "name2", "name3")
@@ -190,7 +209,7 @@ val pictures = Seq(pic1, pic2, pic3)
 Once your data is in a sequence, you can do multiple things with the sequence. Three of the most important operations on a sequence are the following:
 * Carry out a command/statement with each element of the sequence (via `foreach`).
 * Convert the sequence to another sequence using a function that maps each element to a new element (via `map`).
-* Get a subsequence from the sequence with elements that meet a certain criterion (via `filter`).
+* Get a sub-sequence from the sequence with elements that meet a certain criterion (via `filter`).
 
 Here's some code showing these operations in action:
 
@@ -233,9 +252,9 @@ pictures3.foreach { p =>
     draw(rot(-30) * fillColor(green) -> p.copy)
 }
 ```
-Note - we need to do a p.copy in the above code because the original picture has already been drawn, and you can't redraw a picture.
+Note - we need to do a `p.copy` in the above code because the original picture `p` has already been drawn, and you can't redraw a picture.
 
-Let's try to understand what the following code (copied from above) that uses `map` does:
+Let's try to understand what the following code (copied from above) does. The code uses the `map` function  :
 ```scala
 val pictures2 = pictures.map { p =>
     rot(45) * fillColor(blue) -> p.copy
@@ -249,17 +268,20 @@ def fn1(p: Picture): Picture = {
 
 val pictures2 = pictures.map(fn1)
 ```
-The first version of the code uses an anonymous function that is defined inline in the call to `map`, while the second version of the code uses a named function that is defined first and then used in the call to `map`.
+The first version of the code uses an anonymous function that is defined inline in the call to `map`, while the second version of the code uses a named function that is defined earlier and then used in the call to `map`.
 
 Let's do a similar exercise for `filter`.
 
-Version with an anonymous function defined inline:
+Here's the version from above with an anonymous function defined inline:
+
 ```scala
 val pictures3 = pictures.filter { p =>
     p.position.x > 50
 }
 ```
-Version with a named function:
+
+And here is the version with a named function:
+
 ```scala
 def fn2(p: Picture): Boolean = {
     p.position.x > 50
@@ -495,6 +517,7 @@ draw(pics)
 
 Selection involves chosing from amongst multiple paths of execution for carrying out commands or evaluating expressions.
 
+<a name="control-if-else">
 **2.4.1 if-else**
 
 `if (condition) path1 else path2`
