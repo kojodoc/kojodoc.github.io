@@ -495,7 +495,20 @@ draw(pics)
 
 The `for` loop in Scala is extremely powerful, and allows you to use a combination of `foreach`, `map`, and `filter` as per your needs. Let's write the `foreach` and `map` examples from above using `for`:
 
-The rewritten `foreach` example:
+Here's the `foreach` version:
+
+```scala
+cleari()
+val pics = ArrayBuffer.empty[Picture]
+(0 to 4).foreach { n =>
+    val pic = Picture.rectangle(20, 100)
+    pic.setPosition(n * 50, 0)
+    pics.append(pic)
+}
+draw(pics)
+```
+
+And here's the rewritten `for` version:
 
 ```scala
 cleari()
@@ -508,7 +521,20 @@ for (n <- 0 to 4) {
 draw(pics)
 ```
 
-The rewritten `map` example:
+Here's the `map` version:
+
+```scala
+cleari()
+val pics = (0 to 4).map { n =>
+    val pic = Picture.rectangle(20, 100)
+    pic.setPosition(n * 50, 0)
+    pic
+}
+draw(pics)
+```
+
+And here's the rewritten `for` version:
+
 ```scala
 cleari()
 val pics = for(n <- 0 to 4) yield {
@@ -545,6 +571,7 @@ def square(n: Int) {
         setPenColor(brown)
         setFillColor(yellow)
     }
+
     repeat(4) {
         forward(n)
         right(90)
@@ -559,13 +586,37 @@ def absolute(n: Int) = {
 }
 ```
 
-For effective use of `if-else`, it's important to understand conditions, because it is a condition that determines which path in an `if-else` is chosen.
+For effective use of `if-else`, it's important to understand conditions, because it is a condition that determines which path in an `if-else` is taken.
 
 A condition is any function that returns a Boolean. Some examples of such functions are:
 * `>`, `>=`, `<`, `<=`, `==`, `!=` for numeric values.
 * Any function that you write that returns a Boolean.
 * The Boolean binary operators - `&&`, `||`, `==`, and `!=` - which take two Booleans and return a Boolean. These let you combine Booleans in your `if (condition)`.
 * The Boolean binary operators - `!` and `^` - which take a Boolean and return a Boolean.
+
+Here's another example:
+
+```scala
+val n1 = 10
+val n2 = 20
+val n3 = 30
+
+def largeNumber(n: Int): Boolean = n > 100
+
+if ((n1 > 15) && (n2 < n1)) {
+    println("Condition 1")
+}
+else if (((n3 > n1) && (n2 > 17)) || (n1 > 25)) {
+    println("Condition 2")
+}
+else if (largeNumber(n2)) {
+    println("Condition 3")
+}
+else {
+    println("No match")
+}
+```
+
 
 <a name="control-calls">
 **2.5 Calls**
