@@ -698,6 +698,10 @@ The def keyword instruction allows you to define a new command or function.
 
 `def newCommand(inputs) { code }` - creates a new command that takes the specified inputs and carries out the commands specified in the given code block.
 
+The `inputs` can be zero or more `name: type` pairs (separated by commas in the case of more than one input), where `name` is the name of an input and `type` is its type.
+
+Here's an example of the definition and usage of some new commands:
+
 ```scala
 def square1() {
     repeat(4) {
@@ -731,6 +735,10 @@ rectangle(200, 75)
 ```
 
 `def newFunction(inputs) = { code }` - creates a new function that takes the specified inputs, carries out the statements specified in the given code block, and returns the value of the last expression in the code block.
+
+The `inputs` can be zero or more `name: type` pairs (separated by commas in the case of more than one input), where `name` is the name of an input and `type` is its type.
+
+Here's an example of the definition and usage of some new functions:
 
 ```scala
 def double(n: Int) = n * 2 
