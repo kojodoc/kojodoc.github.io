@@ -7,7 +7,7 @@ To best understand the Scala quick-reference below, it us useful for you to be f
 * [Program Operation](../concepts/scala-essentials#program-operation)
 * [Program Development](../concepts/scala-essentials#program-development)
 
-Also, to complement the contents of this page (and for a good introduction to Scala), make sure you check out the freely available version of [Scala for the Impatient](Scala for the Impatient.pdf) by Cay Horstmamm.
+Also, to complement the contents of this page (and for a good introduction to Scala), make sure you check out the freely available version of [Scala for the Impatient](Scala for the Impatient.pdf) by Cay Horstmann.
 
 
 ## Scala Quick Reference
@@ -52,15 +52,17 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 <a name="data">
 **1. Data Types**
 
-A program is nothing without data. It starts out with some data values, and computes new values from old values as it runs ([as explained elsewhere](../concepts/scala-essentials#program-operation)). So learning about data is important.
+A program is nothing without data. It starts out with some data values and computes new values from old values as it runs ([as explained elsewhere](../concepts/scala-essentials#program-operation)). So learning about data is important.
 
-Here is some background information before we start looking at different types of data:
+Here is some background information before we start looking at the different types of data available in Scala:
 
 * A single piece of data is called a value.
-* In Scala, every data value is an object. 
+* In Scala, every value is an object. 
 * An object combines data with functions/commands. The functions/commands attached to an object are called its methods.
-* Every object value has a type.
+* Every object has a type.
 * A type determines a set of possible values and the operations that can be done with these values.
+
+Remember - in the context of Scala, the terms *data*, *value*, and *object* mean the same thing.
 
 The following are some of the different types of data supported by Scala.
 
