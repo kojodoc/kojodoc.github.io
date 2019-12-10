@@ -30,7 +30,7 @@ Here's the absolute minimum amount of programming theory and Scala information t
 *Notes:*
 * The instructions in your program make use of data values to do their jobs. More on this in the *program operation* section below.
 * You **use** a command or function in your program by **calling** it with (optional) input data.
-* Commands also return output values! It's just that each and every command returns the exact same output value - called unit (written `()`). The type of this unit value is `Unit`. You can think of `()` as a value that contains *no information*.
+* Commands also return output values! It's just that each and every command returns the exact same output value - called unit (written `()`). The type of this unit value `()` is `Unit`. You can think of `()` as a value that contains *no information*.
 * Given the previous fact, a Scala program is nothing but a sequence of expressions. It's just that we call some of these expressions (that return `()`) commands or statements.
 
 ### Program Operation
