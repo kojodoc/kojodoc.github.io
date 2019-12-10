@@ -305,16 +305,23 @@ Here is some sample code for `ArrayBuffers`.
 ```scala
 // create an arraybuffer with some values
 val ab = ArrayBuffer(1, 5, 3, 9) //> ab: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(1, 5, 3, 9)
+ab.remove(0) //> res48: Int = 1
+ab //> res49: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(5, 3, 9)
+ab(1) = 12
+ab //> res51: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(5, 12, 9)
+ab.append(21)
+ab //> res53: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(5, 12, 9, 21)
+
+
+
 // create an empty arraybuffer
 val ab2 = ArrayBuffer.empty[Int] //> ab2: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer()
 
 ab2.append(11)
 ab2.append(2)
-
-ab.remove(0) //> res5: Int = 1
-
-ab //> res6: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(5, 3, 9)
-ab2 //> res7: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(11, 2)
+ab2 //> res56: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(11, 2)
+ab(0) = 21
+ab //> res58: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(21, 12, 9, 21)
 ```
 
 <a name="data-map">
@@ -336,9 +343,9 @@ At a high level:
 
 * When a program runs, it carries out the instructions inside it one after the other, in sequence.
 * The following constructs change the above default mode of execution:
-  * Loops (repeat, repeatFor, for, while, etc)
-  * Selection (if-else or switch)
-  * Calls (to functions or commands)
+  * Loops (repeat, repeatFor, for, while, etc) to do the same thing multiple times.
+  * Selection (if-else or switch) to do different things under different conditions.
+  * Calls (to functions or commands) to make use of abstractions.
 
 
 Let's look at the above in a little more detail.
@@ -378,7 +385,7 @@ This prints
 32
 ```
 
-* A block introduces a new scope for naming. A name introduced within a block is visible only within that block, and shadows names from enclosing scopes.
+* A block introduces a new scope for [naming](#abstraction). A name introduced within a block is visible only within that block, and shadows names from enclosing scopes.
 
 ```scala
 val x = 10
