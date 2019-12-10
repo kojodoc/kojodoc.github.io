@@ -7,6 +7,8 @@ To best understand the Scala quick-reference below, it is useful for you to be f
 * [Program Operation](../concepts/scala-essentials#program-operation)
 * [Program Development](../concepts/scala-essentials#program-development)
 
+Click on the links above to review the ideas before moving on.
+
 Also, to complement the contents of this page (and for a good introduction to Scala), make sure you check out the freely available version of [Scala for the Impatient](Scala for the Impatient.pdf) by Cay Horstmann.
 
 
