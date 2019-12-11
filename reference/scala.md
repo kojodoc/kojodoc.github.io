@@ -28,6 +28,8 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 * [1.7.1.1 ArrayBuffer](#data-arraybuffer)
 * [1.7.2 Map](#data-map) (*Todo*)
 * [1.7.3 Set](#data-set) (*Todo*)
+* [1.7.4 Range](#data-range)
+* [1.7.5 Option](#data-option)
 
 ---
 
@@ -336,6 +338,84 @@ Todo
 
 Todo
 
+<a name="data-range">
+**1.7.4 Range**
+
+A range is an ordered sequence of integers that are equally spaced apart. Examples:
+```scala
+1 to 5
+0 to 10 by 2
+2 until 6
+1 until 11 by 3
+```
+
+Ranges are very useful in a couple of different situations.
+
+Firstly, as counters for loops:
+
+```scala
+repeatFor(1 to 5) { n =>
+    println(n, n * n)
+}
+```
+
+Secondly, to populate data structures:
+```scala
+(1 until 11 by 3).toBuffer //> res4: scala.collection.mutable.Buffer[Int] = ArrayBuffer(1, 4, 7, 10)
+```
+
+```scala
+cleari()
+val pics = (1 to 5).map { n =>
+    val pic = Picture.rectangle(30, 20 * n)
+    pic.setPosition(n * 40, 0)
+    pic
+}
+
+repeatFor(pics) { p =>
+    draw(p)
+}
+```
+
+<a name="data-option">
+**1.7.5 Option**
+
+A option is used where a value may or may not be present. For example, given a sequence of numbers, you might want to do a search for the first number in the sequence that is greater than 100. Such a number may or may not be present in the sequence. Let's see this in action in code:
+
+```scala
+val nums = Seq(90, 11, 21, 47)
+val nums2 = Seq(90, 11, 121, 147)
+
+def findFirstMoreThan(s: Seq[Int], n: Int) =
+    s.find { n =>
+        n > 100
+    }
+
+def printAnswer(a: Option[Int]) {
+    if (a.isDefined) {
+        println(a.get)
+    }
+    else {
+        println("No number found")
+    }
+}
+
+val ans = findFirstMoreThan(nums, 100)
+val ans2 = findFirstMoreThan(nums2, 100)
+
+printAnswer(ans)
+printAnswer(ans2)
+```
+
+The above code will print:
+```
+No number found
+121
+```
+
+If an option has the value `v` inside, it is represented as `Some(v)`. If it has no value inside, it is represented as `None`.
+
+
 <a name="control">
 **2 Control Flow**
 
@@ -490,10 +570,10 @@ val pics = (0 to 4).map { n =>
 draw(pics)
 ```
 
+The third (using `foreach`) and fourth (using `map`) examples above are related to `for` loops, which are the topic of the next section.
+
 <a name="control-for">
 **2.3.3 for**
-
-`repeat` and `repeatFor` are looping methods provided by Kojo. Scala itself has multiple looping methods like - `for`, `while`, and `do-while`. Here we will just mention the scala `for` loop.
 
 The `for` loop in Scala is extremely powerful, and allows you to use a combination of `foreach`, `map`, and `filter` as per your needs. Let's write the `foreach` and `map` examples from above using `for`:
 
@@ -546,6 +626,9 @@ val pics = for(n <- 0 to 4) yield {
 }
 draw(pics)
 ```
+
+Note that `repeat` and `repeatFor` are looping methods provided by Kojo, while `for` is built into Scala itself.  Scala also supports other standard looping methods like - `while`, and `do-while`, but we will not discuss them here.
+
 
 <a name="control-selection">
 **2.4 Selection**
