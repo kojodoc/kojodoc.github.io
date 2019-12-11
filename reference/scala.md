@@ -26,10 +26,10 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 * [1.7 Collections](#data-collections)
 * [1.7.1 Sequence (Seq)](#data-sequence)
 * [1.7.1.1 ArrayBuffer](#data-arraybuffer)
+* [1.7.1.2 Range](#data-range)
 * [1.7.2 Map](#data-map) (*Todo*)
 * [1.7.3 Set](#data-set) (*Todo*)
-* [1.7.4 Range](#data-range)
-* [1.7.5 Option](#data-option)
+* [1.7.4 Option](#data-option)
 
 ---
 
@@ -328,18 +328,8 @@ ab(0) = 21
 ab //> res58: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(21, 12, 9, 21)
 ```
 
-<a name="data-map">
-**1.7.2 Map**
-
-Todo
-
-<a name="data-set">
-**1.7.3 Set**
-
-Todo
-
 <a name="data-range">
-**1.7.4 Range**
+**1.7.1.2 Range**
 
 A range is an ordered sequence of integers that are equally spaced apart. Examples:
 ```scala
@@ -377,8 +367,18 @@ repeatFor(pics) { p =>
 }
 ```
 
+<a name="data-map">
+**1.7.2 Map**
+
+Todo
+
+<a name="data-set">
+**1.7.3 Set**
+
+Todo
+
 <a name="data-option">
-**1.7.5 Option**
+**1.7.4 Option**
 
 A option is used where a value may or may not be present. For example, given a sequence of numbers, you might want to do a search for the first number in the sequence that is greater than 100. Such a number may or may not be present in the sequence. Let's see this in action in code:
 
