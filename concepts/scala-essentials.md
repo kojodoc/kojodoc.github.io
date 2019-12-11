@@ -32,6 +32,7 @@ Here's the absolute minimum amount of programming theory and Scala information t
 * You **use** a command or function in your program by **calling** it with (optional) input data.
 * Commands also return output values! It's just that each and every command returns the exact same output value - called unit (written `()`). The type of this unit value `()` is `Unit`. You can think of `()` as a value that contains *no information*.
 * Given the previous fact, a Scala program is nothing but a sequence of expressions. It's just that we call some of these expressions (that return `()`) commands or statements.
+* It's good to remember that expressions exist in source code while values exist in memory.
 
 ### Program Operation
 A program is made out of data and code. Code refers to the instructions that make up the program. A program does the following as it starts up and runs:
