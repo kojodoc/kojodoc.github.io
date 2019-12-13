@@ -298,7 +298,7 @@ val pictures3 = pictures.filter(fn2)
 ```
 As you can see above, `map` and `filter` both take a function as input, apply that function to each element of the sequence, and construct a new sequence based on the results of the function calls.
 
-Scala has multiple sequence types (technically subtypes of Seq). We're going to look at one of them - the `ArrayBuffer`. 
+Scala has multiple sequence types (technically subtypes of Seq). We're going to look at a few that we will use frequently. 
 
 <a name="data-arraybuffer">
 **1.7.1.1 ArrayBuffer**
