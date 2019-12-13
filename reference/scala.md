@@ -28,7 +28,9 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 * [1.7.1.1 ArrayBuffer](#data-arraybuffer)
 * [1.7.1.2 Range](#data-range)
 * [1.7.2 Map](#data-map)
+* [1.7.2.1 HashMap](#data-hashmap)
 * [1.7.3 Set](#data-set)
+* [1.7.3.1 HashSet](#data-hashset)
 * [1.7.4 Option](#data-option)
 
 ---
@@ -408,6 +410,9 @@ val age = ageBook(name)
 println(s"${name}'s age is $age")
 ```
 
+<a name="data-hashmap">
+**1.7.2.1 HashMap**
+
 If you need to to be able to update a map after it is defined, use a HashMap:
 
 ```scala
@@ -450,6 +455,9 @@ val s1 = Set(1, 2, 3, 4) //> s1: scala.collection.immutable.Set[Int] = Set(1, 2,
 val s2 = Set(3, 4, 5, 6) //> s2: scala.collection.immutable.Set[Int] = Set(3, 4, 5, 6)
 s1.intersect(s2) //> res5: scala.collection.immutable.Set[Int] = Set(3, 4)
 ```
+
+<a name="data-hashset">
+**1.7.3.1 HashSet**
 
 If you need to to be able to update a set after it is defined, use a HashSet:
 
