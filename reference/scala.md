@@ -443,7 +443,13 @@ A set, like a sequence, is a collection with multiple elements. A set is differe
 
 A set supports operations similar to sequences - including `foreach`, `map`, and `filter`. Sets also support set specific operations like `contains`, `union`, `intersection`, and `difference`.
 
-In the following example of the firing of bullets in the canvas, we use a set instead of a sequence because we don't care about the order of the bullets in the collection and we don't have duplicates.
+```scala
+val s1 = Set(1, 2, 3, 4) //> s1: scala.collection.immutable.Set[Int] = Set(1, 2, 3, 4)
+val s2 = Set(3, 4, 5, 6) //> s2: scala.collection.immutable.Set[Int] = Set(3, 4, 5, 6)
+s1.intersect(s2) //> res5: scala.collection.immutable.Set[Int] = Set(3, 4)
+```
+
+If you need to to be able to update a set after it is defined, use a HashSet:
 
 ```scala
 cleari()
