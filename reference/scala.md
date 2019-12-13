@@ -447,7 +447,7 @@ In the following example of the firing of bullets in the canvas, we use a set in
 
 ```scala
 cleari()
-drawStage(white)
+drawStage(black)
 val cb = canvasBounds
 
 def newBullet = {
