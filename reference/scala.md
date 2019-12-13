@@ -64,7 +64,7 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 
 A program is nothing without data. It starts out with some data values and computes new values from old values as it runs ([as explained elsewhere](../concepts/scala-essentials#program-operation)). So learning about data is important.
 
-Here is some background information before we start looking at the different types of data available in Scala:
+Here is some background information for you before you start looking at the different types of data available in Scala:
 
 * A single piece of data is called a value.
 * In Scala, every value is an object. 
@@ -261,7 +261,7 @@ pictures3.foreach { p =>
     draw(rot(-30) * fillColor(green) -> p.copy)
 }
 ```
-Note - we need to do a `p.copy` in the above code because the original picture `p` has already been drawn, and you can't redraw a picture.
+Note - you need to do a `p.copy` in the above code because the original picture `p` has already been drawn, and you can't redraw a picture.
 
 Let's try to understand what the following code (copied from above) does. The code uses the `map` function  :
 ```scala
@@ -300,7 +300,7 @@ val pictures3 = pictures.filter(fn2)
 ```
 As you can see above, `map` and `filter` both take a function as input, apply that function to each element of the sequence, and construct a new sequence based on the results of the function calls.
 
-Scala has multiple sequence types (technically subtypes of Seq). We're going to look at a few that we will use frequently. 
+Scala has multiple sequence types (technically subtypes of Seq). Let's look at a few that we will use frequently. 
 
 <a name="data-arraybuffer">
 **1.7.1.1 ArrayBuffer**
@@ -566,7 +566,7 @@ forward(x)
 <a name="control-blocks">
 **2.2 Blocks**
 
-A block is a chunk of code. It can be used in looping (to specify what to do multiple times) or selection (to specify the alternative code paths) or while defining a new function or command (as the body of the function or command). So it is important to learn about blocks before we move any further.
+A block is a chunk of code. It can be used in looping (to specify what to do multiple times) or selection (to specify the alternative code paths) or while defining a new function or command (as the body of the function or command). So it is important for you to learn about blocks before you move any further.
 
 A block is any code between `{` and `}`. In Scala, a block has the following important functions:
 
