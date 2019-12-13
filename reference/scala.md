@@ -27,8 +27,8 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 * [1.7.1 Sequence (Seq)](#data-sequence)
 * [1.7.1.1 ArrayBuffer](#data-arraybuffer)
 * [1.7.1.2 Range](#data-range)
-* [1.7.2 Map](#data-map) (*Todo*)
-* [1.7.3 Set](#data-set) (*Todo*)
+* [1.7.2 Map](#data-map)
+* [1.7.3 Set](#data-set)
 * [1.7.4 Option](#data-option)
 
 ---
@@ -202,7 +202,7 @@ A collection lets you organise the data in your program in a particular way (dep
 <a name="data-sequence">
 **1.7.1 Sequence (Seq)**
 
-A sequence is a bunch of data values arranged one after the other with a well defined order of elements. e.g. `Seq(1, 5, 3)`.
+A sequence is a collection of data values arranged one after the other with a well defined order of elements. e.g. `Seq(1, 5, 3)`.
 
 If you want to arrange some data in your program in a sequence, and the sequence is fixed, you can use `Seq` to construct the sequence.
 ```scala
@@ -371,12 +371,113 @@ repeatFor(pics) { p =>
 <a name="data-map">
 **1.7.2 Map**
 
-Todo
+A map allows you to associate a key with a value. 
+
+Once a `(key, value)` is in a map `m`, it can be looked up via `m(key)`, `m.get(key)`, or `m.getOrElse(key, notFoundValue)`.
+
+Here's an example:
+```scala
+clearOutput()
+val mymap = Map(
+    "key1" -> "value1",
+    "key2" -> "value2",
+    "key3" -> "value3",
+) //> mymap: scala.collection.immutable.Map[String,String] = Map(key1 -> value1, key2 -> value2, key3 -> value3)
+
+mymap("key1") //> res1: String = value1
+mymap.get("key1") //> res2: Option[String] = Some(value1)
+mymap.get("key5") //> res3: Option[String] = None
+mymap.getOrElse("key5", "Not found") //> res4: String = Not found
+```
+
+Here's another example:
+
+```scala
+clearOutput()
+val ageBook = Map(
+    "Rahul" -> 10,
+    "Avinash" -> 12,
+    "Manya" -> 11
+)
+
+val name = readln("Whose age do you want to know?")
+// this will throw an exception if the name is not in the map. We don't care here.
+val age = ageBook(name)
+println(s"${name}'s age is $age")
+```
+
+If you need to to be able to update a map after it is defined, use a HashMap:
+
+```scala
+cleari()
+drawStage(black)
+val pic1 = fillColor(red) -> Picture.rectangle(40, 40)
+val pic2 = fillColor(red) -> Picture.circle(20)
+draw(pic1, pic2)
+
+val vels = HashMap(
+    pic1 -> Vector2D(3, 2),
+    pic2 -> Vector2D(-2, 3)
+)
+
+val pics = Seq(pic1, pic2)
+
+animate {
+    pics.foreach { pic =>
+        val picVel = vels(pic)
+        pic.translate(picVel)
+        if (pic.collidesWith(stageBorder)) {
+            val newPicVel = bouncePicVectorOffStage(pic, picVel)
+            vels(pic) = newPicVel
+        }
+    }
+}
+```
 
 <a name="data-set">
 **1.7.3 Set**
 
-Todo
+A set, like a sequence, is a collection with multiple elements. A set is different from a sequence in the following respects:
+* The elements are not in any particular order.
+* There can be no duplicate elements.
+
+A set supports operations similar to sequences - including `foreach`, `map`, and `filter`. Sets also support set specific operations like `contains`, `union`, `intersection`, and `difference`.
+
+In the following example of the firing of bullets in the canvas, we use a set instead of a sequence because we don't care about the order of the bullets in the collection and we don't have duplicates.
+
+```scala
+cleari()
+drawStage(white)
+val cb = canvasBounds
+
+def newBullet = {
+    fillColor(red) -> Picture.rectangle(2, 5)
+}
+
+val bullets = HashSet.empty[Picture]
+
+timer(1000) {
+    val b = newBullet
+    bullets.add(b)
+    draw(b)
+    b.setPosition(cb.x + 20, cb.y + 5)
+    b.setHeading(- random(45))
+}
+
+
+animate {
+    bullets.foreach { b =>
+        b.translate(0, 5)
+    }
+
+    bullets.foreach { b =>
+        if (b.collidesWith(stageBorder)) {
+            bullets.remove(b)
+            b.erase()
+        }
+    }
+}
+```
 
 <a name="data-option">
 **1.7.4 Option**
