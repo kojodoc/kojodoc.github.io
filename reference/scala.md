@@ -117,7 +117,9 @@ Here are some examples of the use of Booleans:
 2 > 10 //> res34: Boolean = false
 (10 > 2) && (3 > 11) //> res35: Boolean = false
 (10 > 2) && (3 > 11) || (4 < 5) //> res36: Boolean = true
+// ! is for negation
 !true //> res37: Boolean = false
+// ^ is for exclusive-or (xor)
 true ^ false //> res38: Boolean = true
 true ^ true //> res39: Boolean = false
 ```
