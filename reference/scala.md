@@ -504,7 +504,7 @@ A option is used where a value may or may not be present. For example, given a s
 val nums = Seq(90, 11, 21, 47)
 val nums2 = Seq(90, 11, 121, 147)
 
-def findFirstMoreThan(s: Seq[Int], n: Int) =
+def findFirstMoreThan(s: Seq[Int], n: Int): Option[Int] =
     s.find { n =>
         n > 100
     }
