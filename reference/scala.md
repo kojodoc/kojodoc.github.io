@@ -55,6 +55,7 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 * [3.2 var](#abstraction-var)
 * [3.3 def](#abstraction-def)
 * [3.4 class](#abstraction-class)
+* [3.5 case class](#abstraction-case-class)
 
 <a name="data">
 **1. Data Types**
@@ -877,5 +878,63 @@ br.draw()
 
 animate {
     br.step()
+}
+```
+
+<a name="abstraction-case-class">
+**3.5 case class**
+
+A case class is a convenient way to get a bunch of data values together to represent something useful in your program.
+
+`case class Name(valueNamesAndTypes)` - defines a case class called Name with the given values of the given types.
+
+The `valueNamesAndTypes` are (usually) two or more `name: type` pairs separated by commas.
+
+A new instance of the class can be created like this: `Name(values)`, where values is a comma separated list of the right number of appropriately typed values. Note that a `new` is not required to create an instance of a case class. This makes case classes as convenient to use as in-built data types.
+
+Here's a quick example:
+
+```scala
+case class Person(firstName: String, lastName: String, age: Int)
+
+val p1 = Person("Rahul", "Agarwal", 21)
+val p2 = Person("Sanjay", "Pandey", 35)
+```
+
+And here's a longer example:
+
+```scala
+// Based on ideas from https://generativeartistry.com/tutorials/tiled-lines/
+cleari()
+setBackground(cm.rgb(60, 63, 65))
+val cb = canvasBounds
+val n = 20
+val deltax = cb.width / n
+val deltay = cb.height / n
+
+case class Line(x: Double, y: Double, w: Double, h: Double)
+
+def makeLine(x: Double, y: Double, w: Double, h: Double) = {
+    val leftToRight = randomBoolean
+    if (leftToRight) Line(x, y, w, h) else Line(x, y + h, w, -h)
+}
+
+// construct the drawing data-structure in memory
+val lines = ArrayBuffer.empty[Line]
+repeatFor(0 until n) { nx =>
+    val x = cb.x + nx * deltax
+    repeatFor(0 until n) { ny =>
+        val y = cb.y + ny * deltay
+        lines.append(makeLine(x, y, deltax, deltay))
+    }
+}
+
+// draw the data-structure out
+repeatFor(lines) { l =>
+    val pic = Picture.line(l.w, l.h)
+    pic.setPosition(l.x, l.y)
+    pic.setPenThickness(2)
+    pic.setPenColor(white)
+    draw(pic)
 }
 ```
