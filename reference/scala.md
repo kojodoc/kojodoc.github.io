@@ -543,9 +543,9 @@ At a high level:
 
 * When a program runs, it carries out the instructions inside it one after the other, in sequence.
 * The following constructs change the above default mode of execution:
-  * Loops (repeat, repeatFor, for, while, etc) to do the same thing multiple times.
-  * Selection (if-else or switch) to do different things under different conditions.
-  * Calls (to functions or commands) to make use of abstractions.
+  * Loops (repeat, repeatFor, for, while, etc) let you do the same thing multiple times.
+  * Selection (if-else or switch) let you do different things under different conditions.
+  * Calls (to functions or commands) let you make use of abstractions.
 
 
 Let's look at the above in a little more detail.
