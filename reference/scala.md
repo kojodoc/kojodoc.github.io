@@ -27,7 +27,7 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 * [1.7.1 Sequence (Seq)](#data-sequence)
 * [1.7.1.1 Array](#data-array)
 * [1.7.1.2 ArrayBuffer](#data-arraybuffer)
-* [1.7.1.2 Range](#data-range)
+* [1.7.1.3 Range](#data-range)
 * [1.7.2 Map](#data-map)
 * [1.7.2.1 HashMap](#data-hashmap)
 * [1.7.3 Set](#data-set)
@@ -383,7 +383,7 @@ ab //> res58: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(21, 12, 9,
 ```
 
 <a name="data-range">
-**1.7.1.2 Range**
+**1.7.1.3 Range**
 
 A range is an ordered sequence of integers that are equally spaced apart. Examples:
 ```scala
