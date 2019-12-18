@@ -25,7 +25,8 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 
 * [1.7 Collections](#data-collections)
 * [1.7.1 Sequence (Seq)](#data-sequence)
-* [1.7.1.1 ArrayBuffer](#data-arraybuffer)
+* [1.7.1.1 Array](#data-array)
+* [1.7.1.2 ArrayBuffer](#data-arraybuffer)
 * [1.7.1.2 Range](#data-range)
 * [1.7.2 Map](#data-map)
 * [1.7.2.1 HashMap](#data-hashmap)
@@ -302,33 +303,81 @@ As you can see above, `map` and `filter` both take a function as input, apply th
 
 Scala has multiple sequence types (technically subtypes of Seq). Let's look at a few that we will use frequently. 
 
+<a name="data-array">
+**1.7.1.1 Array**
+
+An `Array` is useful when you want to be able to modify an existing sequece by changing its elements.
+
+An `Array` is also a sequence, so anything you can do with a sequence (including the stuff from the previous section), you can also do with an `Array`.
+
+Here is some sample code for `Arrays`.
+
+```scala
+// a pre-populated array
+val a1 = Array(1, 2, 3) //> a1: Array[Int] = Array(1, 2, 3)
+
+// array element access
+a1(1) //> res59: Int = 2
+
+// an empty array that can be filled up later
+val a2 = Array.ofDim[Int](3) //> a2: Array[Int] = Array(0, 0, 0)
+
+// array element update
+a2(0) = 1
+a2(1) = 2
+a2(2) = 3
+
+a1 //> res63: Array[Int] = Array(1, 2, 3)
+a2 //> res64: Array[Int] = Array(1, 2, 3)
+
+// an empty 2D array (aka - array of arrays)
+val a3 = Array.ofDim[Int](2, 3) //> a3: Array[Array[Int]] = Array(Array(0, 0, 0), Array(0, 0, 0))
+
+// array element update
+a3(0)(0) = 1
+a3(1)(1) = 2
+a3(1)(2) = 3
+a3 //> res68: Array[Array[Int]] = Array(Array(1, 0, 0), Array(0, 2, 3))
+
+// array element access
+a3(1)(1) //> res69: Int = 2
+```
+
+
 <a name="data-arraybuffer">
-**1.7.1.1 ArrayBuffer**
+**1.7.1.2 ArrayBuffer**
 
 An `ArrayBuffer` is useful when you want to be able to modify an existing sequece, by changing its elements, adding new elements to it, or removing elements from it.
 
-An `ArraBuffer` is also a sequence, so anything you can do with a sequence (including the stuff from the previous section), you can also do with an `ArrayBuffer`.
+An `ArrayBuffer` is also a sequence, so anything you can do with a sequence (including the stuff from the previous section), you can also do with an `ArrayBuffer`.
 
 Here is some sample code for `ArrayBuffers`.
 
 ```scala
-// create an arraybuffer with some values
+// a pre-populated arraybuffer
 val ab = ArrayBuffer(1, 5, 3, 9) //> ab: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(1, 5, 3, 9)
+
+// element removal
 ab.remove(0) //> res48: Int = 1
 ab //> res49: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(5, 3, 9)
+
+// element update
 ab(1) = 12
 ab //> res51: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(5, 12, 9)
+
+// element addition
 ab.append(21)
 ab //> res53: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(5, 12, 9, 21)
 
-
-
-// create an empty arraybuffer
+// an empty arraybuffer
 val ab2 = ArrayBuffer.empty[Int] //> ab2: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer()
 
+// element addition
 ab2.append(11)
 ab2.append(2)
 ab2 //> res56: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(11, 2)
+
+// element update
 ab(0) = 21
 ab //> res58: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(21, 12, 9, 21)
 ```
