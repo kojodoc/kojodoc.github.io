@@ -341,6 +341,7 @@ a3 //> res68: Array[Array[Int]] = Array(Array(1, 0, 0), Array(0, 2, 3))
 
 // array element access
 a3(1)(1) //> res69: Int = 2
+a3(1) //> res70: Array[Int] = Array(0, 2, 3)
 ```
 
 
@@ -349,7 +350,7 @@ a3(1)(1) //> res69: Int = 2
 
 An `ArrayBuffer` is useful when you want to be able to modify an existing sequece, by changing its elements, adding new elements to it, or removing elements from it.
 
-An `ArrayBuffer` is also a sequence, so anything you can do with a sequence (including the stuff from the previous section), you can also do with an `ArrayBuffer`.
+An `ArrayBuffer` is also a sequence, so as with `Arrays`, anything that you can do with a sequence you can also do with an `ArrayBuffer`.
 
 Here is some sample code for `ArrayBuffers`.
 
