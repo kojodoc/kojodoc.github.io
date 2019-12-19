@@ -306,7 +306,7 @@ Scala has multiple sequence types (technically subtypes of Seq). Let's look at a
 <a name="data-array">
 **1.7.1.1 Array**
 
-An `Array` is useful when you want to be able to modify an existing sequece by changing its elements.
+An `Array` is useful when you want to be able to modify an existing sequence by changing its elements.
 
 An `Array` is also a sequence, so anything you can do with a sequence (including the stuff from the previous section), you can also do with an `Array`.
 
@@ -348,7 +348,7 @@ a3(1) //> res70: Array[Int] = Array(0, 2, 3)
 <a name="data-arraybuffer">
 **1.7.1.2 ArrayBuffer**
 
-An `ArrayBuffer` is useful when you want to be able to modify an existing sequece, by changing its elements, adding new elements to it, or removing elements from it.
+An `ArrayBuffer` is useful when you want to be able to modify an existing sequence by changing its elements, adding new elements to it, or removing elements from it.
 
 An `ArrayBuffer` is also a sequence, so as with `Arrays`, anything that you can do with a sequence you can also do with an `ArrayBuffer`.
 
