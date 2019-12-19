@@ -301,6 +301,19 @@ val pictures3 = pictures.filter(fn2)
 ```
 As you can see above, `map` and `filter` both take a function as input, apply that function to each element of the sequence, and construct a new sequence based on the results of the function calls.
 
+Here's one more example of map and filter, this time working with a sequence of integers:
+```scala
+val s1 = Seq(1, 2, 3) //> s1: Seq[Int] = List(1, 2, 3)
+val s2 = s1.map { n =>
+    n * 2
+} //> s2: Seq[Int] = List(2, 4, 6)
+
+val s3 = Seq(20, 91, 55, 80) //> s3: Seq[Int] = List(20, 91, 55, 80)
+val s4 = s3.filter { n =>
+    n > 60    
+} //> s4: Seq[Int] = List(91, 80)
+```
+
 Scala has multiple sequence types (technically subtypes of Seq). Let's look at a few that we will use frequently. 
 
 <a name="data-array">
