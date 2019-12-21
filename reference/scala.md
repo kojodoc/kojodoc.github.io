@@ -568,8 +568,8 @@ val nums = Seq(90, 11, 21, 47)
 val nums2 = Seq(90, 11, 121, 147)
 
 def findFirstMoreThan(s: Seq[Int], n: Int): Option[Int] =
-    s.find { n =>
-        n > 100
+    s.find { e =>
+        e > n
     }
 
 def printAnswer(a: Option[Int]) {
