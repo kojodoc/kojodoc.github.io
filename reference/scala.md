@@ -561,7 +561,7 @@ animate {
 <a name="data-option">
 **1.7.4 Option**
 
-A option is used where a value may or may not be present. For example, given a sequence of numbers, you might want to do a search for the first number in the sequence that is greater than 100. Such a number may or may not be present in the sequence. Let's see this in action in code:
+An option is used where a value may or may not be present. For example, given a sequence of numbers, you might want to do a search for the first number in the sequence that is greater than 100. Such a number may or may not be present in the sequence. Let's see this in action in code:
 
 ```scala
 val nums = Seq(90, 11, 21, 47)
