@@ -152,3 +152,120 @@ draw {
     }
 }
 ```
+
+### Irregular Grid
+```scala
+size(600, 600)
+cleari()
+setBackground(white)
+originBottomLeft()
+
+val tileCount = 10
+val tileWidth = cwidth / tileCount
+val tileHeight = cheight / tileCount
+
+def shape(w: Double, h: Double) = Picture.ellipse(w / 2, h / 2)
+
+case class Block(x: Double, y: Double, w: Double, h: Double)
+val blocks = ArrayBuffer.empty[Block]
+
+def makeBlock(posX: Double, posY: Double) {
+    val block = Block(posX, posY, tileWidth, tileHeight)
+    blocks.append(block)
+}
+
+def drawBlock(b: Block) {
+    val pic = shape(b.w, b.h)
+    pic.setPosition(b.x, b.y)
+    pic.setPenThickness(2)
+    val d = distance(b.x, b.y, mouseX, mouseY)
+    val f = mathx.map(d, 0, 500, 0.2, .9)
+    pic.setPenColor(black.fadeOut(f))
+    pic.scale(f)
+    draw(pic)
+}
+
+setup {
+    repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
+        repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
+            makeBlock(posX, posY)
+        }
+    }
+}
+
+draw {
+    erasePictures()
+    repeatFor(blocks) { b =>
+        drawBlock(b)
+    }
+}
+```
+
+```scala
+size(600, 600)
+cleari()
+setBackground(white)
+originBottomLeft()
+
+val tileCount = 20
+val tileWidth = cwidth / tileCount
+val tileHeight = cheight / tileCount
+
+def shape(w: Double, h: Double) = trans(w / 2, h / 2) -> Picture.ellipse(w / 2, h / 2)
+
+case class Block(x: Double, y: Double, w: Double, h: Double)
+val blocks = ArrayBuffer.empty[Block]
+val blocks2 = ArrayBuffer.empty[Block]
+
+def makeBlock(posX: Double, posY: Double) {
+    val block = Block(posX, posY, tileWidth, tileHeight)
+    blocks.append(block)
+}
+
+def splitSomeBlocks() {
+    blocks2.clear()
+    var idx = 0
+    repeatFor(blocks) { b =>
+        if (randomDouble(1) < 0.1) {
+            val newBlocks = Array(
+                Block(b.x, b.y, b.w / 2, b.h / 2),
+                Block(b.x, b.y + b.h / 2, b.w / 2, b.h / 2),
+                Block(b.x + b.w / 2, b.y, b.w / 2, b.h / 2),
+                Block(b.x + b.w / 2, b.y + b.h / 2, b.w / 2, b.h / 2)
+            )
+            blocks2.appendAll(newBlocks)
+        }
+        else {
+            blocks2.append(b)
+        }
+        idx += 1
+    }
+}
+
+def drawBlock(b: Block) {
+    val pic = shape(b.w, b.h)
+    pic.setPosition(b.x, b.y)
+    pic.setPenThickness(2)
+    val d = distance(b.x, b.y, mouseX, mouseY)
+    val f = mathx.map(d, 0, 700, 0.2, 0.9)
+    pic.setPenColor(black.fadeOut(f))
+    pic.scale(f)
+    draw(pic)
+}
+
+setup {
+    repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
+        repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
+            makeBlock(posX, posY)
+        }
+    }
+    splitSomeBlocks()
+}
+
+draw {
+    erasePictures()
+    repeatFor(blocks2) { b =>
+        drawBlock(b)
+    }
+}
+```
