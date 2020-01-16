@@ -2,13 +2,12 @@
   <a href="../index.html">Home</a>
 </div>
 
-## An introduction to generative art using Kojo
+## An introduction to grid based generative art
 
 Generative art is art that is generated via an interaction between a computer program and a human being.  
 Todo
 
 In this tutorial, you will play with generative art in the context of a grid. Here is what you will do:
-* Revisit the [grid section](../art/shape-block.html#block-moves-around-grid) from the [shape-block method page](../art/shape-block.html).
 * Make a grid of squares using turtle graphics.
 * Switch to using pictures instead of turtle graphics to enable more flexibility in the drawing.
 * Start using the setup, draw scheme for interactive designs (and more performant drawing).
@@ -22,51 +21,66 @@ In this tutorial, you will play with generative art in the context of a grid. He
 * Stacking multiple grids.
 
 ### Turtle graphics grid
+To get going, you will make a grid of squares on the canvas. For this, you will use the [shape/block idea](https://litan.github.io/kojodoc/art/shape-block.html) that you are familiar with:
+* The shape for the pattern is a square
+* The block positions the turtle at the bottom left of every grid cell, and then makes the shape.
+
+**Reference:**
+* `size(w, h)` [*command*] - sets the size of the canvas to the given width and height.
+* `cwidth` [*query*] - returns the current width of the canvas.
+* `cheight` [*query*] - returns the current height of the canvas.
+* `originBottomLeft()` [*command*] - situates the origin at the bottom left of the canvas.
+* `rangeTill(from, untill, step)` [*function*] - returns a range that starts from `from`, goes until (but excluding) `until`, and steps up by `step`. See examples below:
+```scala
+rangeTill(4, 10, 2).toArray //> res16: Array[Int] = Array(4, 6, 8)
+rangeTill(4, 11.5, 2.5).toArray //> res17: Array[BigDecimal] = Array(4.0, 6.5, 9.0)
+```
+
+**Program:**
 ```scala
 size(600, 600)
 cleari()
+originBottomLeft()
 setSpeed(superFast)
 setBackground(white)
-originBottomLeft()
+setPenColor(black)
 
 val tileCount = 10
-val tileWidth = cwidth / tileCount
-val tileHeight = cheight / tileCount
+val tileSize = cwidth / tileCount
 
 def shape() {
-    repeat(2) {
-        forward(tileHeight)
-        right(90)
-        forward(tileWidth)
+    repeat(4) {
+        forward(tileSize)
         right(90)
     }
 }
 
 def block(posX: Double, posY: Double) {
     setPosition(posX, posY)
-    setPenColor(black)
     shape()
 }
 
-repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
-    repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
+repeatFor(rangeTill(0, cheight, tileSize)) { posY =>
+    repeatFor(rangeTill(0, cwidth, tileSize)) { posX =>
         block(posX, posY)
     }
 }
 ```
+**Output:**  
+Todo
 
 ### Picture grid
+Now, you will make the exact same grid as above, but using Pictures. 
 ```scala
 size(600, 600)
 cleari()
-setBackground(white)
 originBottomLeft()
+setBackground(white)
 
 val tileCount = 10
-val tileWidth = cwidth / tileCount
-val tileHeight = cheight / tileCount
+val tileSize = cwidth / tileCount
 
-def shape = Picture.rectangle(tileWidth, tileHeight)
+def shape = Picture.rectangle(tileSize, tileSize)
 
 def block(posX: Double, posY: Double) {
     val pic = shape
@@ -75,8 +89,8 @@ def block(posX: Double, posY: Double) {
     draw(pic)
 }
 
-repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
-    repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
+repeatFor(rangeTill(0, cheight, tileSize)) { posY =>
+    repeatFor(rangeTill(0, cwidth, tileSize)) { posX =>
         block(posX, posY)
     }
 }
