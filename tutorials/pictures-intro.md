@@ -33,6 +33,8 @@ Pictures can be created in many different ways using any one of the following fu
 | `Picture.point` | Creates a picture of a point. |
 | `Picture.arc(radius, angle)` | Creates a picture of an arc with the given radius and angle. The center of the arc is at (0, 0). |
 | `Picture.text(string)` | Creates a picture with the given text. |
+| `Picture.hgap(width)` | Creates an invisible picture with the given width. This can be useful during picture layout |
+| `Picture.vgap(width)` | Creates an invisible picture with the given height. This can be useful during picture layout |
 | `Picture.image(fileName)` | Creates a picture with the image in the given file. |
 | `Picture.image(url)` | Creates a picture with the image at the given file link. |
 | `Picture.image(image)` | Creates a picture with the given image. |
@@ -107,9 +109,9 @@ Multiple pictures can be laid out in the following ways:
 ```scala
 cleari()
 showAxes()
-def pic1 = Picture.rectangle(50, 50)
-def pic2 = Picture.rectangle(100, 50)
-def pic3 = Picture.rectangle(50, 100)
+val pic1 = Picture.rectangle(50, 50)
+val pic2 = Picture.rectangle(100, 50)
+val pic3 = Picture.rectangle(50, 100)
 val pics = picColCentered(pic1, pic2, pic3)
 draw(pics)
 ```
@@ -117,12 +119,37 @@ draw(pics)
 ```scala
 cleari()
 showAxes()
-def pic1 = Picture.rectangle(50, 50)
-def pic2 = rot(45) * fillColor(blue) -> Picture.rectangle(100, 50)
-def pic3 = scale(1.5) * penColor(green) -> Picture.rectangle(50, 100)
+val pic1 = Picture.rectangle(50, 50)
+val pic2 = rot(45) * fillColor(blue) -> Picture.rectangle(100, 50)
+val pic3 = scale(1.5) * penColor(green) -> Picture.rectangle(50, 100)
 val pics = picColCentered(pic1, pic2, pic3)
 draw(pics)
 ```
+
+```scala
+cleari()
+showAxes()
+val pic1 = Picture.rectangle(100, 50)
+val pic2 = picRowCentered(Picture.rectangle(25, 50), Picture.hgap(48), Picture.rectangle(25, 50))
+val pic3 = Picture.rectangle(100, 50)
+val pics = picColCentered(pic1, pic2, pic3)
+draw(pics)
+```
+
+#### Exercise
+Write programs to make the figures shown below using the following instructions:
+* `Picture.rectangle`
+* `Picture.text`
+* `Picture.hgap`
+* `picColCentered`
+* `picRowCentered`
+* `penColor`
+* `draw`
+
+![ex1](ex1.png)
+
+![ex2](ex2.png)
+
 
 #### Picture coordinate systems
 
@@ -143,7 +170,7 @@ Picture.showAxes(pics, pic2)
 **Output**:
 ![pic-coordinate-systems](pic-coordinate-systems.png)
 
-The coordinate system axes that you see are for:
+In the figure above, you see the axes for the following coordinate systems:
 * The canvas coordinate system
-* The coordinate system for pics, which lives within the coordinate system of its parent - the canvas
-* The coordinate system for pic2, which lives within the coordinate system of its parent - pics.
+* The coordinate system for `pics`, which lives within the coordinate system of its parent - the canvas
+* The coordinate system for `pic2`, which lives within the coordinate system of its parent - `pics`.
