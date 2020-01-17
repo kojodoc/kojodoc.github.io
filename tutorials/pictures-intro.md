@@ -7,11 +7,10 @@ A picture is a visual element in Kojo. To work with a picture, you do the follow
 * [Create the picture](#picture-creation)
 * [Transform it](#picture-transformation) (optional)
 * [Lay it out by aligning it with other pictures](#picture-layout) (optional)
-* Attach mouse event handlers to it (optional)
 * Draw it
 * Animate it as you continue to transform it (optional)
 * Check for collisions with other pictures (optional)
-* Interact with it as a user via the event handlers(optional)
+* Attach mouse event handlers to it to interact with it (optional)
 
 The above Picture capabilites enable the following:
 * Functional art
@@ -136,6 +135,19 @@ val pics = picColCentered(pic1, pic2, pic3)
 draw(pics)
 ```
 
+```scala
+cleari()
+def p(n: Int): Picture = {
+    if (n < 10) {
+        Picture.rectangle(n, n)
+    }
+    else {
+        picStack(Picture.rectangle(n, n), trans(10, 0) * rot(2) -> p(n - 15))
+    }
+}
+draw(penColor(blue) * penThickness(3) -> p(250))
+```
+
 #### Exercise
 Write programs to make the figures shown below using the following instructions:
 * `Picture.rectangle`
@@ -174,3 +186,9 @@ In the figure above, you see the axes for the following coordinate systems:
 * The canvas coordinate system
 * The coordinate system for `pics`, which lives within the coordinate system of its parent - the canvas
 * The coordinate system for `pic2`, which lives within the coordinate system of its parent - `pics`.
+
+### Drawing Pictures
+You can draw a picture `pic` in a few different ways:
+* `draw(pic)` - draws the picture
+* `pic.draw()` - similar to the above
+* `drawCentered(pic)` - draws the picture centered in the canvas
