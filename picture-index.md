@@ -11,4 +11,5 @@ Pictures build upon turtle graphics to let you create more intricate art, learn 
 
 For now, you can refer to:
 * The [Picture Basics](concepts/turtle-picture-basics.html) page in the [Turtle Graphics](turtle-index.html) section.
+* The [Pictures Introduction](tutorials/pictures-intro.html) page.
 * The [Picture Graphics Reference](reference/picture.html) page.

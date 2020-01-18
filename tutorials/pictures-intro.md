@@ -1,8 +1,8 @@
 <div class="nav">
-  <a href="../index.html">Home</a>
+  <a href="../index.html">Home</a> | <a href="../picture-index.html">Picture Graphics</a> 
 </div>
 
-## An introduction to pictures
+## An introduction to Pictures
 A picture is a visual element in Kojo. To work with a picture, you do the following:
 * [Create the picture](#picture-creation)
 * [Transform it](#picture-transformation) (optional)
