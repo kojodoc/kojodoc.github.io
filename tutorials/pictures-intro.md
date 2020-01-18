@@ -84,7 +84,7 @@ Multiple transformations can be combined in the following ways:
 * transformation methods/commands are combined by sequential calls, e.g., `pic.translate(100, 0); pic.rotate(45)`
 
 
-#### Examples
+The following example shows the exact same figure being drawn using the two different ways of doing transformations:
 
 ---
 
@@ -165,6 +165,9 @@ draw(pics)
 ![fig5](fig5.png)
 
 ---
+
+The following example uses recursion to make an interesting figure (recursion will be explained in detail in a separate article):
+
 ---
 
 ```scala
@@ -222,8 +225,8 @@ Picture.showAxes(pics, pic2)
 
 In the figure above, you see the axes for the following coordinate systems:
 * The canvas coordinate system
-* The coordinate system for `pics`, which lives within the coordinate system of its parent - the canvas
-* The coordinate system for `pic2`, which lives within the coordinate system of its parent - `pics`.
+* The coordinate system for `pics`, which lives within the coordinate system of its parent - the canvas (pics.position is (35.36, 35.36)).
+* The coordinate system for `pic2`, which lives within the coordinate system of its parent - `pics` (pic2.position is (121.00, 0.00)).
 
 ### Picture Effects
 
@@ -293,15 +296,15 @@ drawCentered(pic2)
 ---
 
 Some things to note:
-* When an effect is applied to a (vector) picture, it is converted to an image before the effect is applied. You need to be aware of this if you want to print the output at high resolution (a separate article will go into this in more detail).
+* When an effect is applied to a (vector) picture, it is converted to an image before the effect is applied. You need to be aware of this if you want to export/print the output at high resolution (a separate article will go into this in more detail).
 * You are not limited to using the bundled JH Labs image filters for effects. You can use filters from any Java (or Scala) image processing library (after downloading it and putting it in the Kojo `libk` directory).
 
 
 ### Picture Drawing
 You can draw a picture `pic` in a few different ways:
-* `draw(pic)` - draws the picture
-* `pic.draw()` - similar to the above
-* `drawCentered(pic)` - draws the picture centered in the canvas
+* `draw(pic)` - draws the picture.
+* `pic.draw()` - similar to the above.
+* `drawCentered(pic)` - draws the picture centered in the canvas.
 
 The draw command can also be used to draw multiple pictures:
 * `draw(pic1, pic2, ...)`
@@ -334,16 +337,16 @@ A few more picuture transformations (not mentioned earlier) are useful during an
 
 ### Picture Collisions
 
-As a picture moves around the canvas, you can check for collisions with:
+As a picture moves around the canvas, you can check it for collisions with:
 * the edges of the canvas (which are called the stageBorder).
 * other pictures
 
-You can also determine how the picture will bounce off the obstacle that it collided with.
+After a collision, you can also determine how the picture will bounce off the obstacle that it collided with.
 
 
 #### Collision checking and bouncing off the borders of the stage
 
-You use two functions for this:
+You can use two functions for this:
 * `pic.collidesWith(stageBorder)` - returns true if `pic` has collided with the stage border.
 * `bouncePicOffStage(pic, vel)` - for a picture `pic` moving with velocity `vel` - this function returns the velocity after bouncing off the stage.
 
@@ -428,6 +431,9 @@ Picture's can respond to mouse events in the following ways:
 * `pic.onMouseExit { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse exits the picture.
 
 #### Example
+
+---
+
 ```scala
 clear()
 setBackground(cm.black)
@@ -442,6 +448,10 @@ pic.onMouseClick { (x, y) =>
     pic.setFillColor(c)
 }
 ```
+
+![mouse-move](mouse-move.png)
+
+---
 
 #### Exercise
 
