@@ -7,11 +7,11 @@ A picture is a visual element in Kojo. To work with a picture, you do the follow
 * [Create the picture](#picture-creation)
 * [Transform it](#picture-transformation) (optional)
 * [Lay it out by aligning it with other pictures](#picture-layout) (optional)
-* Apply effects to it
+* [Apply effects to it](#picture-effects)
 * [Draw it](#picture-drawing)
-* Animate it as you continue to transform it (optional)
-* Check for collisions with other pictures (optional)
-* Attach mouse event handlers to it to interact with it (optional)
+* [Animate it as you continue to transform it](#picture-animation) (optional)
+* [Check for collisions with other pictures](#picture-collisions) (optional)
+* [Attach mouse event handlers to it to interact with it](#picture-event-handlers) (optional)
 
 The above Picture capabilites enable the following:
 * Functional and Generative art
@@ -64,6 +64,7 @@ You can transform pictures in the following main ways (every transformation belo
 | change pen color | `penColor(color) -> pic` | `pic.setPenColor(color)` |
 | change pen thickness | `penThickness(t) -> pic` | `pic.setPenThickness(t)` |
 | change fill color | `fillColor(color) -> pic` | `pic.setFillColor(color)` |
+| set opacity | `opac(o) -> pic` | `pic.setOpacity(o)` | 
 
 As shown above, there are two distinct ways of doing picture transformations:
 * the object/function way, e.g., `trans(100, 0) -> pic` - which is useful while doing functional graphics. This way of doing transformations can be used only before a picture is drawn.
@@ -273,4 +274,119 @@ Also, for the purpose of 'debugging', you can see the local coordinate system ax
 * `Picture.showAxes(pic1, pic2, ...)`
 * `Picture.showBounds(pic)`
 * `Picture.showBounds(pic1, pic2, ...)`
+
+### Picture Animation
+
+After you draw a picture, you can animate it within an `animate { }` loop.
+
+#### Example
+```scala
+cleari()
+val pic = fillColor(red) -> Picture.rectangle(30, 30)
+draw(pic)
+animate {
+    // you can use any transformation method here
+    pic.translate(2, 3)
+}
+```
+
+A few more picuture transformations (not mentioned earlier) are useful during animation and gaming:
+* `pic.invisible()` - hides `pic`.
+* `pic.visible()` - makes hidden `pic` visible again.
+* `pic.erase()` - erases `pic` and removes it from the canvas.
+
+### Picture Collisions
+
+As a picture moves around the canvas, you can check for collisions with:
+* the edges of the canvas (which are called the stageBorder).
+* other pictures
+
+You can also determine how the picture will bounce off the obstacle that it collided with.
+
+
+#### Collision checking and bouncing off the borders of the stage
+
+You use two functions for this:
+* `pic.collidesWith(stageBorder)` - returns true if `pic` has collided with the stage border.
+* `bouncePicOffStage(pic, vel)` - for a picture `pic` moving with velocity `vel` - this function returns the velocity after bouncing off the stage.
+
+```scala
+clear()
+drawStage(cm.black)
+val cb = canvasBounds
+
+val pic = fillColor(red) -> Picture.rectangle(40, 40)
+pic.setPosition(cb.x + 20, cb.y + 20)
+var vel = Vector2D(2, 10)
+
+draw(pic)
+
+animate {
+    pic.translate(vel)
+    if (pic.collidesWith(stageBorder)) {
+        vel = bouncePicOffStage(pic, vel)
+    }
+}
+```
+
+#### Collision checking and bouncing off other pictures
+
+For collision checking, you can use the following functions:
+* `pic.collidesWith(other: Picture)` - returns true if `pic` has collided with `other`.
+* `pic.collisions(others: Set[Picture])` - returns the subset of pictures within `others` that `pic` has collided with.
+* `pic.collision(others: Seq[Picture])` - returns an Option with the first picture in `others` that pic has collided with.
+
+For bouncing, you can use the following function:
+* `bouncePicOffPic(pic: Picture, vel: Vector2D, obstacle: Picture)`- for a picture `pic` moving with velocity `vel` - this function returns the velocity after bouncing off `obstacle`.
+
+```scala
+clear()
+drawStage(cm.black)
+val cb = canvasBounds
+
+val pic1 = fillColor(red) -> Picture {
+    right(45)
+    val n = 6
+    repeat(n) {
+        forward(50)
+        right(360.0 / n)
+    }
+}
+pic1.setPosition(cb.x + 20, 0)
+var vel1 = Vector2D(4, 0)
+
+val pic2 = fillColor(red) -> Picture {
+    val n = 5
+    repeat(n) {
+        forward(50)
+        right(360.0 / n)
+    }
+}
+pic2.setPosition(cb.x + cb.width - 40 - 20, 0)
+var vel2 = -vel1
+
+draw(pic1, pic2)
+animate {
+    pic1.translate(vel1)
+    pic2.translate(vel2)
+
+    if (pic1.collidesWith(pic2)) {
+        vel1 = bouncePicOffPic(pic1, vel1, pic2)
+        vel2 = -vel1
+    }
+}
+```
+
+For more examples of picture animation and collision checking, check out the [gaming](../gaming-index.html) page.
+
+### Picture Event Handlers
+
+Picture's can respond to mouse events in the following ways:
+* `pic.onMouseClick { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is clicked inside the picture.
+* `pic.onMousePress { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is pressed inside the picture.
+* `pic.onMouseRelease { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is released inside the picture.
+* `pic.onMouseMove { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse moves inside the picture.
+* `pic.onMouseDrag { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is dragged inside the picture.
+* `pic.onMouseEnter { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse enters the picture.
+* `pic.onMouseExit { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse exits the picture.
 
