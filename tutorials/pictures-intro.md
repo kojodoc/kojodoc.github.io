@@ -390,3 +390,22 @@ Picture's can respond to mouse events in the following ways:
 * `pic.onMouseEnter { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse enters the picture.
 * `pic.onMouseExit { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse exits the picture.
 
+#### Example
+```scala
+clear()
+setBackground(cm.black)
+val cb = canvasBounds
+
+val pic = fillColor(red) -> Picture.rectangle(400, 400)
+drawCentered(pic)
+
+pic.onMouseClick { (x, y) =>
+    val xy = pic.pnode.globalToLocal(Point2D(x, y))
+    val c = cm.linearGradient(0, 0, cm.blue, xy.getX, xy.getY, cm.black, true)
+    pic.setFillColor(c)
+}
+```
+
+#### Exercise
+
+In the example above, change the onMouseClick to the other onMouseXs - and then play with the picture to see how it behaves differently.
