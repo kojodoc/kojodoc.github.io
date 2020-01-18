@@ -7,19 +7,19 @@ A picture is a visual element in Kojo. To work with a picture, you do the follow
 * [Create the picture](#picture-creation)
 * [Transform it](#picture-transformation) (optional)
 * [Lay it out by aligning it with other pictures](#picture-layout) (optional)
-* Draw it
+* Apply effects to it
+* [Draw it](#picture-drawing)
 * Animate it as you continue to transform it (optional)
 * Check for collisions with other pictures (optional)
 * Attach mouse event handlers to it to interact with it (optional)
 
 The above Picture capabilites enable the following:
-* Functional art
-* Generative art
+* Functional and Generative art
 * Gaming
 
-### Picture creation
+### Picture Creation
 Pictures can be created in many different ways using any one of the following functions:  
-*Note* - these pictures are located at at the canvas position (0, 0) to begin with. They can be positioned at any other location by using the setPosition command or being part of a row, column, or stack of pictures.
+*Note* - the newly created pictures are located at at the canvas position (0, 0) to begin with. They can be positioned at any other location by using the setPosition command or being part of a row, column, or stack of pictures.
 
 | Function | Description |
 | :--- | :--- |
@@ -187,8 +187,90 @@ In the figure above, you see the axes for the following coordinate systems:
 * The coordinate system for `pics`, which lives within the coordinate system of its parent - the canvas
 * The coordinate system for `pic2`, which lives within the coordinate system of its parent - `pics`.
 
-### Drawing Pictures
+### Picture Effects
+
+After you create a picture, you can apply effects to it via image filters. 
+
+Kojo includes a bunch of [image filters from JH Labs](http://www.jhlabs.com/ip/filters/). To use these filters effectively, it's best to (for now) just [look at the JavaDoc in the source code](https://github.com/litan/jhlabs-image-filters/tree/master/src/com/jhlabs/image).
+
+The general approach while using these filters is to:
+* create the filter - e.g. `val filter = new com.jhlabs.image.WeaveFilter`
+* change the filter parameters as desired - e.g. `filter1.setXGap(10)`
+* apply the effect to a picture - e.g. `val pic2 = effect(filter) -> pic`
+  * multiple effects can be composed together - e.g. `val pic2 = effect(filter1) * effect(filter2) -> pic`
+* draw the picture with effects - `draw(pic2)`
+
+
+#### Examples
+
+---
+
+```scala
+cleari()
+val pic = fillColor(red) -> Picture.rectangle(400, 400)
+val filter1 = new com.jhlabs.image.WeaveFilter
+filter1.setXGap(10)
+filter1.setXWidth(50)
+val filter2 = new com.jhlabs.image.NoiseFilter
+filter2.setAmount(100)
+filter2.setDensity(1)
+val pic2 = effect(filter1) * effect(filter2) -> pic
+drawCentered(pic2)
+```
+
+![pic-weavenoise-filter.png](pic-weavenoise-filter.png)
+
+---
+
+---
+
+```scala
+cleari()
+val pic = penColor(cm.black) * fillColor(cm.darkOliveGreen) -> Picture {
+    val n = mathx.lcm(85, 360)
+    repeat(n / 85) {
+        forward(250)
+        right(85)
+    }
+}
+
+val filter1 = new com.jhlabs.image.LightFilter
+val light = new filter1.SpotLight()
+light.setCentreX(0.7f)
+light.setCentreY(0.35f)
+light.setAzimuth(135.toRadians)
+light.setElevation(.5f)
+light.setDistance(300f)
+light.setConeAngle(30.toRadians)
+filter1.addLight(light)
+val filter2 = new com.jhlabs.image.NoiseFilter
+filter2.setAmount(30)
+filter2.setDensity(1)
+val pic2 = effect(filter1) * effect(filter2) -> pic
+drawCentered(pic2)
+```
+
+![pic-lightnoise-filter.png](pic-lightnoise-filter.png)
+
+---
+
+Some things to note:
+* When an effect is applied to a (vector) picture, it is converted to an image before the effect is applied. You need to be aware of this if you want to print the output at high resolution (a separate article will go into this in more detail).
+* You are not limited to using the bundled JH Labs image filters for effects. You can use filters from any Java (or Scala) image processing library (after downloading it and putting it in the Kojo `libk` directory).
+
+
+### Picture Drawing
 You can draw a picture `pic` in a few different ways:
 * `draw(pic)` - draws the picture
 * `pic.draw()` - similar to the above
 * `drawCentered(pic)` - draws the picture centered in the canvas
+
+The draw command can also be used to draw multiple pictures:
+* `draw(pic1, pic2, ...)`
+
+Also, for the purpose of 'debugging', you can see the local coordinate system axes and bounds of one or more pictures via the following commands:
+* `Picture.showAxes(pic)`
+* `Picture.showAxes(pic1, pic2, ...)`
+* `Picture.showBounds(pic)`
+* `Picture.showBounds(pic1, pic2, ...)`
+
