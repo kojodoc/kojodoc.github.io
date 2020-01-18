@@ -7,7 +7,7 @@ A picture is a visual element in Kojo. To work with a picture, you do the follow
 * [Create the picture](#picture-creation)
 * [Transform it](#picture-transformation) (optional)
 * [Lay it out by aligning it with other pictures](#picture-layout) (optional)
-* [Apply effects to it](#picture-effects)
+* [Apply effects to it](#picture-effects) (optional)
 * [Draw it](#picture-drawing)
 * [Animate it as you continue to transform it](#picture-animation) (optional)
 * [Check for collisions with other pictures](#picture-collisions) (optional)
@@ -18,8 +18,10 @@ The above Picture capabilites enable the following:
 * Gaming
 
 ### Picture Creation
-Pictures can be created in many different ways using any one of the following functions:  
-*Note* - the newly created pictures are located at at the canvas position (0, 0) to begin with. They can be positioned at any other location by using the setPosition command or being part of a row, column, or stack of pictures.
+A picture can be created using any one of the functions shown below. A couple of things to note are the following:  
+* A newly created picture is located at at the canvas position (0, 0) to begin with. It can then be positioned at any other location by using the `pic.setPosition(x, y)` command or being part of a row, column, or stack of pictures.
+* Normally, a picture's position is the location of it's bottom-left corner. Exceptions to this are the ellipse, the circle, and the arc, which have their center located at their position.
+
 
 | Function | Description |
 | :--- | :--- |
@@ -67,7 +69,7 @@ You can transform pictures in the following main ways (every transformation belo
 | set opacity | `opac(o) -> pic` | `pic.setOpacity(o)` | 
 
 As shown above, there are two distinct ways of doing picture transformations:
-* the object/function way, e.g., `trans(100, 0) -> pic` - which is useful while doing functional graphics. This way of doing transformations can be used only before a picture is drawn.
+* the object/function way, e.g., `trans(100, 0) -> pic` - which is useful while doing functional graphics. This way of doing transformations can be used only before a picture is drawn (and these transformations are applied when the picture is drawn).
 * the method/command way, e.g.. `pic.translate(100, 0)` - which is useful while doing generative art or gaming. This way of doing transformations can be used before and after a picture is drawn.
 
 
