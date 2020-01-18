@@ -18,10 +18,9 @@ The above Picture capabilites enable the following:
 * Gaming
 
 ### Picture Creation
-A picture can be created using any one of the functions shown below. A couple of things to note are the following:  
+A picture can be created using any one of the functions shown below. There are a couple of things that you should be aware of:  
 * A newly created picture is located at at the canvas position (0, 0) to begin with. It can then be positioned at any other location by using the `pic.setPosition(x, y)` command or being part of a row, column, or stack of pictures.
-* Normally, a picture's position is the location of it's bottom-left corner. Exceptions to this are the ellipse, the circle, and the arc, which have their center located at their position.
-
+* Normally, a picture's position is the location of it's bottom-left corner. Exceptions to this are the ellipse, the circle, and the arc, which are positioned at their center.
 
 | Function | Description |
 | :--- | :--- |
@@ -42,16 +41,23 @@ A picture can be created using any one of the functions shown below. A couple of
 
 #### Example
 
+---
+
 ```scala
 cleari()
+showAxes()
 val pic1 = Picture.rectangle(100, 50)
 val pic2 = Picture.circle(50)
 draw(pic1, pic2)
 ```
 
+![fig1](fig1.png)
+
+---
+
 #### Exercise
 
-Use all the picture creation functions listed above to create and draw pictures.
+Use all the picture creation functions listed above (except `hgap` and `vgap`) to create and draw pictures.
 
 ### Picture Transformation
 You can transform pictures in the following main ways (every transformation below is shown via a tranformation object/function and a transformation method/command):
@@ -69,8 +75,8 @@ You can transform pictures in the following main ways (every transformation belo
 | set opacity | `opac(o) -> pic` | `pic.setOpacity(o)` | 
 
 As shown above, there are two distinct ways of doing picture transformations:
-* the object/function way, e.g., `trans(100, 0) -> pic` - which is useful while doing functional graphics. This way of doing transformations can be used only before a picture is drawn (and these transformations are applied when the picture is drawn).
-* the method/command way, e.g.. `pic.translate(100, 0)` - which is useful while doing generative art or gaming. This way of doing transformations can be used before and after a picture is drawn.
+* The object/function way, e.g., `trans(100, 0) -> pic` - which is useful while doing functional/compositional graphics. This way of doing transformations can be used only before a picture is drawn (and these transformations are applied when the picture is drawn).
+* The method/command way, e.g.. `pic.translate(100, 0)` - which is useful while doing generative art or gaming. This way of doing transformations can be used before and after a picture is drawn.
 
 
 Multiple transformations can be combined in the following ways:
@@ -79,6 +85,8 @@ Multiple transformations can be combined in the following ways:
 
 
 #### Examples
+
+---
 
 ```scala
 cleari()
@@ -97,6 +105,10 @@ pic.setPenColor(blue)
 draw(pic)
 ```
 
+![fig2](fig2.png)
+
+---
+
 ### Picture Layout
 Multiple pictures can be laid out in the following ways:
 
@@ -108,6 +120,8 @@ Multiple pictures can be laid out in the following ways:
 
 #### Examples
 
+---
+
 ```scala
 cleari()
 showAxes()
@@ -117,6 +131,11 @@ val pic3 = Picture.rectangle(50, 100)
 val pics = picColCentered(pic1, pic2, pic3)
 draw(pics)
 ```
+
+![fig3](fig3.png)
+
+---
+---
 
 ```scala
 cleari()
@@ -128,6 +147,11 @@ val pics = picColCentered(pic1, pic2, pic3)
 draw(pics)
 ```
 
+![fig4](fig4.png)
+
+---
+---
+
 ```scala
 cleari()
 showAxes()
@@ -137,6 +161,11 @@ val pic3 = Picture.rectangle(100, 50)
 val pics = picColCentered(pic1, pic2, pic3)
 draw(pics)
 ```
+
+![fig5](fig5.png)
+
+---
+---
 
 ```scala
 cleari()
@@ -150,6 +179,10 @@ def p(n: Int): Picture = {
 }
 draw(penColor(blue) * penThickness(3) -> p(250))
 ```
+
+![fig6](fig6.png)
+
+---
 
 #### Exercise
 Write programs to make the figures shown below using the following instructions:
@@ -170,7 +203,8 @@ Write programs to make the figures shown below using the following instructions:
 
 The following example shows you three different coordinate systems in action when you create a transformed row of pictures.
 
-**Program**:
+---
+
 ```scala
 cleari()
 val pic1 = trans(60, 0) -> Picture.rectangle(60, 50)
@@ -182,8 +216,9 @@ showAxes()
 Picture.showAxes(pics, pic2)
 ```
 
-**Output**:
 ![pic-coordinate-systems](pic-coordinate-systems.png)
+
+---
 
 In the figure above, you see the axes for the following coordinate systems:
 * The canvas coordinate system
