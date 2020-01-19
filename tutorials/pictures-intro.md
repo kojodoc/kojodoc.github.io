@@ -116,7 +116,7 @@ Multiple pictures can be laid out in the following ways:
 
 | Layout type | Function for layout (with centering) | Function for layout (without centering) |
 | :--- | :--- | :--- |
-| stack - one on top of the other | `picStackCentered(pic1, pic2, ...)` | `picStack(pic1, pic2, ...)` |
+| stack - one over the other | `picStackCentered(pic1, pic2, ...)` | `picStack(pic1, pic2, ...)` |
 | row - left to right | `picRowCentered(pic1, pic2, ...)` | `picRow(pic1, pic2, ...)` |
 | column - bottom to top | `picColCentered(pic1, pic2, ...)` | `picCol(pic1, pic2, ...)` |
 
@@ -203,6 +203,8 @@ Write programs to make the figures shown below using the following instructions:
 
 ![ex2](ex2.png)
 
+#### Exercise
+Write a program (using the above ideas) to make the flags of any two countries of your choice.
 
 #### Picture coordinate systems
 
@@ -212,9 +214,9 @@ The following example shows you three different coordinate systems in action whe
 
 ```scala
 cleari()
-val pic1 = trans(60, 0) -> Picture.rectangle(60, 50)
-val pic2 = rot(20) -> Picture.rectangle(100, 60)
-val pic3 = Picture.rectangle(50, 100)
+val pic1 = trans(60, 0) * fillColor(blue) -> Picture.rectangle(60, 50)
+val pic2 = rot(20) * fillColor(green.fadeOut(0.5)) -> Picture.rectangle(100, 60)
+val pic3 = fillColor(yellow) -> Picture.rectangle(50, 100)
 val pics = rot(45) * trans(50, 0) -> picRow(pic1, pic2, pic3)
 draw(pics)
 showAxes()
@@ -228,7 +230,7 @@ Picture.showAxes(pics, pic2)
 In the figure above, you see the axes for the following coordinate systems:
 * The canvas coordinate system
 * The coordinate system for `pics`, which lives within the coordinate system of its parent - the canvas (pics.position is (35.36, 35.36)).
-* The coordinate system for `pic2`, which lives within the coordinate system of its parent - `pics` (pic2.position is (121.00, 0.00)).
+* The coordinate system for `pic2` (in translucent green), which lives within the coordinate system of its parent - `pics` (pic2.position is (121.00, 0.00)).
 
 ### Picture layout with Functions
 
