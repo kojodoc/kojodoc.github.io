@@ -7,6 +7,7 @@ A picture is a visual element in Kojo. To work with a picture, you do the follow
 * [Create the picture](#picture-creation)
 * [Transform it](#picture-transformation) (optional)
 * [Lay it out by aligning it with other pictures](#picture-layout) (optional)
+* [Use functions for powerful layout and transformation](#picture-layout-with-functions) (optional)
 * [Apply effects to it](#picture-effects) (optional)
 * [Draw it](#picture-drawing)
 * [Animate it as you continue to transform it](#picture-animation) (optional)
@@ -227,6 +228,34 @@ In the figure above, you see the axes for the following coordinate systems:
 * The canvas coordinate system
 * The coordinate system for `pics`, which lives within the coordinate system of its parent - the canvas (pics.position is (35.36, 35.36)).
 * The coordinate system for `pic2`, which lives within the coordinate system of its parent - `pics` (pic2.position is (121.00, 0.00)).
+
+### Picture layout with functions
+
+Because Pictures are like any other data values, they can be transformed using functions. This is the great benefit of splitting the drawing of pictures into two or more steps - the creation (which just creates the data value), the optional transformation of the data via functions, and the drawing of the final data via a command.
+
+The example below shows some of this in action with your own transformation functions (which build upon the transformation functions provided by Kojo):
+
+---
+
+```scala
+cleari()
+def two(p: Picture) = picRow(p, p)
+def four(p: Picture) = picCol(two(p), two(p))
+def checker(p1: Picture, p2: Picture) = {
+    picCol(
+        picRow(p1, p2),
+        picRow(p2, p1)
+    )
+}
+val pic1 = penColor(cm.darkGray) * fillColor(cm.blue) -> Picture.rectangle(50, 50)
+val pic2 = penColor(cm.darkGray) * fillColor(cm.green) -> Picture.rectangle(50, 50)
+val pic = four(checker(pic1, pic2))
+draw(pic)
+```
+
+![picture-layout-functions](picture-layout-functions.png)
+
+---
 
 ### Picture Effects
 

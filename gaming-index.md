@@ -86,8 +86,8 @@ drawStage(ColorMaker.black)
 val cb = canvasBounds
 
 class Ball {
-    val pic1 = PicShape.image("/media/flappy-ball/ballwing1.png")
-    val pic2 = PicShape.image("/media/flappy-ball/ballwing2.png")
+    val pic1 = Picture.image("/media/flappy-ball/ballwing1.png")
+    val pic2 = Picture.image("/media/flappy-ball/ballwing2.png")
     val pic = picBatch(
           pic1,
           pic2
