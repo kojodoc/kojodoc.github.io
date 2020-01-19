@@ -72,6 +72,7 @@ You can transform pictures in the following main ways (every transformation belo
 | position at a given location | `offset(x, y) -> pic` (one time) | `pic.setPosition(x, y)` |
 | change pen color | `penColor(color) -> pic` | `pic.setPenColor(color)` |
 | change pen thickness | `penThickness(t) -> pic` | `pic.setPenThickness(t)` |
+| set no pen | `noPen -> pic` | `pic.setNoPen()` | 
 | change fill color | `fillColor(color) -> pic` | `pic.setFillColor(color)` |
 | set opacity | `opac(o) -> pic` | `pic.setOpacity(o)` | 
 
@@ -229,7 +230,7 @@ In the figure above, you see the axes for the following coordinate systems:
 * The coordinate system for `pics`, which lives within the coordinate system of its parent - the canvas (pics.position is (35.36, 35.36)).
 * The coordinate system for `pic2`, which lives within the coordinate system of its parent - `pics` (pic2.position is (121.00, 0.00)).
 
-### Picture layout with functions
+### Picture layout with Functions
 
 Because Pictures are like any other data values, they can be transformed using functions. This is the great benefit of splitting the drawing of pictures into two or more steps - the creation (which just creates the data value), the optional transformation of the data via functions, and the drawing of the final data via a command.
 
