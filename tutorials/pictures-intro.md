@@ -362,7 +362,7 @@ animate {
 }
 ```
 
-A few more picuture transformations (not mentioned earlier) are useful during animation and gaming:
+A few more picture transformations (not mentioned earlier) are useful during animation and gaming:
 * `pic.invisible()` - hides `pic`.
 * `pic.visible()` - makes hidden `pic` visible again.
 * `pic.erase()` - erases `pic` and removes it from the canvas.
@@ -411,6 +411,10 @@ For collision checking, you can use the following functions:
 For bouncing, you can use the following function:
 * `bouncePicOffPic(pic: Picture, vel: Vector2D, obstacle: Picture)`- for a picture `pic` moving with velocity `vel` - this function returns the velocity after bouncing off `obstacle`.
 
+The example below shows two pictures colliding and bouncing off each other:
+
+---
+
 ```scala
 clear()
 drawStage(cm.black)
@@ -449,7 +453,15 @@ animate {
 }
 ```
 
-For more examples of picture animation and collision checking, check out the [gaming](../gaming-index.html) page.
+![pic-pic-collision](pic-pic-collision.png)
+
+---
+
+#### Exercise
+
+Change pic1 and pic2 above to play with collisions between different shapes.
+
+For more examples of picture animation and collisions, check out the [gaming](../gaming-index.html) page.
 
 ### Picture Event Handlers
 
