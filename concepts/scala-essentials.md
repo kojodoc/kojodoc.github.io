@@ -30,10 +30,11 @@ That's the abstract idea. Actual physical computations are carried out by a comp
 
 <img src ="computer.png" width="500"/>
 
-So a computer basically:
+So a computer basically (as per the program running on it):
 * Takes in information from an input device into main memory.
-* Has the CPU work on this input information (from main memory) to generate new information (which is put back into main memory) as per the program running on the computer. The new information is of two kinds - intermediate calculations (which feed back as input into more computations), and output information.
+* Has the CPU work on this input information (from main memory) to generate new information (which is put back into main memory). The new information is of two kinds - intermediate calculations (which feed back as input into more computations), and output information.
 * Takes the output information from main memory and writes it to an output device.
+* Saves some of the output information (which needs to survive a computer restart) to secondary storage.
 
 Let's zoom into the CPU and main memory:
 
