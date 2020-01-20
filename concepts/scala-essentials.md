@@ -2,9 +2,10 @@
   <a href="../index.html">Home</a> | <a href="../gaming-index.html">Gaming</a> | <a href="../fundamentals-index.html">Fundamentals</a>
 </div>
 
-## Scala essentials for Kojo gaming
+## Scala (and computing) essentials for Kojo gaming
 
 Here's the absolute minimum amount of programming theory and Scala information that you need to know - to be able to effectively write games in Kojo.
+* [Computing Fundamentals](#computing-fundamentals)
 * [Program Structure](#program-structure)
 * [Program Operation](#program-operation)
 * [Program Development](#program-development)
@@ -15,6 +16,38 @@ Here's the absolute minimum amount of programming theory and Scala information t
 * [An Example](#an-example)
 * [Scala Collections](../reference/scala-collections.html)
 * [How-tos](../howtos/gaming.html)
+
+### Computing Fundamentals
+So what's a computer?  
+The literal answer is - a device for doing computations.
+
+And what is a computation?  
+A computation takes in information and spits out new infomation.
+
+<img src ="computation.png" width="300"/>
+
+That's the abstract idea. Actual physical computations are carried out by a computer. Here's an idealised view of one:
+
+<img src ="computer.png" width="500"/>
+
+So a computer basically:
+* Takes in information from an input device into main memory.
+* Has the CPU work on this input information (from main memory) to generate new information (which is put back into main memory) as per the program running on the computer. The new information is of two kinds - intermediate calculations (which feed back as input into more computations), and output information.
+* Takes the output information from main memory and writes it to an output device.
+
+Let's zoom into the CPU and main memory:
+
+<img src ="cpu-memory.png" width="500"/>
+
+* Memory is divided into two sections - code and data.
+* When you run a program, the instructions of the program are loaded into the code section.
+* The CPU has an instruction pointer (IP) that points to the next instruction that it is going to run. After a program is loaded, the IP points to the first instruction in the program.
+* As the clock cycle on the computer drives the CPU forward, it runs the instructions in the program one after the other. The instructions are run in sequence, but special instructions in your program make the CPU also do - looping (via repeat), selection(via if/else), and calls (via function/command usage).
+* Code works on data (it takes it in as input and generates it as output).
+* The data section is divided into two parts - the stack (where the local variables live), and the heap, where the long-lived data lives.
+* Every data value (in Scala) is an object - it contains a reference to the code that can work with it. 
+ 
+This is the physical setting in which computer programs run.
 
 ### Program Structure
 * A program is a sequence of lines of text.
