@@ -30,11 +30,11 @@ That's the abstract idea. Actual physical computations are carried out by a comp
 
 <img src ="computer.png" width="500"/>
 
-So a computer basically (as per the program running on it):
-* Takes in information from an input device into main memory.
-* Has the CPU work on this input information (from main memory) to generate new information (which is put back into main memory). The new information is of two kinds - intermediate calculations (which feed back as input into more computations), and output information.
-* Takes the output information from main memory and writes it to an output device.
-* Saves some of the output information (which needs to survive a computer restart) to secondary storage.
+So a computer basically (as per the program running on it) does the following:
+* It takes in information from an input device into main memory.
+* It has the CPU work on this input information (from main memory) to generate new information (which is put back into main memory). The new information is of two kinds - intermediate calculations (which feed back as input into more computations), and output information.
+* The computer takes the output information from main memory and writes it to an output device.
+* It saves some of the output information (which needs to survive a computer restart) to secondary storage.
 
 Let's zoom into the CPU and main memory:
 
@@ -45,7 +45,8 @@ Let's zoom into the CPU and main memory:
 * The CPU has an instruction pointer (IP) that points to the next instruction that it is going to run. After a program is loaded, the IP points to the first instruction in the program.
 * As the clock cycle on the computer drives the CPU forward, it runs the instructions in the program one after the other. The instructions are run in sequence, but special instructions in your program make the CPU also do - looping (via repeat), selection(via if/else), and calls (via function/command usage).
 * Code works on data (it takes it in as input and generates it as output).
-* The data section is divided into two parts - the stack (where the local variables live), and the heap, where the long-lived data lives.
+* When you run a program, the data in it is loaded into the data section.
+* The data section is divided into two parts - the stack (where the local variables live), and the heap, where the data/objects live. Don't worry about this for now.
 * Every data value (in Scala) is an object - it contains a reference to the code that can work with it. 
  
 This is the physical setting in which computer programs run.
