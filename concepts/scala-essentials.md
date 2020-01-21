@@ -88,16 +88,7 @@ Let's look at how these ideas play out as you write programs in Kojo.
 
 ### Kojo Primitives
 
-Let's look at the primitives available in Kojo:
-
-#### Data Types
-* Every data value is an object. An object combines data with functions/commands. The functions/commands attached to an object are called its methods.
-  * Every object has a type.
-  * A type determines a set of possible values and the operations that can be done with these values.
-  * Some primitive types are - Int, Double, Boolean, String, Color, Sequence, Map, Set, etc.
-  * Given a value `pic` that has a method `draw()`, you can call the draw method like this: `pic.draw()`.
-
-[More info](../reference/scala.html#data).
+The following are some of the primitives are avilable in Kojo.
 
 #### Turtle Graphics
 [Reference Page](../reference/turtle.html).
@@ -107,6 +98,18 @@ Let's look at the primitives available in Kojo:
 
 #### Gaming
 [Reference Page](../reference/gaming.html).
+
+#### Data Types
+
+As you work with turtle graphics, pictures, or gaming, you will need to work with different types of data. Some of the primitive types availabe in Kojo are - Int, Double, Boolean, String, Color, Sequence, Map, Set, etc.
+
+[More info](../reference/scala.html#data).
+
+Here are some points to keep in mind about data:
+* Every data value is an object. An object combines data with functions/commands. The functions/commands attached to an object are called its methods.
+* Every object has a type.
+* A type determines a set of possible values and the operations that can be done with these values.
+* Given a value `pic` that has a method `draw()`, you can call the draw method like this: `pic.draw()`.
 
 ### Composition
 
