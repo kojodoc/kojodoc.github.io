@@ -88,7 +88,7 @@ Let's look at how these ideas play out as you write programs in Kojo.
 
 ### Kojo Primitives
 
-The following are some of the primitives are avilable in Kojo.
+The following are some of the primitives available in Kojo.
 
 #### Turtle Graphics
 [Reference Page](../reference/turtle.html).
