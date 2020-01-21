@@ -2,19 +2,18 @@
   <a href="../index.html">Home</a> | <a href="../gaming-index.html">Gaming</a> | <a href="../fundamentals-index.html">Fundamentals</a>
 </div>
 
-## Scala (and computing) essentials for Kojo gaming
+## Scala (and computing) essentials
 
-Here's the absolute minimum amount of programming theory and Scala information that you need to know - to be able to effectively write games in Kojo.
+Here's the absolute minimum amount of programming theory and Scala information that you need to know to write interesting programs as you move beyond turtle graphics.
 * [Computing Fundamentals](#computing-fundamentals)
 * [Program Structure](#program-structure)
 * [Program Operation](#program-operation)
 * [Program Development](#program-development)
-* [Scala Introduction](#scala-introduction)
-* [Scala Quickref](../reference/scala.html)
-* [Gaming Primitives](#gaming-primitives)
-* [Means of composition in Scala](#means-of-composition-in-scala)
+* [Kojo Primitives](#kojo-primitives)
+* [Composition](#composition)
+* [Abstraction](#abstraction)
 * [An Example](#an-example)
-* [Scala Collections](../reference/scala-collections.html)
+* [Scala Quickref](../reference/scala.html)
 * [How-tos](../howtos/gaming.html)
 
 ### Computing Fundamentals
@@ -81,51 +80,57 @@ A program is made out of data and code. Code refers to the instructions that mak
 
 ### Program Development
 You use three important ideas while writing a program:
-* Primitives - these are the commands, functions, and data types provided to you by your programming language/environment. See below for the [gaming primitives](#gaming-primitives) that you will use.
-* Composition - these are the ways in which your programming language allows you to combine the primitives to do useful things. The [means of composition](#means-of-composition-in-scala) that you will use for now are given below.
-* Abstraction - this is the process of giving names to useful compositions, so that they become available as primitives in your program. The [Scala introduction](#scala-introduction) section below describes the means of abstraction that you will use.
+* Primitives - these are the commands, functions, and data types provided to you by your programming language/environment.
+* Composition - these are the ways in which your programming language allows you to combine the primitives to do useful things.
+* Abstraction - this is the process of giving names to useful compositions, so that they become available as primitives in your program.
 
-### Scala Introduction
+Let's look at how these ideas play out as you write programs in Kojo.
+
+### Kojo Primitives
+
+Let's look at the primitives available in Kojo:
+
+#### Data Types
 * Every data value is an object. An object combines data with functions/commands. The functions/commands attached to an object are called its methods.
   * Every object has a type.
   * A type determines a set of possible values and the operations that can be done with these values.
   * Some primitive types are - Int, Double, Boolean, String, Color, Sequence, Map, Set, etc.
-* Given a value `pic` that has a method `draw()`, you can call the draw method like this: `pic.draw()`.
+  * Given a value `pic` that has a method `draw()`, you can call the draw method like this: `pic.draw()`.
+
+[More info](../reference/scala.html#data).
+
+#### Turtle Graphics
+[Reference Page](../reference/turtle.html).
+
+#### Picture Graphics
+[Reference Page](../reference/picture.html).
+
+#### Gaming
+[Reference Page](../reference/gaming.html).
+
+### Composition
+
+#### Commands/Statements
+* Sequencing - you put instructions one after the other in your program, and these instructions run in sequence, one line after the other, top to bottom.
+* Looping - is for the situation where you want a sequence of instructions to run multiple times. For this you can use things like [`repeat`](../reference/turtle.html#repeat) and [`repeatFor`](../reference/turtle.html#repeatfor) from earlier. For animations in gaming, you can use the `animate { code }` command. With `animate`, the code that you give it gets called approximately fifty times per second till you stop the animation.
+* Selection - you can use `if-else` to choose between two alternative code paths based on the result of a condition. This is a means of composition.
+  * A condition is an expression that evaluates to a Boolean (true or false).
+
+#### Functions
+Functions are composed by feeding the outputs of one function into another function.  
+This section will be fleshed out soon.
+
+#### Data
+* [Scala Collections](../reference/scala-collections.html).
+* Case classes (described below).
+
+### Abstraction
 * The `val` keyword instruction allows you to associate a name with a value; e.g. `val x = 10`. This is a form of abstraction.
 * The `var` keyword instruction allows you to bind a name to a value; e.g. `var x = 10`. This name can be bound to a different value later on in your program. This is a form of abstraction.
 * The `def` keyword instruction allows you to define a new command or function. This is a means of abstraction.
 * The `class` keyword instruction lets you create a new class. A class is a description for a new type of object. The class can contain `vals`, `vars`, and `defs`. This is a powerful means of abstraction.
   * Once you create a class, let's say X, you can create an object of type X (also called a new instace of X) like this: `new X()`, or `new X(inputs)` if X takes inputs.
-* The `if-else` keyword lets you check the result of a condition and choose between two alternative code paths based on the result of the condition. This is a means of composition.
-  * A condition is an expression that evaluates to a Boolean (true or false).
-
-The [example below](#an-example) will make these ideas concrete. And much more information about Scala is available on the [Scala Quickref page](../reference/scala.html).
-
-### Gaming Primitives
-* `drawStage(color)` - draws a stage on the canvas with the given color. The stage border can be used for collision detection with game objects to keep them within the canvas.
-* `canvasBounds` - returns the bounds of the canvas within an object that has `x`, `y`, `width`, and `height` data values.
-* `Picture { turtle drawing }` - creates a picture out of a turtle shape.
-  * The turtle shape can be made by using the [turtle primitives](../reference/turtle.html).
-* `Picture.image(fileName)` - creates a picture from an image file.
-* `pic.draw()` - draws the given picture on the canvas. Just creating a picture does not draw it. The creation via a function and the drawing via a command are separate operations.
-* `pic.translate(x, y)` - moves the picture named `pic` on the canvas by the given amount.
-* `pic.rotate(angle)` - rotates the picture around its origin by the given angle.
-* `pic.rotateAboutPoint(x, y, angle)` - rotates the picture by the given angle around the given (x, y) in the local coordinate system of the picture.
-* `pic.setPosition(x, y)` - sets the position of the picture named `pic` to be the given (x, y) on the canvas.
-* `pic.collidesWith(otherPic)` - checks to see if `pic` is in collision with `otherPic`.
-* `pic.onMouseClick { { (x, y) => code }` - runs the given code when the mouse is clicked on the picture. The code has access to the (x, y) of the mouse click.
-* `bouncePicVectorOffStage(pic, vel)` - computes a new velocity for `pic` moving with `velocity` that collides with the stage border.
-* `Vector2D(x, y)` - creates a vector with the two given components. The vector specifies a magnitude and a direction.
-* `animate { code }` - schedules your code to be called approximately fifty times per second.
-
-The [example below](#an-example) will show you how to use these primitives.
-
-
-### Means of composition in Scala
-For now, you will use the following ideas (which are essentially about composing commands):
-* Sequencing - you put instructions one after the other in your program, and these instructions run in sequence, one line after the other, top to bottom.
-* Looping - is for the situation where you want a sequence of instructions to run multiple times. For this you can use things like [`repeat`](../reference/turtle.html#repeat) and [`repeatFor`](../reference/turtle.html#repeatfor) from earlier. For animations in gaming, you can use the `animate { code }` command. With `animate`, the code that you give it gets called approximately fifty times per second till you stop the animation.
-* Selection - you can use `if-else` to choose between two alternative code paths.
+* The `case class` keyword instruction allows you to create a [case class](../reference/scala.html#abstraction-case-class), which describes a composition of data.
 
 ### An Example
 Here's a program that brings all of these ideas together:

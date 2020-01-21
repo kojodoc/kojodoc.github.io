@@ -3,6 +3,7 @@
 </div>
 
 To best understand the Scala quick-reference below, it is useful for you to be familiar with the following ideas:
+* [Computing Fundamentals](../concepts/scala-essentials#computing-fundamentals)
 * [Program Structure](../concepts/scala-essentials#program-structure)
 * [Program Operation](../concepts/scala-essentials#program-operation)
 * [Program Development](../concepts/scala-essentials#program-development)
@@ -157,7 +158,7 @@ repeat(4) {
     right(90)
 }
 ```
-[Read more about colors](../concepts/colors.html)
+[Read more about colors](../concepts/colors.html).
 
 <a name="data-picture">
 **1.6 Picture**
@@ -198,6 +199,8 @@ animate {
     pic.scale(1.001)
 }
 ```
+
+[Read more about Pictures](../tutorials/pictures-intro.html).
 
 <a name="data-collections">
 **1.7 Collections**
