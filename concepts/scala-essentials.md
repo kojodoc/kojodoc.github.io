@@ -2,7 +2,7 @@
   <a href="../index.html">Home</a> | <a href="../gaming-index.html">Gaming</a> | <a href="../fundamentals-index.html">Fundamentals</a>
 </div>
 
-## Scala (and computing) essentials
+## Scala (and computing) essentials for Kojo
 
 Here's the absolute minimum amount of programming theory and Scala information that you need to know to write interesting programs as you move beyond turtle graphics.
 * [Computing Fundamentals](#computing-fundamentals)
@@ -86,46 +86,46 @@ You use three important ideas while writing a program:
 
 Let's look at how these ideas play out as you write programs in Kojo.
 
+---
+
 ### Kojo Primitives
 
 The following are some of the primitives available in Kojo.
 
-#### Turtle Graphics
-[Reference Page](../reference/turtle.html).
-
-#### Picture Graphics
-[Reference Page](../reference/picture.html).
-
-#### Gaming
-[Reference Page](../reference/gaming.html).
-
-#### Data Types
-
-As you work with turtle graphics, pictures, or gaming, you will need to work with different types of data. Some of the primitive types availabe in Kojo are - Int, Double, Boolean, String, Color, Sequence, Map, Set, etc.
-
-[More info](../reference/scala.html#data).
-
+* [Turtle Graphics](../reference/turtle.html)
+* [Picture Graphics](../reference/picture.html)
+* [Gaming](../reference/gaming.html)
+* [Data Types](../reference/scala.html#data) - as you work with turtle graphics, pictures, or gaming, you will need to work with different types of data. Some of the primitive types availabe in Kojo are - Int, Double, Boolean, String, Color, Sequence, Map, Set, etc.  
 Here are some points to keep in mind about data:
-* Every data value is an object. An object combines data with functions/commands. The functions/commands attached to an object are called its methods.
-* Every object has a type.
-* A type determines a set of possible values and the operations that can be done with these values.
-* Given a value `pic` that has a method `draw()`, you can call the draw method like this: `pic.draw()`.
+  * Every data value is an object. An object combines data with functions/commands. The functions/commands attached to an object are called its methods.
+  * Every object has a type.
+  * A type determines a set of possible values and the operations that can be done with these values.
+  * Given a value `pic` that has a method `draw()`, you can call the draw method like this: `pic.draw()`.
+* Utility commands and functions (listing coming soon).
+
+---
 
 ### Composition
 
 #### Commands/Statements
+
+Commands can be composed in the following ways:
+
 * Sequencing - you put instructions one after the other in your program, and these instructions run in sequence, one line after the other, top to bottom.
 * Looping - is for the situation where you want a sequence of instructions to run multiple times. For this you can use things like [`repeat`](../reference/turtle.html#repeat) and [`repeatFor`](../reference/turtle.html#repeatfor) from earlier. For animations in gaming, you can use the `animate { code }` command. With `animate`, the code that you give it gets called approximately fifty times per second till you stop the animation.
 * Selection - you can use `if-else` to choose between two alternative code paths based on the result of a condition. This is a means of composition.
   * A condition is an expression that evaluates to a Boolean (true or false).
 
+[More information](https://litan.github.io/kojodoc/reference/scala.html#control)
+
 #### Functions
-Functions are composed by feeding the outputs of one function into another function.  
-This section will be fleshed out soon.
+Functions are composed by feeding the output of one function as input into another function.
 
 #### Data
-* [Scala Collections](../reference/scala-collections.html).
-* Case classes (described below).
+* The [Scala Collections](../reference/scala-collections.html) are predefined means of data composition for various well known situations.
+* [Case classes](../reference/scala.html#abstraction-case-class) allow you to compose data as per your own requirements.
+
+---
 
 ### Abstraction
 * The `val` keyword instruction allows you to associate a name with a value; e.g. `val x = 10`. This is a form of abstraction.
@@ -175,8 +175,4 @@ animate {
 }
 ```
 
-
-The above contains a very brief introduction to Scala. For more detailed information, here are some links that you can refer to:
-* [Programming in Scala book](https://www.artima.com/pins1ed/)
-* [Scala for Java programmers](https://docs.scala-lang.org/tutorials/scala-for-java-programmers.html)
-* [A Scala tutorial](https://docs.scala-lang.org/tutorials/)
+For more information, check out the [Scala Quickref](../reference/scala.html) page.
