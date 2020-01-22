@@ -119,7 +119,32 @@ Commands can be composed in the following ways:
 [More information](https://litan.github.io/kojodoc/reference/scala.html#control)
 
 #### Functions
-Functions are composed by feeding the output of one function as input into another function.
+Functions are composed by feeding the output of one function as input into another function. This can be done in a couple of different ways:
+* nesting or chaining function calls:
+
+```scala
+// example 1
+def twice(n: Int) = n * 2 //> twice: (n: Int)Int
+def thrice(n: Int) = n * 3 //> thrice: (n: Int)Int
+twice(thrice(4)) //> res2: Int = 24
+
+// example 2
+(1 to 10).filter(n => n % 2 == 0).map(n => n * 2) //> res3: IndexedSeq[Int] = Vector(4, 8, 12, 16, 20)
+```
+
+* storing intermediate results in vals and calling functions in sequence, one after the other:
+
+```scala
+// example 1
+def twice(n: Int) = n * 2 //> twice: (n: Int)Int
+def thrice(n: Int) = n * 3 //> thrice: (n: Int)Int
+val times3 = thrice(4) //> times3: Int = 12
+twice(times3) //> res4: Int = 24
+
+// example 2
+val evens = (1 to 10).filter(n => n % 2 == 0) //> evens: scala.collection.immutable.IndexedSeq[Int] = Vector(2, 4, 6, 8, 10)
+val twiceEvens = evens.map(n => n * 2) //> twiceEvens: scala.collection.immutable.IndexedSeq[Int] = Vector(4, 8, 12, 16, 20)
+```
 
 #### Data
 * The [Scala Collections](../reference/scala-collections.html) are predefined means of data composition for various well known situations.
