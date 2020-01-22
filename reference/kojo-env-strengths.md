@@ -25,4 +25,7 @@ Kids learning programming in Kojo get to see these ideas in a theoretically clea
 Kojo has great support for generative art, which can be used to create exciting designs that can be printed on t-shirts, carry bags, posters, back-packs, cups, caps, etc. This enables children to build things that they can use, showcase, and potentially sell. This in turn provides tremendous motivation and multi-dimensional learning and growth opportunities.
 
 Here is a sample t-shirt design done in Kojo:
+
+---
+
 ![code-for-good](code-for-good.png)
