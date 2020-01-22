@@ -25,7 +25,7 @@ To get going, you will make a grid of squares on the canvas. For this, you will 
 * The shape for the pattern is a square
 * The block positions the turtle at the bottom left of every grid cell, and then makes the shape.
 
-**Reference:**
+**Quick Reference:**
 * `size(w, h)` [*command*] - sets the size of the canvas to the given width and height.
 * `cwidth` [*query*] - returns the current width of the canvas.
 * `cheight` [*query*] - returns the current height of the canvas.
@@ -36,7 +36,7 @@ rangeTill(4, 10, 2).toArray //> res16: Array[Int] = Array(4, 6, 8)
 rangeTill(4, 11.5, 2.5).toArray //> res17: Array[BigDecimal] = Array(4.0, 6.5, 9.0)
 ```
 
-Type out the following code and run it. Look at the output. Make sure you understand how the output is generated.
+Type in the code below and run it. Look at the output. Make sure you understand how the output is generated.
 
 ---
 
@@ -106,6 +106,27 @@ repeatFor(rangeTill(0, cheight, tileSize)) { posY =>
 Try out different picture shapes in the grid.
 
 ### Dynamic Picture Grid
+
+For the next set of patterns, you will make the grid dynamic. Here, *dynamic* means that as you move the mouse over the grid, the grid-pattern will change. 
+
+There are may ways to make a grid dynamic, but you will work with the following approach:
+
+For every picture in the grid:
+* note the position (posX, posY) of the picture.
+* determine its distance from the mouse position (mouseX, mouseY).
+* determine its angle from the mouse position.
+* use the distance to scale and fade out the picture.
+* use the angle to rotate the picture.
+
+**Quick Reference:**
+* `setup { drawing code }` - the drawing code is called once at the beginning of your program.
+* `draw { drawing code }` - the drawing code is called at the default refresh rate, which is 50 times a second.
+* `setRefreshRate(n)` - the refresh rate is set to `n` times per second. The next time a clear is done, the refresh rate is reset to its default value of 50.
+
+In this first *dynamic* example, you will work with a simple shape (a rectangle), and make the grid-pattern dynamic by (only) scaling the pictures in it.
+
+Type in the code below and run it. Look at the output. Make sure you understand how the output is generated.
+
 ```scala
 size(600, 600)
 cleari()
@@ -138,27 +159,29 @@ draw {
 }
 ```
 
+#### Exercise
+* Try out different picture shapes in the grid.
+* Experiment with differernt scaling schemes.
+
+In the second *dynamic* example, you will also fade out grid pictures as the mouse moves over the grid.
+
+Type in the code below and run it. Look at the output. Make sure you understand how the output is generated.
+
 ```scala
 size(600, 600)
 cleari()
 setBackground(white)
 originBottomLeft()
 
-val tileCount = 20
+val tileCount = 10
 val tileWidth = cwidth / tileCount
 val tileHeight = cheight / tileCount
 
-def shape = Picture {
-    repeatFor(30 to 60) { n =>
-        forward(n)
-        right(91)
-    }
-}
+def shape = Picture.rectangle(tileWidth, tileHeight)
 
 def block(posX: Double, posY: Double) {
     val pic = shape
     pic.setPosition(posX, posY)
-    pic.setPenThickness(1)
     val d = distance(posX, posY, mouseX, mouseY)
     val f = mathx.map(d, 0, 500, 0.2, .9)
     pic.setPenColor(black.fadeOut(f))
