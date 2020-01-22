@@ -12,7 +12,10 @@ This page contains descriptions of general purpose utility commands and function
 | `cwidth` [*Q*] | returns the current width of the canvas. |
 | `cheight` [*Q*] | returns the current height of the canvas. |
 | `originBottomLeft()` [*C*] | situates the origin at the bottom left of the canvas. |
-
+| `setup { drawing code }` | calls the drawing code once at the beginning of your program. |
+| `draw { drawing code }` | calls the drawing code at the default refresh rate, which is 50 times a second. |
+| `setRefreshRate(n)` | sets the refresh rate to `n` times per second. The next time a `clear()` is done, the refresh rate is reset to its default value of 50. |
+| `erasePictures()` | erases all the pictures in the canvas. |
 
 ### Random numbers
 
@@ -36,6 +39,10 @@ This page contains descriptions of general purpose utility commands and function
 | `mathx.map(value, low1, high1, low2, high2)` | Maps the given value from the range `(low1, high1)` to the range `(low2, high2)`. |
 | `mathx.lerp(value1, value2, amt)` | Returns the interpolation as per the given fraction `amt` in the range `(value1, value2)`. |
 | `mathx.constrain(value, min, max)` | Constrains the given `value` between `min` and `max`. |
+| `mathx.distance(x1, y1, x2, y2)` | Calculates the distance between (x1, y1) and (x2, y2). |
+| `mathx.distance(point1, point2)` | Calculates the distance between point1 and point2. |
+| `mathx.angle(x1, y1, x2, y2)` | calculates the angle in degrees between the line from (x1, y1) to (x2, y2) and the horizontal. |
+| `mathx.angle(point1, point2)` | calculates the angle in degrees between the line from point1 to point2 and the horizontal. |
 | `rangeTill(from, untill, step)` | returns a range that starts from `from`, goes until (but excluding) `until`, and steps up by `step`. [See example](#rangetill). |
 
 ### Examples

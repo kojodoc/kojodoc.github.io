@@ -109,7 +109,7 @@ Try out different picture shapes in the grid.
 
 For the next set of patterns, you will make the grid dynamic. Here, *dynamic* means that as you move the mouse over the grid, the grid-pattern will change. 
 
-There are may ways to make a grid dynamic, but you will work with the following approach:
+There are many ways to make a grid dynamic, but you will work with the following approach:
 
 For every picture in the grid:
 * note the position (posX, posY) of the picture.
@@ -119,9 +119,13 @@ For every picture in the grid:
 * use the angle to rotate the picture.
 
 **Quick Reference:**
-* `setup { drawing code }` - the drawing code is called once at the beginning of your program.
-* `draw { drawing code }` - the drawing code is called at the default refresh rate, which is 50 times a second.
-* `setRefreshRate(n)` - the refresh rate is set to `n` times per second. The next time a clear is done, the refresh rate is reset to its default value of 50.
+* `setup { drawing code }` - calls the drawing code once at the beginning of your program.
+* `draw { drawing code }` - calls the drawing code at the default refresh rate, which is 50 times a second.
+* `setRefreshRate(n)` - sets the refresh rate to `n` times per second. The next time a `clear()` is done, the refresh rate is reset to its default value of 50.
+* `erasePictures()` - erases all the pictures in the canvas.
+* `mathx.map(value, low1, high1, low2, high2)` - maps the given value from the range `(low1, high1)` to the range `(low2, high2)`
+* `mathx.distance(x1, y1, x2, y2)` - calculates the distance between (x1, y1) and (x2, y2).
+* `mathx.angle(x1, y1, x2, y2)` - calculates the angle in degrees between the line from (x1, y1) to (x2, y2) and the horizontal.
 
 In this first *dynamic* example, you will work with a simple shape (a rectangle), and make the grid-pattern dynamic by (only) scaling the pictures in it.
 
@@ -143,7 +147,7 @@ def block(posX: Double, posY: Double) {
     val pic = shape
     pic.setPosition(posX, posY)
     pic.setPenColor(black)
-    val d = distance(posX, posY, mouseX, mouseY)
+    val d = mathx.distance(posX, posY, mouseX, mouseY)
     val f = mathx.map(d, 0, 500, 0.3, .9)
     pic.scale(f)
     draw(pic)
@@ -182,10 +186,10 @@ def shape = Picture.rectangle(tileWidth, tileHeight)
 def block(posX: Double, posY: Double) {
     val pic = shape
     pic.setPosition(posX, posY)
-    val d = distance(posX, posY, mouseX, mouseY)
-    val f = mathx.map(d, 0, 500, 0.2, .9)
-    pic.setPenColor(black.fadeOut(f))
+    val d = mathx.distance(posX, posY, mouseX, mouseY)
+    val f = mathx.map(d, 0, 500, 0.2, .7)
     pic.scale(f)
+    pic.setPenColor(black.fadeOut(f))
     draw(pic)
 }
 
@@ -198,6 +202,69 @@ draw {
     }
 }
 ```
+
+In the third and final *dynamic* example, you will also rotate the grid pictures as the mouse moves over the grid. Plus you will use a square-spiral shape instead of a rectangle for a nicer effect.
+
+Type in the code below and run it. Look at the output. Make sure you understand how the output is generated.
+
+```scala
+size(600, 600)
+cleari()
+setBackground(white)
+originBottomLeft()
+
+val tileCount = 20
+val tileWidth = cwidth / tileCount
+val tileHeight = cheight / tileCount
+
+def shape = Picture {
+    repeatFor(30 to 70) { n =>
+        forward(n)
+        right(91)
+    }
+}
+
+def block(posX: Double, posY: Double) {
+    val pic = shape
+    pic.setPosition(posX, posY)
+    val angle = mathx.angle(posX, posY, mouseX, mouseY)
+    val dist = mathx.distance(posX, posY, mouseX, mouseY)
+    val f = mathx.map(dist, 0, 500, 0.2, 0.8)
+    pic.scale(f)
+    pic.setPenColor(black.fadeOut(f))
+    pic.setPenThickness(1)
+    pic.rotate(angle)
+    draw(pic)
+}
+
+draw {
+    erasePictures()
+    repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
+        repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
+            block(posX, posY)
+        }
+    }
+}
+```
+
+To better understand how the picture rotation works, play with the following code:
+
+```scala
+cleari()
+
+draw {
+    erasePictures()
+    val pic = Picture.rectangle(100, 10)
+    draw(pic)
+    val pos = pic.position
+    val a = math.atan2(mouseY - pos.y, mouseX - pos.x)
+    pic.rotate(a.toDegrees)
+}
+```
+
+#### Exercise
+* Try out different picture shapes in the grid.
+* Experiment with differernt scaling, fading, and rotation schemes.
 
 ### Irregular Grid
 ```scala
@@ -653,18 +720,5 @@ draw {
     repeatFor(blocks2) { b =>
         drawBlock(b)
     }
-}
-```
-
-```scala
-cleari()
-
-draw {
-    erasePictures()
-    val pic = Picture.rectangle(100, 10)
-    draw(pic)
-    val pos = pic.position
-    val a = math.atan2(mouseY - pos.y, mouseX - pos.x)
-    pic.rotate(a.toDegrees)
 }
 ```
