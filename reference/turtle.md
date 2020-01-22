@@ -39,6 +39,7 @@ Most descriptions include sample code. Copy & paste and then run the sample code
 * [setPenFontSize](#setpenfontsize)
 * [setPenFont](#setpenfont)
 * [setPosition](#setposition)
+* [lineTo](#lineto)
 * [setSpeed](#setspeed)
 * [invisible and visible](#invisible-and-visible)
 * [repeat](#repeat)
@@ -182,7 +183,10 @@ write("Hello World")
 ```
 
 ### setPosition
-`setPosition(x, y)` - sets the turtle's position to the given x and y.
+`setPosition(x, y)` - sets the turtle's position to the given `(x, y)`.
+
+### lineTo
+`lineTo(x, y)` - moves the turtle to the given `(x, y)`, drawing a line in the process. So this command essentially draws a line from the turtle's current position to the given `(x, y)`.
 
 ### setSpeed
 `setSpeed(speed)` - sets the turtle's speed to the given speed, which can be one of `slow`, `medium`, `fast`, or `superFast`.
