@@ -136,7 +136,7 @@ Functions are composed by feeding the output of one function as input into anoth
 * The `case class` keyword instruction allows you to create a [case class](../reference/scala.html#abstraction-case-class), which describes a composition of data.
 
 ### An Example
-Here's a program that brings all of these ideas together:
+Here's a program that brings a lot of these ideas together:
 ```scala
 clear()
 drawStage(ColorMaker.black)
@@ -174,5 +174,3 @@ animate {
     shape.step()
 }
 ```
-
-For more information, check out the [Scala Quickref](../reference/scala.html) page.
