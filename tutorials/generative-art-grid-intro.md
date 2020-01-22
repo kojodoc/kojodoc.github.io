@@ -5,7 +5,7 @@
 ## An introduction to grid based generative art
 
 Generative art is art that is generated via an interaction between a computer program and a human being.  
-Todo
+[*Todo*]
 
 In this tutorial, you will play with generative art in the context of a grid. Here is what you will do:
 * Make a grid of squares using turtle graphics.
@@ -36,7 +36,10 @@ rangeTill(4, 10, 2).toArray //> res16: Array[Int] = Array(4, 6, 8)
 rangeTill(4, 11.5, 2.5).toArray //> res17: Array[BigDecimal] = Array(4.0, 6.5, 9.0)
 ```
 
-**Program:**
+Type out the following code and run it. Look at the output. Make sure you understand how the output is generated.
+
+---
+
 ```scala
 size(600, 600)
 cleari()
@@ -66,11 +69,14 @@ repeatFor(rangeTill(0, cheight, tileSize)) { posY =>
     }
 }
 ```
-**Output:**  
-Todo
+
+![gena-turtle-grid](gena-turtle-grid.png)
+
+---
 
 ### Picture grid
-Now, you will make the exact same grid as above, but using Pictures. 
+Now, you will make the exact same grid as above, but using Pictures. The one big change here is that `shape` is no longer a command. Earlier the `block` command used to position the turtle appropriately and call the `shape` command. Now the `block` command creates a shape via the `shape` function, positions it appropriately, and then draws it.
+
 ```scala
 size(600, 600)
 cleari()
@@ -95,6 +101,9 @@ repeatFor(rangeTill(0, cheight, tileSize)) { posY =>
     }
 }
 ```
+
+#### Exercise
+Try out different picture shapes in the grid.
 
 ### Dynamic Picture Grid
 ```scala

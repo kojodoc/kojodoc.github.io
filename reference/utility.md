@@ -4,6 +4,16 @@
 
 This page contains descriptions of general purpose utility commands and functions available in Kojo.
 
+### Environment
+
+| Command/Function | Description |
+| :--- | :--- |
+| `size(w, h)` [*C*]| sets the size of the canvas to the given width and height. |
+| `cwidth` [*Q*] | returns the current width of the canvas. |
+| `cheight` [*Q*] | returns the current height of the canvas. |
+| `originBottomLeft()` [*C*] | situates the origin at the bottom left of the canvas. |
+
+
 ### Random numbers
 
 | Command/Function | Description |
@@ -26,6 +36,16 @@ This page contains descriptions of general purpose utility commands and function
 | `mathx.map(value, low1, high1, low2, high2)` | Maps the given value from the range `(low1, high1)` to the range `(low2, high2)`. |
 | `mathx.lerp(value1, value2, amt)` | Returns the interpolation as per the given fraction `amt` in the range `(value1, value2)`. |
 | `mathx.constrain(value, min, max)` | Constrains the given `value` between `min` and `max`. |
+| `rangeTill(from, untill, step)` | returns a range that starts from `from`, goes until (but excluding) `until`, and steps up by `step`. [See example](#rangetill). |
+
+### Examples
+
+#### rangeTill
+
+```scala
+rangeTill(4, 10, 2).toArray //> res16: Array[Int] = Array(4, 6, 8)
+rangeTill(4, 11.5, 2.5).toArray //> res17: Array[BigDecimal] = Array(4.0, 6.5, 9.0)
+```
 
 
 
