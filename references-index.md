@@ -7,4 +7,3 @@
 * [Picture Graphics Reference](reference/picture.html)
 * [Gaming Reference](reference/gaming.html)
 * [Scala Language Quickref](reference/scala.html)
-* [Scala Collections](reference/scala-collections.html)
