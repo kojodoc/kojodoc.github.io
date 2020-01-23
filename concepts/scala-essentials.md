@@ -147,7 +147,7 @@ val twiceEvens = evens.map(n => n * 2) //> twiceEvens: scala.collection.immutabl
 ```
 
 #### Scala Keyword Instructions
-You saw above how commands can be composed and how functions can be composed. Keep in mind that Scala keyword instructions give you additional ways to compose commands/functions/data for particular uses. You will learn about these keyword instructions as you go along (and as you need them).
+You saw above how commands can be composed and how functions can be composed. Keep in mind that Scala keyword instructions give you additional ways to compose commands/functions/data for particular uses. You will learn about these instructions as you go along (and as you need them).
 
 #### Data
 * The [Scala Collections](../reference/scala-collections.html) are predefined means of data composition for various well known situations.
