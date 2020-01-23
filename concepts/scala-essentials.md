@@ -25,11 +25,11 @@ A computation takes in information and spits out new infomation.
 
 <img src ="computation.png" width="300"/>
 
-That's the abstract idea. Actual physical computations are carried out by a computer. Here's an idealised view of one:
+That's the abstract idea. Actual physical computations are carried out by an electronic computer. Here's an idealised view of one:
 
 <img src ="computer.png" width="500"/>
 
-So a computer basically (as per the program running on it) does the following:
+So an electronic computer basically does the following (as per the program running on it):
 * It takes in information from an input device into main memory.
 * It has the CPU work on this input information (from main memory) to generate new information (which is put back into main memory). The new information is of two kinds - intermediate calculations (which feed back as input into more computations), and output information.
 * The computer takes the output information from main memory and writes it to an output device.
