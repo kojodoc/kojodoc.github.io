@@ -101,7 +101,7 @@ Here are some points to keep in mind about data:
   * Every object has a type.
   * A type determines a set of possible values and the operations that can be done with these values.
   * Given a value `pic` that has a method `draw()`, you can call the draw method like this: `pic.draw()`.
-* Utility commands and functions (listing coming soon).
+* [Utility commands and functions](../reference/utility.html).
 
 ---
 
