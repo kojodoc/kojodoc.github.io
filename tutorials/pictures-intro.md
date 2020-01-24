@@ -352,15 +352,23 @@ Also, for the purpose of 'debugging', you can see the local coordinate system ax
 After you draw a picture, you can animate it within an `animate { }` loop.
 
 #### Example
+
+---
+
 ```scala
 cleari()
+setBackground(black)
 val pic = fillColor(red) -> Picture.rectangle(30, 30)
 draw(pic)
 animate {
     // you can use any transformation method here
-    pic.translate(2, 3)
+    pic.translate(2, 0)
 }
 ```
+
+![pic-animate](pic-animate.gif)
+
+---
 
 A few more picture transformations (not mentioned earlier) are useful during animation and gaming:
 * `pic.invisible()` - hides `pic`.
@@ -382,6 +390,8 @@ You can use two functions for this:
 * `pic.collidesWith(stageBorder)` - returns true if `pic` has collided with the stage border.
 * `bouncePicOffStage(pic, vel)` - for a picture `pic` moving with velocity `vel` - this function returns the velocity after bouncing off the stage.
 
+---
+
 ```scala
 clear()
 drawStage(cm.black)
@@ -389,7 +399,7 @@ val cb = canvasBounds
 
 val pic = fillColor(red) -> Picture.rectangle(40, 40)
 pic.setPosition(cb.x + 20, cb.y + 20)
-var vel = Vector2D(2, 10)
+var vel = Vector2D(2, 5)
 
 draw(pic)
 
@@ -400,6 +410,10 @@ animate {
     }
 }
 ```
+
+![pic-bounce-stage](pic-bounce-stage.gif)
+
+---
 
 #### Collision checking and bouncing off other pictures
 
@@ -453,7 +467,7 @@ animate {
 }
 ```
 
-![pic-pic-collision](pic-pic-collision.png)
+![pic-bounce-pic](pic-bounce-pic.gif)
 
 ---
 

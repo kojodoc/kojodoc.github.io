@@ -131,6 +131,8 @@ In this first *dynamic* example, you will work with a simple shape (a rectangle)
 
 Type in the code below and run it. Look at the output. Make sure you understand how the output is generated.
 
+---
+
 ```scala
 size(600, 600)
 cleari()
@@ -146,14 +148,14 @@ def shape = Picture.rectangle(tileWidth, tileHeight)
 def block(posX: Double, posY: Double) {
     val pic = shape
     pic.setPosition(posX, posY)
-    pic.setPenColor(black)
+    pic.setPenColor(cm.darkBlue)
     val d = mathx.distance(posX, posY, mouseX, mouseY)
     val f = mathx.map(d, 0, 500, 0.3, .9)
     pic.scale(f)
     draw(pic)
 }
 
-draw {
+drawLoop {
     erasePictures()
     repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
         repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
@@ -163,6 +165,10 @@ draw {
 }
 ```
 
+![dynamic1](dynamic1.gif)
+
+---
+
 #### Exercise
 * Try out different picture shapes in the grid.
 * Experiment with differernt scaling schemes.
@@ -170,6 +176,8 @@ draw {
 In the second *dynamic* example, you will also fade out grid pictures as the mouse moves over the grid.
 
 Type in the code below and run it. Look at the output. Make sure you understand how the output is generated.
+
+---
 
 ```scala
 size(600, 600)
@@ -203,9 +211,15 @@ draw {
 }
 ```
 
+![dynamic2](dynamic2.gif)
+
+---
+
 In the third and final *dynamic* example, you will also rotate the grid pictures as the mouse moves over the grid. Plus you will use a square-spiral shape instead of a rectangle for a nicer effect.
 
 Type in the code below and run it. Look at the output. Make sure you understand how the output is generated.
+
+---
 
 ```scala
 size(600, 600)
@@ -237,7 +251,7 @@ def block(posX: Double, posY: Double) {
     draw(pic)
 }
 
-draw {
+drawLoop {
     erasePictures()
     repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
         repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
@@ -247,20 +261,30 @@ draw {
 }
 ```
 
+![dynamic3](dynamic3.gif)
+
+---
+
 To better understand how the picture rotation works, play with the following code:
+
+---
 
 ```scala
 cleari()
 
-draw {
+drawLoop {
     erasePictures()
     val pic = Picture.rectangle(100, 10)
     draw(pic)
     val pos = pic.position
-    val a = math.atan2(mouseY - pos.y, mouseX - pos.x)
-    pic.rotate(a.toDegrees)
+    val a = mathx.angle(position, mousePosition)
+    pic.rotate(a)
 }
 ```
+
+![pic-rotate-mouse](pic-rotate-mouse.gif)
+
+---
 
 #### Exercise
 * Try out different picture shapes in the grid.
