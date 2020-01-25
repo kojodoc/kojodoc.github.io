@@ -500,14 +500,14 @@ val cb = canvasBounds
 val pic = fillColor(red) -> Picture.rectangle(400, 400)
 drawCentered(pic)
 
-pic.onMouseClick { (x, y) =>
+pic.onMouseMove { (x, y) =>
     val xy = pic.pnode.globalToLocal(Point2D(x, y))
     val c = cm.linearGradient(0, 0, cm.blue, xy.getX, xy.getY, cm.black, true)
     pic.setFillColor(c)
 }
 ```
 
-![mouse-move](mouse-move.png)
+![pic-mousemove](pic-mousemove.gif)
 
 ---
 
