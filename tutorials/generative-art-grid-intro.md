@@ -334,17 +334,17 @@ drawLoop {
 ---
 
 That did not quite work out as expected, because:
-* We wanted each square on the grid to be a different random color.
+* We wanted each square on the grid to have a different random color.
 * But we wanted any particular square on the grid to have the same color over time.
 
-With the above program, the color of any given square is changing over time. 
+With the above program, the color of any given square is changing randomly over time. 
 
-How can you fix this. 
+How can you fix this?
 
 One approach can be to do the following:
 
-* At the beginning of the program (in `setup`) create a description of each block. This description can contain the position of the block and its (random) color
-* In `drawLoop` - do the dynamic behavior as before.
+* At the beginning of the program (in `setup`), you can create a description of each block. This description can contain the position of the block and its (random) color, and can be implemented as a [case class](../reference/scala.html#abstraction-case-class). The descriptions of all the blocks can be put into a sequence (specifically an ArrayBuffer, which makes it easy to create an empty sequence and then add elements to it one by one).
+* In `drawLoop` - you can erase the canvas, and then go through the sequence, draw the elememts, and do the dynamic behavior as before.
 
 ---
 ```scala
@@ -458,22 +458,32 @@ drawLoop {
 
 ---
 
+#### Exercise
+Try out different shapes in the previous idea. Feel free to use your [knowledge of Pictures](./pictures-intro.html) to put more complex shapes in the grid. Also, experiment with different combinations (and subsets) of scaling, fading, and rotation to see what works well for the shapes that you are trying out.
+
 ### Irregular Grid
+
+Now that we've broken down the process of drawing into first creating a description of the blocks, and then drawing the blocks, you can do something interesting. Before drawing the blocks, you can split them up into smaller blocks. When you then draw this new sequence of blocks, you will have an irregular grid - one in which the sizes of the blocks are different.
+
+---
+
 ```scala
 size(600, 600)
 cleari()
 setBackground(white)
 originBottomLeft()
 
-val tileCount = 10
+val tileCount = 3
 val tileWidth = cwidth / tileCount
 val tileHeight = cheight / tileCount
 
-def shape(w: Double, h: Double) = Picture.rectangle(w, h)
+def shape(w: Double, h: Double) = {
+    val len = math.min(w, h) * 3 / 4
+    picStackCentered(noPen -> Picture.rectangle(w, h), Picture.ellipseInRect(len, len))
+}
 
 case class Block(x: Double, y: Double, w: Double, h: Double, c: Color)
-val blocks = ArrayBuffer.empty[Block]
-val blocks2 = ArrayBuffer.empty[Block]
+var blocks = ArrayBuffer.empty[Block]
 
 def makeBlock(posX: Double, posY: Double) {
     val block = Block(posX, posY, tileWidth, tileHeight, randomColor)
@@ -484,25 +494,23 @@ def drawBlock(b: Block) {
     val pic = shape(b.w, b.h)
     pic.setPosition(b.x, b.y)
     val d = mathx.distance(b.x, b.y, mouseX, mouseY)
-    val f = mathx.map(d, 0, 500, 0.3, .9)
+    val f = mathx.map(d, 0, 800, 0.3, .9)
     val angle = mathx.angle(b.x, b.y, mouseX, mouseY)
-    pic.scale(f)
-    pic.setPenColor(black.fadeOut(f))
-    pic.setFillColor(b.c.fadeOut(f / 2))
-    pic.setPenThickness(1)
-    pic.rotate(angle)
+    pic.setPenColor(b.c)
+    pic.setFillColor(b.c.fadeOut(f))
+    pic.setPenThickness(2)
     draw(pic)
 }
 
-def splitSomeBlocks() {
-    blocks2.clear()
+def splitSomeBlocks(blocks: ArrayBuffer[Block], p: Double): ArrayBuffer[Block] = {
+    val blocks2 = ArrayBuffer.empty[Block]
     repeatFor(blocks) { b =>
-        if (randomDouble(1) < 0.3) {
+        if (randomDouble(1) < p) {
             val newBlocks = Array(
-                Block(b.x, b.y, b.w / 2, b.h / 2, b.c),
-                Block(b.x, b.y + b.h / 2, b.w / 2, b.h / 2, b.c),
-                Block(b.x + b.w / 2, b.y, b.w / 2, b.h / 2, b.c),
-                Block(b.x + b.w / 2, b.y + b.h / 2, b.w / 2, b.h / 2, b.c)
+                Block(b.x, b.y, b.w / 2, b.h / 2, randomColor),
+                Block(b.x, b.y + b.h / 2, b.w / 2, b.h / 2, randomColor),
+                Block(b.x + b.w / 2, b.y, b.w / 2, b.h / 2, randomColor),
+                Block(b.x + b.w / 2, b.y + b.h / 2, b.w / 2, b.h / 2, randomColor)
             )
             blocks2.appendAll(newBlocks)
         }
@@ -510,6 +518,7 @@ def splitSomeBlocks() {
             blocks2.append(b)
         }
     }
+    blocks2
 }
 
 setup {
@@ -518,91 +527,26 @@ setup {
             makeBlock(posX, posY)
         }
     }
-    splitSomeBlocks()
+    repeat(5) {
+        blocks = splitSomeBlocks(blocks, 0.3)
+    }
 }
 
 drawLoop {
     erasePictures()
-    repeatFor(blocks2) { b =>
-        drawBlock(b)
-    }
-}
-```
-
-```scala
-size(600, 600)
-cleari()
-setBackground(white)
-originBottomLeft()
-
-val tileCount = 10
-val tileWidth = cwidth / tileCount
-val tileHeight = cheight / tileCount
-
-def shape(w: Double, h: Double) = Picture {
-    repeatFor(1 to w.toInt) { n =>
-        forward(n)
-        right(91)
-    }
-}
-
-case class Block(x: Double, y: Double, w: Double, h: Double, c: Color)
-val blocks = ArrayBuffer.empty[Block]
-val blocks2 = ArrayBuffer.empty[Block]
-
-def makeBlock(posX: Double, posY: Double) {
-    val block = Block(posX, posY, tileWidth, tileHeight, randomColor)
-    blocks.append(block)
-}
-
-def drawBlock(b: Block) {
-    val pic = shape(b.w, b.h)
-    pic.setPosition(b.x, b.y)
-    val d = mathx.distance(b.x, b.y, mouseX, mouseY)
-    val f = mathx.map(d, 0, 500, 0.3, .9)
-    val angle = mathx.angle(b.x, b.y, mouseX, mouseY)
-    pic.scale(f)
-    pic.setPenColor(black.fadeOut(f))
-    pic.setFillColor(b.c.fadeOut(f / 2))
-    pic.setPenThickness(1)
-    pic.rotate(angle)
-    draw(pic)
-}
-
-def splitSomeBlocks() {
-    blocks2.clear()
     repeatFor(blocks) { b =>
-        if (randomDouble(1) < 0.2) {
-            val newBlocks = Array(
-                Block(b.x, b.y, b.w / 2, b.h / 2, b.c),
-                Block(b.x, b.y + b.h / 2, b.w / 2, b.h / 2, b.c),
-                Block(b.x + b.w / 2, b.y, b.w / 2, b.h / 2, b.c),
-                Block(b.x + b.w / 2, b.y + b.h / 2, b.w / 2, b.h / 2, b.c)
-            )
-            blocks2.appendAll(newBlocks)
-        }
-        else {
-            blocks2.append(b)
-        }
-    }
-}
-
-setup {
-    repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
-        repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
-            makeBlock(posX, posY)
-        }
-    }
-    splitSomeBlocks()
-}
-
-drawLoop {
-    erasePictures()
-    repeatFor(blocks2) { b =>
         drawBlock(b)
     }
 }
 ```
+
+![irregular1](irregular1.gif)
+
+---
+
+You can also try out a more complex shape:
+
+---
 
 ```scala
 size(600, 600)
@@ -610,15 +554,15 @@ cleari()
 setBackground(white)
 originBottomLeft()
 
-val tileCount = 10
+val tileCount = 5
 val tileWidth = cwidth / tileCount
 val tileHeight = cheight / tileCount
 
-def shape(w: Double, h: Double) = Picture {
+def shape(w: Double, h: Double, tiltAngle: Double) = Picture {
     val nums = 5
     def size(n: Int) = w / nums * n
 
-    def squares(n: Int, dir: Int) {
+    def squares(n: Int) {
         val len = size(n)
         repeat(4) {
             forward(len)
@@ -631,21 +575,20 @@ def shape(w: Double, h: Double) = Picture {
             right(90)
             hop(delta)
             left(90)
-            dir match {
-                case 1 =>
-                    right(90); hop(delta / 2); left(90)
-                case _ =>
-            }
-            squares(n - 1, dir)
+
+            right(90)
+            left(tiltAngle)
+            hop(delta/2)
+            left(90 - tiltAngle)
+            squares(n - 1)
         }
     }
 
-    squares(nums, 1)
+    squares(nums)
 }
 
 case class Block(x: Double, y: Double, w: Double, h: Double, c: Color)
-val blocks = ArrayBuffer.empty[Block]
-val blocks2 = ArrayBuffer.empty[Block]
+var blocks = ArrayBuffer.empty[Block]
 
 def makeBlock(posX: Double, posY: Double) {
     val block = Block(posX, posY, tileWidth, tileHeight, randomColor)
@@ -653,28 +596,26 @@ def makeBlock(posX: Double, posY: Double) {
 }
 
 def drawBlock(b: Block) {
-    val pic = shape(b.w, b.h)
+    val angle = mathx.angle(b.x, b.y, mouseX, mouseY)
+    val pic = shape(b.w, b.h, angle)
     pic.setPosition(b.x, b.y)
     val d = mathx.distance(b.x, b.y, mouseX, mouseY)
-    val f = mathx.map(d, 0, 350, 0.2, .9)
-    val angle = mathx.angle(b.x, b.y, mouseX, mouseY)
-//    pic.scale(f)
+    val f = mathx.map(d, 0, 350, 0.3, .9)
     pic.setPenColor(cm.gray)
     pic.setFillColor(b.c.fadeOut(f / 2))
     pic.setPenThickness(1)
-//    pic.rotate(angle)
     draw(pic)
 }
 
-def splitSomeBlocks() {
-    blocks2.clear()
+def splitSomeBlocks(blocks: ArrayBuffer[Block], p: Double): ArrayBuffer[Block] = {
+    val blocks2 = ArrayBuffer.empty[Block]
     repeatFor(blocks) { b =>
-        if (randomDouble(1) < 0.2) {
+        if (randomDouble(1) < p) {
             val newBlocks = Array(
-                Block(b.x, b.y, b.w / 2, b.h / 2, b.c),
-                Block(b.x, b.y + b.h / 2, b.w / 2, b.h / 2, b.c),
-                Block(b.x + b.w / 2, b.y, b.w / 2, b.h / 2, b.c),
-                Block(b.x + b.w / 2, b.y + b.h / 2, b.w / 2, b.h / 2, b.c)
+                Block(b.x, b.y, b.w / 2, b.h / 2, randomColor),
+                Block(b.x, b.y + b.h / 2, b.w / 2, b.h / 2, randomColor),
+                Block(b.x + b.w / 2, b.y, b.w / 2, b.h / 2, randomColor),
+                Block(b.x + b.w / 2, b.y + b.h / 2, b.w / 2, b.h / 2, randomColor)
             )
             blocks2.appendAll(newBlocks)
         }
@@ -682,6 +623,7 @@ def splitSomeBlocks() {
             blocks2.append(b)
         }
     }
+    blocks2
 }
 
 setup {
@@ -690,13 +632,19 @@ setup {
             makeBlock(posX, posY)
         }
     }
-    splitSomeBlocks()
+    repeat(2) {
+        blocks = splitSomeBlocks(blocks, 0.1)
+    }
 }
 
 drawLoop {
     erasePictures()
-    repeatFor(blocks2) { b =>
+    repeatFor(blocks) { b =>
         drawBlock(b)
     }
 }
 ```
+
+![irregular2](irregular2.gif)
+
+---
