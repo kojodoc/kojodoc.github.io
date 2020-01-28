@@ -16,4 +16,6 @@ title: "Happy Jekylling!"
     Here's another way to look at the documentation: <br/><br/>
     <a href="fundamentals-index.html"><img src="fundamentals.png" width="260"/></a> <br/>
     <a href="references-index.html"><img src="references.png" width="260"/></a> <br/>
+    <a href="tutorials-index.html"><img src="tutorials.png" width="260"/></a> <br/>
+    <a href="howtos-index.html"><img src="howtos.png" width="260"/></a> <br/>
 </div>
