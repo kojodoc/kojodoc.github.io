@@ -78,6 +78,15 @@ A program is made out of data and code. Code refers to the instructions that mak
   * The showing of outputs is done via **commands**.
 4. The program then (optionally) goes back to step 2 above.
 
+The following simple program shows steps 1, 2, and 3 from above in action:
+```scala
+val n1 = readInt("Enter a number")
+val n2 = readInt("Enter another number")
+val sum = n1 + n2
+println(s"The sum of $n1 and $n2 is $sum")
+```
+
+
 ### Program Development
 You use three important ideas while writing a program:
 * Primitives - these are the commands, functions, and data types provided to you by your programming language/environment.
