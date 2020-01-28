@@ -138,10 +138,16 @@ setBackground(white)
 setSpeed(superFast)
 setPenColor(cm.gray)
 
+val nx = 20
+val ny = 20
+val cb = canvasBounds
+val dx = cb.width / nx
+val dy = cb.height / ny
+
 def shape() {
     savePosHe()
     right(random(-5, 5))
-    val len = 15 + random(40)
+    val len = dy / 2 + randomDouble(dx)
     repeat(4) {
         forward(len)
         right(90)
@@ -149,14 +155,8 @@ def shape() {
     restorePosHe()
 }
 
-val nx = 20
-val ny = 20
-val cb = canvasBounds
-val dx = cb.width / (nx + 1)
-val dy = cb.height / (ny + 1)
-
-def posx(gx: Int) = cb.x + gx * dx - dx / 2
-def posy(gy: Int) = cb.y + gy * dy - dy / 2
+def posx(gx: Int) = cb.x + gx * dx
+def posy(gy: Int) = cb.y + gy * dy
 
 def block(gx: Int, gy: Int) {
     setPosition(posx(gx), posy(gy))
@@ -164,8 +164,8 @@ def block(gx: Int, gy: Int) {
     shape()
 }
 
-repeatFor(1 to nx) { x =>
-    repeatFor(1 to ny) { y =>
+repeatFor(0 until nx) { x =>
+    repeatFor(0 until ny) { y =>
         block(x, y)
     }
 }
