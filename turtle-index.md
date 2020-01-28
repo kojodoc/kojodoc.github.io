@@ -7,7 +7,7 @@ These pages describe the Turtle Graphics facility within Kojo.
 * [Getting Started](#getting-started)
 * [Turtle Graphics Reference](reference/turtle.html)
 * [Core Concepts](concepts/turtle-core-ideas.html)
-* [Art Ideas](art/ideas.html)
+* [Art Ideas](ideas/turtle-art.html)
 * [Colors](concepts/colors.html)
 * [Picture Basics](#picture-basics)
 
