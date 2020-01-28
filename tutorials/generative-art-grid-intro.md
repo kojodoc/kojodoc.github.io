@@ -4,20 +4,14 @@
 
 ## An introduction to grid based generative art
 
-Generative art is art that is generated via an interaction between a computer program and a human being. The programmer-artist writes a program to make the art. This program can contain elements of randomness in it. The program can also be driven by interaction with the programmer-artist (via mouse, keyboard, etc). The programmer-artist runs the program, interacts with it, looks at the output, modifies the program as desired, re-runs it, and iteratively contiues doing this till the final output is to his liking. The final output can then be printed to a physical medium (like a t-shirt, bag, wall canvas, cup, cap, backpack, etc).
+Generative art is art that is generated via an interaction between a computer program and a human being. The programmer-artist writes a program to make the art. The program can contain elements of randomness in it. The program can also be driven by interaction with the programmer-artist (via mouse, keyboard, etc). The programmer-artist runs the program, interacts with it, looks at the output, modifies the program as desired, re-runs it, and iteratively contiues doing this till the final output is to his liking. The final output can then be printed to a physical medium (like a t-shirt, bag, wall canvas, cup, cap, backpack, etc).
 
 In this tutorial, you will play with generative art in the context of a grid. Here is what you will do:
-* Make a grid of squares using turtle graphics.
-* Switch to using pictures instead of turtle graphics to enable more flexibility in the drawing.
-* Start using the setup, drawLoop scheme for interactive designs (and more performant drawing).
-  * Squares with scaling and opacity changes (and maybe rotation).
-  * Square spiral in the above.
-  * Random colors for the cells (but the same color for each cell).
-  * Random colors from a palette (but the same color for each cell).
-  * More compex shapes in each cell (introduce recursion?)
-* Irregular grid.
-* Shape palette.
-* Stacking multiple grids.
+* [Make a grid of squares using turtle graphics](#turtle-graphics-grid) - to get going.
+* [Make the same grid using Pictures](#picture-grid) - to start to use the power of pictures in your generative art.
+* [Make the grid dynamic](#dynamic-picture-grid), so that as you move the mouse over the grid, it changes. In this section you will play with various forms of dynamism.
+* [Work with irregular grids](#irregular-grid), where the sizes of the grid cells are different.
+
 
 ### Turtle graphics grid
 To get going, you will make a grid of squares on the canvas. For this, you will use the [shape/block idea](https://litan.github.io/kojodoc/art/shape-block.html) that you are familiar with:
@@ -74,7 +68,9 @@ repeatFor(rangeTill(0, cheight, tileSize)) { posY =>
 ---
 
 ### Picture grid
-Now, you will make the exact same grid as above, but using Pictures. The one big change here is that `shape` is no longer a command, but it is a function instead. Earlier the `block` command used to position the turtle appropriately and call the `shape` command. Now the `block` command creates a shape via the `shape` function, positions it appropriately, and then draws it.
+Now, you will make the same grid as above (except for the pen color), but using Pictures. The one big change here is that `shape` is no longer a command, but it is a function instead. Earlier the `block` command used to position the turtle appropriately and call the `shape` command. Now the `block` command creates a shape via the `shape` function, positions it appropriately, and then draws it.
+
+---
 
 ```scala
 size(600, 600)
@@ -90,7 +86,7 @@ def shape = Picture.rectangle(tileSize, tileSize)
 def block(posX: Double, posY: Double) {
     val pic = shape
     pic.setPosition(posX, posY)
-    pic.setPenColor(black)
+    pic.setPenColor(cm.tomato)
     draw(pic)
 }
 
@@ -100,6 +96,10 @@ repeatFor(rangeTill(0, cheight, tileSize)) { posY =>
     }
 }
 ```
+
+![gena-picture-grid](gena-picture-grid.png)
+
+---
 
 #### Exercise
 Try out different picture shapes in the grid.
@@ -334,17 +334,17 @@ drawLoop {
 ---
 
 That did not quite work out as expected, because:
-* We wanted each square on the grid to have a different random color.
-* But we wanted any particular square on the grid to have the same color over time.
+* We wanted each square in the grid to have a different random color.
+* But we wanted any particular square in the grid to stay the same color over time.
 
-With the above program, the color of any given square is changing randomly over time. 
+With the above program, the color of any given square is changing randomly as the program runs. 
 
 How can you fix this?
 
 One approach can be to do the following:
 
 * At the beginning of the program (in `setup`), you can create a description of each block. This description can contain the position of the block and its (random) color, and can be implemented as a [case class](../reference/scala.html#abstraction-case-class). The descriptions of all the blocks can be put into a sequence (specifically an ArrayBuffer, which makes it easy to create an empty sequence and then add elements to it one by one).
-* In `drawLoop` - you can erase the canvas, and then go through the sequence, draw the elememts, and do the dynamic behavior as before.
+* In `drawLoop` - you can erase the canvas, and then go through the sequence of blocks to draw them and do the dynamic behavior as before.
 
 ---
 ```scala
@@ -401,7 +401,7 @@ drawLoop {
 
 That's much better. 
 
-Now we can add fading and rotation:
+Now you can add fading and rotation:
 
 ---
 ```scala
@@ -463,7 +463,7 @@ Try out different shapes in the previous idea. Feel free to use your [knowledge 
 
 ### Irregular Grid
 
-Now that we've broken down the process of drawing into first creating a description of the blocks, and then drawing the blocks, you can do something interesting. Before drawing the blocks, you can split them up into smaller blocks. When you then draw this new sequence of blocks, you will have an irregular grid - one in which the sizes of the blocks are different.
+Now that we've broken down the process of drawing into first creating a description of the blocks and then drawing the blocks, you can do something interesting. Before drawing the blocks, you can split them up into smaller blocks. When you then draw this new sequence of blocks, you will have an irregular grid - one in which the sizes of the blocks are different.
 
 ---
 
@@ -648,3 +648,13 @@ drawLoop {
 ![irregular2](irregular2.gif)
 
 ---
+
+**Note** - in all the above programs where dynamic behavior is being generated based on mouse movement, you can use `onMouseMove` instead of `drawLoop` for more efficient grid drawing. The benefit of `drawLoop` is that dynamism can be driven by things other than (or in addition to) mouse movement. That is why we have focused on `drawLoop` in this tutorial.
+
+The above material should give you solid start in generative intriciate and pleasing generative art. Happy hacking!
+
+In the next tutorial in this series we will look at:
+- Selecting colors for the grid cells based on a harmonious palette (instead of using random colors).
+- Using a pool of shapes to populate the cells of the grid (instead of using one shape).
+
+
