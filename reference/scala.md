@@ -3,10 +3,10 @@
 </div>
 
 To best understand the Scala quick-reference below, it is useful for you to be familiar with the following ideas:
-* [Computing Fundamentals](../concepts/scala-essentials#computing-fundamentals)
-* [Program Structure](../concepts/scala-essentials#program-structure)
-* [Program Operation](../concepts/scala-essentials#program-operation)
-* [Program Development](../concepts/scala-essentials#program-development)
+* [Computing Fundamentals](../concepts/computing-essentials#computing-fundamentals)
+* [Program Structure](../concepts/computing-essentials#program-structure)
+* [Program Operation](../concepts/computing-essentials#program-operation)
+* [Program Development](../concepts/computing-essentials#program-development)
 
 Click on the links above to review the ideas before moving on.
 
@@ -64,7 +64,7 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 <a name="data">
 **1. Data Types**
 
-A program is nothing without data. It starts out with some data values and computes new values from old values as it runs ([as explained elsewhere](../concepts/scala-essentials#program-operation)). So learning about data is important.
+A program is nothing without data. It starts out with some data values and computes new values from old values as it runs ([as explained elsewhere](../concepts/computing-essentials#program-operation)). So learning about data is important.
 
 Here is some background information for you before you start looking at the different types of data available in Scala:
 
@@ -603,7 +603,7 @@ If an option has the value `v` inside, it is represented as `Some(v)`. If it has
 <a name="control">
 **2 Control Flow**
 
-As a program runs, [it computes new data from old data and shows this new data to the user](../concepts/scala-essentials#program-operation) as required - with the help of the functions and commands available to it. How these functions and commands are strung together in the program is the subject matter of control flow.
+As a program runs, [it computes new data from old data and shows this new data to the user](../concepts/computing-essentials#program-operation) as required - with the help of the functions and commands available to it. How these functions and commands are strung together in the program is the subject matter of control flow.
 
 At a high level:
 
@@ -929,7 +929,7 @@ forward(d)
 <a name="abstraction">
 **3 Abstraction / Naming**
 
-As you write programs, abstraction (along with primitives and composition) is a core idea [as described here](../concepts/scala-essentials#program-development). Abstraction lets you give names to useful things in your program that you need to use multiple times (or even once, if that makes your program clearer to read and understand).
+As you write programs, abstraction (along with primitives and composition) is a core idea [as described here](../concepts/computing-essentials#program-development). Abstraction lets you give names to useful things in your program that you need to use multiple times (or even once, if that makes your program clearer to read and understand).
 
 Scala provides the following means of abstraction. Each of these uses a keyword instruction (or statement):
 

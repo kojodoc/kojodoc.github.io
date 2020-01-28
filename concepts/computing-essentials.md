@@ -2,7 +2,7 @@
   <a href="../index.html">Home</a> | <a href="../gaming-index.html">Gaming</a> | <a href="../fundamentals-index.html">Fundamentals</a>
 </div>
 
-## Scala (and computing) essentials for Kojo
+## Computing essentials for Kojo
 
 Here's the absolute minimum amount of programming theory and Scala information that you need to know to write interesting programs as you move beyond turtle graphics.
 * [Computing Fundamentals](#computing-fundamentals)
