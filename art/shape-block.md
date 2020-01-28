@@ -5,9 +5,9 @@
 ## The Shape/Block method
 The shape/block method builds upon the ideas in the forty-patterns section at the end of the [Getting Started](http://wiki.kogics.net/kojo-codeactive-books#getting-started) book. 
 
-There, you had focused on analysing a given pattern, determining the shape and the block present in the pattern, and then drawing the pattern in a structured and systematic way.
+In that section you focused on analysing a given pattern, determining the shape and the block present in the pattern, and then drawing the pattern in a structured and systematic way using the shape/block method.
 
-Here, we will use the shape/block method to design new patterns.
+Here, you will use the shape/block method to *design new patterns*.
 * [Quick Recap](#quick-recap)
 * [Block rotates in place](#block-rotates-in-place)
 * [Block rotates around circle](#block-rotates-around-circle)
@@ -23,6 +23,9 @@ Here, we will use the shape/block method to design new patterns.
 To implement the above ideas, it's good to know [how defs work](../reference/turtle.html#def).
 
 Here's a drawning based on the above ideas:
+
+---
+
 ```scala
 def shape() {
     // savePosHe() not needed here as turtle ends up at its starting state
@@ -47,8 +50,13 @@ repeat(18) {
 ```
 ![shape-block](shape-block.png)
 
+---
+
 ### Block rotates in place
-In this approach, the block just rotates the shape around a point.
+In this approach, the block just rotates the shape around a point:
+
+---
+
 ```scala
 def shape() {
     savePosHe()
@@ -75,8 +83,13 @@ repeat(18) {
 ```
 ![block-rotate-in-place](block-rotate-in-place.png)
 
+---
+
 ### Block rotates around circle
-In this approach, the block rotates the shape around the boundary of a circle.
+In this approach, the block rotates the shape around the boundary of a circle:
+
+---
+
 ```scala
 def shape() {
     savePosHe()
@@ -105,8 +118,13 @@ repeat(18) {
 ```
 ![block-rotate-around-circle](block-rotate-around-circle.png)
 
+---
+
 ### Block rotates around spiral
-In this approach, the block moves the shape around the boundary of a spiral.
+In this approach, the block moves the shape around the boundary of a spiral:
+
+---
+
 ```scala
 clear()
 setSpeed(fast)
@@ -130,8 +148,13 @@ repeatFor(1 to 150) { n =>
 ```
 ![block-rotate-around-spiral](block-rotate-around-spiral.png)
 
+---
+
 ### Block moves around grid
 In this approach, the block moves the shape around a grid that spans the canvas.
+
+---
+
 ```scala
 clear()
 setBackground(white)
@@ -171,3 +194,5 @@ repeatFor(0 until nx) { x =>
 }
 ```
 ![block-move-around-grid](block-move-around-grid.png)
+
+---
