@@ -18,6 +18,15 @@ The above Picture capabilites enable the following:
 * Functional and Generative art
 * Gaming
 
+---
+
+*Note* - As you go through this tutorial, make sure you do the following:
+* Run every example (in Kojo).
+* Make changes to every example and rerun it - for better understanding. 
+* Do all the exercises.
+
+---
+
 ### Picture Creation
 A picture can be created using any one of the functions shown below. There are a couple of things that you should be aware of:  
 * A newly created picture is located at at the canvas position (0, 0) to begin with. It can then be positioned at any other location by using the `pic.setPosition(x, y)` command or being part of a row, column, or stack of pictures.
@@ -56,7 +65,7 @@ draw(pic1, pic2)
 
 ---
 
-#### Exercise
+#### Exercise 1
 
 Use all the picture creation functions listed above (except `hgap` and `vgap`) to create and draw pictures.
 
@@ -66,7 +75,7 @@ You can transform pictures in the following main ways (every transformation belo
 | Transformation | Object/function | Method/command |
 | :--- | :--- | :--- |
 | rotate | `rot(angle) -> pic` | `pic.rotate(angle)` |
-| scale | `scale(f) -> pic` | `pic.scale(f)` |
+| scale (to make bigger or smaller) | `scale(f) -> pic` | `pic.scale(f)` |
 | translate (in its local coordinate system) | `trans(x, y) -> pic` | `pic.translate(x, y)` |
 | translate (in its parent's coordinate system) | `offset(x, y) -> pic` | `pic.offset(x, y)` |
 | position at a given location | `offset(x, y) -> pic` (one time) | `pic.setPosition(x, y)` |
@@ -110,6 +119,10 @@ draw(pic)
 ![fig2](fig2.png)
 
 ---
+
+#### Exercise 2
+
+Use all the transformation functions listed above in drawings of your own.
 
 ### Picture Layout
 Multiple pictures can be laid out in the following ways:
@@ -189,7 +202,7 @@ draw(penColor(blue) * penThickness(3) -> p(250))
 
 ---
 
-#### Exercise
+#### Exercise 3
 Write programs to make the figures shown below using the following instructions:
 * `Picture.rectangle`
 * `Picture.text`
@@ -203,7 +216,9 @@ Write programs to make the figures shown below using the following instructions:
 
 ![ex2](ex2.png)
 
-#### Exercise
+![ex3](ex3.png)
+
+#### Exercise 4
 Write a program (using the above ideas) to make the flags of any two countries of your choice.
 
 #### Picture coordinate systems
@@ -469,7 +484,7 @@ animate {
 
 ---
 
-#### Exercise
+#### Exercise 5
 
 Change pic1 and pic2 above to play with collisions between different shapes.
 
@@ -509,6 +524,6 @@ pic.onMouseMove { (x, y) =>
 
 ---
 
-#### Exercise
+#### Exercise 6
 
 In the example above, change the onMouseClick to the other onMouseXs - and then play with the picture to see how it behaves differently.
