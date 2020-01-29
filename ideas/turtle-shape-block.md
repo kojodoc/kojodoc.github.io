@@ -194,5 +194,3 @@ repeatFor(0 until nx) { x =>
 }
 ```
 ![block-move-around-grid](block-move-around-grid.png)
-
----

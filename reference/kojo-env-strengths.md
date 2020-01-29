@@ -1,3 +1,7 @@
+<div class="nav">
+  <a href="../index.html">Home</a> | <a href="../fundamentals-index.html">Fundamentals</a>
+</div>
+
 ## Kojo Strengths
 
 ### A modern programming environment
