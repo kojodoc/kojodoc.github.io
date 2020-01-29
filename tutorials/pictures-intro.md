@@ -210,6 +210,8 @@ Write programs to make the figures shown below using the following instructions:
 * `picColCentered`
 * `picRowCentered`
 * `penColor`
+* `rot`
+* `scale`
 * `draw`
 
 ![ex1](ex1.png)
