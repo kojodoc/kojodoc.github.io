@@ -295,8 +295,6 @@ drawCentered(pic2)
 
 ---
 
----
-
 ```scala
 cleari()
 val pic = penColor(cm.black) * fillColor(cm.darkOliveGreen) -> Picture {
