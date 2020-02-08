@@ -231,11 +231,11 @@ The following example shows you three different coordinate systems in action whe
 
 ```scala
 cleari()
-val pic1 = trans(60, 0) * fillColor(blue) -> Picture.rectangle(60, 50)
-val pic2 = rot(20) * fillColor(green.fadeOut(0.5)) -> Picture.rectangle(100, 60)
-val pic3 = fillColor(yellow) -> Picture.rectangle(50, 100)
+val pic1 = fillColor(blue) -> Picture.rectangle(60, 50)
+val pic2 = trans(60, 0) * fillColor(green) -> Picture.rectangle(100, 60)
+val pic3 = rot(20) * fillColor(yellow.fadeOut(0.5)) -> Picture.rectangle(50, 100)
 val pics = rot(45) * trans(50, 0) -> picRow(pic1, pic2, pic3)
-draw(pics)
+drawCentered(pics)
 showAxes()
 Picture.showAxes(pics, pic2)
 ```
@@ -245,9 +245,9 @@ Picture.showAxes(pics, pic2)
 ---
 
 In the figure above, you see the axes for the following coordinate systems:
-* The canvas coordinate system
-* The coordinate system for `pics`, which lives within the coordinate system of its parent - the canvas (pics.position is (35.36, 35.36)).
-* The coordinate system for `pic2` (in translucent green), which lives within the coordinate system of its parent - `pics` (pic2.position is (121.00, 0.00)).
+* The canvas coordinate system (with axes in gray with a tick spacing of 50 units).
+* The coordinate system for `pics` (where the blue picture is, with axes in black with a tick spacing of 20 units). This coordinate system lives within the coordinate system of its parent - the canvas. Within its parent, `pics.position` is (35.36, 35.36).
+* The coordinate system for `pic2` (where the green picture is, with axes in black with a tick spacing of 20 units). This coordinate system lives within the coordinate system of its parent - `pics`. Within its parent, `pic2.position` is (121.00, 0.00).
 
 ### Picture layout with Functions
 
