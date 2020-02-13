@@ -653,7 +653,7 @@ drawLoop {
 
 The above material should give you solid start in generative intriciate and pleasing generative art. Happy hacking!
 
-In the next tutorial in this series we will look at:
+In the [next tutorial](./generative-art-grid-part2.html) in this series we will look at:
 - Selecting colors for the grid cells based on a harmonious palette (instead of using random colors).
 - Using a pool of shapes to populate the cells of the grid (instead of using one shape).
 
