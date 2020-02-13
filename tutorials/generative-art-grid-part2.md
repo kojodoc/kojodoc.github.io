@@ -30,11 +30,6 @@ def shape(w: Double, h: Double) = {
 case class Block(x: Double, y: Double, w: Double, h: Double, c: Color)
 var blocks = ArrayBuffer.empty[Block]
 
-def makeBlock(posX: Double, posY: Double) {
-    val block = Block(posX, posY, tileWidth, tileHeight, cellColor)
-    blocks.append(block)
-}
-
 def drawBlock(b: Block) {
     val pic = shape(b.w, b.h)
     pic.setPosition(b.x, b.y)
@@ -69,7 +64,8 @@ def splitSomeBlocks(blocks: ArrayBuffer[Block], p: Double): ArrayBuffer[Block] =
 setup {
     repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
         repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
-            makeBlock(posX, posY)
+            val block = Block(posX, posY, tileWidth, tileHeight, cellColor)
+            blocks.append(block)
         }
     }
     repeat(5) {
@@ -217,11 +213,6 @@ case class Block(x: Double, y: Double, w: Double, h: Double, c: Color) {
 }
 var blocks = ArrayBuffer.empty[Block]
 
-def makeBlock(posX: Double, posY: Double) {
-    val block = Block(posX, posY, tileWidth, tileHeight, cellColor)
-    blocks.append(block)
-}
-
 def drawBlock(b: Block) {
     val pic = b.s.copy
     pic.setPosition(b.x, b.y)
@@ -256,7 +247,8 @@ def splitSomeBlocks(blocks: ArrayBuffer[Block], p: Double): ArrayBuffer[Block] =
 setup {
     repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
         repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
-            makeBlock(posX, posY)
+            val block = Block(posX, posY, tileWidth, tileHeight, cellColor)
+            blocks.append(block)
         }
     }
     repeat(5) {

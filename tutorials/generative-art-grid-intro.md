@@ -362,12 +362,6 @@ def shape = Picture.rectangle(tileWidth, tileHeight)
 case class Block(x: Double, y: Double, c: Color)
 val blocks = ArrayBuffer.empty[Block]
 
-def makeBlock(posX: Double, posY: Double) {
-    val block = Block(posX, posY, randomColor)
-    blocks.append(block)
-}
-
-
 def drawBlock(b: Block) {
     val pic = shape
     pic.setPosition(b.x, b.y)
@@ -382,7 +376,8 @@ def drawBlock(b: Block) {
 setup {
     repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
         repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
-            makeBlock(posX, posY)
+            val block = Block(posX, posY, randomColor)
+            blocks.append(block)
         }
     }
 }
@@ -404,6 +399,7 @@ That's much better.
 Now you can add fading and rotation:
 
 ---
+
 ```scala
 size(600, 600)
 cleari()
@@ -419,11 +415,6 @@ def shape = Picture.rectangle(tileWidth, tileHeight)
 case class Block(x: Double, y: Double, c: Color)
 val blocks = ArrayBuffer.empty[Block]
 
-def makeBlock(posX: Double, posY: Double) {
-    val block = Block(posX, posY, randomColor)
-    blocks.append(block)
-}
-
 def drawBlock(b: Block) {
     val pic = shape
     pic.setPosition(b.x, b.y)
@@ -432,7 +423,7 @@ def drawBlock(b: Block) {
     val angle = mathx.angle(b.x, b.y, mouseX, mouseY)
     pic.scale(f)
     pic.setPenColor(black.fadeOut(f))
-    pic.setFillColor(b.c.fadeOut(f/2))
+    pic.setFillColor(b.c.fadeOut(f / 2))
     pic.setPenThickness(1)
     pic.rotate(angle)
     draw(pic)
@@ -441,7 +432,8 @@ def drawBlock(b: Block) {
 setup {
     repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
         repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
-            makeBlock(posX, posY)
+            val block = Block(posX, posY, randomColor)
+            blocks.append(block)
         }
     }
 }
@@ -485,11 +477,6 @@ def shape(w: Double, h: Double) = {
 case class Block(x: Double, y: Double, w: Double, h: Double, c: Color)
 var blocks = ArrayBuffer.empty[Block]
 
-def makeBlock(posX: Double, posY: Double) {
-    val block = Block(posX, posY, tileWidth, tileHeight, randomColor)
-    blocks.append(block)
-}
-
 def drawBlock(b: Block) {
     val pic = shape(b.w, b.h)
     pic.setPosition(b.x, b.y)
@@ -524,7 +511,8 @@ def splitSomeBlocks(blocks: ArrayBuffer[Block], p: Double): ArrayBuffer[Block] =
 setup {
     repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
         repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
-            makeBlock(posX, posY)
+            val block = Block(posX, posY, tileWidth, tileHeight, randomColor)
+            blocks.append(block)
         }
     }
     repeat(5) {
@@ -578,7 +566,7 @@ def shape(w: Double, h: Double, tiltAngle: Double) = Picture {
 
             right(90)
             left(tiltAngle)
-            hop(delta/2)
+            hop(delta / 2)
             left(90 - tiltAngle)
             squares(n - 1)
         }
@@ -589,11 +577,6 @@ def shape(w: Double, h: Double, tiltAngle: Double) = Picture {
 
 case class Block(x: Double, y: Double, w: Double, h: Double, c: Color)
 var blocks = ArrayBuffer.empty[Block]
-
-def makeBlock(posX: Double, posY: Double) {
-    val block = Block(posX, posY, tileWidth, tileHeight, randomColor)
-    blocks.append(block)
-}
 
 def drawBlock(b: Block) {
     val angle = mathx.angle(b.x, b.y, mouseX, mouseY)
@@ -629,7 +612,8 @@ def splitSomeBlocks(blocks: ArrayBuffer[Block], p: Double): ArrayBuffer[Block] =
 setup {
     repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
         repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
-            makeBlock(posX, posY)
+            val block = Block(posX, posY, tileWidth, tileHeight, randomColor)
+            blocks.append(block)
         }
     }
     repeat(2) {
