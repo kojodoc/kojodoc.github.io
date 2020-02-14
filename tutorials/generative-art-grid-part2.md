@@ -1,5 +1,5 @@
 <div class="nav">
-  <a href="../index.html">Home</a> | <a href="../picture-index.html">Picture Graphics</a> | <a href="../tutorials-index.html">References</a>
+  <a href="../index.html">Home</a> | <a href="../picture-index.html">Picture Graphics</a> | <a href="../tutorials-index.html">Tutorials</a>
 </div>
 
 ## Grid based generative art - Part 2
