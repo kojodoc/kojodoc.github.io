@@ -196,11 +196,11 @@ def block(posX: Double, posY: Double) {
     val d = mathx.distance(posX, posY, mouseX, mouseY)
     val f = mathx.map(d, 0, 500, 0.2, .7)
     pic.scale(f)
-    pic.setPenColor(black.fadeOut(f))
+    pic.setPenColor(cm.darkBlue.fadeOut(f))
     draw(pic)
 }
 
-draw {
+drawLoop {
     erasePictures()
     repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
         repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
