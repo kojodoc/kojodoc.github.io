@@ -2,7 +2,7 @@
   <a href="../index.html">Home</a> | <a href="../picture-index.html">Picture Graphics</a> | <a href="../tutorials-index.html">Tutorials</a>
 </div>
 
-## Grid based generative art - Part 2
+## Grid based generative art (part 2) - color and shape palettes
 
 As mentioned in the [previous tutorial](./generative-art-grid-intro.html), here we will look at:
 * Selecting colors for the grid cells based on a harmonious palette (instead of using random colors).
@@ -269,3 +269,5 @@ drawLoop {
 ---
 
 **Exercise** - give different weights to the different shapes in the shape palette.
+
+In the [next tutorial](./generative-art-grid-part3.html) in this series, we will look at selecting the colors for a grid cell based on an image.
