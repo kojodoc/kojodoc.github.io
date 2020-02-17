@@ -206,3 +206,8 @@ setup {
 
 ![color-from-image-2](color-from-image-2.png)
 
+---
+
+### Approach 2 - Colors from an image extracted palette
+
+Coming soon...
