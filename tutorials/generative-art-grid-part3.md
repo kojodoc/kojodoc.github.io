@@ -4,11 +4,17 @@
 
 ## Grid based generative art (part 3) - colors from an image.
 
+The following are the previous tutorials in this series:
+* [An introduction to grid based generative art](tutorials/generative-art-grid-intro.html).
+* [Grid based generative art (part 2) - color and shape palettes](tutorials/generative-art-grid-part2.html).
+
+---
+
 In this tutorial, you will see how you can pick the colors for a grid cell based on the colors in any image of your choice. This can be done in a couple of different ways:
 * For a grid cell, you choose a color based on the position of the cell and the color present at the corresponding position in the reference image.
 * You create a palette out of the most frequently used colors in an image, and then you randomly choose from this palette (using a uniform or weighted strategy as described in the [previous article](./generative-art-grid-part2.html)).
 
-### Approach 1 - Colors from the corresponding position in the image
+### Approach 1 - Colors from the corresponding position in an image
 
 The key idea is shown in the following code:
 
@@ -21,7 +27,7 @@ def imgColor(x: Double, y: Double) = {
 }
 ```
 
-For any grid position, the color from the corresponding position in the image can be obtained via the `imgColor` function defined above. This function makes use of `mathx.map(value, low1, high1, low2, high2)` to do it's work. `mathx.map` maps the given value from the range (low1, high1) to the range (low2, high2).
+For any grid position, the color from the corresponding position in the image can be obtained via the `imgColor` function defined above. This function makes use of `mathx.map(value, low1, high1, low2, high2)` to do its work. `mathx.map` maps the given value from the range (low1, high1) to the range (low2, high2).
 
 Let's see this in action with a complete program. The program will make an irregular grid of rectangles, and color it using the colors from an image.
 

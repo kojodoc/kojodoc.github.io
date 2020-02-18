@@ -10,8 +10,8 @@ Pictures build upon turtle graphics to let you create more intricate art, learn 
 For a quick intro, look at the [Picture Basics](concepts/turtle-picture-basics.html) page in the [Turtle Graphics](turtle-index.html) section.
 
 Then take a lool at the following tutorials:
-* [Introduction to Pictures](tutorials/pictures-intro.html).
-* [Introduction to grid based generative art](tutorials/generative-art-grid-intro.html).
+* [An introduction to Pictures](tutorials/pictures-intro.html).
+* [An introduction to grid based generative art](tutorials/generative-art-grid-intro.html).
 * [Grid based generative art (part 2) - color and shape palettes](tutorials/generative-art-grid-part2.html).
 * [Grid based generative art (part 3) - colors from an image](tutorials/generative-art-grid-part3.html).
 
