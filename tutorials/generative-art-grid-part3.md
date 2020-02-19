@@ -227,6 +227,7 @@ Here's the code for creating a palette from the frequently used colors in an ima
 
 ```scala
 val img = image(url("http://docs.kogics.net/tutorials/sunset-tree.png"))
+// step 1 - build up a map of pixel colors to counts
 val pixels = HashMap.empty[Color, Int]
 repeatFor(0 until img.getHeight) { y =>
     repeatFor(0 until img.getWidth) { x =>
@@ -234,12 +235,23 @@ repeatFor(0 until img.getHeight) { y =>
         pixels(p) = pixels.getOrElseUpdate(p, 0) + 1
     }
 }
-val palette = pixels.toSeq.sortWith(_._2 > _._2).drop(2000).take(50).map(_._1)
+// step 2 - create the palette from the map
+val palette = pixels.toSeq.sortWith(_._2 > _._2).map(_._1).drop(2000).take(50)
 
 def cellColor = randomFrom(palette)
 ```
 
-And here's the full code and output:
+In the first step above, a map is created by going through all the pixels in the image, getting the color of each pixel, and putting these colors in a map along with their counts. Each time a previously seen color is encountered, it's count is bumped up by 1.
+
+In the second step (which is just one line of code!), many things happen:
+* The map is converted to a sequence of (Color, Int) tuples (`pixels.toSeq`).
+* This sequence is sorted in descending order based on the second elements (which are the color counts) of the tuples inside it (`.sortWith(_._2 > _._2)`).
+* The sequence is mapped to another sequence which contains just the colors and not the counts, which we don't need any more after sorting (`.map(_._1)`).
+* The first 2000 elements of the new sequence are dropped, to get to some interesting colors (`.drop(2000)`)).
+* The next 50 elements of the new sequence are put into the palette (`.take(50)`).
+
+
+Here's the full code and output:
 
 ---
 
@@ -262,7 +274,7 @@ repeatFor(0 until img.getHeight) { y =>
         pixels(p) = pixels.getOrElseUpdate(p, 0) + 1
     }
 }
-val palette = pixels.toSeq.sortWith(_._2 > _._2).drop(2000).take(50).map(_._1)
+val palette = pixels.toSeq.sortWith(_._2 > _._2).map(_._1).drop(2000).take(50)
 
 def cellColor = randomFrom(palette)
 
