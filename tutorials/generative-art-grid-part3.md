@@ -33,7 +33,7 @@ Let's see this in action with a complete program. The program will make an irreg
 
 Here's the image:
 
-<img src="sunset-tree.png" height="200">
+<img src="https://klike.net/uploads/posts/2019-10/1570441589_32.jpg" height="200">
 
 And here's the program that uses the colors from the image:
 
@@ -50,7 +50,9 @@ val tileCount = 3
 val tileWidth = cwidth / tileCount
 val tileHeight = cheight / tileCount
 
-val img = image(url("http://docs.kogics.net/tutorials/sunset-tree.png"))
+// Todo - save the above image as sunset-tree.png and then use it in your program.
+// without the above step, the program will not work. 
+val img = image("sunset-tree.png")
 def imgColor(x: Double, y: Double) = {
     val nx = mathx.map(x, 0, cwidth, 0, img.getWidth).toInt
     val ny = mathx.map(y, 0, cheight, 0, img.getHeight).toInt
@@ -220,13 +222,12 @@ Let's work with the sunset image again:
 
 Here's the image:
 
-<img src="sunset-tree.png" height="200">
+<img src="https://klike.net/uploads/posts/2019-10/1570441589_32.jpg" height="200">
 
-
-Here's the code for creating a palette from the frequently used colors in an image:
+And here's the code for creating a palette from the frequently used colors in the image:
 
 ```scala
-val img = image(url("http://docs.kogics.net/tutorials/sunset-tree.png"))
+val img = image("sunset-tree.png")
 // step 1 - build up a map of pixel colors to counts
 val pixels = HashMap.empty[Color, Int]
 repeatFor(0 until img.getHeight) { y =>
@@ -266,7 +267,7 @@ val tileCount = 3
 val tileWidth = cwidth / tileCount
 val tileHeight = cheight / tileCount
 
-val img = image(url("http://docs.kogics.net/tutorials/sunset-tree.png"))
+val img = image("sunset-tree.png")
 val pixels = HashMap.empty[Color, Int]
 repeatFor(0 until img.getHeight) { y =>
     repeatFor(0 until img.getWidth) { x =>
