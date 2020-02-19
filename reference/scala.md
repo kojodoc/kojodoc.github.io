@@ -34,6 +34,7 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 * [1.7.3 Set](#data-set)
 * [1.7.3.1 HashSet](#data-hashset)
 * [1.7.4 Option](#data-option)
+* [1.7.5 Tuple](#data-tuple)
 
 ---
 
@@ -599,6 +600,28 @@ No number found
 
 If an option has the value `v` inside, it is represented as `Some(v)`. If it has no value inside, it is represented as `None`.
 
+<a name="data-tuple">
+**1.7.5 Tuple**
+
+A tuple is an easy way to package multiple values together. One good use of this is to return multiple values from a function:
+
+```scala
+def div(n1: Int, n2: Int) = {
+    val quot = n1 / n2
+    val rem = n1 % n2
+    (quot, rem)
+} //> div: (n1: Int, n2: Int)(Int, Int)
+
+val ans = div(11, 3) //> ans: (Int, Int) = (3,2)
+ans._1 //> res1: Int = 3
+ans._2 //> res2: Int = 2
+```
+
+For a tuple `t` with `n` elements, you access the `i-th` element like this: `t._i`. You can see an example of this in the last two lines of the code above.
+
+A tuple of two elements is called a pair.
+
+Note that you can view a map as a collection of (key, value) pairs.
 
 <a name="control">
 **2 Control Flow**

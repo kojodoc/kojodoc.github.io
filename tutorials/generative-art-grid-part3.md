@@ -244,7 +244,7 @@ def cellColor = randomFrom(palette)
 In the first step above, a map is created by going through all the pixels in the image, getting the color of each pixel, and putting these colors in a map along with their counts. Each time a previously seen color is encountered, it's count is bumped up by 1.
 
 In the second step (which is just one line of code!), many things happen:
-* The map is converted to a sequence of (Color, Int) tuples (`pixels.toSeq`).
+* The map is converted to a sequence of (Color, Int) tuples (`pixels.toSeq`). [Read more about tuples](../reference/scala.html#data-tuple).
 * This sequence is sorted in descending order based on the second elements (which are the color counts) of the tuples inside it (`.sortWith(_._2 > _._2)`).
 * The sequence is mapped to another sequence which contains just the colors and not the counts, which we don't need any more after sorting (`.map(_._1)`).
 * The first 2000 elements of the new sequence are dropped, to get to some interesting colors (`.drop(2000)`)).
