@@ -216,4 +216,113 @@ setup {
 
 ### Approach 2 - Colors from an image extracted palette
 
-Coming soon...
+Let's work with the sunset image again:
+
+Here's the image:
+
+<img src="sunset-tree.png" height="200">
+
+
+Here's the code for creating a palette from the frequently used colors in an image:
+
+```scala
+val img = image(url("http://docs.kogics.net/tutorials/sunset-tree.png"))
+val pixels = HashMap.empty[Color, Int]
+repeatFor(0 until img.getHeight) { y =>
+    repeatFor(0 until img.getWidth) { x =>
+        val p = getImagePixel(img, x, y)
+        pixels(p) = pixels.getOrElseUpdate(p, 0) + 1
+    }
+}
+val palette = pixels.toSeq.sortWith(_._2 > _._2).drop(2000).take(50).map(_._1)
+
+def cellColor = randomFrom(palette)
+```
+
+And here's the full code and output:
+
+---
+
+```scala
+size(900, 900)
+cleari()
+setBackground(white)
+originBottomLeft()
+initRandomGenerator(-647255116900691681L)
+
+val tileCount = 3
+val tileWidth = cwidth / tileCount
+val tileHeight = cheight / tileCount
+
+val img = image(url("http://docs.kogics.net/tutorials/sunset-tree.png"))
+val pixels = HashMap.empty[Color, Int]
+repeatFor(0 until img.getHeight) { y =>
+    repeatFor(0 until img.getWidth) { x =>
+        val p = getImagePixel(img, x, y)
+        pixels(p) = pixels.getOrElseUpdate(p, 0) + 1
+    }
+}
+val palette = pixels.toSeq.sortWith(_._2 > _._2).drop(2000).take(50).map(_._1)
+
+def cellColor = randomFrom(palette)
+
+def shape(w: Double, h: Double) = {
+    val len = math.min(w, h) * 3 / 4
+    picStackCentered(noPen -> Picture.rectangle(w, h), Picture.ellipseInRect(len, len))
+}
+
+case class Block(x: Double, y: Double, w: Double, h: Double, c: Color)
+var blocks = ArrayBuffer.empty[Block]
+
+def drawBlock(b: Block) {
+    val pic = shape(b.w, b.h)
+    pic.setPosition(b.x, b.y)
+    val d = mathx.distance(b.x, b.y, mouseX, mouseY)
+    val f = mathx.map(d, 0, 2000, 0.3, .9)
+    val angle = mathx.angle(b.x, b.y, mouseX, mouseY)
+    pic.setPenColor(b.c)
+    pic.setFillColor(b.c.fadeOut(f))
+    pic.setPenThickness(2)
+    draw(pic)
+}
+
+def splitSomeBlocks(blocks: ArrayBuffer[Block], p: Double): ArrayBuffer[Block] = {
+    val blocks2 = ArrayBuffer.empty[Block]
+    repeatFor(blocks) { b =>
+        if (randomDouble(1) < p) {
+            val newBlocks = Array(
+                Block(b.x, b.y, b.w / 2, b.h / 2, cellColor),
+                Block(b.x, b.y + b.h / 2, b.w / 2, b.h / 2, cellColor),
+                Block(b.x + b.w / 2, b.y, b.w / 2, b.h / 2, cellColor),
+                Block(b.x + b.w / 2, b.y + b.h / 2, b.w / 2, b.h / 2, cellColor)
+            )
+            blocks2.appendAll(newBlocks)
+        }
+        else {
+            blocks2.append(b)
+        }
+    }
+    blocks2
+}
+
+setup {
+    repeatFor(rangeTill(0, cheight, tileHeight)) { posY =>
+        repeatFor(rangeTill(0, cwidth, tileWidth)) { posX =>
+            val block = Block(posX, posY, tileWidth, tileHeight, cellColor)
+            blocks.append(block)
+        }
+    }
+    repeat(5) {
+        blocks = splitSomeBlocks(blocks, 0.4)
+    }
+}
+
+drawLoop {
+    erasePictures()
+    repeatFor(blocks) { b =>
+        drawBlock(b)
+    }
+}
+```
+
+![color-from-image-3](color-from-image-3.png)
