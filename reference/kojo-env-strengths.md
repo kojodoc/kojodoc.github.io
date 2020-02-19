@@ -26,9 +26,13 @@ Kojo has the following features to support the flow of programming:
 Kids learning programming in Kojo get to see these ideas in a theoretically clean but also practically very usable and rich context. These learned ideas can then be transferred very easily to other languages like Python, Javascript, and Java.
 
 ### Physical product development opportunities
-Kojo has great support for generative art, which can be used to create exciting designs that can be printed on t-shirts, carry bags, posters, back-packs, cups, caps, etc. This enables children to build things that they can use, showcase, and potentially sell. This in turn provides tremendous motivation and multi-dimensional learning and growth opportunities.
+Kojo has great support for generative art, which can be used to create exciting designs that can be printed on t-shirts, carry bags, posters, back-packs, cups, caps, etc. This enables children to build things that they can use, showcase, and potentially sell. This in turn provides tremendous motivation and multi-dimensional learning and growth opportunities. Here's a picture of a Kojo poster (and a Kojo-designed carry bag) showing some of these ideas in action:
 
-Here is a sample t-shirt design done in Kojo:
+![kojo-poster](kojo-poster.jpg)
+
+---
+
+And here is a sample t-shirt design done in Kojo:
 
 ---
 

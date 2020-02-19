@@ -35,7 +35,7 @@ To make this idea more concrete, here are some examples related to computation, 
 
 
 ### Why Kojo?
-Kojo has the following things going for it:
+Kojo has [the following things](../reference/kojo-env-strengths.html) going for it:
 * It is a [modern programming environment](../reference/kojo-env-strengths.html).
 * It uses a powerful programming language that has good support for all the [essential ideas in computing](../reference/kojo-env-strengths.html#a-powerful-language). 
 * It has [rich activity areas](../index.html) that you can program in.
