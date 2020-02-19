@@ -104,8 +104,8 @@ setup {
             blocks.append(block)
         }
     }
-    repeat(7) {
-        blocks = splitSomeBlocks(blocks, 0.5)
+    repeat(9) {
+        blocks = splitSomeBlocks(blocks, 0.7)
     }
 }
 
