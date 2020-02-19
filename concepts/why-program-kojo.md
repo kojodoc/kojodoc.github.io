@@ -2,9 +2,7 @@
   <a href="../index.html">Home</a> | <a href="../fundamentals-index.html">Fundamentals</a>
 </div>
 
-## Why learn to program? Why Kojo?
-
-### Why learn to program?
+## Why learn to program?
 Here's a brief answer:
 
 1. To better understand the world around you - by gaining a deeper knowledge of **computation**, the foundation of the digital world that’s augmenting the physical world.  
@@ -20,7 +18,7 @@ To make this idea more concrete, here are some examples related to computation, 
       * Energy (smart buildings, smart road lighting).
       * Security (cameras, sensors, social feeds).
 
-    The above ideas are meant to highlight why it is important to learn about **computation** if you hope to understand the world around you at a non-superficial level.
+    The above ideas (which are all driven by **computation**) are meant to highlight why it is important to learn about **computation** if you hope to understand the world around you at a non-superficial level.
 2. To get good brain **exercise** (with reinforcement, given the goal oriented and interactive nature of programming).
   * The exercise is in the areas of logical, creative, and critical thinking.
 3. To have a new way to learn **subjects** like mathematics, art, music, and science.
@@ -34,7 +32,7 @@ To make this idea more concrete, here are some examples related to computation, 
   * Or get a job and earn a decent (or great) living.
 
 
-### Why Kojo?
+## Why Kojo?
 Kojo has [the following things](../reference/kojo-env-strengths.html) going for it:
 * It is a [modern programming environment](../reference/kojo-env-strengths.html).
 * It uses a powerful programming language that has good support for all the [essential ideas in computing](../reference/kojo-env-strengths.html#a-powerful-language). 
