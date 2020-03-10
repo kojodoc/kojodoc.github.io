@@ -14,6 +14,7 @@ Then take a lool at the following tutorials:
 * [An introduction to grid based generative art](tutorials/generative-art-grid-intro.html).
 * [Grid based generative art (part 2) - color and shape palettes](tutorials/generative-art-grid-part2.html).
 * [Grid based generative art (part 3) - colors from an image](tutorials/generative-art-grid-part3.html).
+* [Neural Style Transfer](tutorials/neural-style.html) -- in which you use artificial intelligence to transfer the style of an image to your drawing.
 
 ---
 
