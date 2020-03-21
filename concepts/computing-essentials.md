@@ -74,8 +74,8 @@ A program is made out of data and code. Code refers to the instructions that mak
   * These initial data values can be hard-coded inside the program, or can be read from the outside via a query.
 2. The program then (optionally) computes new values from its current values.
   * This computation is done via **functions**.
-3. The program then shows you outputs based on its (new) current values.
-  * The showing of outputs is done via **commands**.
+3. The program then generates outputs based on its (new) current values.
+  * Outputs are meant to be seen/used by the users of the program. Outputs are generated via **commands**.
 4. The program then (optionally) goes back to step 2 above.
 
 The following simple program shows steps 1, 2, and 3 from above in action:
@@ -104,13 +104,8 @@ The following are some of the primitives available in Kojo.
 * [Turtle Graphics](../reference/turtle.html)
 * [Picture Graphics](../reference/picture.html)
 * [Gaming](../reference/gaming.html)
-* [Data Types](../reference/scala.html#data) - as you work with turtle graphics, pictures, or gaming, you will need to work with different types of data. Some of the primitive types availabe in Kojo are - Int, Double, Boolean, String, Color, Sequence, Map, Set, etc.  
-Here are some points to keep in mind about data:
-  * Every data value is an object. An object combines data with functions/commands. The functions/commands attached to an object are called its methods.
-  * Every object has a type.
-  * A type determines a set of possible values and the operations that can be done with these values.
-  * Given a value `pic` that has a method `draw()`, you can call the draw method like this: `pic.draw()`.
-* [Utility commands and functions](../reference/utility.html).
+* [Data Types](../reference/scala.html#data)
+* [Utility commands and functions](../reference/utility.html)
 
 ---
 
