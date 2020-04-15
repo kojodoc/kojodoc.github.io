@@ -12,9 +12,9 @@ For a quick intro, look at the [Picture Basics](concepts/turtle-picture-basics.h
 Then take a lool at the following tutorials:
 * [An introduction to Pictures](tutorials/pictures-intro.html).
 * [An introduction to grid based generative art](tutorials/generative-art-grid-intro.html).
-* [Grid based generative art (part 2) - color and shape palettes](tutorials/generative-art-grid-part2.html).
-* [Grid based generative art (part 3) - colors from an image](tutorials/generative-art-grid-part3.html).
-* [Neural Style Transfer](tutorials/neural-style.html) -- in which you use artificial intelligence to transfer the style of an image to your drawing.
+* [Grid based generative art (part 2)](tutorials/generative-art-grid-part2.html) -- Using color and shape palettes.
+* [Grid based generative art (part 3)](tutorials/generative-art-grid-part3.html) -- Using colors from an image.
+* [Neural Style Transfer](tutorials/neural-style.html) -- Using deep-learning/AI to transfer the style of an image to your drawing.
 
 ---
 
