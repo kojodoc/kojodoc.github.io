@@ -36,8 +36,8 @@ This page contains descriptions of general purpose utility commands and function
 ### Math
 
 | Function | Description |
-| `mathx.map(value, low1, high1, low2, high2)` | Maps the given value from the range `(low1, high1)` to the range `(low2, high2)`. |
-| `mathx.lerp(value1, value2, amt)` | Returns the interpolation as per the given fraction `amt` in the range `(value1, value2)`. |
+| `mathx.map(value, start1, stop1, start2, stop2)` | Maps the given value from the range `(start1, stop1)` to the range `(start2, stop2)`. |
+| `mathx.lerp(start, stop, amt)` | Returns the interpolation as per the given fraction `amt` in the range `(start, stop)`. |
 | `mathx.constrain(value, min, max)` | Constrains the given `value` between `min` and `max`. |
 | `mathx.distance(x1, y1, x2, y2)` | Calculates the distance between (x1, y1) and (x2, y2). |
 | `mathx.distance(point1, point2)` | Calculates the distance between point1 and point2. |
