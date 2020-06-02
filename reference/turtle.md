@@ -40,6 +40,14 @@ Most descriptions include sample code. Copy & paste and then run the sample code
 * [setPenFont](#setpenfont)
 * [setPosition](#setposition)
 * [lineTo](#lineto)
+* [beginShape](#beginshape)
+* [vertex](#beginshape)
+* [curveVertex](#beginshape)
+* [vertexRt](#beginshape)
+* [curveVertexRt](#beginshape)
+* [quadraticVertex](#beginshape)
+* [bezierVertex](#beginshape)
+* [endShape](#endshape)
 * [setSpeed](#setspeed)
 * [invisible and visible](#invisible-and-visible)
 * [repeat](#repeat)
@@ -190,6 +198,19 @@ write("Hello World")
 
 ### setSpeed
 `setSpeed(speed)` - sets the turtle's speed to the given speed, which can be one of `slow`, `medium`, `fast`, or `superFast`.
+
+### beginShape
+`beginShape()` - Starts the definition of a shape made out of vertices. Vertices can be added to the shape using the following commands:
+ * `vertex(x, y)` - adds a vertex to the shape at the given (x, y).
+ * `vertexRt(r, theta)` - adds a vertex to the shape at the given (r, theta).
+ * `curveVertex(x, y)` - adds a curve-vertex to the shape at the given (x, y).
+ * `curveVertexRt(r, theta)` - adds a curve-vertex to the shape at the given (r, theta).
+ * `quadraticVertex(cx, cy, x2, y2)` - adds a quadratic-bezier curve-vertex to the shape using the given control and second vertex coordinates (with one control point).
+ * `bezierVertex(cx1, cy1, cx2, cy2, x2, y2)` - adds a bezier curve-vertex to the shape using the given control and second vertex coordinates (with two control points).
+
+### endShape
+`endShape()` - Finishes the definition of a shape made out of vertices, **and draws the shape**. A shape definition is started with a `beginShape()`, and vertices are added to the shape using the various vertex commands described in the `beginShape()` section above.
+
 
 ### invisible and visible
 `invisible()` - hides the turtle.  
