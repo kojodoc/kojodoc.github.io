@@ -2,7 +2,11 @@
   <a href="./index.html">Home</a>
 </div>
 
-Welcome to the [iKojo](http://ikojo.kogics.net) page. iKojo is the web based version of Kojo. 
+This page contains information on iKojo -- the web-based version of desktop Kojo.
+
+<span style="font-size:150%">
+  <a href="http://ikojo.kogics.net"><strong>Run iKojo</strong></a> 
+</span>
 
 iKojo supports the following subset of the features of desktop Kojo:
 * Most of [turtle graphics](reference/turtle.html) (for an easy beginning).
