@@ -4,7 +4,7 @@
 
 <div style="text-align:center;margin:25px;">
   <span style="font-size:150%">
-    <a href="http://ikojo.kogics.net"><strong>Run iKojo</strong></a> 
+    <a href="http://ikojo.in"><strong>Run iKojo</strong></a> 
   </span>
 </div>
 
@@ -15,17 +15,17 @@ iKojo is the web-based version of Kojo. It supports the following subset of the 
 Here are some examples showing the above features in action:
 
 Drawings:
-* [A square](http://ikojo.kogics.net/sf/g1fJBcD/0)
-* [A colored pattern with pentagons](http://ikojo.kogics.net/sf/oR9PJ43/0)
-* [A flower](http://ikojo.kogics.net/sf/AlUnOa0/0)
-* [A tree](http://ikojo.kogics.net/sf/NrOU9qJ/0)
+* [A square](http://ikojo.in/sf/g1fJBcD/0)
+* [A colored pattern with pentagons](http://ikojo.in/sf/oR9PJ43/0)
+* [A flower](http://ikojo.in/sf/AlUnOa0/0)
+* [A tree](http://ikojo.in/sf/NrOU9qJ/0)
 
 Games:
-* [Pong](http://ikojo.kogics.net/sf/nOB7vtO/0)
-* [Hunted](http://ikojo.kogics.net/sf/KQPttLI/0)
-* [Bugs](http://ikojo.kogics.net/sf/OuGi82j/0)
-* [Car Ride](http://ikojo.kogics.net/sf/erwlDLW/0)
-* [Lunar Lander](http://ikojo.kogics.net/sf/Y3MnOHR/0)
+* [Pong](http://ikojo.in/sf/nOB7vtO/0)
+* [Hunted](http://ikojo.in/sf/KQPttLI/0)
+* [Bugs](http://ikojo.in/sf/OuGi82j/0)
+* [Car Ride](http://ikojo.in/sf/erwlDLW/0)
+* [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/0)
 
 ### Background information
 The core idea behind iKojo is the following:
