@@ -1,5 +1,5 @@
 ## Contributions Welcome!
-Kojo is open source, and welcomes code contributions from anyone who cares to pitch in. The best way to get going with your potential contribution is to write an email to kojo-dev@googlegroups.com. 
+Kojo is open source, and welcomes code (and documentation) contributions from anyone who cares to pitch in. The best way to get going with your potential contribution is to write an email with your thoughts to kojo-dev@googlegroups.com. 
 
 Kojo is made up of the following projects:
 
