@@ -4,7 +4,7 @@ title: "Happy Jekylling!"
 ---
 <div style="text-align:center">
     This is the documentation wiki for <a href="http://www.kogics.net/kojo">The Kojo Learning Environment</a>.<br/> 
-    Kojo is available as a <a href="http://www.kogics.net/kojo-download">desktop app</a> and a <a href="ikojo.html">webapp</a>.
+    Kojo is available as a <a href="http://www.kogics.net/kojo-download">Desktop-App</a> and a <a href="ikojo.html">Web-App</a>.
     <hr/>
     Kojo has four major activity areas, as shown below. Click on an area to view its documentation. <br/><br/>
     <a href="turtle-index.html"><img src="turtle-graphics.png" width="600"/></a>

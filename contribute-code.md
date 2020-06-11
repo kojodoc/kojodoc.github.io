@@ -7,8 +7,8 @@ Kojo is made up of the following projects:
 * [GitHub repository](https://github.com/litan/kojo)
 
 **iKojo**
-* [Core-webapp GitHub repository](https://github.com/litan/kojojs-editor)
-* [Compiler-server GitHub repository](https://github.com/litan/kojojs-core)
+* [Web-App GitHub repository](https://github.com/litan/kojojs-editor)
+* [Compiler-Server + KojoJS GitHub repository](https://github.com/litan/kojojs-core)
 
 **Kojo Documentation** (this website)  
 * [Contribution page](contribute.html)
