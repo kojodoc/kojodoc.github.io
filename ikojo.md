@@ -8,7 +8,7 @@
   </span>
 </div>
 
-iKojo is the web-based version of Kojo. It supports the following subset of the features of desktop Kojo:
+iKojo is the **i**nternet/web based version of Kojo. It supports the following subset of the features of desktop Kojo:
 * Most of [turtle graphics](reference/turtle.html) (for an easy beginning).
 * Most of [Picture graphics for gaming](reference/gaming.html) (for easy sharing of games developed within desktop Kojo).
 
@@ -25,7 +25,7 @@ Games:
 * [Hunted](http://ikojo.in/sf/KQPttLI/0)
 * [Bugs](http://ikojo.in/sf/OuGi82j/0)
 * [Car Ride](http://ikojo.in/sf/erwlDLW/0)
-* [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/0)
+* [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
 
 ### Background information
 The core idea behind iKojo is the following:
