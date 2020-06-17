@@ -29,7 +29,7 @@ Drawings:
 
 Games:
 * [Pong](http://ikojo.in/sf/nOB7vtO/0)
-* [Hunted](http://ikojo.in/sf/KQPttLI/0)
+* [Hunted](http://ikojo.in/sf/KQPttLI/1)
 * [Bugs](http://ikojo.in/sf/OuGi82j/0)
 * [Car Ride](http://ikojo.in/sf/erwlDLW/0)
 * [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
