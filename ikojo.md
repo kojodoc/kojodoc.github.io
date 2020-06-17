@@ -1,5 +1,5 @@
 <div class="nav">
-  <a href="./index.html">Home</a>
+  <a href="./index.html">Home</a> | <a href="http://www.lth.se/programmera/installera">Information in Swedish</a>
 </div>
 
 <div style="text-align:center;margin:25px;">
@@ -12,7 +12,14 @@
 * Most of [turtle graphics](reference/turtle.html) (for an easy beginning).
 * Most of [Picture graphics for gaming](reference/gaming.html) (for easy sharing of games developed within desktop Kojo).
 
-Here are some examples showing the above features in action:
+Information to get going with Kojo and iKojo is available at:
+* The [Kojo-Docs](http://docs.kogics.net) website
+* The [Kojo Ebooks](https://www.kogics.net/kojo-ebooks) page
+* The [Lund University (LTH) Kojo page](http://www.lth.se/programmera/installera) (**in Swedish**)
+
+---
+
+Here are some examples showing iKojo in action:
 
 Drawings:
 * [A square](http://ikojo.in/sf/g1fJBcD/0)
