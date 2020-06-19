@@ -33,6 +33,8 @@ Games:
 * [Bugs](http://ikojo.in/sf/OuGi82j/0)
 * [Car Ride](http://ikojo.in/sf/erwlDLW/0)
 * [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
+* [Collidium](http://ikojo.in/sf/wpduPSw/1)
+* [Tic Tac Toe](http://ikojo.in/sf/WRksphz/0)
 
 ### Background information
 The core idea behind iKojo is the following:
