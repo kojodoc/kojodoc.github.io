@@ -35,6 +35,7 @@ Games:
 * [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
 * [Collidium](http://ikojo.in/sf/wpduPSw/1)
 * [Tic Tac Toe](http://ikojo.in/sf/WRksphz/0)
+* [Flappy Ball](http://ikojo.in/sf/6z0ySUq/0)
 
 ### Background information
 The core idea behind iKojo is the following:
