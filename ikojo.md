@@ -42,9 +42,9 @@ Games:
 * [Pong](http://ikojo.in/sf/nOB7vtO/0)
 * [Hunted](http://ikojo.in/sf/KQPttLI/1)
 * [Bugs](http://ikojo.in/sf/OuGi82j/0)
-* [Car Ride](http://ikojo.in/sf/erwlDLW/0)
+* [Car Ride](http://ikojo.in/sf/erwlDLW/1)
 * [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
-* [Collidium](http://ikojo.in/sf/wpduPSw/2)
+* [Collidium](http://ikojo.in/sf/wpduPSw/3)
 * [Tic Tac Toe](http://ikojo.in/sf/WRksphz/0)
 * [Flappy Ball](http://ikojo.in/sf/6z0ySUq/0)
 
