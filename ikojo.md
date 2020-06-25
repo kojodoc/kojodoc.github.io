@@ -8,16 +8,16 @@
   </span>
 </div>
 
-**i**Kojo is the **i**nternet/web based version of Kojo. It supports the following subset of the features of desktop Kojo:
-* Most of [turtle graphics](reference/turtle.html) (for an easy beginning).
-* Most of [Picture graphics for gaming](reference/gaming.html) (for easy sharing of games developed within desktop Kojo).
+**i**Kojo is the **i**nternet/web based version of Kojo. It supports the following subset of the features of desktop-Kojo:
+* [Turtle graphics](reference/turtle.html) (for an easy beginning).
+* [Picture graphics](reference/gaming.html) (for easy sharing of games and simulations developed within desktop-Kojo).
 
-Information to get going with Kojo and iKojo is available at:
+Information for getting started with Kojo and iKojo is available at:
 * The [Kojo-Docs](http://docs.kogics.net) website
 * The [Kojo Ebooks](https://www.kogics.net/kojo-ebooks) page
 * The [Lund University (LTH) Kojo page](http://www.lth.se/programmera/installera) (**in Swedish**)
 
-Some especially relevant pages (from the Kojo-Docs website) are:
+Some useful learning-material pages (from the Kojo-Docs website) are:
 * [Turtle graphics - Core Ideas](https://docs.kogics.net/concepts/turtle-core-ideas.html)
 * [Turtle graphics - Reference](https://docs.kogics.net/reference/turtle.html)
 * [An introduction to Pictures](https://docs.kogics.net/tutorials/pictures-intro.html)
@@ -38,7 +38,7 @@ Drawings:
 * [A flower](http://ikojo.in/sf/AlUnOa0/0)
 * [A tree](http://ikojo.in/sf/NrOU9qJ/0)
 
-Games:
+Games (for devices that have a keyboard. Mobile games coming soon):
 * [Pong](http://ikojo.in/sf/nOB7vtO/0)
 * [Hunted](http://ikojo.in/sf/KQPttLI/1)
 * [Bugs](http://ikojo.in/sf/OuGi82j/0)
@@ -50,6 +50,6 @@ Games:
 
 ### Background information
 The core idea behind iKojo is the following:
-* To enable users to easily start experimenting with Kojo without having to download/install anything. When they want to dig deeper and do more serious programming, they can download/install the Kojo desktop app.
-* To enable users to easily share (via a web link) the games and simulations that they write in Kojo. The game or simulation can be developed in desktop Kojo, and then shared via iKojo.  
-Note - generative art that is created within desktop Kojo can easily be shared as an image via the many image sharing apps that exist out there.
+* To enable users to easily start experimenting with Kojo without having to download/install anything. When they want to dig deeper and do more serious programming, they can download/install the desktop-Kojo app.
+* To enable users to easily share (via a web link) the games and simulations that they write in Kojo. The game or simulation can be developed in desktop-Kojo, and then shared via iKojo.  
+Note - generative art that is created within desktop-Kojo does not really require iKojo, and can easily be shared as an image via the many image sharing apps that exist out there (like instagram, facebook, twitter, etc). Hence iKojo is optimized more for animations than pretty drawings.
