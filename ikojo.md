@@ -52,4 +52,4 @@ Games (for devices that have a keyboard. Mobile games coming soon):
 The core idea behind iKojo is the following:
 * To enable users to easily start experimenting with Kojo without having to download/install anything. When they want to dig deeper and do more serious programming, they can download/install the desktop-Kojo app.
 * To enable users to easily share (via a web link) the games and simulations that they write in Kojo. The game or simulation can be developed in desktop-Kojo, and then shared via iKojo.  
-Note - generative art that is created within desktop-Kojo does not really require iKojo, and can easily be shared as an image via the many image sharing apps that exist out there (like instagram, facebook, twitter, etc). Hence iKojo is optimized more for animations than pretty drawings.
+Note - generative art that is created within desktop-Kojo does not really require iKojo for sharing, as it can be easily shared (in image format) via the many image sharing apps that exist out there (like instagram, facebook, twitter, etc). Hence iKojo is optimized more for animations than pretty drawings.
