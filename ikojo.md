@@ -45,14 +45,14 @@ And here are some examples showing iKojo in action:
 * [Car Ride](http://ikojo.in/sf/erwlDLW/1)
 * [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
 * [Collidium](http://ikojo.in/sf/wpduPSw/3)
-* [Tic Tac Toe](http://ikojo.in/sf/WRksphz/0)
+* [Tic Tac Toe](http://ikojo.in/sf/WRksphz/1)
 * [Flappy Ball](http://ikojo.in/sf/6z0ySUq/1)
 
 **Games** (for *mobile/touch devices*; currently experimental):  
 Instructions - run the game, and then click on the game 'start' button to switch to fullscreen mode and start playing (note that fullscreen mode is not supported on Apple/iOS devices).
 * [Hunted](http://ikojo.in/sf/uLydUCi/0) - best played in portrait mode. Control the player with the joystick at the bottom of the screen.
 * [Collidium](http://ikojo.in/sf/Nwo4UWB/1) - best played in landscape mode. Launch the ball with your finger. Then draw paddles with your finger to guide the ball towards the target.
-* [Tic Tac Toe](http://ikojo.in/sf/Dz6F6v4/0)
+* [Tic Tac Toe](http://ikojo.in/sf/Dz6F6v4/1)
 
 ### Background information
 The core idea behind iKojo is the following:
