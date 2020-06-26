@@ -48,8 +48,8 @@ And here are some examples showing iKojo in action:
 * [Tic Tac Toe](http://ikojo.in/sf/WRksphz/0)
 * [Flappy Ball](http://ikojo.in/sf/6z0ySUq/1)
 
-**Games** (for *mobile/touch devices*; currently experimental - works on Android but not yet on iOS):  
-Instructions - run the game, and then click on the game 'start' button to switch to fullscreen mode and start playing. 
+**Games** (for *mobile/touch devices*; currently experimental):  
+Instructions - run the game, and then click on the game 'start' button to switch to fullscreen mode and start playing (note that fullscreen mode is not supported on Apple/iOS devices).
 * [Hunted](http://ikojo.in/sf/uLydUCi/0) - best played in portrait mode. Control the player with the joystick at the bottom of the screen.
 * [Collidium](http://ikojo.in/sf/Nwo4UWB/1) - best played in landscape mode. Launch the ball with your finger. Then draw paddles with your finger to guide the ball towards the target.
 * [Tic Tac Toe](http://ikojo.in/sf/Dz6F6v4/0)
