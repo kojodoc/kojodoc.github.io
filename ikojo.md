@@ -36,11 +36,11 @@ And here are some examples showing iKojo in action:
 * [A square](http://ikojo.in/sf/g1fJBcD/0)
 * [A colored pattern with pentagons](http://ikojo.in/sf/oR9PJ43/0)
 * [A flower](http://ikojo.in/sf/AlUnOa0/0)
-* [A tree](http://ikojo.in/sf/NrOU9qJ/0)
+* [A tree](http://ikojo.in/sf/NrOU9qJ/1)
 
 **Games** (for *devices that have a keyboard*. Mobile games are listed further down):
-* [Pong](http://ikojo.in/sf/nOB7vtO/0)
 * [Hunted](http://ikojo.in/sf/KQPttLI/1)
+* [Pong](http://ikojo.in/sf/nOB7vtO/1)
 * [Bugs](http://ikojo.in/sf/OuGi82j/0)
 * [Car Ride](http://ikojo.in/sf/erwlDLW/1)
 * [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
