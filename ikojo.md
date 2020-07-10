@@ -29,11 +29,11 @@
 * The [Lund University (LTH) Kojo page](http://www.lth.se/programmera/installera) (**in Swedish**).
 
 ### Getting Started
-A couple of books to get going:
+Books:
 * [Getting started with Kojo](http://wiki.kogics.net/kojo-codeactive-books#getting-started).
 * [Explorations with Kojo, Level-1 [PDF]](https://bitbucket.org/lalit_pant/kojo/downloads/Kojo-Lessons-Level1-140620.pdf) (Version -- June 14, 2020).
 
-Some useful learning-material pages (from the Kojo-Docs website):
+Pages (from the Kojo-Docs website):
 * [Turtle graphics - Core Ideas](https://docs.kogics.net/concepts/turtle-core-ideas.html).
 * [Turtle graphics - Reference](https://docs.kogics.net/reference/turtle.html).
 * [An introduction to Pictures](https://docs.kogics.net/tutorials/pictures-intro.html).
