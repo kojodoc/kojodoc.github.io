@@ -2,35 +2,46 @@
   <a href="./index.html">Home</a> | <a href="http://www.lth.se/programmera/installera">Information in Swedish</a>
 </div>
 
+---
+
 <div style="text-align:center;margin:25px;">
   <span style="font-size:150%">
     <a href="http://ikojo.in"><strong>Run iKojo</strong></a> 
   </span>
 </div>
 
+---
+
+* [About iKojo](#about-ikojo)
+* [Documentation](#documentation)
+* [Getting started](#getting-started)
+* [Examples](#examples)
+* [Background information](#background-information)
+
+### About iKojo
 **i**Kojo is the **i**nternet/web based version of Kojo. It supports the following subset of the features of desktop-Kojo:
 * [Turtle graphics](reference/turtle.html) (for an easy beginning).
 * [Picture graphics](reference/gaming.html) (for easy sharing of games and simulations developed within desktop-Kojo).
 
-Information for getting started with Kojo and iKojo is available at:
-* The [Kojo-Docs](http://docs.kogics.net) website
-* The [Kojo Ebooks](https://www.kogics.net/kojo-ebooks) page
-* The [Lund University (LTH) Kojo page](http://www.lth.se/programmera/installera) (**in Swedish**)
+### Documentation
+* The [Kojo-Docs](http://docs.kogics.net) website.
+* The [Kojo Ebooks](https://www.kogics.net/kojo-ebooks) page.
+* The [Lund University (LTH) Kojo page](http://www.lth.se/programmera/installera) (**in Swedish**).
 
-Some useful learning-material pages (from the Kojo-Docs website) are:
-* [Turtle graphics - Core Ideas](https://docs.kogics.net/concepts/turtle-core-ideas.html)
-* [Turtle graphics - Reference](https://docs.kogics.net/reference/turtle.html)
-* [An introduction to Pictures](https://docs.kogics.net/tutorials/pictures-intro.html)
-* [Computing Essentials for Kojo](https://docs.kogics.net/concepts/computing-essentials.html)
-* [Scala Language Quickref](https://docs.kogics.net/reference/scala.html)
+### Getting Started
+A couple of books to get going:
+* [Getting started with Kojo](http://wiki.kogics.net/kojo-codeactive-books#getting-started).
+* [Explorations with Kojo, Level-1 [PDF]](https://bitbucket.org/lalit_pant/kojo/downloads/Kojo-Lessons-Level1-140620.pdf) (Version -- June 14, 2020).
 
-If you prefer something in book form, here's the Kojo starter book:
+Some useful learning-material pages (from the Kojo-Docs website):
+* [Turtle graphics - Core Ideas](https://docs.kogics.net/concepts/turtle-core-ideas.html).
+* [Turtle graphics - Reference](https://docs.kogics.net/reference/turtle.html).
+* [An introduction to Pictures](https://docs.kogics.net/tutorials/pictures-intro.html).
+* [Computing Essentials for Kojo](https://docs.kogics.net/concepts/computing-essentials.html).
+* [Scala Language Quickref](https://docs.kogics.net/reference/scala.html).
 
-[Explorations with Kojo, Level-1 [PDF]](https://bitbucket.org/lalit_pant/kojo/downloads/Kojo-Lessons-Level1-140620.pdf) (Version -- June 14, 2020).
-
----
-
-And here are some examples showing iKojo in action:
+### Examples
+Here are some examples showing iKojo in action:
 
 **Drawings**:
 * [A square](http://ikojo.in/sf/g1fJBcD/0)
