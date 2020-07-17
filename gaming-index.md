@@ -6,7 +6,7 @@ These pages describe the Gaming facility within Kojo.
 
 > <img src="man-at-work.png"/> <br/> *This section of the website is currently under development*.
 
-Check out the [iKojo](ikojo.html) page many [sample](ikojo.html#examples) games.
+For now, you can go to the [iKojo](ikojo.html) page to check out (and play) [many sample games](ikojo.html#examples).
 
 Also, here are some simple animations leading up to a *Lunar Lander* game:
 
