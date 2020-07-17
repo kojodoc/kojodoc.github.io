@@ -6,7 +6,9 @@ These pages describe the Gaming facility within Kojo.
 
 > <img src="man-at-work.png"/> <br/> *This section of the website is currently under development*.
 
-For now, here are some simple animations leading up to a *Lunar Lander* game:
+Check out the [iKojo](ikojo.html) page many [sample](ikojo.html#examples) games.
+
+Also, here are some simple animations leading up to a *Lunar Lander* game:
 
 * [Bouncing shape](#bouncing-shape)
 * [Bouncing shape with gravity](#bouncing-shape-with-gravity)
