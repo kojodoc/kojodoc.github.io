@@ -64,6 +64,7 @@ Instructions - run the game, and then click on the game 'start' button to switch
 * [Hunted](http://ikojo.in/sf/uLydUCi/2) - best played in portrait mode. Control the player with the joystick at the bottom of the screen.
 * [Collidium](http://ikojo.in/sf/Nwo4UWB/3) - best played in landscape mode. Launch the ball with your finger. Then draw paddles with your finger to guide the ball towards the target.
 * [Tic Tac Toe](http://ikojo.in/sf/Dz6F6v4/2)
+* [Bugs](http://ikojo.in/sf/T4ZKAkH/0)
 
 ### Background information
 The core idea behind iKojo is the following:
