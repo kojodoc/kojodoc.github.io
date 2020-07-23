@@ -3,11 +3,31 @@
 </div>
 
 ## Gaming How-to code snippets
+* [Move a picture towards a given position](#move-a-picture-towards-a-given-position).
 * [On picture click - draw a new picture](#on-picture-click---draw-a-new-picture).
 * [Check if two pictures have the same orientation](#check-if-two-pictures-have-the-same-orientation).
 * [Fire Bullets](#fire-bullets).
 * [Click on a button to start a game](#click-on-a-button-to-start-a-game).
 * [Pictures with hotspots for collision checking](#pictures-with-hotspots-for-collision-checking).
+
+
+### Move a picture towards a given position
+```scala
+// an example where a rectange moves towards the mouse cursor
+cleari()
+val pic = Picture.rectangle(50, 50)
+draw(pic)
+
+animate {
+    val mp = mousePosition 
+    // mp now holds the x, y of the current mouse cursor location
+    val pos = pic.position
+
+    val vel = Vector2D(mp.x - pos.x, mp.y - pos.y).normalize * 3
+    pic.translate(vel)
+    
+}
+```
 
 ### On picture click - draw a new picture
 ```scala

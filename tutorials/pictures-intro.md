@@ -70,7 +70,7 @@ draw(pic1, pic2)
 Use all the picture creation functions listed above (except `hgap` and `vgap`) to create and draw pictures.
 
 ### Picture Transformation
-You can transform pictures in the following main ways (every transformation below is shown via a tranformation object/function and a transformation method/command):
+You can transform pictures in the following main ways (via a tranformation object/function or a transformation method/command):
 
 | Transformation | Object/function | Method/command |
 | :--- | :--- | :--- |
@@ -78,12 +78,15 @@ You can transform pictures in the following main ways (every transformation belo
 | scale (to make bigger or smaller) | `scale(f) -> pic` | `pic.scale(f)` |
 | translate (in its local coordinate system) | `trans(x, y) -> pic` | `pic.translate(x, y)` |
 | translate (in its parent's coordinate system) | `offset(x, y) -> pic` | `pic.offset(x, y)` |
-| position at a given location | `offset(x, y) -> pic` (one time) | `pic.setPosition(x, y)` |
 | change pen color | `penColor(color) -> pic` | `pic.setPenColor(color)` |
 | change pen thickness | `penThickness(t) -> pic` | `pic.setPenThickness(t)` |
 | set no pen | `noPen -> pic` | `pic.setNoPen()` | 
 | change fill color | `fillColor(color) -> pic` | `pic.setFillColor(color)` |
 | set opacity | `opac(o) -> pic` | `pic.setOpacity(o)` | 
+| position at a given location | | `pic.setPosition(x, y)` |
+| rotate to a particular heading | | `pic.setRotation(angle)` |
+| rotate to a particular heading (alternative way) | | `pic.setHeading(angle)` |
+| scale to a particular magnificaton | | `pic.setScale(scale)` |
 
 As shown above, there are two distinct ways of doing picture transformations:
 * The object/function way, e.g., `trans(100, 0) -> pic` - which is useful while doing functional/compositional graphics. This way of doing transformations can be used only before a picture is drawn (and these transformations are applied when the picture is drawn).
