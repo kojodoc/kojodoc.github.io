@@ -86,7 +86,7 @@ You can transform pictures in the following main ways (via a tranformation objec
 | position at a given location | | `pic.setPosition(x, y)` |
 | rotate to a particular heading | | `pic.setRotation(angle)` |
 | rotate to a particular heading (alternative way) | | `pic.setHeading(angle)` |
-| scale to a particular magnificaton | | `pic.setScale(scale)` |
+| scale to a particular size | | `pic.setScale(scale)` |
 
 As shown above, there are two distinct ways of doing picture transformations:
 * The object/function way, e.g., `trans(100, 0) -> pic` - which is useful while doing functional/compositional graphics. This way of doing transformations can be used only before a picture is drawn (and these transformations are applied when the picture is drawn).
