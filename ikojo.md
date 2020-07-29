@@ -4,8 +4,10 @@
 
 ---
 
-<div style="text-align:center;margin:25px;">
-    <a href="http://ikojo.in"><span style="font-size:150%;color:#ff6200"><strong>Run iKojo</strong></span></a>
+<div style="text-align:center;">
+    <a href="http://ikojo.in">
+      <span style="font-size:150%;background-color:#0f79cb;color:white;padding: 15px 32px;display: inline-block;margin: 5px;"><strong>Run iKojo</strong></span>
+    </a>
 </div>
 
 ---
