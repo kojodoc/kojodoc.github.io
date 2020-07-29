@@ -49,6 +49,7 @@ Here are some examples showing iKojo in action:
 
 **Games** (for *devices that have a keyboard*. Mobile games are listed further down):
 * [Hunted](http://ikojo.in/sf/KQPttLI/1)
+* [Hunted (device fps independent)](http://ikojo.in/sf/6sBFHOV/0)
 * [Pong](http://ikojo.in/sf/nOB7vtO/1)
 * [Bugs](http://ikojo.in/sf/OuGi82j/1)
 * [Car Ride](http://ikojo.in/sf/erwlDLW/1)
