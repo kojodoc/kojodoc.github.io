@@ -5,7 +5,7 @@
 ---
 
 <div style="text-align:center;margin:25px;">
-  <span style="font-size:150%">
+  <span style="font-size:150%;color:#ff6200">
     <a href="http://ikojo.in"><strong>Run iKojo</strong></a> 
   </span>
 </div>
@@ -52,7 +52,7 @@ Here are some examples showing iKojo in action:
 **Games** (for *devices that have a keyboard*. Mobile games are listed further down):
 * [Hunted](http://ikojo.in/sf/KQPttLI/1)
 * [Pong](http://ikojo.in/sf/nOB7vtO/1)
-* [Bugs](http://ikojo.in/sf/OuGi82j/0)
+* [Bugs](http://ikojo.in/sf/OuGi82j/1)
 * [Car Ride](http://ikojo.in/sf/erwlDLW/1)
 * [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
 * [Collidium](http://ikojo.in/sf/wpduPSw/3)
@@ -64,7 +64,7 @@ Instructions - run the game, and then click on the game 'start' button to switch
 * [Hunted](http://ikojo.in/sf/uLydUCi/2) - best played in portrait mode. Control the player with the joystick at the bottom of the screen.
 * [Collidium](http://ikojo.in/sf/Nwo4UWB/3) - best played in landscape mode. Launch the ball with your finger. Then draw paddles with your finger to guide the ball towards the target.
 * [Tic Tac Toe](http://ikojo.in/sf/Dz6F6v4/2)
-* [Bugs](http://ikojo.in/sf/T4ZKAkH/0)
+* [Bugs](http://ikojo.in/sf/T4ZKAkH/2)
 
 ### Background information
 The core idea behind iKojo is the following:
