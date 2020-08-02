@@ -12,15 +12,15 @@ Steps in brief (for now; more details soon):
 * This will compile the script via iKojo, and create a Web-App based on the script under `~/kojo-export`.
 
 ### Running the Web-App locally
-* Go over to `~/kojo-export`, and launch index.html. This will open your system browser and start running the exported Web-App.
+* Go over to `~/kojo-export/webapp`, and launch index.html. This will open your system browser and start running the exported Web-App.
 
 ### Putting the Web-App in the cloud (using Netlify)
 * Assume that your Web-App will go live at `https://yourapp.netlify.app`
 * Under the `~/kojo-export/webapp` folder, update icon.png (if you want)
 * Under the `~/kojo-export/webapp` folder, update manifest.json (set `start_url` and `url` to `https://yourapp.netlify.app`)
-* Login to netlify (you can use your github id for this).
-* Drag-n-drop your webapp folder onto the netlify page to create a new site (with a netlify generated name).
-* Go to site settings and change the site name to `yourapp` from the netlify generated name.
+* Login to Netlify (you can use your github id for this).
+* Drag-n-drop your `webapp` folder onto the Netlify page to create a new site (with a Netlify generated name).
+* Go to site settings and change the site name to `yourapp` from the Netlify generated name.
 * Your site will now be live at `https://yourapp.netlify.app`
 
 ### Creating a mobile app from your Web-App
