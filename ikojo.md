@@ -54,9 +54,9 @@ Here are some examples showing iKojo in action:
 * [Hunted (device fps independent)](http://ikojo.in/sf/6sBFHOV/0)
 * [Pong](http://ikojo.in/sf/nOB7vtO/1)
 * [Bugs](http://ikojo.in/sf/OuGi82j/2)
-* [Car Ride](http://ikojo.in/sf/erwlDLW/1)
+* [Car Ride](http://ikojo.in/sf/erwlDLW/2)
 * [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
-* [Collidium](http://ikojo.in/sf/wpduPSw/3)
+* [Collidium](http://ikojo.in/sf/wpduPSw/5)
 * [Tic Tac Toe](http://ikojo.in/sf/WRksphz/1)
 * [Flappy Ball](http://ikojo.in/sf/6z0ySUq/1)
 
@@ -64,7 +64,7 @@ Here are some examples showing iKojo in action:
 Instructions - run the game, and then click on the game 'start' button to switch to fullscreen mode and start playing (note that fullscreen mode is currently not supported on Apple/iOS devices).
 * [Hunted](http://ikojo.in/sf/uLydUCi/2) - best played in portrait mode. Control the player with the joystick at the bottom of the screen.
 * [Hunted](http://ikojo.in/sf/gYwb905/0) - with sound.
-* [Collidium](http://ikojo.in/sf/Nwo4UWB/3) - best played in landscape mode. Launch the ball with your finger. Then draw paddles with your finger to guide the ball towards the target.
+* [Collidium](http://ikojo.in/sf/Nwo4UWB/4) - best played in landscape mode. Launch the ball with your finger. Then draw paddles with your finger to guide the ball towards the target.
 * [Tic Tac Toe](http://ikojo.in/sf/Dz6F6v4/2)
 * [Bugs](http://ikojo.in/sf/T4ZKAkH/3)
 
