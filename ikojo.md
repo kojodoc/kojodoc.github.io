@@ -6,7 +6,7 @@
 
 <div style="text-align:center;">
     <a href="http://ikojo.in">
-      <span style="font-size:150%;background-color:#1189e6;color:white;padding: 15px 32px;display: inline-block;margin: 5px;"><strong>Run iKojo</strong></span>
+      <span style="font-size:150%;background-color:#1189e6;color:white;padding: 15px 32px;display: inline-block;margin: 5px;border-style:solid;border-width:3px;border-color:lightgray"><strong>Run iKojo</strong></span>
     </a>
 </div>
 
