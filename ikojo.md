@@ -54,7 +54,7 @@ Here are some examples showing iKojo in action:
 * [Hunted (device fps independent)](http://ikojo.in/sf/6sBFHOV/0)
 * [Pong](http://ikojo.in/sf/nOB7vtO/1)
 * [Bugs](http://ikojo.in/sf/OuGi82j/2)
-* [Car Ride](http://ikojo.in/sf/erwlDLW/2)
+* [Car Ride](http://ikojo.in/sf/erwlDLW/3)
 * [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
 * [Collidium](http://ikojo.in/sf/wpduPSw/5)
 * [Tic Tac Toe](http://ikojo.in/sf/WRksphz/1)
