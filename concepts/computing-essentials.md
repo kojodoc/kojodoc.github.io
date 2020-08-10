@@ -34,17 +34,18 @@ So an electronic computer basically does the following (as per the program runni
 * It has the CPU work on this input information (from main memory) to generate new information (which is put back into main memory). The new information is of two kinds - intermediate calculations (which feed back as input into more computations), and output information.
 * The computer takes the output information from main memory and writes it to an output device.
 * It saves some of the output information (which needs to survive a computer restart) to secondary storage.
+* It repeats one or more of the above steps as specified.
 
 Let's zoom into the CPU and main memory:
 
 <img src ="cpu-memory.png" width="500"/>
 
-* Memory is divided into two sections - code and data.
+* Memory (for computer programs) is divided into two sections - code and data.
 * When you run a program, the instructions of the program are loaded into the code section.
 * The CPU has an instruction pointer (IP) that points to the next instruction that it is going to run. After a program is loaded, the IP points to the first instruction in the program.
 * As the clock cycle on the computer drives the CPU forward, it runs the instructions in the program one after the other. The instructions are run in sequence, but special instructions in your program make the CPU also do - looping (via repeat), selection(via if/else), and calls (via function/command usage).
 * Code works on data (it takes it in as input and generates it as output).
-* When you run a program, the data in it is loaded into the data section.
+* When you run a program, the data in it is loaded into the data section. Additional data can be read into the data section from an input device - as the program runs.
 * The data section is divided into two parts - the stack (where the local variables live), and the heap, where the data/objects live. Don't worry about this for now.
 * Every data value (in Scala) is an object - it contains a reference to the code that can work with it. 
  
@@ -160,6 +161,8 @@ You saw above how commands can be composed and how functions can be composed. Ke
 ---
 
 ### Abstraction
+Abstraction is the process of giving a name to a useful composition (it's a process because abstractions change as you refine your program). In Kojo/Scala, you can create abstractions in the following ways:
+
 * The `val` keyword instruction allows you to associate a name with a value; e.g. `val x = 10`. This is a form of abstraction.
 * The `var` keyword instruction allows you to bind a name to a value; e.g. `var x = 10`. This name can be bound to a different value later on in your program. This is a form of abstraction.
 * The `def` keyword instruction allows you to define a new command or function. This is a means of abstraction.
