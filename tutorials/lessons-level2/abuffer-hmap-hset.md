@@ -1,10 +1,6 @@
 <div class="nav">
-  <a href="../index.html">Home</a> | <a href="../gaming-index.html">Picture Graphics</a> | <a href="../tutorials-index.html">Tutorials</a>
+  <a href="../../index.html">Home</a> | <a href="index.html">Level 2 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
-
-> <img src="../man-at-work.png"/> <br/> *This page is currently under development*.
-
----
 
 ## ArrayBuffer, HashMap, and HashSet for gaming
 
@@ -91,7 +87,7 @@ activateCanvas()
 
 ### Step 2
 
-Read about [ArrayBuffers](../reference/abuffer-hmap-hset.html).
+Read about [ArrayBuffers](../../reference/abuffer-hmap-hset.html).
 
 **Q2a.** What is an ArrayBuffer?
 
@@ -103,7 +99,7 @@ Read about [ArrayBuffers](../reference/abuffer-hmap-hset.html).
 
 ### Step 3
 
-Read about [HashMaps](../reference/abuffer-hmap-hset.html).
+Read about [HashMaps](../../reference/abuffer-hmap-hset.html#hashmap).
 
 **Q3a.** What is a HashMap?
 
