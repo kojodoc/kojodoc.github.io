@@ -17,3 +17,25 @@
 ## Books
 * [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/2.9.05_release/getting-started-06-08-18.pdf) (Version -- August 6, 2018).
 * [Introduction to Programming with Kojo [PDF]](https://github.com/litan/kojo/releases/download/2.9.05_release/intro-to-programming-180918.pdf) (Version -- September 18, 2018).
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
