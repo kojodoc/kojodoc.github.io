@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 2 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## Understanding repeatFor
+## Understanding the second input to repeatFor
 
 ### Step 1
 

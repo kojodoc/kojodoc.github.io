@@ -11,9 +11,11 @@
 * Moving Pictures on the screen/stage.
 * Keeping Pictures within the stage area.
 * Checking for Picture collisions.
+* Object Oriented Programming (with InstagePic)
+* [Blocks of code, and much more](code-blocks.html).
+* [More on the second input to repeatFor](repeat-for.html).
 * Pictures - responding to keyboard, joystick, and mouse clicks.
 * Making a game - Hunted.
-* [Understanding repeatFor](repeat-for.html).
 * [ArrayBuffer, HashMap, and HashSet for gaming](abuffer-hmap-hset.html).
 * Hunted 2 - increasing the number of hunters without any code change.
 * Hunted 3 - adding background and character images.
