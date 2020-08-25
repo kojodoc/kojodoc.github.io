@@ -75,7 +75,7 @@ Here is some background information for you before you start looking at the diff
 * Every object has a type.
 * A type determines a set of possible values and the operations that can be done with these values.
 
-Remember - in the context of Scala, the terms *data*, *value*, and *object* mean the same thing.
+Remember - in the context of Scala, the terms *data*, *value*, and *object* can be used interchangably.
 
 The following are some of the different types of data supported by Scala.
 
@@ -113,7 +113,7 @@ Here are some examples of the use of Doubles:
 <a name="data-boolean">
 **1.3 Boolean**
 
-Booleans represent true/false data.  
+Booleans represent `true` or `false` values in a program.  
 The usual math operators/functions (`&&`, `||`, `==`, `!=`, `!`, `^`) are supported for Booleans.
 
 Here are some examples of the use of Booleans:
@@ -133,7 +133,7 @@ Booleans are important because they are used in [conditions](#control-if-else).
 <a name="data-string">
 **1.4 String**
 
-Strings are used to communicate textual information to/from a program. Examples of strings are: "Hello World", s"Your score is $score".
+Strings are used to communicate textual information to/from a program. Examples of strings are: `"Hello World"`, `s"Your score is $score"`.
 
 Here is an examples of the use of Strings to get data into and out of a program:
 
