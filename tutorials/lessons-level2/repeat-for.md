@@ -66,7 +66,9 @@ repeatForBoth(10, 12) { n =>
 }
 ```
 
-**Q3a.** What are the inputs to `repeatForBoth`? Notice that when an input is a command, the input and the result of the command are separated by a `=>`.
+**Q3a.** What are the inputs to `repeatForBoth`?
+
+Notice that the `cmd` input to `repeatForBoth` is itself a command. It's type is `Int => Unit` - which means - a function that takes an `Int` and returns `Unit` (if you remember, anything that returns `Unit` is a command).
 
 **Q3b.** How does `repeatForBoth` make use of its inputs?
 

@@ -70,7 +70,7 @@ The unit value `()` is meant to signify *no information* - and this makes sense 
 
 ### Step 5
 
-Type in following code and run it (via *Ctrl+Enter*):
+Type in following code and run it (via *Ctrl+Enter* again):
 ```scala
 val x5 = { a: Int =>
     val b = a * 3
