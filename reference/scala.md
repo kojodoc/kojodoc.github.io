@@ -74,8 +74,9 @@ Here is some background information for you before you start looking at the diff
 * An object combines data with functions/commands. The functions/commands attached to an object are called its methods.
 * Every object has a type.
 * A type determines a set of possible values and the operations that can be done with these values.
+* Types are described via classes. An object is an instance of its type/class.
 
-Remember - in the context of Scala, the terms *data*, *value*, and *object* can be used interchangably.
+Remember - in the context of Scala, the terms *data*, *value*, *object*, and *instance* can be used interchangably.
 
 The following are some of the different types of data supported by Scala.
 
@@ -133,7 +134,10 @@ Booleans are important because they are used in [conditions](#control-if-else).
 <a name="data-string">
 **1.4 String**
 
-Strings are used to communicate textual information to/from a program. Examples of strings are: `"Hello World"`, `s"Your score is $score"`.
+Strings are used to communicate textual information to/from a program. Examples of strings are: `"Hello World"` and `s"Your score is $score"`.
+
+Some useful String methods are: `+`, `concat`, `trim`, `toUpperCase`, `toLowerCase`, `substring`, etc. You can do code-completion on a String instance/value to discover many more methods that are available for Strings.
+
 
 Here is an examples of the use of Strings to get data into and out of a program:
 
@@ -206,15 +210,18 @@ animate {
 <a name="data-collections">
 **1.7 Collections**
 
-A collection lets you organise the data in your program in a particular way (depending on the nature of the collection). Some useful collections are:
+A collection lets you organise the data in your program in a particular way (depending on the nature of the collection). The following are some useful collections:
 
 <a name="data-sequence">
 **1.7.1 Sequence (Seq)**
 
 A sequence is a collection of data values arranged one after the other with a well defined order of elements. e.g. `Seq(1, 5, 3)`.
 
-If you want to arrange some data in your program in a sequence, and the sequence is fixed, you can use `Seq` to construct the sequence.
+Every element in a sequence can be located based on its position or index within the Sequence. Positions (or indices) start from `0` and go upto `sequence-length - 1`.
+
+If you want to arrange some data in your program in a sequence, and the sequence is fixed, you can use the `Seq` function to construct the sequence.
 ```scala
+val numbers = Seq(5, 9, 2, 3)
 val names = Seq("name1", "name2", "name3")
 // assume pic1, pic2, pic3 are defined earlier in your program
 val pictures = Seq(pic1, pic2, pic3)
@@ -228,60 +235,55 @@ Once your data is in a sequence, you can do multiple things with the sequence. T
 Here's some code showing these operations in action:
 
 ```scala
-cleari()
-showAxes()
-def p = Picture {
-    repeat(4) {
-        forward(30)
-        right(90)
-    }
-}
-val pic1 = p
-val pic2 = trans(50, 0) -> p
-val pic3 = trans(100, 0) -> p
-val pictures = Seq(pic1, pic2, pic3)
+clearOutput()
+val numbers = Seq(5, 9, 2, 3)
 
 // do something for each element in the sequence
-pictures.foreach { p =>
-    draw(p)
+numbers.foreach { n =>
+    println(n)
 }
+
+println("---")
 
 // map a sequence to convert it to another sequence
-val pictures2 = pictures.map { p =>
-    rot(45) * fillColor(blue) -> p.copy
+val numbers2 = numbers.map { n =>
+    n * 2
 }
 
 // then do something for each element in the new sequence
-pictures2.foreach { p =>
-    draw(p)
+numbers2.foreach { n =>
+    println(n)
 }
+
+println("---")
 
 // filter a sequence to get a sub-sequence
-val pictures3 = pictures.filter { p =>
-    p.position.x > 50
+val numbers3 = numbers.filter { n =>
+    n > 4
 }
 
 // then do something for each element in the new sequence
-pictures3.foreach { p =>
-    draw(rot(-30) * fillColor(green) -> p.copy)
+numbers3.foreach { n =>
+    println(n)
 }
 ```
-Note - you need to do a `p.copy` in the above code because the original picture `p` has already been drawn, and you can't redraw a picture.
+
 
 Let's try to understand what the following code (copied from above) does. The code uses the `map` function  :
 ```scala
-val pictures2 = pictures.map { p =>
-    rot(45) * fillColor(blue) -> p.copy
+val numbers2 = numbers.map { n =>
+    n * 2
 }
 ```
 This code can be rewritten as:
 ```scala
-def fn1(p: Picture): Picture = {
-    rot(45) * fillColor(blue) -> p.copy
+def fn1(n: Int): Int = {
+    n * 2
 }
 
-val pictures2 = pictures.map(fn1)
+val numbers2 = numbers.map(fn1)
 ```
+
 The first version of the code uses an anonymous function that is defined inline in the call to `map`, while the second version of the code uses a named function that is defined earlier and then used in the call to `map`.
 
 Let's do a similar exercise for `filter`.
@@ -289,43 +291,33 @@ Let's do a similar exercise for `filter`.
 Here's the version from above with an anonymous function defined inline:
 
 ```scala
-val pictures3 = pictures.filter { p =>
-    p.position.x > 50
+val numbers3 = numbers.filter { n =>
+    n > 4
 }
 ```
 
 And here is the version with a named function:
 
 ```scala
-def fn2(p: Picture): Boolean = {
-    p.position.x > 50
+def fn2(n: Int): Boolean = {
+    n > 4
 }
 
-val pictures3 = pictures.filter(fn2)
+val numbers3 = numbers.filter(fn2)
 ```
+
 As you can see above, `map` and `filter` both take a function as input, apply that function to each element of the sequence, and construct a new sequence based on the results of the function calls.
 
-Here's one more example of map and filter, this time working with a sequence of integers:
-```scala
-val s1 = Seq(1, 2, 3) //> s1: Seq[Int] = List(1, 2, 3)
-val s2 = s1.map { n =>
-    n * 2
-} //> s2: Seq[Int] = List(2, 4, 6)
+Scala has multiple Seq types - `Array`, `ArrayBuffer`, `ArrayDeque`, `Vector`, `List`, `Range`, and more. Each one has different strengths, and Scala gives you the option to choose the best type of sequence for a given situation.
 
-val s3 = Seq(20, 91, 55, 80) //> s3: Seq[Int] = List(20, 91, 55, 80)
-val s4 = s3.filter { n =>
-    n > 60    
-} //> s4: Seq[Int] = List(91, 80)
-```
-
-Scala has multiple sequence types (technically subtypes of Seq). Let's look at a few that we will use frequently. 
+Let's look in more detail at a few sequence types that we will use frequently.
 
 <a name="data-array">
 **1.7.1.1 Array**
 
-An `Array` is useful when you want to be able to modify an existing sequence by changing its elements.
+An `Array` is useful when you want to be able to modify an existing sequence by changing its elements. An `Array` is also useful when you want to write high-performance code with numbers (as an Array in Scala is a platform-native array, which can be viewed as a Scala sequence.)
 
-An `Array` is also a sequence, so anything you can do with a sequence (including the stuff from the previous section), you can also do with an `Array`.
+An `Array` works like a sequence, so anything you can do with a sequence (including the stuff from the previous section), you can also do with an `Array`.
 
 Here is some sample code for `Arrays`.
 
@@ -365,19 +357,15 @@ a3(1) //> res70: Array[Int] = Array(0, 2, 3)
 <a name="data-arraybuffer">
 **1.7.1.2 ArrayBuffer**
 
-An `ArrayBuffer` is useful when you want to be able to modify an existing sequence by changing its elements, adding new elements to it, or removing elements from it.
+An `ArrayBuffer` is useful when you want to be able to modify an existing sequence by changing its elements, adding new elements to it, or removing elements from it (although removal is much more efficient with an `ArrayDeque`).
 
-An `ArrayBuffer` is also a sequence, so as with `Arrays`, anything that you can do with a sequence you can also do with an `ArrayBuffer`.
+An `ArrayBuffer` is also a sequence, so as with `Arrays`, anything that you can do with a sequence you can also do with an `ArrayBuffer` (specifically - `foreach`, `map`, and `filter`).
 
 Here is some sample code for `ArrayBuffers`.
 
 ```scala
 // a pre-populated arraybuffer
-val ab = ArrayBuffer(1, 5, 3, 9) //> ab: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(1, 5, 3, 9)
-
-// element removal
-ab.remove(0) //> res48: Int = 1
-ab //> res49: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(5, 3, 9)
+val ab = ArrayBuffer(5, 3, 9) //> ab: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(5, 3, 9)
 
 // element update
 ab(1) = 12
@@ -394,10 +382,6 @@ val ab2 = ArrayBuffer.empty[Int] //> ab2: scala.collection.mutable.ArrayBuffer[I
 ab2.append(11)
 ab2.append(2)
 ab2 //> res56: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(11, 2)
-
-// element update
-ab(0) = 21
-ab //> res58: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(21, 12, 9, 21)
 ```
 
 <a name="data-range">
@@ -405,11 +389,17 @@ ab //> res58: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(21, 12, 9,
 
 A range is an ordered sequence of integers that are equally spaced apart. Examples:
 ```scala
-1 to 5
-0 to 10 by 2
-2 until 6
-1 until 11 by 3
+1 to 5 // or rangeTo(1, 5)
+0 to 10 by 2 // or rangeTo(0, 10, 2)
+2 until 6 // or rangeTill(2, 6)
+1 until 11 by 3 // or rangeTill(1, 11, 3)
 ```
+
+As you can see above, integer ranges are available in a couple of different ways:
+* via infix `to`/`till` functions - e.g. `1 to 5`, `2 until 6`
+* via the regular `rangeTo`/`rangeTill` functions - e.g. `rangeTo(1, 5)`, `rangeTill(2, 6)`
+
+The advantage of the infix `to`/`till` functions is that they are easier to type and read. The advantage of the regular `rangeTo`/`rangeTill` functions is that they work with Doubles - e.g. `rangeTo(1, 2, 0.1)`.
 
 Ranges are very useful in a couple of different situations.
 
