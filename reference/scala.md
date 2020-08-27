@@ -412,9 +412,14 @@ repeatFor(1 to 5) { n =>
 ```
 
 Secondly, to populate data structures:
+
+* Efficiently create an ArrayBuffer with data that has a pattern to it:
+
 ```scala
-(1 until 11 by 3).toBuffer //> res4: scala.collection.mutable.Buffer[Int] = ArrayBuffer(1, 4, 7, 10)
+(1 until 11 by 3).toBuffer
 ```
+
+* Use `map` to convert a range to a bunch of pictures (which can then be drawn):
 
 ```scala
 cleari()
@@ -424,17 +429,21 @@ val pics = (1 to 5).map { n =>
     pic
 }
 
-repeatFor(pics) { p =>
-    draw(p)
-}
+//repeatFor(pics) { p =>
+//    draw(p)
+//}
 ```
 
 <a name="data-map">
 **1.7.2 Map**
 
-A map allows you to associate a key with a value. 
+A Map is a collection of key-value pairs. You can add key-value pairs to a Map, and quickly look up the values for given keys.
 
-Once a `(key, value)` is in a map `m`, it can be looked up via `m(key)`, `m.get(key)`, or `m.getOrElse(key, notFoundValue)`.
+Once a `(key, value)` is in a map `m`, it can be looked up via `m(key)`
+
+If there is a chance that the key is not in the map, you can use `m.get(key)`, or `m.getOrElse(key, notFoundValue)` - to attempt to look up the value for that key.
+* `m.get(key)` returns an [Option](#data-option).
+* `m.getOrElse(key, notFoundValue)` returns either the value for the given `key`, or the `notFoundValule` if the key is not present in the map.
 
 Here's an example:
 ```scala
@@ -588,7 +597,8 @@ No number found
 121
 ```
 
-If an option has the value `v` inside, it is represented as `Some(v)`. If it has no value inside, it is represented as `None`.
+If an option `o` has the value `v` inside, it is represented as `Some(v)`. You can obtain the value of the option using `o.get`.  
+If `o` has no value inside, it is represented as `None`.
 
 <a name="data-tuple">
 **1.7.5 Tuple**
@@ -823,6 +833,8 @@ val pics = for(n <- 0 to 4) yield {
 }
 draw(pics)
 ```
+
+Note the use of `yield` above. That's what makes the for-loop use a `map` as opposed to a `foreach`
 
 Note that `repeat` and `repeatFor` are looping methods provided by Kojo, while `for` is built into Scala itself.  Scala also supports other standard looping methods like - `while`, and `do-while`, but we will not discuss them here.
 
