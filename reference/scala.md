@@ -23,18 +23,19 @@ Also, to complement the contents of this page (and for a good introduction to Sc
 * [1.4 String](#data-string)
 * [1.5 Color](#data-color)
 * [1.6 Picture](#data-picture)
+* [1.7 Unit](#data-unit)
 
-* [1.7 Collections](#data-collections)
-* [1.7.1 Sequence (Seq)](#data-sequence)
-* [1.7.1.1 Array](#data-array)
-* [1.7.1.2 ArrayBuffer](#data-arraybuffer)
-* [1.7.1.3 Range](#data-range)
-* [1.7.2 Map](#data-map)
-* [1.7.2.1 HashMap](#data-hashmap)
-* [1.7.3 Set](#data-set)
-* [1.7.3.1 HashSet](#data-hashset)
-* [1.7.4 Option](#data-option)
-* [1.7.5 Tuple](#data-tuple)
+* [1.8 Collections](#data-collections)
+* [1.8.1 Sequence (Seq)](#data-sequence)
+* [1.8.1.1 Array](#data-array)
+* [1.8.1.2 ArrayBuffer](#data-arraybuffer)
+* [1.8.1.3 Range](#data-range)
+* [1.8.2 Map](#data-map)
+* [1.8.2.1 HashMap](#data-hashmap)
+* [1.8.3 Set](#data-set)
+* [1.8.3.1 HashSet](#data-hashset)
+* [1.8.4 Option](#data-option)
+* [1.8.5 Tuple](#data-tuple)
 
 ---
 
@@ -207,13 +208,40 @@ animate {
 
 [Read more about Pictures](../tutorials/pictures-intro.html).
 
+<a name="data-unit">
+**1.7 Unit**
+
+The `Unit` type is very interesting. It has only one possible value - the unit value `()`.
+
+Compare this with `Boolean` - which has two possible values, `true` and `false`, or `Int` which has many-many possible (positive and negative) values.
+
+If you have an `Int` value, it can contain many different kinds of information (age, salary, distance, height, etc., etc.).
+
+If you have a `Boolean` value, it can contain `true` or `false` information.
+
+If you have a `Unit` value, it contains **no** information (because there is only one possible value - `()`).
+
+Unit is the return type of commands. Rememeber that commands carry out actions, but don't return any information. Let's see this in action:
+
+```scala
+val a = forward(100) //> val a: Unit = ()
+val b = right(90) //> val b: Unit = ()
+```
+
+As you can see above, both `forward` and `right` return the Unit value - `()`, which carries no information. That is why it's better to write the above code as:
+
+```scala
+forward(100)
+right(90)
+```
+
 <a name="data-collections">
-**1.7 Collections**
+**1.8 Collections**
 
 A collection lets you organise the data in your program in a particular way (depending on the nature of the collection). The following are some useful collections:
 
 <a name="data-sequence">
-**1.7.1 Sequence (Seq)**
+**1.8.1 Sequence (Seq)**
 
 A sequence is a collection of data values arranged one after the other with a well defined order of elements. e.g. `Seq(1, 5, 3)`.
 
@@ -313,7 +341,7 @@ Scala has multiple Seq types - `Array`, `ArrayBuffer`, `ArrayDeque`, `Vector`, `
 Let's look in more detail at a few sequence types that we will use frequently.
 
 <a name="data-array">
-**1.7.1.1 Array**
+**1.8.1.1 Array**
 
 An `Array` is useful when you want to be able to modify an existing sequence by changing its elements. An `Array` is also useful when you want to write high-performance code with numbers (as an Array in Scala is a platform-native array, which can be viewed as a Scala sequence.)
 
@@ -355,7 +383,7 @@ a3(1) //> res70: Array[Int] = Array(0, 2, 3)
 
 
 <a name="data-arraybuffer">
-**1.7.1.2 ArrayBuffer**
+**1.8.1.2 ArrayBuffer**
 
 An `ArrayBuffer` is useful when you want to be able to modify an existing sequence by changing its elements, adding new elements to it, or removing elements from it (although removal is much more efficient with an `ArrayDeque`).
 
@@ -385,7 +413,7 @@ ab2 //> res56: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(11, 2)
 ```
 
 <a name="data-range">
-**1.7.1.3 Range**
+**1.8.1.3 Range**
 
 A range is an ordered sequence of integers that are equally spaced apart. Examples:
 ```scala
@@ -435,7 +463,7 @@ val pics = (1 to 5).map { n =>
 ```
 
 <a name="data-map">
-**1.7.2 Map**
+**1.8.2 Map**
 
 A Map is a collection of key-value pairs. You can add key-value pairs to a Map, and quickly look up the values for given keys.
 
@@ -477,7 +505,7 @@ println(s"${name}'s age is $age")
 ```
 
 <a name="data-hashmap">
-**1.7.2.1 HashMap**
+**1.8.2.1 HashMap**
 
 If you need to to be able to update a map after it is defined, use a HashMap:
 
@@ -508,7 +536,7 @@ animate {
 ```
 
 <a name="data-set">
-**1.7.3 Set**
+**1.8.3 Set**
 
 A set, like a sequence, is a collection with multiple elements. A set is different from a sequence in the following respects:
 * The elements are not in any particular order.
@@ -523,7 +551,7 @@ s1.intersect(s2) //> res5: scala.collection.immutable.Set[Int] = Set(3, 4)
 ```
 
 <a name="data-hashset">
-**1.7.3.1 HashSet**
+**1.8.3.1 HashSet**
 
 If you need to to be able to update a set after it is defined, use a HashSet:
 
@@ -562,7 +590,7 @@ animate {
 ```
 
 <a name="data-option">
-**1.7.4 Option**
+**1.8.4 Option**
 
 An option is used where a value may or may not be present. For example, given a sequence of numbers, you might want to do a search for the first number in the sequence that is greater than 100. Such a number may or may not be present in the sequence. Let's see this in action in code:
 
@@ -601,7 +629,7 @@ If an option `o` has the value `v` inside, it is represented as `Some(v)`. You c
 If `o` has no value inside, it is represented as `None`.
 
 <a name="data-tuple">
-**1.7.5 Tuple**
+**1.8.5 Tuple**
 
 A tuple is an easy way to package multiple values together. One good use of this is to return multiple values from a function:
 
@@ -1053,6 +1081,8 @@ The `class` keyword instruction lets you create a new class. A class is a descri
 
 The basic idea behind a class is to bring together related data and behavior in your program to create a useful abstraction. You want to do this if it makes your program easier to write and read. Once you have a good abstraction, the rest of your program can use it to good effect without worrying about how it is implemented. In the best case, your program becomes a choreography of the abstractions available within it.
 
+A class can be used to represent an active entity in your program. Classes are especially useful in scenarios like games and simulations.
+
 * Once you create a class, let’s say `X`, you can create an object of type `X` (also called an instace of `X`) like this: `new X()`, or `new X(inputs)`.
 
 Here's an example:
@@ -1092,7 +1122,7 @@ animate {
 <a name="abstraction-case-class">
 **3.5 case class**
 
-A case class is a convenient way to get a bunch of data values together to represent something useful in your program.
+A case class is a convenient way to put a bunch of data values together to represent something useful in your program.
 
 `case class Name(valueNamesAndTypes)` - defines a case class called Name with the given values of the given types.
 
