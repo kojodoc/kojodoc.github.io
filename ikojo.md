@@ -30,8 +30,8 @@
 
 ### Getting Started
 Books:
-* [Getting started with Kojo](http://wiki.kogics.net/kojo-codeactive-books#getting-started).
-* [Explorations with Kojo, Level-1 [PDF]](https://bitbucket.org/lalit_pant/kojo/downloads/Kojo-Lessons-Level1-140620.pdf) (Version -- June 14, 2020).
+* [Getting started with Kojo](https://docs.kogics.net/tutorials-index.html#books)
+* [Explorations with Kojo](https://docs.kogics.net/tutorials-index.html#lesson-plans)
 
 Pages (from the Kojo-Docs website):
 * [Turtle graphics - Core Ideas](https://docs.kogics.net/concepts/turtle-core-ideas.html).
