@@ -2,7 +2,17 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 2 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## Blocks of code
+## Blocks of code and lambdas
+
+This activity has the following desired goals:
+* Getting to know about blocks of code (**A**).
+* Learning about the `Unit` value and type (**A**).
+* Learning how commands return the `Unit` value (**A, M**).
+* Learning about *blocks of code that take an input* (**A, M**).
+* Learning about lambdas (**A, M**).
+* Using `repeatFor` and lambdas to work with numbers (**M, T**).
+
+---
 
 ### Step 1
 
@@ -30,6 +40,7 @@ println(x1b)
 
 **Q1d** Do you see how the value of a block of code is the value of the last instruction in it?
 
+---
 
 ### Step 2
 
@@ -46,6 +57,8 @@ println(x2)
 
 **Q2a.** What's the value of x2?
 
+---
+
 ### Step 3
 
 Type in following code and run it in Worksheet mode via *Shift+Enter*:
@@ -54,6 +67,8 @@ val x3 = right(90)
 ```
 
 **Q3a.** What's the value of x3? What's its type?
+
+---
 
 ### Step 4
 
@@ -67,6 +82,7 @@ val x4 = forward(100)
 **Q4b.** Do you see how (all) commands return the value `()`, whose type is `Unit`?  
 The unit value `()` is meant to signify *no information* - and this makes sense based on what you have learned earlier - that commands carry out actions but do not return any information, as opposed to functions, which take in information and return new information.
 
+---
 
 ### Step 5
 
@@ -82,6 +98,7 @@ println(x5(10))
 
 **Q5a.** Do you see how the block of code above takes an input, and does a calculation based on this input?
 
+---
 
 ### Step 6
 
@@ -113,7 +130,9 @@ The *named block of code* above cannot exist without its name. But the *un-named
 
 Do you see how the *un-named block of code that takes an input* is used above without giving it an intermediate name.
 
-A *named block of code that takes an input* is called a user-defined command or function, while an *un-named block of code that takes an input* is called an anonymous command or function.
+A *named block of code that takes an input* is called a user-defined command or function, while an *un-named block of code that takes an input* is called a lambda or an anonymous command or function.
+
+---
 
 ### Step 7
 
@@ -122,7 +141,7 @@ Type in following code and run it:
 ```scala
 clearOutput()
 
-val ab = ArrayBuffer(2, 9, 3)
+val ab = rangeTo(3, 10, 2)
 
 def printInt(n: Int) {
     println(n)
@@ -145,3 +164,8 @@ repeatFor(ab) { n =>
 
 **Q7e.** What's the benefit of an un-named block of code (anonymous command or function)? What's the drawback?
 
+---
+
+**Exercise**
+
+Write a program to print out all the positive integers below 20 that are divisible by 3.
