@@ -7,12 +7,11 @@
 ---
 
 ### Level 2 lesson plans
-* Creating Pictures.
-* Moving Pictures on the screen/stage.
+* [Creating Pictures and moving them around on the canvas](creating-moving-pictures.html).
 * Keeping Pictures within the stage area.
 * Checking for Picture collisions.
 * Object Oriented Programming (with InstagePic)
-* [Blocks of code, and much more](code-blocks.html).
+* [Blocks of code and lambdas](code-blocks.html).
 * [More on the second input to repeatFor](repeat-for.html).
 * Pictures - responding to keyboard, joystick, and mouse clicks.
 * Making a game - Hunted.
@@ -24,9 +23,10 @@
 * Exporting `Hunted 5` as a web-app.
 * Putting the `Hunted 5` web-app in the cloud.
 * Running the `Hunted 5` web-app as a mobile app.
+* Multiple screens in your game.
 * Game 2 - Shooter
 * Game 3 - Runner
 * Game 4 - Falling letters
-* Game 5 - Dino
+* Game 5 - Super Dino
 
 
