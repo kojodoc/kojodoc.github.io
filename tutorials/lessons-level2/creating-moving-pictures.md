@@ -5,7 +5,7 @@
 ## Creating Pictures and moving them around on the canvas
 
 This activity has the following desired goals:
-* Learning to make pictures out of your turtle drawings (**A**).
+* Learning to make pictures out of turtle drawings (**A**).
 * Learning to use `Picture.rectangle` (**A**).
 * Learning to use `Picture.image` (**A**).
 * Learning to move pictures around  (**A, M**).

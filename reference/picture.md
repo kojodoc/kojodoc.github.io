@@ -78,7 +78,7 @@ bouncing off the stage.
 * `pic.collidesWith(other: Picture)` - returns true if `pic` has collided with `other`.
 * `pic.collisions(others: Set[Picture])` - returns the subset of pictures within `others` that `pic` has collided with.
 * `pic.collision(others: Seq[Picture])` - returns an Option with the first picture in `others` that pic has collided with.
-* `bouncePicOffStage(pic, vel)` - for a picture `pic` moving with velocity `vel` - this function returns the velocity after 
+* `bouncePicOffStage(pic, vel)` - for a picture `pic` moving with velocity `vel` - this function returns the velocity after bouncing off the stage.
 * `bouncePicOffPic(pic: Picture, vel: Vector2D, obstacle: Picture)`- for a picture `pic` moving with velocity `vel` - this function returns the velocity after bouncing off `obstacle`.
 
 ### Picture Event Handling
