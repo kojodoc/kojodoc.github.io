@@ -89,9 +89,8 @@ Function description:
 
 Write a program where four squares start out at the center of the stage and then move towards its four corners.
 
-
-
-
-
-
+Write a program that does the following:
+* Draws four rectangles at the centerof the stage.
+* Moves the rectangles towards the four corners of the stage.
+* Keeps the rectangles within the stage borders.
 

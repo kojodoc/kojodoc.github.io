@@ -65,11 +65,16 @@ draw(pic)
 
 **Q2a.** Is `Picture.rectangle` a command or function? What do you think it does?
 
+**Q2b.** What does the `.` in `Picture.rectangle` signify?
+
+
 ---
 
 ### Explanation
 
 For well defined shapes (like rectangles, ellipses, lines, etc.), you can create a Picture directly (by using the appropriate function in the Picture object, like above) without having to make a turtle drawing. The advantage of this is that it is easier to code and has better runtime performance. But this works only for predefined simple shapes. For custom shapes, you can always make a turtle drawing and put it in a Picture.
+
+The `.` in the function name specifies that the function is being called via an object.
 
 ---
 
@@ -104,6 +109,9 @@ Type in the following code and run it:
 cleari()
 
 val pic = Picture.rectangle(50, 50)
+pic.setPosition(50, 100)
+pic.setFillColor(red)
+pic.setPenColor(black)
 
 draw(pic)
 
@@ -112,17 +120,26 @@ animate {
 }
 ```
 
-**Q4a.** Is `animate` a command or function? What do you think it does?
+**Q4a.** Is `pic.setPosition` a command or function? What do you think it does?
 
-**Q4b.** Is `translate` a command or function? What do you think it does?
+**Q4b.** What do you think `pic.setFillColor` does?
+
+**Q4c.** What do you think `pic.setPenColor` does?
+
+**Q4d.** Is `animate` a command or function? What do you think it does?
+
+**Q4e.** Is `pic.translate` a command or function? What do you think it does?
 
 
 ---
 
 ### Explanation
 
+* `pic.setPosition(x, y)` - sets the position of the given `pic` to the given `(x, y)`.
+* `pic.setFillColor(c)` - sets the fill color of the given `pic` to given `c`.
+* `pic.setPenColor(c)` - sets the pen color of the given `pic` to given `c`.
 * `animate` is a command that takes another command as input, and runs this given command around 50 times per second.
-* `translate` is a command that moves the given picture by the given x and y amounts.
+* `pic.translate` is a command that moves the given `pic`` by the given `x` and `y` amounts.
 
 ---
 

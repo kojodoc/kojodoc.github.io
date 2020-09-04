@@ -9,7 +9,7 @@
 ### Level 2 lesson plans
 * [Creating Pictures and moving them around on the canvas](creating-moving-pictures.html).
 * [Keeping Pictures within the stage area](keep-pictures-instage.html).
-* Checking for Picture collisions.
+* [Picture collisions and bouncing](pic-collisions-bouncing.html).
 * Object Oriented Programming (with InstagePic)
 * [Blocks of code and lambdas](code-blocks.html).
 * [More on the second input to repeatFor](repeat-for.html).
