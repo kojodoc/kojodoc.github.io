@@ -24,9 +24,9 @@ drawStage(black)
 
 Then zoom out the canvas a little.
 
-**Q1a** Do you see the stage area?
+**Q1a.** Do you see the stage area?
 
-**Q1b** What do you think is the use of the stage area?
+**Q1b.** What do you think is the use of the stage area?
 
 ---
 
@@ -56,13 +56,13 @@ animate {
 }
 ```
 
-**Q2a** What do you think is a `Vector2D`? How is it used in the code above?
+**Q2a.** What do you think is a `Vector2D`? How is it used in the code above?
 
-**Q2b** What do you think the `collidesWith` function does? What inputs does it take? What value does it return?
+**Q2b.** What do you think the `collidesWith` function does? What inputs does it take? What value does it return?
 
-**Q2c** What do you think the `bouncePicOffStage` function does? What inputs does it take? What value does it return?
+**Q2c.** What do you think the `bouncePicOffStage` function does? What inputs does it take? What value does it return?
 
-**Q2d** Can you explain the above code?
+**Q2d.** Can you explain the above code?
 
 ---
 

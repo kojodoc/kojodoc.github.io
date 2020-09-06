@@ -59,11 +59,11 @@ animate {
 }
 ```
 
-**Q1a** Read through the code above and try to understand what it does. Then explain to a friend.
+**Q1a.** Read through the code above and try to understand what it does. Then explain to a friend.
 
-**Q1b**  What do you think `pic1.collidesWith(pic2)` does? Is this a command or a function? What are its inputs and outputs?
+**Q1b.**  What do you think `pic1.collidesWith(pic2)` does? Is this a command or a function? What are its inputs and outputs?
 
-**Q1c**  What do you think `bouncePicOffPic(pic1, vel1, pic2)` does? Is this a command or a function? What are its inputs and outputs?
+**Q1c.**  What do you think `bouncePicOffPic(pic1, vel1, pic2)` does? Is this a command or a function? What are its inputs and outputs?
 
 ---
 
