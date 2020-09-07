@@ -25,5 +25,8 @@
 * Game 3 - Runner
 * Game 4 - Falling letters
 * Game 5 - Super Dino
+* Game 6 - Tic Tac Toe
+* Game 7 - Tic Tac Toe, unbeatable (with AI).
+* Final Project
 
 
