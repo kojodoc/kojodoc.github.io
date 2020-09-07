@@ -36,6 +36,7 @@ This page contains descriptions of general purpose utility commands and function
 ### Math
 
 | Function | Description |
+| :--- | :--- |
 | `mathx.map(value, start1, stop1, start2, stop2)` | Maps the given value from the range `(start1, stop1)` to the range `(start2, stop2)`. |
 | `mathx.lerp(start, stop, amt)` | Returns the interpolation as per the given fraction `amt` in the range `(start, stop)`. |
 | `mathx.constrain(value, min, max)` | Constrains the given `value` between `min` and `max`. |
@@ -44,6 +45,16 @@ This page contains descriptions of general purpose utility commands and function
 | `mathx.angle(x1, y1, x2, y2)` | calculates the angle in degrees between the line from (x1, y1) to (x2, y2) and the horizontal. |
 | `mathx.angle(point1, point2)` | calculates the angle in degrees between the line from point1 to point2 and the horizontal. |
 | `rangeTill(from, untill, step)` | returns a range that starts from `from`, goes until (but excluding) `until`, and steps up by `step`. [See example](#rangetill). |
+
+### Colors
+
+| Function | Description |
+| :--- | :--- |
+| `cm.hsl(hueAngle, saturationFraction, lightnessFraction)` | Creates a color with the given hue, saturation, and lightness. |
+| `cm.hsla(hueAngle, saturationFraction, lightnessFraction, opacityFraction)` | Creates a color with the given hue, saturation, lightness, and opacity. |
+| `cm.linearGradient(x1, y1, c1, x2, y2, c2, cyclic)` | Creates a linear color gradient btween color `c1` at position `(x1, y1)` and color `c2` at position `(x2, y2)`. The `cyclic` parameter specifies whether the gradient should be repeated or not. |
+| `cm.radialGradient(cx, cy, c1, radius, c2, cyclic)` | Creates a radial color gradient btween color `c1` at the center of a circle positioned at `(x1, y1)` and color `c2` at a distance `radius` from the center. The `cyclic` parameter specifies whether the gradient should be repeated or not. |
+
 
 ### Examples
 
