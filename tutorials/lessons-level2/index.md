@@ -2,11 +2,8 @@
   <a href="../../index.html">Home</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-> <img src="../../man-at-work.png"/> <br/> *This page is currently under development*.
-
----
-
 ### Level 2 lesson plans
+
 * [Creating Pictures and moving them around on the canvas](creating-moving-pictures.html).
 * [Keeping Pictures within the stage area](keep-pictures-instage.html).
 * [Picture collisions and bouncing](pic-collisions-bouncing.html).

@@ -7,7 +7,7 @@
 This activity has the following desired goals:
 * Learning about linear gradients (**A, M**).
 * Learning about radial gradients (**A, M**).
-* Using the above ideas to make pleasing drawings (**M, T**).
+* Learning to apply the above ideas to make pleasing drawings (**M, T**).
 
 ---
 
