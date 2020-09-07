@@ -75,7 +75,7 @@ Create a radial gradient to fill a rectangle.
 
 Write a program to make the following drawing:
 
-![exercise](linear-radial-gradient-exercise.png)
+<img src="linear-radial-gradient-exercise.png" height="600">
 
 
 
