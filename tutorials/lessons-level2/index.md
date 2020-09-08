@@ -10,7 +10,7 @@
 * [Object Oriented Programming](oo-programming.html).
 * [Blocks of code and lambdas](code-blocks.html).
 * [More on the second input to repeatFor](repeat-for.html).
-* Pictures - responding to keyboard, joystick, and mouse clicks.
+* [Pictures - responding to keyboard, joystick, and mouse clicks](pic-events.html).
 * Making a game - Hunted.
 * [ArrayBuffer, HashMap, and HashSet for gaming](abuffer-hmap-hset.html).
 * Hunted 2 - increasing the number of hunters without any code change.
