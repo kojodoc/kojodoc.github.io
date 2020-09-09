@@ -7,6 +7,15 @@
 
 ## Pictures - responding to the keyboard, joystick, and mouse clicks
 
+This activity has the following desired goals:
+* Learning how to make a picture respond to keyboard key-presses (**A, M**).
+* Learning how to make a picture respond to mouse clicks (**A, M**).
+* Learning how to make a picture respond to the joystick (**A, M**).
+* Learning to apply the above ideas to interact with a picture (**M, T**).
+
+---
+
+
 ### Step 1
 Type in following code and run it:
 
@@ -36,9 +45,19 @@ activateCanvas()
 
 **Q1a.** What does the above program do?
 
-**Q1b.** What information does the Kc (short for key-code) object contain? Use code completion to find out
+**Q1b.** What information does the `Kc` (short for key-code) object contain? Use code completion to find out
 
-**Q1c** What do you think the isKeyPressed query does? What input does it take? What result does it return?
+**Q1c** What do you think the `isKeyPressed` query does? What input does it take? What result does it return?
+
+---
+
+### Explanation
+
+* Every time you press a key on the keyboard, a key-press event is sent to the window on your screen that has the focus.
+* The drawing canvas gets the focus if you either (a) click on it or (b) run the activateCanvas() command.
+* Every key-press event has a key-code associated with it (to identify it).
+* All possible key-codes are defined in the `Kc` object.
+* The `isKeyPressed(keyCode)` function takes a key-code as input and returns true if that key is currently pressed. Otherwise it returns false. 
 
 ---
 
@@ -66,3 +85,68 @@ pic.onMouseClick { (x, y) =>
 **Q2b.** Replace the onMouseClick with onMousePress in the code above. How does that change the functioning of the program?
 
 **Q2c.** Replace the onMouseClick with onMouseRelease in the code above. How does that change the functioning of the program?
+
+---
+
+### Explanation
+
+Command descriptions:
+
+* `pic.onMouseClick { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is clicked inside the picture.
+* `pic.onMousePress { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is pressed inside the picture.
+* `pic.onMouseRelease { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is released inside the picture.
+* `pic.onMouseMove { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse moves inside the picture.
+* `pic.onMouseDrag { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is dragged inside the picture.
+* `pic.onMouseEnter { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse enters the picture.
+* `pic.onMouseExit { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse exits the picture.
+
+---
+
+### Step 3
+
+Type in following code and run it:
+
+
+```scala
+cleari()
+drawStage(black)
+val pic = Picture.rectangle(50, 50)
+draw(pic)
+
+val js = joystick(25)
+val cb = canvasBounds
+js.setPostiion(cb.x + cb.width / 2, cb.y + 25 + 10)
+js.draw()
+
+animate {
+    js.movePlayer(pic, 1)
+}
+```
+
+**Q3a.** What does the above program do?
+
+**Q3b** What does the joystick function do?
+
+**Q3c** How does the joystick help you to move/control the picture?
+
+**Q3d** What does the second input to `js.movePlayer` do? Find out by changing the value from 1 to 0.5 and then 2.
+
+---
+
+### Explanation
+
+Command/Function descriptions:
+
+* `joystick(radius)` - creates a joystick control with the given radius.
+* `js.movePlayer(pic, scaleFactor)` - moves the player based on the movement of the joystick.
+
+---
+
+### Exercise
+
+Write a program that does the following:
+* Creates a rectangular picture.
+* Allows the user to control the picture via a joystick poisitoned at the bottom right of the stage.
+* Allows the user to increase the size of the picture by pressing the up arrow.
+* Allows the user to decrease the size of the picture by clicking on it.
+

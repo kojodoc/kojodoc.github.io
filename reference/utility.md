@@ -55,6 +55,12 @@ This page contains descriptions of general purpose utility commands and function
 | `cm.linearGradient(x1, y1, c1, x2, y2, c2, cyclic)` | Creates a linear color gradient btween color `c1` at position `(x1, y1)` and color `c2` at position `(x2, y2)`. The `cyclic` parameter specifies whether the gradient should be repeated or not. |
 | `cm.radialGradient(cx, cy, c1, radius, c2, cyclic)` | Creates a radial color gradient btween color `c1` at the center of a circle positioned at `(x1, y1)` and color `c2` at a distance `radius` from the center. The `cyclic` parameter specifies whether the gradient should be repeated or not. |
 
+### Misc
+
+| Function | Description |
+| :--- | :--- |
+| `isKeyPressed(keyCode)` | Returns true if the given key is currently pressed on the keyboard. Otherwise returns false. |
+
 
 ### Examples
 
