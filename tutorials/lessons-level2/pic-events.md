@@ -138,7 +138,8 @@ animate {
 Command/Function descriptions:
 
 * `joystick(radius)` - creates a joystick control with the given radius.
-* `js.movePlayer(pic, scaleFactor)` - moves the player based on the movement of the joystick.
+* `js.currentVector` - tells you the current vector for the joystick `js`. This vector is defined by two points - the center of the joystick control, and the center of the moveable joystick circle.
+* `js.movePlayer(pic, scaleFactor)` - for the joystick `js`, moves the player based on the movement of the joystick circle, as per the `currentVector` defined above. You can scale the currentVector by using `scaleFactor` to make the movement faster (`scaleFactor` > `1`) or slower (`scaleFactor` < `1`).
 
 ---
 

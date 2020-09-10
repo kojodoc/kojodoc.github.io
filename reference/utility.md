@@ -60,6 +60,9 @@ This page contains descriptions of general purpose utility commands and function
 | Function | Description |
 | :--- | :--- |
 | `isKeyPressed(keyCode)` | Returns true if the given key is currently pressed on the keyboard. Otherwise returns false. |
+| `joystick(radius)` | Creates a joystick control with the given radius. |
+| `js.currentVector` | Tells you the current vector for the joystick `js`. This vector is defined by two points - the center of the joystick control, and the center of the moveable joystick circle. |
+| `js.movePlayer(pic, scaleFactor)` | For the joystick `js`, moves the player based on the movement of the joystick circle, as per the `currentVector` defined above. You can scale the currentVector by using `scaleFactor` to make the movement faster (`scaleFactor` > `1`) or slower (`scaleFactor` < `1`). |
 
 
 ### Examples
