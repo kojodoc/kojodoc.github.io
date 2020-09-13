@@ -5,7 +5,7 @@
 ### Level 1 (Supplementary) lesson plans 
 
 * [Linear and Radial gradients](linear-radial-gradients.html).
-* Textures.
+* [Textures](textures.html).
 * Linear and Radial multi-gradients.
 * [Recursion](recursion.html).
 * The shape-block method for design.
