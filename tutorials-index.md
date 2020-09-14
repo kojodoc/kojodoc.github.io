@@ -11,7 +11,7 @@
 * [Neural Style Transfer](tutorials/neural-style.html) -- Using deep-learning/AI to transfer the style of an image to your drawing.
 
 ## Lesson Plans
-* [Explorations with Kojo, Level-1 [PDF]](assets/pdf-books/Kojo-Lessons-Level1-230820.pdf) (Version -- August 23, 2020).
+* [Explorations with Kojo, Level-1 [PDF]](https://github.com/litan/kojo/releases/download/2.9.05_release/Kojo-Lessons-Level1-140920.pdf) (Version -- September 14, 2020).
 * [Explorations with Kojo, Level-1 Supplement](tutorials/lessons-level1-sup/index.html).
 * [Explorations with Kojo, Level-2](tutorials/lessons-level2/index.html).
 
