@@ -9,8 +9,8 @@
 * Linear and Radial multi-gradients.
 * [Recursion](recursion.html).
 * [The shape-block method for design](shape-block-intro.html).
-* [The shape-block method - block rotates in-place](shape-block-1.html).
-* The shape-block method - block rotates around circle.
-* The shape-block method - block moves along spiral.
-* The shape-block method - Block moves along grid.
+* [The shape-block method - blocks rotate in-place](shape-block-1.html).
+* [The shape-block method - blocks move around circle](shape-block-2.html).
+* The shape-block method - blocks moves along spiral.
+* The shape-block method - blocks moves along grid.
 * Pictures for shape and text alignment.

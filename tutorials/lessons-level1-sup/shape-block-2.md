@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 1s Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## The shape-block method - blocks rotate in-place
+## The shape-block method - blocks move around circle
 
 ### Step 1
 
@@ -21,8 +21,10 @@ def shape() {
 def block() {
     setFillColor(randomColor.fadeOut(0.7))
     shape()
-    // rotate in place
-    right(20)
+    penUp()
+    // rotate around circle of radius 200
+    right(20, 200)
+    penDown()
 }
 
 clear()
@@ -48,7 +50,7 @@ repeat(18) {
 Here's how designs are made using this method:
 * You define a shape.
 * You define a block.
-  * The block calls the shape, then rotates the turtle without changing its position, making it ready to make the next shape.
+  * The block calls the shape, picks the pen up, moves the turtle along a circle, and then puts the pen down, to be ready to make the next shape.
 * You repeat the block the desired number of times to make the pattern.
 
 ### Exercise
