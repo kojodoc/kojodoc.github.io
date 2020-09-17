@@ -11,6 +11,6 @@
 * [The shape-block method for design](shape-block-intro.html).
 * [The shape-block method - blocks rotate in-place](shape-block-1.html).
 * [The shape-block method - blocks move around circle](shape-block-2.html).
-* The shape-block method - blocks moves along spiral.
+* [The shape-block method - blocks moves along spiral](shape-block-3.html).
 * The shape-block method - blocks moves along grid.
 * Pictures for shape and text alignment.
