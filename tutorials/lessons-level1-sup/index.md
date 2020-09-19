@@ -13,4 +13,4 @@
 * [The shape-block method - blocks move around circle](shape-block-2.html).
 * [The shape-block method - blocks moves along spiral](shape-block-3.html).
 * [The shape-block method - blocks moves along grid](shape-block-4.html).
-* Pictures for shape and text alignment.
+* [Pictures for shape and text alignment](pic-shape-align.html).
