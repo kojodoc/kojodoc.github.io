@@ -53,6 +53,19 @@ drawCentered(pic123)
 
 ### Explanation
 
+The basic idea with pictures is simple:
+* You put a turtle drawing inside a picture.
+* Now you can do many things with this picture drawing:
+  * You can draw it (of course).
+  * You can align it with other pictures.
+  * You can translate, scale, or rotate it.
+  * You can change its transparency.
+  * You can apply effects to it.
+  * You can animate it.
+  * You can detect collisions with other pictures
+  
+In this activity, we are only interested in the drawing and the alignment part.
+
 Function descriptions:
 
 * `picStackCentered(pic1, pic2, ...)` - creates a new picture that stacks `pic1, pic2, ...` one over the other, with `pic1` underneath, `pic2` over it, and so on.
