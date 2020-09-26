@@ -53,7 +53,7 @@ setBackground(clr)
 
 **Q2b.** The above code creates a multi-gradient from which point in the canvas to which point?
 
-**Q2c.** What are the colors in the multi-gradient? How are these colors distributed between the start and finish point?
+**Q2c.** What are the colors in the multi-gradient? How are these colors distributed between the start point and the finish point?
 
 ---
 
@@ -82,6 +82,14 @@ val cb = canvasBounds
 val clr = cm.radialMultipleGradient(0, 0, cb.height / 2, Seq(0, 0.7, 1), Seq(red, yellow, orange))
 setBackground(clr)
 ```
+
+**Q3a.** What do you think is a radial color multi-gradient?
+
+**Q3b.** The above code creates a gradient from which point in the canvas to which points?
+
+**Q3c.** What are the colors in the multi-gradient? How are these colors distributed between the start point and the finish points?
+
+---
 
 ### Explanation
 

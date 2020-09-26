@@ -57,11 +57,19 @@ val clr = cm.radialGradient(0, 0, red, cb.height / 2, yellow, true)
 setBackground(clr)
 ```
 
+**Q2a.** What do you think is a radial color gradient?
+
+**Q2b.** The above code creates a gradient from which point in the canvas to which points?
+
+**Q2c.** What is the start color of the gradient? What is the end color?
+
+---
+
 ### Explanation
 
 Function description:
 
-* `cm.radialGradient(cx, cy, c1, radius, c2, cyclic)` - Creates a radial color gradient btween color `c1` at the center of a circle positioned at `(x1, y1)` and color `c2` at a distance `radius` from the center. The `cyclic` parameter specifies whether the gradient should be repeated or not.
+* `cm.radialGradient(cx, cy, c1, radius, c2, cyclic)` - Creates a radial color gradient between color `c1` at the center of a circle positioned at `(x1, y1)` and color `c2` at a distance `radius` from the center. The `cyclic` parameter specifies whether the gradient should be repeated or not.
 
 ---
 
