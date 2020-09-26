@@ -6,7 +6,7 @@
 
 * [Linear and Radial gradients](linear-radial-gradients.html).
 * [Textures](textures.html).
-* Linear and Radial multi-gradients.
+* [Linear and Radial multi-gradients](linear-radial-multigradients.html).
 * [Recursion](recursion.html).
 * [The shape-block method for design](shape-block-intro.html).
 * [The shape-block method - blocks rotate in-place](shape-block-1.html).

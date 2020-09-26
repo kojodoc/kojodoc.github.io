@@ -35,7 +35,7 @@ setBackground(clr)
 
 Function description:
 
-* `cm.linearGradient(x1, y1, c1, x2, y2, c2, cyclic)` - Creates a linear color gradient btween color `c1` at position `(x1, y1)` and color `c2` at position `(x2, y2)`. The `cyclic` parameter specifies whether the gradient should be repeated or not.
+* `cm.linearGradient(x1, y1, c1, x2, y2, c2, cyclic)` - Creates a linear color gradient between color `c1` at position `(x1, y1)` and color `c2` at position `(x2, y2)`. The `cyclic` parameter specifies whether the gradient should be repeated or not.
 
 ---
 
