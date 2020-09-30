@@ -4,6 +4,7 @@
 
 ### Level 1 (Supplementary) lesson plans 
 
+* [Control Flow](control-flow.html).
 * [Linear and Radial gradients](linear-radial-gradients.html).
 * [Textures](textures.html).
 * [Linear and Radial multi-gradients](linear-radial-multigradients.html).

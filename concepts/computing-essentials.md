@@ -121,8 +121,6 @@ Commands can be composed in the following ways:
 * Selection - you can use `if-else` to choose between two alternative code paths based on the result of a condition. This is a means of composition.
   * A condition is an expression that evaluates to a Boolean (true or false).
 
-[More information](https://litan.github.io/kojodoc/reference/scala.html#control)
-
 #### Functions
 Functions are composed by feeding the output of one function as input into another function. This can be done in a couple of different ways:
 * nesting or chaining function calls:
@@ -150,6 +148,8 @@ twice(times3) //> res4: Int = 24
 val evens = (1 to 10).filter(n => n % 2 == 0) //> evens: scala.collection.immutable.IndexedSeq[Int] = Vector(2, 4, 6, 8, 10)
 val twiceEvens = evens.map(n => n * 2) //> twiceEvens: scala.collection.immutable.IndexedSeq[Int] = Vector(4, 8, 12, 16, 20)
 ```
+
+Command and function composition is intimately related to the idea of [control flow](https://litan.github.io/kojodoc/reference/scala.html#control).
 
 #### Scala Keyword Instructions
 You saw above how commands can be composed and how functions can be composed. Keep in mind that Scala keyword instructions give you additional ways to compose commands/functions/data for particular uses. You will learn about these instructions as you go along (and as you need them).
