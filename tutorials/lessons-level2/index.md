@@ -13,7 +13,7 @@
 * [Pictures - responding to the keyboard, joystick, and mouse clicks](pic-events.html).
 * [Making a game - Hunted](hunted.html).
 * [ArrayBuffer, HashMap, and HashSet for gaming](abuffer-hmap-hset.html).
-* Hunted 2 - increasing the number of hunters without any code change.
+* [Hunted 2 - increasing the number of hunters without any code change](hunted2.html).
 * Hunted 3 - adding background and character images.
 * Hunted 4 - adding sound.
 * Hunted 5 - loading images and sound off the web.
