@@ -110,7 +110,7 @@ activateCanvas()
 
 **Q1c.** Which line in the above code loads the image for the hunters? Which line draws this image?
 
-**Q1b.** Which line in the above code loads the background image? Which line draws this image?
+**Q1d.** Which line in the above code loads the background image? Which line draws this image?
 
 
 ---
