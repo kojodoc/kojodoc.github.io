@@ -14,12 +14,14 @@
 * [Making a game - Hunted](hunted.html).
 * [ArrayBuffer, HashMap, and HashSet for gaming](abuffer-hmap-hset.html).
 * [Hunted 2 - increasing the number of hunters without any code change](hunted2.html).
-* Hunted 3 - adding background and character images.
-* Hunted 4 - adding sound.
-* Hunted 5 - loading images and sound off the web.
-* Exporting `Hunted 5` as a web-app.
-* Putting the `Hunted 5` web-app in the cloud.
-* Running the `Hunted 5` web-app as a mobile app.
+* [Hunted 3 - adding background and character images](hunted3.html).
+* Hunted 4 - putting an envelope around the characters for better collision detection.
+* Hunted 5 - using multiple images per character for richer animation.
+* Hunted 6 - adding sound.
+* Hunted 7 - loading images and sounds off the web.
+* Exporting `Hunted 7` as a web-app.
+* Putting the `Hunted 7` web-app in the cloud.
+* Running the `Hunted 7` web-app as a mobile app.
 * Multiple screens in your game.
 * Game 2 - Shooter
 * Game 3 - Runner
