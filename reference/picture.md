@@ -20,6 +20,7 @@
 | `Picture.hgap(width)` |  Creates an invisible picture with the given width. This can be used during picture layout - to provide horizontal spacing. |
 | `Picture.vgap(height)` |  Creates an invisible picture with the given height. This can be used during picture layout - to provide vertical spacing. |
 | `Picture.image(fileName)` | Creates a picture with the image in the given file. |
+| `Picture.image(fileName, envelope)` | Creates a picture with the image in the given file, and with the given envelope for the picture's (collision) geometry. |
 | `Picture.image(url)` | Creates a picture with the image at the given file link. |
 | `Picture.image(image)` | Creates a picture with the given image. |
 
