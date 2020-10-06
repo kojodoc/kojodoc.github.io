@@ -80,6 +80,7 @@ Vectors in Kojo are two-dimensional (as they work with the 2-D canvas). Each vec
 
 Function description:
 
+* `Vector2D(x, y)` - constructs a Vector2D value with the given `x` and `y`. Note that here Vector2D is both the name of the function and the type of the data value that is created/returned by the function.
 * `pic.collidesWith(stageBorder)` - returns true if pic has collided with the stage border. bouncing off the stage.
 * `bouncePicOffStage(pic, vel)` - for a picture `pic` moving with velocity `vel` - this function returns the velocity after bouncing off the stage.
 
@@ -87,10 +88,8 @@ Function description:
 
 ### Exercise
 
-Write a program where four squares start out at the center of the stage and then move towards its four corners.
-
 Write a program that does the following:
-* Draws four rectangles at the centerof the stage.
+* Draws four rectangles at the center of the stage.
 * Moves the rectangles towards the four corners of the stage.
 * Keeps the rectangles within the stage borders.
 
