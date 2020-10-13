@@ -39,11 +39,11 @@ hop(xx)
 
 ### Explanation
 
-Control flow (or flow of control) is the order in which the instructions of a computer program are executed. There are four primary ways in which this happens:
+Control flow (or flow of control) is the order in which the instructions of a computer program are executed (by the CPU in a computer). There are four primary ways in which this happens:
 * sequencing - this is the default mode of execution of a program - instructions are run one after the other.
 * looping - special istructions (like repeat) make the program loop over a sequence of instructions.
 * selection - lets you choose the next instrunction to run from alternative instructions - based on a condition.
-* calls and returns - *calls* jump into previously defined functions or commands, carry out the instructions specified there, and then *return* to the instruction right after the calling instruction.
+* calls and returns - *calls* jump into previously defined functions or commands, supplying input values as needed, then carry out the instructions specified there, and finally *return* to the instruction right after the calling instruction. In the case of functions, the result of the computation/calculation carried out by the function is returned. In the case of commands, the unit value `()` is returned.
 
 Note - the Kojo trace window only shows calls and returns to/from commands and functions that you define. It does not show the calls/returns of predefined (primitive) commands and functions. Be aware that these calls/returns (of primitives) happen under the covers.
 

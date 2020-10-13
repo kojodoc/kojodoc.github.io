@@ -55,7 +55,8 @@ This is the physical setting in which computer programs run.
 * A program is a sequence of lines of text.
 * Each line contains instructions for the computer. These instructions can be of the following kinds:
   * Commands - which let you take output actions that can be sensed in the external world (e.g. `forward(100)`, `println(10)`), or indirectly affect future actions (e.g. `setPenColor(blue)`).  
-  Note - a couple of other names are also used for commands - *statements* and *procedures*.
+  Note that in `forward(100)`, the number/value `100` is an input that is passed into the `forward` command. Similarly, `10` is an input to `println` above, and `blue` is an input to `setPenColor`.  
+  Be aware that a couple of other names are also used for commands - *statements* and *procedures*.
   * Expressions - which are portions of your program text that can be evaluated to produce a value. Expressions are of two kinds:
     * Functions - which take input values and compute output or return values from these inputs (e.g. `math.round(11.1)`, `math.pow(2, 3)`).
     * Literals - which evaluate to themselves (e.g. `9`, `7.1`, `blue`, `"hello"`, `List(1, 2, 3)`).
@@ -64,7 +65,8 @@ This is the physical setting in which computer programs run.
 
 *Notes:*
 * The instructions in your program make use of data values to do their jobs. More on this in the *program operation* section below.
-* You **use** a command or function in your program by **calling** it with (optional) input data.
+* You **use** a command or function in your program by **calling** it with (optional) input data. After a command or function is done, it `returns` to the next instruction after the **calling** instruction.
+* Functions return output values that are the result of the computation/calculation carried out by them. These output values are available to the the next instruction after the **call** to the function.
 * Commands also return output values! It's just that each and every command returns the exact same output value - called unit (written `()`). The type of this unit value `()` is `Unit`. You can think of `()` as a value that contains *no information*.
 * Given the previous fact, a Scala program is nothing but a sequence of expressions. It's just that we call some of these expressions (that return `()`) commands or statements.
 * It's good to remember that expressions exist in source code while values exist in memory.
