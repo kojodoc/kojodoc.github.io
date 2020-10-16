@@ -28,11 +28,12 @@ Here is a notional machine for Kojo:
 12. Some instructions make Kojo read data (queries), do calculations and create new data (functions), and carry out actions (commands). Other instructions control what instructions Kojo executes (these are mostly keyword instructions), which is how looping and selection works. 
 13. The calling of any command or function happens via a call/return.
 14. When a command or function is called, Kojo creates a new stack frame and adds it to the call stack. The inputs/parameters to the command/function are supplied via this stack frame.
+ * When a method is called on an object via the dot notation, the object is considered to be a input/parameter to the method.
 15. Each stack frame stores the val/var names created inside the command/function, and references to the data corresponding to the names. Command/Function inputs/parameters are just vals in the stack frame.
 16. When a val/var is used, Kojo looks for it in the current stack frame. If it isn’t there, Kojo looks for it in the top-level (global) frame.
-17. When a command or function finishes, Kojo erases its stack frame from the call stack, jumps back (returns) to the instructions it was executing before the command/function call, and carrries on with the next instruction after the call. If there isn’t a next instruction, the program finishes.
+17. When a command or function finishes, Kojo erases its stack frame from the call stack, jumps back (returns) to the instructions it was executing before the command/function call, and carrries on with the next instruction after the call.
  * A function returns a value (which is the result of its computation/calculation) to the next instruction. It's the responsibility of the next instruction to use this value appropriately (otherwise the value will remain unused in the program).
- * A command returns the unit value `()` to the next instruction. The unit value `()` specifies *no information*.
-18. When a method is called on an object via the dot notation, the object is considered to be a input/parameter to the method.
+ * A command returns the unit value `()` to the next instruction. The unit value `()` specifies *no information*.   
+If there isn’t a next instruction, the program finishes.
 
 
