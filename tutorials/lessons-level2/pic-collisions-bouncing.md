@@ -81,5 +81,5 @@ Function descriptions:
 Write a program that does the following:
 * Draws four non-overlapping rectangles in the center region of the stage.
 * Moves the rectangles towards the four corners of the stage.
-* Keeps the rectangles within the stage borders.
-* Makes the rectangles bounce off each other.
+* Keeps the rectangles within the stage borders (by making them bounce off the borders).
+* Makes the rectangles bounce off each other (so that whenever any two collide, they bounce off each other).
