@@ -11,6 +11,12 @@ This activity has the following desired goals:
 
 ---
 
+### Step 0
+
+Read up on the [notional machine](/concepts/notional-machine.html) for Kojo.
+
+---
+
 ### Step 1
 
 Type in the following code and trace it:
