@@ -16,6 +16,9 @@ This page contains descriptions of general purpose utility commands and function
 | `drawLoop { drawing code }` | calls the drawing code at the default refresh rate, which is 50 times a second. |
 | `setRefreshRate(n)` | sets the refresh rate to `n` times per second. The next time a `clear()` is done, the refresh rate is reset to its default value of 50. |
 | `erasePictures()` | erases all the pictures in the canvas. |
+| `viewRotate(angle)`| rotates the contents of the drawing canvas by the given `angle`. |
+| `viewTranslate(x, y)`| translates the contents of the drawing canvas by the given `(x, y)`). |
+| `viewScale(factor)`| scales the contents of the drawing canvas by the given `factor`. |
 
 ### Random numbers
 
