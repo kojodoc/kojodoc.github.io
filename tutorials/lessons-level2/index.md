@@ -16,19 +16,21 @@
 10. [Hunted 2 - increasing the number of hunters without any code change](hunted2.html).
 11. [Hunted 3 - adding background and character images](hunted3.html).
 12. [Hunted 4 - putting an envelope around character images for better collision detection](hunted4.html).
-13. Hunted 5 - using multiple images per character for richer animation.
-14. Hunted 6 - adding sound.
-15. Hunted 7 - loading images and sounds off the web.
-16. Exporting `Hunted 7` as a web-app.
-17. Putting the `Hunted 7` web-app in the cloud.
-18. Running the `Hunted 7` web-app as a mobile app.
-19. Multiple screens in your game.
-20. Game 2 - Shooter
-21. Game 3 - Runner
-22. Game 4 - Falling letters
-23. Game 5 - Super Dino
-24. Game 6 - Tic Tac Toe
-25. Game 7 - Tic Tac Toe, unbeatable (with AI).
-26. Final Project
+13. [Using multiple images per character for richer animation.](sprite-sheet.html).
+
+* Hunted 5 - using sprite-sheets.
+* Hunted 6 - adding sound.
+* Hunted 7 - loading images and sounds off the web.
+* Exporting `Hunted 7` as a web-app.
+* Putting the `Hunted 7` web-app in the cloud.
+* Running the `Hunted 7` web-app as a mobile app.
+* Multiple screens in your game.
+* Game 2 - Shooter
+* Game 3 - Runner
+* Game 4 - Falling letters
+* Game 5 - Super Dino
+* Game 6 - Tic Tac Toe
+* Game 7 - Tic Tac Toe, unbeatable (with AI).
+* Final Project
 
 
