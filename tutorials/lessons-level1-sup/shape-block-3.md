@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 1s Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## The shape-block method - blocks moves along spiral
+## The shape-block method - blocks move along spiral
 
 ### Step 1
 

@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 1s Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## The shape-block method - blocks moves along ellipse
+## The shape-block method - blocks move along ellipse
 
 ### Step 1
 
