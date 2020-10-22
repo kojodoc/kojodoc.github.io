@@ -12,13 +12,12 @@
 6. [More on the second input to repeatFor](repeat-for.html).
 7. [Pictures - responding to the keyboard, joystick, and mouse clicks](pic-events.html).
 8. [Making a game - Hunted](hunted.html).
-9. [ArrayBuffer, HashMap, and HashSet for gaming](abuffer-hmap-hset.html).
+9. [ArrayBuffers and HashMaps for gaming](abuffer-hmap.html).
 10. [Hunted 2 - increasing the number of hunters without any code change](hunted2.html).
 11. [Hunted 3 - adding background and character images](hunted3.html).
 12. [Hunted 4 - putting an envelope around character images for better collision detection](hunted4.html).
-13. [Using multiple images per character for richer animation.](sprite-sheet.html).
+13. [Hunted 5 - Using multiple images per character for richer animation](hunted5.html).
 
-* Hunted 5 - using sprite-sheets.
 * Hunted 6 - adding sound.
 * Hunted 7 - loading images and sounds off the web.
 * Exporting `Hunted 7` as a web-app.

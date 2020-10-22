@@ -8,6 +8,9 @@ This activity has the following desired goals:
 * Learning to put an envelope around character images for better collision detection (**A, M**)
 * Using the above idea to improve the game from the previous lesson  (**M, T**).
 
+
+In this lesson, we will use the images from the previous lesson located in the folder `full/path/to/assets/hunted3-assets`.
+
 ---
 
 ### Step 1
@@ -17,7 +20,8 @@ Type in following code and run it:
 cleari()
 drawStage(black)
 
-val assetsDir = "/home/lalit/Dropbox/kojo-work/hunted-simple/"
+// change the following line as per the location of the assets folder on your computer
+val assetsDir = "full/path/to/assets/hunted3-assets"
 val pic = Picture.image(s"$assetsDir/player_run1.png")
 draw(pic)
 
@@ -43,7 +47,8 @@ Type in following code and run it:
 cleari()
 drawStage(black)
 
-val assetsDir = "/home/lalit/Dropbox/kojo-work/hunted-simple/"
+// change the following line as per the location of the assets folder on your computer
+val assetsDir = "full/path/to/assets/hunted3-assets"
 val picEnvelope = Picture {
     right(90)
     hop(10)
@@ -82,7 +87,8 @@ Type in following code and run it:
 ```scala
 cleari()
 
-val assetsDir = "/home/lalit/Dropbox/kojo-work/hunted-simple/"
+// change the following line as per the location of the assets folder on your computer
+val assetsDir = "full/path/to/assets/hunted3-assets"
 val pic = Picture.image(s"$assetsDir/player_run1.png")
 draw(pic)
 

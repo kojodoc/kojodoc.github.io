@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 2 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## ArrayBuffer, HashMap, and HashSet for gaming
+## ArrayBuffers and HashMaps for gaming
 
 This activity has the following desired goals:
 * Learning to use ArrayBuffers and HashMaps 

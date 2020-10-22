@@ -7,22 +7,24 @@
 This activity has the following desired goals:
 * Using multiple separate images to animate a character (**A, M**)
 * Using multiple images in a sprite-sheet to animate a character (**A, M**)
+* Applying the above idea to the hunted game (**M, T**)
 
 ---
 
 ### Step 0
 
-Download the zip file with the image assets for this lesson - [multi-image-assets.zip](multi-image-assets.zip). This zip file contains the following image files:
+Download the zip file with the image assets for this lesson - [hunted5.zip](hunted5.zip). This zip file contains the following image files:
 ```
 player_run0.png
 player_run1.png
 player_run2.png
 player_run_sheet.png
+robot_walk_sheet.png
 ```
 
 Uncompress this zip-file and put it under any folder on your computer. Let's call this folder `full/path/to/assets`.
 
-So now the above images will be in the folder `full/path/to/assets/multi-image-assets`.
+So now the above images will be in the folder `full/path/to/assets/hunted5`.
 
 ---
 
@@ -49,7 +51,7 @@ val env = Picture {
 drawAndHide(env)
 
 // change the following line as per the location of the assets folder on your computer
-val assetsDir = "full/path/to/assets/multi-image-assets"
+val assetsDir = "full/path/to/assets/hunted5"
 val pic1 = Picture.image(s"$assetsDir/player_run0.png", env)
 val pic2 = Picture.image(s"$assetsDir/player_run1.png", env)
 val pic3 = Picture.image(s"$assetsDir/player_run2.png", env)
@@ -118,7 +120,7 @@ val env = Picture {
 drawAndHide(env)
 
 // change the following line as per the location of the assets folder on your computer
-val assetsDir = "full/path/to/assets/multi-image-assets"
+val assetsDir = "full/path/to/assets/hunted5"
 val sheet = SpriteSheet(s"$assetsDir/player_run_sheet.png", 96, 128)
 val pic1 = Picture.image(sheet.imageAt(0, 0), env)
 val pic2 = Picture.image(sheet.imageAt(1, 0), env)
@@ -168,4 +170,4 @@ Function descriptions:
 
 ### Exercise
 
-Download a sprite sheet off the internet and use it to animate the player from `Step 2` above.
+Use the ideas above to improve the version of hunted from the previous lesson.
