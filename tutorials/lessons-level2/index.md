@@ -23,7 +23,6 @@
 * Exporting `Hunted 7` as a web-app.
 * Putting the `Hunted 7` web-app in the cloud.
 * Running the `Hunted 7` web-app as a mobile app.
-* Multiple screens in your game.
 * Game 2 - Shooter
 * Game 3 - Runner
 * Game 4 - Falling letters
