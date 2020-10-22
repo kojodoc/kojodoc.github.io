@@ -17,11 +17,11 @@ Here is a notional machine for Kojo:
 2. The code for a program is loaded into the code area.
 3. The data for a program is created and lives in the heap.
 4. Variables, named values, command/function inputs/parameters (which are like named values), and command/function outputs/return-values live on the call stack.
-5. Every piece of data is an object. The object contains the value of the data, information on the type of the data, and a reference to the code that works with this type of data. The code is a bunch of commands and functions, which are called the methods of the object.
-6. Some types of data are never modified after they are created, e.g., Boolean, Int, Double, String, Seq, List, etc. These are called immutable data types.
-7. Other types of data can be modified after they are created, e.g., ArrayBuffer, HashMap, HashSet, etc. These are called mutable data types.
-8. A val is constant reference to a value. You can think of it as a name for a value.
-9. A var is a reference to a value. You can think of it as a binding of a name to a value. This binding can be changed to a different value in your program.
+5. Every piece of data is an object. The object contains the value of the data, information on the type of the data, and a reference to the code that works with this type of data. The code is a bunch of commands and functions, which are called the methods of the object. A piece of data is also informally called a value.
+6. A val is constant reference to a value. You can think of it as a name for a value.
+7. A var is a reference to a value. You can think of it as a binding of a name to a value. This binding can be changed to a different value in your program.
+8. Some types of data are never modified after they are created, e.g., Boolean, Int, Double, String, Seq, List, etc. These are called immutable data types.
+9. Other types of data can be modified after they are created, e.g., ArrayBuffer, HashMap, HashSet, etc. These are called mutable data types.
 10.  Immutable data types are built using vals. Mutable data types are built using vars.
 11.  When code is loaded into memory, Kojo converts it to a sequence of instructions that are stored in the code area. 
 12. Code can be treated as data by putting it in an object. This is why it’s possible to assign commands/functions to vals/vars and pass them as inputs/parameters to other commands/functions.
