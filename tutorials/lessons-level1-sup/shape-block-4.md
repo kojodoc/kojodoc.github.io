@@ -24,9 +24,11 @@ def shape() {
     circle(10)
 }
 
+// the radii of the ellipse
 val r1 = 200
 val r2 = 100
 
+// x and y are calculated based on the parametric form of the equation of an ellipse
 def posx(a: Int) = r1 * math.cos(a.toRadians)
 def posy(a: Int) = r2 * math.sin(a.toRadians)
 
