@@ -2,8 +2,8 @@
   <a href="index.html">Home</a>
 </div>
 
-## Tutorials
-### Picture Graphics
+## Tutorials and more...
+### Picture Graphics Tutorials
 * [An introduction to Pictures](tutorials/pictures-intro.html).
 * [An introduction to grid based generative art](tutorials/generative-art-grid-intro.html).
 * [Grid based generative art (part 2)](tutorials/generative-art-grid-part2.html) -- Using color and shape palettes.
@@ -19,6 +19,9 @@
 ## Activity books to get going with
 * [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/2.9.05_release/getting-started-06-08-18.pdf) (Version -- August 6, 2018).
 * [Introduction to Programming with Kojo [PDF]](https://github.com/litan/kojo/releases/download/2.9.05_release/intro-to-programming-180918.pdf) (Version -- September 18, 2018).
+
+## Learning Modules
+* [Modules Index](/modules/modules-index.html)
 
 <br/>
 <br/>
