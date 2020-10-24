@@ -14,12 +14,6 @@ setBackground(white)
 setSpeed(fast)
 setPenColor(cm.gray)
 
-val nx = 20
-val ny = 20
-val cb = canvasBounds
-val dx = cb.width / nx
-val dy = cb.height / ny
-
 def shape() {
     circle(10)
 }
