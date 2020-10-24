@@ -34,4 +34,4 @@ Intermediate programming certificate, enjoyable publishable games.
 
 ### Gallery of Kojo created games
 
-You can check out [many sample games](https://docs.kogics.net/ikojo.html#examples) made with Kojo.
+You can check out [many sample games](/ikojo.html#examples) made with Kojo.

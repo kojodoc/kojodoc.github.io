@@ -29,3 +29,7 @@ Advanced programming certificate, rich and enjoyable publishable games.
 *Coming Soon*
 
 For now, you can check out the [gaming page](/gaming-index.html).
+
+### Gallery of Kojo created games
+
+You can check out [many sample games](/ikojo.html#examples) made with Kojo.
