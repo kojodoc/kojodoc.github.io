@@ -6,6 +6,10 @@
 **Go deeper into programming, math, and physics as you create publishable games**  
 *Around 25 one-hour classes plus projects*
 
+<div style="margin-top: 20px;margin-bottom: 20px;text-align:center">
+  <img src="module2-images/hunted.png" width="500"/>
+</div>
+
 ### Topics
 
 Picture graphics, notional machine for programming, object-oriented programming, basic data-structures, animation, collision detection, sprites, sprite-sheets, sounds, web-apps, mobile-apps.
@@ -27,3 +31,7 @@ Intermediate programming certificate, enjoyable publishable games.
 ### Lesson Plans
 
 * [Explorations with Kojo, Level-2](/tutorials/lessons-level2/index.html).
+
+### Gallery of Kojo created games
+
+You can check out [many sample games](https://docs.kogics.net/ikojo.html#examples) made with Kojo.
