@@ -6,6 +6,10 @@
 **Learn to program as you create printable geometric art**  
 *Around 25 one-hour classes plus projects*
 
+<div style="margin-top: 20px;margin-bottom: 20px;text-align:center">
+  <img src="module1-images/flower.png"/>
+</div>
+
 ### Topics
 
 Turtle graphics, commands, functions, colors, shapes, pattern analysis and design, control flow.
@@ -28,3 +32,25 @@ Introductory programming certificate, aesthetic and attractive printable art.
 
 * [Explorations with Kojo, Level-1 [PDF]](https://github.com/litan/kojo/releases/download/2.9.05_release/Kojo-Lessons-Level1-140920.pdf) (Version -- September 14, 2020).
 * [Explorations with Kojo, Level-1 Supplement](/tutorials/lessons-level1-sup/index.html).
+
+### Gallery of Kojo generated art and printed merchandise
+
+<div style="margin-top:20px;margin-bottom:20px;text-align:center;font-size:150%">
+  <img src="module1-images/event-pics.png"/><br/>
+  Various events around printed merchandise
+  <hr/>
+  <img src="module1-images/pentagon.png"/><br/>
+  A pentagon pattern
+  <hr/>
+  <img src="module1-images/rangoli.png"/><br/>
+  A rangoli design
+  <hr/>
+  <img src="module1-images/snowflake.png"/><br/>
+  A fractal snowflake
+  <hr/>
+  <img src="module1-images/tree.png"/><br/>
+  A fractal tree
+  <hr/>
+  <img src="module1-images/design-1.png"/><br/>
+  A t-shirt design
+</div>
