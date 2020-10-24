@@ -16,7 +16,7 @@ Data structures and algorithms, classical AI, grid worlds, platformer games, sim
 
 ### Activities
 
-Create rich games and simulations using geometric shapes, images, sounds, and algorithms. 
+Create rich games and simulations using geometric shapes, images, sounds, algorithms, and AI. 
 
 ### Benefits
 

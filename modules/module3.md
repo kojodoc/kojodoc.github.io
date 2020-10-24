@@ -20,7 +20,7 @@ Create a wide range of generative art using compositional graphics, grids, manda
 
 ### Benefits
 
-Critical thinking, creative thinking, more advanced programming, introduction to deep-learning AI, analysis, design, real-word impact via printable merchandise.
+Critical thinking, creative thinking, more advanced programming, introduction to deep-learning AI, analysis, design, real-word impact via printable merchandise. Plus an introduction to the spiritual dimension.
 
 ### Achievements
 
