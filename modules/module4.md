@@ -6,6 +6,10 @@
 **Create richer games and simulations using more advanced ideas from computer science.**  
 *Around 25 one-hour classes plus projects*
 
+<div style="margin-top: 20px;margin-bottom: 20px;text-align:center">
+  <img src="module4-images/platformer.png" width="600"/>
+</div>
+
 ### Topics
 
 Data structures and algorithms, classical AI, grid worlds, platformer games, simulations.

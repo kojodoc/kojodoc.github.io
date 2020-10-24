@@ -6,6 +6,10 @@
 **Use Arduino and Raspberry-PI to build smart circuits and robots.**  
 *Around 25 one-hour classes plus projects*
 
+<div style="margin-top: 20px;margin-bottom: 20px;text-align:center">
+  <img src="module5-images/adi-robot.png" width="600"/>
+</div>
+
 > <img src="/man-at-work.png"/> <br/> *This section of the website is currently under development*.
 
 For now, here are some links:
