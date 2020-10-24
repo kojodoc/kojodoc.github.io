@@ -6,7 +6,7 @@
 
 * [Module 1 - Drawings and Generative Art with Turtle Graphics](module1.html).
 * [Module 2 - Gaming with Picture Graphics](module2.html).
-* [Module 3 - Drawings and Generative Art with Picture Graphics](module3.html).
+* [Module 3 - Drawings and Generative Art with Picture Graphics and AI](module3.html).
 * [Module 4 - Advanced Gaming and Simulations](module4.html).
 * [Module 5 - Electronic Circuits and Robots](module5.html).
 
