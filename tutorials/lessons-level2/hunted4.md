@@ -123,4 +123,4 @@ Function descriptions:
 
 1. Using the code in Step 3, improve the picture envelope for the code in step 2 so that collisions for the character with the stage border are better (on the top and left side).
 
-2. Use the improved picture envelope to improve the game from the previous lesson.
+2. Use the improved picture envelope to improve the version of hunted from the previous lesson.
