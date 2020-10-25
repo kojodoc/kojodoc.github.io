@@ -11,6 +11,8 @@
 * [Module 5 - Electronic Circuits and Robots](module5.html).
 
 
+The modules are meant to be done in sequence, starting with the first module.
+
 For a quick overview of the range of topics covered and the kinds of creations possible via the above modules, check out the Kojo Intro Video:
 
 <div style="margin-top: 20px;margin-bottom: 20px;text-align:center">
