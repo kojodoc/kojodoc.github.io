@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 2 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## Using multiple images per character for richer animation.
+## Hunted 5 - using multiple images per character for richer animation.
 
 This activity has the following desired goals:
 * Using multiple separate images to animate a character (**A, M**)
@@ -13,7 +13,7 @@ This activity has the following desired goals:
 
 ### Step 0
 
-Download the zip file with the image assets for this lesson - [hunted5.zip](hunted5.zip). This zip file contains the following image files:
+Download the zip file with the image assets for this lesson - [hunted5-assets.zip](hunted5-assets.zip). This zip file contains the following image files:
 ```
 player_run0.png
 player_run1.png
@@ -24,7 +24,7 @@ robot_walk_sheet.png
 
 Uncompress this zip-file and put it under any folder on your computer. Let's call this folder `full/path/to/assets`.
 
-So now the above images will be in the folder `full/path/to/assets/hunted5`.
+So now the above images will be in the folder `full/path/to/assets/hunted5-assets`.
 
 ---
 
@@ -51,7 +51,7 @@ val env = Picture {
 drawAndHide(env)
 
 // change the following line as per the location of the assets folder on your computer
-val assetsDir = "full/path/to/assets/hunted5"
+val assetsDir = "full/path/to/assets/hunted5-assets"
 val pic1 = Picture.image(s"$assetsDir/player_run0.png", env)
 val pic2 = Picture.image(s"$assetsDir/player_run1.png", env)
 val pic3 = Picture.image(s"$assetsDir/player_run2.png", env)
@@ -120,7 +120,7 @@ val env = Picture {
 drawAndHide(env)
 
 // change the following line as per the location of the assets folder on your computer
-val assetsDir = "full/path/to/assets/hunted5"
+val assetsDir = "full/path/to/assets/hunted5-assets"
 val sheet = SpriteSheet(s"$assetsDir/player_run_sheet.png", 96, 128)
 val pic1 = Picture.image(sheet.imageAt(0, 0), env)
 val pic2 = Picture.image(sheet.imageAt(1, 0), env)
