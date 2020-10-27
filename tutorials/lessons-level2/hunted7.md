@@ -41,7 +41,6 @@ val env = Picture {
 }
 drawAndHide(env)
 
-// change the following line as per the location of the assets folder on your computer
 val assetsDir = "https://kojofiles.netlify.app/hunted7"
 
 preloadImage(s"$assetsDir/player_run_sheet.png")
