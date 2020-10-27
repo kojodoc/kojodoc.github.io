@@ -18,8 +18,8 @@
 12. [Hunted 4 - putting an envelope around character images for better collision detection](hunted4.html).
 13. [Hunted 5 - using multiple images per character for richer animation](hunted5.html).
 14. [Hunted 6 - adding sound](hunted6.html).
+15. [Hunted 7 - loading images and sounds off the web](hunted7.html).
 
-* Hunted 7 - loading images and sounds off the web.
 * Hunted 8 - using a joystick to make the game mobile friendly.
 * Exporting `Hunted 8` as a web-app.
 * Putting the `Hunted 8` web-app in the cloud.

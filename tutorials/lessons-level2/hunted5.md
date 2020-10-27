@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 2 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## Hunted 5 - using multiple images per character for richer animation.
+## Hunted 5 - using multiple images per character for richer animation
 
 This activity has the following desired goals:
 * Using multiple separate images to animate a character (**A, M**)

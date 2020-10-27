@@ -2,31 +2,20 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 2 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## Hunted 6 - adding sound
+## Hunted 7 - loading images and sounds off the web
 
 This activity has the following desired goals:
-* Using mp3 files to add background music (**A, M**)
-* Using mp3 files to add action music (**A, M**)
+* Loading images from the web (**A, M**)
+* Loading sounds from the web (**A, M**)
 * Applying the above ideas to the hunted game (**M, T**)
 
 ---
 
 ### Step 0
 
-Download the zip file with the image assets for this lesson - [hunted6-assets.zip](hunted6-assets.zip). This zip file contains the following image files:
-```
-player_run0.png
-player_run1.png
-player_run2.png
-player_run_sheet.png
-robot_walk_sheet.png
-Cave.mp3
-DrumBeats.mp3
-```
+Transfer the assets from the previous lesson to some location on the web/internet/cloud. A good place for this is netlify.com.
 
-Uncompress this zip-file and put it under any folder on your computer. Let's call this folder `full/path/to/assets`.
-
-So now the above images will be in the folder `full/path/to/assets/hunted6-assets`.
+For the purpose of this lesson, the assets have been transferred to `https://kojofiles.netlify.app/hunted7`
 
 ---
 
@@ -53,7 +42,11 @@ val env = Picture {
 drawAndHide(env)
 
 // change the following line as per the location of the assets folder on your computer
-val assetsDir = "full/path/to/assets/hunted6-assets"
+val assetsDir = "https://kojofiles.netlify.app/hunted7"
+
+preloadImage(s"$assetsDir/player_run_sheet.png")
+preloadMp3(s"$assetsDir/Cave.mp3")
+preloadMp3(s"$assetsDir/DrumBeats.mp3")
 
 playMp3Loop(s"$assetsDir/Cave.mp3")
 
@@ -98,24 +91,24 @@ animate {
 activateCanvas()
 ```
 
-**Q1a.** Which line in the above code plays the background music?
-
-**Q1b.** Which lines in the above code play and stop the action music?
+**Q1a.** Does the code above do the same thing as the code in `step 1` of the previous lesson? If so, what has changed?
 
 ---
 
 ### Explanation
 
 Command/Function description:
-* `pic1.distanceTo(pic2)` - tells you the distance between `pic1` and `pic2`.
-* `playMp3Loop(music.mp3)` - plays the given `music.mp3` in a loop. This command is used for playing background music.
-* `playMp3(sound.mp3)` - plays the given sound once.
-* `stopMp3()` - stops a sound played with `playMp3`.
-* `isMp3Playing` - tells you whether a sound played with `playMp3` is currently playing.
 
+As you just saw, the one significant difference between the version of the game in this lesson and the previous lesson is that the `asssetDir` changed from being a local folder to a remote one.
+
+It's important to keep in mind that loading a file from a remote location can take substantially longer than loading it locally. So, the program above also preloads the sounds and images needed for the game, so that the game does not pause when any sound or image is accessed for the first time and is loaded off the web. 
+
+The following commands are used for preloading:
+* `preloadImage(imageFileLocation)` - loads and caches the image file from the given location.
+* `preloadImage(soundFileLocation)` - loads and caches the sound file from the given location.
 
 ---
 
 ### Exercise
 
-Use the ideas above to improve the version of hunted from the previous lesson.
+Using the ideas above, load sounds and images off the web in the version of hunted from the previous lesson .
