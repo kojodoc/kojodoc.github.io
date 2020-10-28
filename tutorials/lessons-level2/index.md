@@ -19,6 +19,7 @@
 13. [Hunted 5 - using multiple images per character for richer animation](hunted5.html).
 14. [Hunted 6 - adding sound](hunted6.html).
 15. [Hunted 7 - loading images and sounds off the web](hunted7.html).
+16. [Hunted 7 - running in iKojo](hunted7-ikojo.html).
 
 * Hunted 8 - using a joystick to make the game mobile friendly.
 * Exporting `Hunted 8` as a web-app.
