@@ -3,7 +3,7 @@
 </div>
 
 ## Module 4 - Advanced Gaming and Simulations
-**Create richer games and simulations using more advanced ideas from computer science.**  
+**Create richer games and simulations using more advanced ideas from computer science**  
 *Around 25 one-hour classes plus projects*
 
 <div style="margin-top: 20px;margin-bottom: 20px;text-align:center">

@@ -3,7 +3,7 @@
 </div>
 
 ## Module 5 - Electronic Circuits and Robots
-**Use Arduino and Raspberry-PI to build smart circuits and robots.**  
+**Use Arduino and Raspberry-PI to build smart circuits and robots**  
 *Around 25 one-hour classes plus projects*
 
 <div style="margin-top: 20px;margin-bottom: 20px;text-align:center">
