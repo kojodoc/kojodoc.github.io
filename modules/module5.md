@@ -10,7 +10,27 @@
   <img src="module5-images/adi-robot.png" width="600"/>
 </div>
 
-> <img src="/man-at-work.png"/> <br/> *This section of the website is currently under development*.
+### Topics
+
+Electronic circuits with the Arduino board. Robots with a combination of Arduino + Raspberry-Pi.
+
+### Activities
+
+Create interesting circuits and simple robots controlled by code that you write. 
+
+### Benefits
+
+Critical thinking, creative thinking, advanced programming, introduction to circuits and robotics.
+
+### Achievements
+
+Advanced programming with circuits and robots certificate, interesting runnable creations in the physical world.
+
+---
+
+### Lesson Plans
+
+*Coming Soon*
 
 For now, here are some links:
 
