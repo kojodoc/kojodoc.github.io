@@ -2,9 +2,6 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 2 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-> <img src="../../man-at-work.png"/> <br/> *This section of the website is currently under development*.
-
-
 ## Pictures - responding to the keyboard, joystick, and mouse clicks
 
 This activity has the following desired goals:
