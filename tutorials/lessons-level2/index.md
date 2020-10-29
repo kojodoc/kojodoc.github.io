@@ -4,6 +4,7 @@
 
 ### Level 2 lesson plans
 
+0. [Control flow and notional machine review](../lessons-level1-sup/control-flow.html).
 1. [Creating Pictures and moving them around on the canvas](creating-moving-pictures.html).
 2. [Keeping Pictures within the stage area](keep-pictures-instage.html).
 3. [Picture collisions and bouncing](pic-collisions-bouncing.html).
