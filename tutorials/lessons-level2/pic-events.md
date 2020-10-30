@@ -89,13 +89,14 @@ pic.onMouseClick { (x, y) =>
 
 Command descriptions:
 
-* `pic.onMouseClick { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is clicked inside the picture.
-* `pic.onMousePress { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is pressed inside the picture.
-* `pic.onMouseRelease { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is released inside the picture.
-* `pic.onMouseMove { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse moves inside the picture.
-* `pic.onMouseDrag { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is dragged inside the picture.
-* `pic.onMouseEnter { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse enters the picture.
-* `pic.onMouseExit { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse exits the picture.
+* `pic.erase()` - Erases `pic` from the drawing canvas.
+* `pic.onMouseClick { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is clicked inside `pic`.
+* `pic.onMousePress { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is pressed inside `pic`.
+* `pic.onMouseRelease { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is released inside `pic`.
+* `pic.onMouseMove { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse moves inside `pic`.
+* `pic.onMouseDrag { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse is dragged inside `pic`.
+* `pic.onMouseEnter { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse enters `pic`.
+* `pic.onMouseExit { (x, y) => handler code }` - The supplied code is called, with the current mouse position as input, when the mouse exits `pic`.
 
 ---
 
@@ -147,4 +148,8 @@ Write a program that does the following:
 * Allows the user to control the picture via a joystick poisitoned at the bottom right of the stage.
 * Allows the user to increase the size of the picture by pressing the up arrow.
 * Allows the user to decrease the size of the picture by clicking on it.
+
+You can use the following commands in your solution:
+* `pic.scale(f)` - changes the size of `pic`. If the given `f` is greater than 1, the size of the picture increases. If `f` is less than 1, the size decreases.
+* `pic.rotate(a`) - rotates `pic` by the given angle `a`.
 
