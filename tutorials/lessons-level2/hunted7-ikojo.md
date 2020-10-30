@@ -7,7 +7,6 @@
 This activity has the following desired goals:
 * Testing a game (that loads assets off the web) within iKojo - as we prepare to convert the game to a web-app (**A, M**).
 
-
 ---
 
 ### Step 1

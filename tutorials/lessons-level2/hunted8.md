@@ -2,20 +2,11 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 2 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## Hunted 7 - loading images and sounds off the web
+## Hunted 8 - using a joystick to make the game mobile friendly
 
 This activity has the following desired goals:
-* Loading images from the web (**A, M**)
-* Loading sounds from the web (**A, M**)
+* Using a joystick to make games mobile friendly (**A, M**)
 * Applying the above ideas to the hunted game (**M, T**)
-
----
-
-### Step 0
-
-Transfer the assets from the previous lesson to some location on the web/internet/cloud. A good place for this is netlify.com.
-
-For the example in this lesson, the assets have been transferred to `https://kojofiles.netlify.app/hunted7`
 
 ---
 
@@ -58,6 +49,13 @@ val player = picBatch(pic1, pic2, pic3)
 player.setPosition(cb.x + cb.width / 2, cb.y + 20)
 draw(player)
 
+val js = joystick(25)
+js.setPostiion(cb.x + cb.width / 2, cb.y + 25 + 10)
+js.setPerimeterColor(ColorMaker.hsl(120, 1.00, 0.68).fadeOut(0.2))
+js.setPerimeterPenColor(white.fadeOut(0.5))
+js.setControlColor(black.fadeOut(0.2))
+js.draw()
+
 val speed = 5
 animate {
     if (isKeyPressed(Kc.VK_RIGHT)) {
@@ -76,6 +74,9 @@ animate {
         player.translate(0, -speed)
         player.showNext(200)
     }
+    else {
+        js.movePlayer(player, 1)
+    }
 
     if (player.distanceTo(stageBorder) < 50) {
         if (!isMp3Playing) {
@@ -90,24 +91,12 @@ animate {
 activateCanvas()
 ```
 
-**Q1a.** Does the code above do the same thing as the code in `step 1` of the previous lesson? If so, what has changed?
+**Q1a.** How does the above code use a joystick to move the player? Does the code also support keyboard input in addition to joystick input to control the player?
 
----
-
-### Explanation
-
-Command/Function description:
-
-As you just saw, the one significant difference between the version of the game in this lesson and the previous lesson is that the `asssetDir` changed from being a local folder to a remote one.
-
-It's important to keep in mind that loading a file from a remote location can take substantially longer than loading it locally. So, the program above also preloads the sounds and images needed for the game, so that the game does not pause when any sound or image is accessed for the first time and is loaded off the web. 
-
-The following commands are used for preloading:
-* `preloadImage(imageFileLocation)` - loads and caches the image file from the given location.
-* `preloadMp3(soundFileLocation)` - loads and caches the sound file from the given location.
+**Q1ba** Why does the above game use both keyboard and joystick for player control?
 
 ---
 
 ### Exercise
 
-Using the ideas above, load sounds and images off the web in the version of hunted from the previous lesson .
+Using the ideas above, use a joystick in the version of hunted from the previous lesson.
