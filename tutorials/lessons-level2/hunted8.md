@@ -93,7 +93,7 @@ activateCanvas()
 
 **Q1a.** How does the above code use a joystick to move the player? Does the code also support keyboard input in addition to joystick input to control the player?
 
-**Q1ba** Why does the above game use both keyboard and joystick for player control?
+**Q1b** Why does the above game use both keyboard and joystick for player control?
 
 ---
 
