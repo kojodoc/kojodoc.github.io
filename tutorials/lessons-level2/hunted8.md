@@ -76,6 +76,7 @@ animate {
     }
     else {
         js.movePlayer(player, 1)
+        player.showNext(200)
     }
 
     if (player.distanceTo(stageBorder) < 50) {
