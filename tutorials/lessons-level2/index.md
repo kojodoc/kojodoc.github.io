@@ -22,8 +22,8 @@
 15. [Hunted 7 - loading images and sounds off the web](hunted7.html).
 16. [Hunted 7 - running in iKojo](hunted7-ikojo.html).
 17. [Hunted 8 - using a joystick to make the game mobile friendly](hunted8.html).
+18. [Exporting *Hunted 8* as a web-app that can run standalone on personal computers and on mobile phones](hunted8-export.html).
 
-* Exporting `Hunted 8` as a web-app that can run standalone on personal computers and on mobile phones.
 * Game 2 - Shooter
 * Game 3 - Runner
 * Game 4 - Falling letters
