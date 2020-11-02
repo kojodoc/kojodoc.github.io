@@ -23,13 +23,13 @@
 16. [Hunted 7 - running in iKojo](hunted7-ikojo.html).
 17. [Hunted 8 - using a joystick to make the game mobile friendly](hunted8.html).
 18. [Exporting *Hunted 8* as a web-app that can run standalone on personal computers and on mobile phones](hunted8-export.html).
+19. [Game refinement project 1 - Dino](dino.html).
 
-* Game 2 - Shooter
-* Game 3 - Runner
-* Game 4 - Falling letters
-* Game 5 - Super Dino
-* Game 6 - Tic Tac Toe
-* Game 7 - Tic Tac Toe, unbeatable (with AI).
+* Game refinement project 2 - Shooter
+* Game refinement project 3 - Runner
+* Game refinement project 4 - Falling letters
+* Tic Tac Toe
+* Tic Tac Toe, unbeatable (with AI).
 * Final Project
 
 
