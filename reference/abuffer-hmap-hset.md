@@ -144,9 +144,9 @@ pic2.translate(hm2(pic2))
 
 A HashSet is an unordered collection of objects. Checking if an object is present in a set, or removing an object from a set - is very efficient.
 
-Here is a pictorial representation of a HashSet (*Todo - need to fix the drawing below*):
+Here is a pictorial representation of a HashSet:
 
-<img src="hashmap.png" width="450"/>
+<img src="hashset.png" width="450"/>
 
 The following is a description of the primary operations that you can do with a HashSet:
 
