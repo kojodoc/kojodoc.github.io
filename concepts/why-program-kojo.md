@@ -33,11 +33,11 @@ To make this idea more concrete, here are some examples related to computation, 
 
 
 ## Why Kojo?
-Kojo has [the following things](../reference/kojo-env-strengths.html) going for it:
-* It is a [modern programming environment](../reference/kojo-env-strengths.html).
-* It uses a powerful programming language that has good support for all the [essential ideas in computing](../reference/kojo-env-strengths.html#a-powerful-language). 
-* It has [rich activity areas](../index.html) that you can program in.
-* It provides exciting opportunities for [physical product design and development](../reference/kojo-env-strengths.html#physical-product-development-opportunities).
+Kojo brings together [the following things](../reference/kojo-env-strengths.html) in a compelling manner:
+* A powerful programming language that has good support for all the [essential ideas in computing](../reference/kojo-env-strengths.html#a-powerful-language). 
+* A [modern programming environment](../reference/kojo-env-strengths.html#a-modern-programming-environment).
+* [Rich activity areas](../reference/kojo-env-strengths.html#rich-areas-of-programming) that you can program in.
+* Exciting opportunities for [physical product design and development](../reference/kojo-env-strengths.html#physical-product-development-opportunities).
 
 Individually, each of the above features is very useful to have in a programming environment. Collectively, these features enable Kojo to provide a very fertile space for empowered exploration, discovery, creation, innovation, and learning.
 
