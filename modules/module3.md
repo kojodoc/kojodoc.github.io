@@ -30,9 +30,10 @@ Programming proficiency certificate, rich and intricate printable art.
 
 ### Lesson Plans
 
-*Coming Soon*
+* [Explorations with Kojo, Level-3](/tutorials/lessons-level3/index.html).
 
-For now, take a look at the following tutorials:
+
+For more information on Picture based Generative Art, take a look at the following tutorials:
 * [An introduction to Pictures](/tutorials/pictures-intro.html).
 * [An introduction to grid based generative art](/tutorials/generative-art-grid-intro.html).
 * [Grid based generative art (part 2)](/tutorials/generative-art-grid-part2.html) -- Using color and shape palettes.
