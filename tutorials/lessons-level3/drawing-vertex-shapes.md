@@ -94,12 +94,12 @@ invisible()
 
 ### Exercise
 
-**1** Make the following figure using one (`beginShape` plus `vertex`es plus `endShape`) shape:
+**1** Write a program to make the following figure using one (`beginShape` plus `vertex`es plus `endShape`) shape:
 
 ![vertex-shapes-ex1.png](vertex-shapes-ex1.png)
 
 
-**2** Make the following figure using four different (`beginShape` plus `curveVertex`es plus `endShape`) shapes:
+**2** Write a program to make the following figure using four different (`beginShape` plus `curveVertex`es plus `endShape`) shapes:
 
 ![vertex-shapes-ex2.png](vertex-shapes-ex2.png)
 

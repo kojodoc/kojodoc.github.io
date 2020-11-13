@@ -85,12 +85,12 @@ invisible()
 
 ### Exercise
 
-**1** Make the following figure using two different (`beginShape` plus `curveVertexRt`s plus `endShape`) shapes:
+**1** Write a program to make the following figure using two different (`beginShape` plus `curveVertexRt`s plus `endShape`) shapes:
 
 ![vertex-shapes-rt-ex1.png](vertex-shapes-rt-ex1.png)
 
 
-**2** Make the following figure using four different (`beginShape` plus `curveVertexRt`s plus `endShape`) shapes:
+**2** Write a program to make the following figure using four different (`beginShape` plus `curveVertexRt`s plus `endShape`) shapes:
 
 ![vertex-shapes-rt-ex2.png](vertex-shapes-rt-ex2.png)
 
