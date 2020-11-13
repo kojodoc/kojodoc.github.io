@@ -1,5 +1,5 @@
 <div class="nav">
-  <a href="../../index.html">Home</a> | <a href="../../tutorials-index.html">Tutorials</a>
+  <a href="../../index.html">Home</a> | <a href="/modules/modules-index.html">Modules</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
 ### Level 3 lesson plans
@@ -12,7 +12,8 @@
 * Rectangular grids
 * Rectangular grid based designs - 1
 * Rectangular grid based designs - 2
-* Drawing curves
+* [Drawing vertex based shapes](drawing-vertex-shapes.html)
+* [Drawing vertex based shapes using (r, theta) coordinates](drawing-vertex-rt-shapes.html)
 * Circular grids
 * Mandala 1
 * Mandala building blocks

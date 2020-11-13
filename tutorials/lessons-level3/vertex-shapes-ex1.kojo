@@ -1,0 +1,11 @@
+clear()
+showAxes()
+showGrid()
+
+beginShape()
+vertex(100, 0)
+vertex(0, 100)
+vertex(-100, 0)
+vertex(0, -100)
+vertex(100, 0)
+endShape()

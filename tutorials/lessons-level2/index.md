@@ -1,5 +1,5 @@
 <div class="nav">
-  <a href="../../index.html">Home</a> | <a href="../../tutorials-index.html">Tutorials</a>
+  <a href="../../index.html">Home</a> | <a href="/modules/modules-index.html">Modules</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
 ### Level 2 lesson plans
@@ -7,6 +7,7 @@
 0. [Control flow and notional machine review](../lessons-level1-sup/control-flow.html).
 1. [Creating Pictures and moving them around on the canvas](creating-moving-pictures.html).
 2. [Keeping Pictures within the stage area](keep-pictures-instage.html).
+0. Canvas bounds.
 3. [Picture collisions and bouncing](pic-collisions-bouncing.html).
 4. [Object Oriented Programming](oo-programming.html).
 5. [Blocks of code and lambdas](code-blocks.html).

@@ -1,5 +1,5 @@
 <div class="nav">
-  <a href="../../index.html">Home</a> | <a href="../../tutorials-index.html">Tutorials</a>
+  <a href="../../index.html">Home</a> | <a href="/modules/modules-index.html">Modules</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
 ### Level 1 (Supplementary) lesson plans 
