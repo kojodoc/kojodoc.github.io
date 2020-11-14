@@ -14,6 +14,7 @@
 * Rectangular grid based designs - 2
 * [Drawing vertex based shapes](drawing-vertex-shapes.html)
 * [Drawing vertex based shapes using (r, theta) coordinates](drawing-vertex-rt-shapes.html)
+* [Using vertex-shape Pictures to draw shapes](drawing-vertex-rt-shapes-pic.html)
 * Circular grids
 * Mandala 1
 * Mandala building blocks
