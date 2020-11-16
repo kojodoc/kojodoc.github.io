@@ -68,7 +68,3 @@ Inside the function, the shape being constructed is available as a parameter (ca
 **2** Write a program to make the following figure using first one and then four different vertex-shape Pictures:
 
 ![vertex-shapes-rt-ex2.png](vertex-shapes-rt-ex2.png)
-
-
-
-

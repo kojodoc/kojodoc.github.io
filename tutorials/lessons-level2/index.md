@@ -29,7 +29,7 @@
 * Game refinement project 2 - Shooter
 * Game refinement project 3 - Runner
 * Game refinement project 4 - Falling letters
-* Tic Tac Toe
+* [Sample game - Tic Tac Toe](tic-tac-toe.html)
 * Tic Tac Toe, unbeatable (with AI).
 * Final Project
 
