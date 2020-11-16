@@ -10,6 +10,7 @@ These pages describe the Turtle Graphics facility within Kojo.
 * [Art Ideas](ideas/turtle-art.html)
 * [Colors](concepts/colors.html)
 * [Picture Basics](#picture-basics)
+* [Structured Learning Module](/modules/module1.html)
 
 ## Getting Started
 To get going with Kojo, use the [Getting Started](http://wiki.kogics.net/kojo-codeactive-books#getting-started) book.

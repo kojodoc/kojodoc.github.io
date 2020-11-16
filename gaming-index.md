@@ -4,11 +4,14 @@
 
 These pages describe the Gaming facility within Kojo.  
 
-> <img src="man-at-work.png"/> <br/> *This section of the website is currently under development*.
+The best way to get going is the following:
 
-For now, you can go to the [iKojo](ikojo.html) page to check out (and play) [many sample games](ikojo.html#examples).
+* [Structured Learning Module - Basic](/modules/module2.html)
+* [Structured Learning Module - Advanced](/modules/module4.html)
 
-Also, here are some simple animations leading up to a *Lunar Lander* game:
+You can also go to the [iKojo](ikojo.html) page to check out (and play) [many sample games](ikojo.html#examples).
+
+Finally, here are some simple animations and game:
 
 * [Bouncing shape](#bouncing-shape)
 * [Bouncing shape with gravity](#bouncing-shape-with-gravity)

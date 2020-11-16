@@ -9,7 +9,9 @@ Pictures build upon turtle graphics to let you create more intricate art, learn 
 
 For a quick intro, look at the [Picture Basics](concepts/turtle-picture-basics.html) page in the [Turtle Graphics](turtle-index.html) section.
 
-Then take a lool at the following tutorials:
+For systematic learning, check out the [Structured Learning Module](/modules/module3.html) for Pictures.
+
+Also, the following tutorials are available:
 * [An introduction to Pictures](tutorials/pictures-intro.html).
 * [An introduction to grid based generative art](tutorials/generative-art-grid-intro.html).
 * [Grid based generative art (part 2)](tutorials/generative-art-grid-part2.html) -- Using color and shape palettes.

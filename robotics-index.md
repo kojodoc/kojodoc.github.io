@@ -7,7 +7,7 @@ These pages describe the Robotics facility within Kojo.
 > <img src="man-at-work.png"/> <br/> *This section of the website is currently under development*.
 
 For now, here are some links:
-
+* [The upcoming Structured Learning Module](/modules/module5.html).
 * [The Kojo-Arduino Bridge](https://github.com/litan/kojo-arduino).
 * [Simple electronics examples](https://github.com/litan/kojo-arduino/tree/master/examples).
 * [Some more electronics examples](https://github.com/litan/kojo-arduino/tree/master/starterkit).
