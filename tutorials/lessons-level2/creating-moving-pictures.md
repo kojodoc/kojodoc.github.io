@@ -146,3 +146,7 @@ animate {
 ### Exercise
 
 Write a program that draws a rectangle at the center of the canvas and moves it to the top-right so that the corner of the rectangle hits the corner of the canvas.
+
+<div style="margin-top: 20px;margin-bottom: 20px;text-align:center">
+    <iframe frameborder="0" width="640" height="360" src="https://player.vimeo.com/video/479774201" allow="autoplay"></iframe>
+</div>
