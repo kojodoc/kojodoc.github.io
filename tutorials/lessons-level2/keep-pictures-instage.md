@@ -91,5 +91,8 @@ Function description:
 Write a program that does the following:
 * Draws four rectangles at the center of the stage.
 * Moves the rectangles towards the four corners of the stage.
-* Keeps the rectangles within the stage borders.
+* Keeps the rectangles within the stage borders as they move around.
 
+<div style="margin-top: 20px;margin-bottom: 20px;text-align:center">
+    <iframe frameborder="0" width="640" height="360" src="https://player.vimeo.com/video/480240170" allow="autoplay"></iframe>
+</div>
