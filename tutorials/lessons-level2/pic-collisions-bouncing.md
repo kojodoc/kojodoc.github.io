@@ -83,3 +83,7 @@ Write a program that does the following:
 * Moves the rectangles towards the four corners of the stage.
 * Keeps the rectangles within the stage borders (by making them bounce off the borders).
 * Makes the rectangles bounce off each other (so that whenever any two collide, they bounce off each other).
+
+<div style="margin-top: 20px;margin-bottom: 20px;text-align:center">
+    <iframe frameborder="0" width="640" height="360" src="https://player.vimeo.com/video/480783794" allow="autoplay"></iframe>
+</div>
