@@ -139,7 +139,7 @@ animate {
 * `pic.setFillColor(c)` - sets the fill color of the given `pic` to given `c`.
 * `pic.setPenColor(c)` - sets the pen color of the given `pic` to given `c`.
 * `animate` is a command that takes another command as input, and runs this given command around 50 times per second.
-* `pic.translate` is a command that moves the given `pic`` by the given `x` and `y` amounts.
+* `pic.translate` is a command that moves the given `pic` by the given `x` and `y` amounts.
 
 ---
 
