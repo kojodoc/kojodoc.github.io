@@ -15,7 +15,7 @@
 * [Drawing vertex based shapes](drawing-vertex-shapes.html)
 * [Drawing vertex based shapes using (r, theta) coordinates](drawing-vertex-rt-shapes.html)
 * [Using vertex-shape Pictures to draw shapes](drawing-vertex-rt-shapes-pic.html)
-* Circular grids
+* [Circular grids](circular-grids.html)
 * Mandala 1
 * Mandala building blocks
 * Mandala 2
