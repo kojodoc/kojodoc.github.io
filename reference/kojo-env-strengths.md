@@ -21,8 +21,9 @@ Kids learning programming in Kojo get to see these ideas in a theoretically clea
 Kojo has the following features to support the flow of programming:
 * Syntax highlighting.
 * Code completion.
-* Fast interactivity - instant feedback for graphics and console based programming.
+* Interactive Program Manipulation.
 * Online help.
+* Strong feedback loop - instant feedback for graphics and console based programming.
 * Program data exploration via Worksheet mode or Explorer pane.
 * Program tracing.
 * Lightweight breakpoints.
@@ -35,7 +36,7 @@ Kojo has the following features to support the flow of programming:
 Kojo has very good support for [many exciting and rich areas](/modules/modules-index.html) in which children can write programs, leading to great opportunities for learning.
 
 #### Physical product development opportunities
-Kojo has excellent support for creative coding and generative art, which can be used to create exciting designs that can be printed on t-shirts, carry bags, posters, back-packs, cups, caps, etc. This enables children to build things that they can use, showcase, and potentially sell. This in turn provides tremendous motivation and multi-dimensional learning and growth opportunities. Here's a picture of a Kojo poster (and a Kojo-designed carry bag) showing some of these ideas in action:
+Kojo has excellent support for creative coding and generative art, which can be used to create exciting designs that can be printed on t-shirts, carry bags, posters, back-packs, cups, caps, etc. This enables children to build things that they can use, showcase, and potentially sell (for good causes). This in turn provides tremendous motivation and multi-dimensional learning and growth opportunities. Here's a picture of a Kojo poster (and a Kojo-designed carry bag) showing some of these ideas in action:
 
 ![kojo-poster](kojo-poster.jpg)
 
