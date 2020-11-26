@@ -41,6 +41,8 @@ Kojo brings together [the following things](../reference/kojo-env-strengths.html
 
 Individually, each of the above features is very useful to have in a programming environment. Collectively, these features enable Kojo to provide a very fertile space for empowered exploration, discovery, creation, innovation, and learning.
 
+[Kojo has been used world-wide with good success over the past decade](../reference/kojo-case-studies.html).
+
 The motto in Kojo is – **Play**. **Create**. **Learn**.
 
 In Kojo, children play with small Scala programs. They create drawings, animations, games, and Arduino based intelligent circuits (with appropriate additional hardware). And they learn logical and creative thinking, programming, problem solving, math, physics, emotional grit, collaboration (via pair programming), and a lot more.

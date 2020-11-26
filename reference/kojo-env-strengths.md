@@ -6,7 +6,9 @@
 
 A big strength of Kojo is that it brings together a powerful programming language, a strong (but easy to use) programming environment, and rich areas of programming with opportunities for physical product development and real-world impact.
 
-Individually, each of the above features is very useful to have in a programming environment. Collectively, these features enable Kojo to provide a very fertile space for empowered exploration, discovery, creation, innovation, and learning.
+Individually, each of the above features is very useful to have in a programming environment. Collectively, these features enable Kojo to provide a very fertile space for empowered exploration, discovery, creation, innovation, and multidisciplinary learning.
+
+[Kojo has been used world-wide with good success over the past decade](kojo-case-studies.html).
 
 ### A powerful language
 [Scala](http://scala-lang.org), the programming language used in Kojo, has great (arguably better than any other language in the world) support for the most important and widely used programming/computing ideas and paradigms:
