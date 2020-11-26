@@ -6,13 +6,13 @@
 
 Kojo has been around since late 2009. Over the past decade, it has been downloaded and used joyfully by people from all over the world. Below, you will find a number of interviews, articles, and papers based on the use of Kojo by different people in different settings over this period of time. These references provide details on the origin and history of Kojo, the pedagogical ideas behind it, its features, and its beneficiaries. They also highlight some of the human interest stories along this journey.
 
-* [2010 - A Kojo interview with Geertjan Wielenga, software architect at Sun/Oracle Inc., USA](https://dzone.com/articles/learn-scala-with-kojo).  
+* [2010 - A Kojo interview with Geertjan Wielenga, a software architect at Sun/Oracle Inc., USA](https://dzone.com/articles/learn-scala-with-kojo).  
 The first Kojo interview, conducted by Geertjan Wielenga a few days after Kojo was announced to the world in February 2010. Geertjan is a software architect at Sun/Oracle.
 
-* [2011 - A Kojo article by Martin Odersky, a German/Swiss computer scientist and creator of the Scala programming language](https://readwrite.com/2011/10/13/bringing_scalability_to_the_classrooms_of_the_hima/).  
+* [2011 - A Kojo article by Martin Odersky, a German/Swiss computer scientist and the creator of the Scala programming language](https://readwrite.com/2011/10/13/bringing_scalability_to_the_classrooms_of_the_hima/).  
 A short note on the development of Kojo by Martin Odersky himself. Martin is a computer science professor at EPFL, Switzerland, and the creator of the Scala Programming Language. Note - EPFL, Switzerland is ranked #14 in the QS Global World Rankings 2021.
 
-* [2011 - A Kojo Interview with Phil Bagwell, a British computer scientist and innovator in the area of persistent data structures for functional programming](https://www.scala-lang.org/old/node/10714).  
+* [2011 - A Kojo Interview with Phil Bagwell, a British computer scientist and an innovator in the area of persistent data structures for functional programming](https://www.scala-lang.org/old/node/10714).  
 A detailed Kojo interview, conducted by Phil Bagwell in 2011. Phil Bagwell was a famous computer scientist who played a big role in making functional programming practical through the idea of persistent data structures.
 
 * [2012 - A description by Prof. Bjorn Regnell of the three-level usage of Kojo at Lund University, Sweden](http://fileadmin.cs.lth.se/cs/Personal/Bjorn_Regnell/project-learn-how-to-program.pdf).  
@@ -26,6 +26,6 @@ Another detailed Kojo interview, conducted in 2014 by Deepthi Shankar of Thought
 
 * [2014 - Phil Bagwell Award at the annual Scala Days conference](https://twitter.com/lightbend/status/478545426249809920/photo/1).
 
-* [2017 - A Kojo interview with Lightbend, Inc.](https://www.lightbend.com/blog/supporting-kojo-scala-based-learning-environment-for-coders-aged-8-to-80)  
+* [2017 - A Kojo interview with Lightbend, Inc., USA](https://www.lightbend.com/blog/supporting-kojo-scala-based-learning-environment-for-coders-aged-8-to-80)  
 This interview provides a quick history and overview of Kojo, and has information on some of the big users of Kojo and their experiences with Kojo. It also talks about the reasons for using Scala as the programming language in Kojo.
 
