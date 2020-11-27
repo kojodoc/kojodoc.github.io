@@ -39,6 +39,12 @@ draw(pic1, pic2)
 
 ---
 
+### Self exploration
+
+Play with the above code and try out different ideas as you see fit.
+
+---
+
 ### Explanation
 
 **Query description:**
