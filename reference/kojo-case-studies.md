@@ -29,5 +29,5 @@ Another detailed Kojo interview, conducted in 2014 by Deepthi Shankar of Thought
 * [2017 - A Kojo interview with Lightbend, Inc., USA](https://www.lightbend.com/blog/supporting-kojo-scala-based-learning-environment-for-coders-aged-8-to-80)  
 This interview provides a quick history and overview of Kojo, and has information on some of the big users of Kojo and their experiences with Kojo. It also talks about the reasons for using Scala as the programming language in Kojo.
 
-* [2020 - A techgig article on programming languages invented by Indian technologists](https://content.techgig.com/independence-day-3-programming-languages-that-were-invented-by-indian-technologists/articleshow/75764949.cms)
+* [2020 - A techgig article on programming languages invented by Indian technologists](https://content.techgig.com/independence-day-3-programming-languages-that-were-invented-by-indian-technologists/articleshow/75764949.cms).
 
