@@ -94,7 +94,7 @@ So what's a class, and how does it relate to object oriented programming? Read o
 * Programming with objects is called object oriented programming.
 * The core ideas in object oriented programming are:
   * Abstraction - Something useful is created with a given name and a way of interacting with it (called its interface).
-  * Encapsulatin - The implementation of the interface is hidden behind the walls of the abstraction (within the body of the class/object).
+  * Encapsulation - The implementation of the interface is hidden behind the walls of the abstraction (within the body of the class/object).
   * Polymorphism - Different types of objects with the same interface can be treated in the same fashion. Ploymorphism literally means - *many forms*, and supports the idea of the same thing (interface) in many forms (implementations).
   * Inheritence and composition - to use the functionality of a given class, a new class can inherit from it or use it (by containing an instance of it).
 
@@ -118,9 +118,6 @@ drawStage(black)
 trait Shape {
     def pic: Picture
     var currVel: Vector2D = _
-    def updateCurrVel(vel: Vector2D) {
-        currVel = vel
-    }
 
     def draw() {
         pic.draw()
@@ -129,7 +126,7 @@ trait Shape {
     def move() {
         pic.translate(currVel)
         if (pic.collidesWith(stageBorder)) {
-            updateCurrVel(bouncePicOffStage(pic, currVel))
+            currVel = bouncePicOffStage(pic, currVel)
         }
     }
 
