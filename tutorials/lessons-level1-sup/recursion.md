@@ -59,12 +59,12 @@ figure(100)
 Type in the following code and run it:
 
 ```scala
-def seq(n: Int): Int = {
-    if (n == 1) 2 else seq(n - 1) + 3
+def numberPattern(n: Int): Int = {
+    if (n == 1) 2 else numberPattern(n - 1) + 3
 }
 clearOutput()
 repeatFor(1 to 5) { e =>
-    println(s"${seq(e)}")
+    println(numberPattern(e))
 }
 ```
 
