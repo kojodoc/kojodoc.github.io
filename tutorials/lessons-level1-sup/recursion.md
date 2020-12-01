@@ -31,7 +31,7 @@ figure(100)
 
 ---
 
-### Step 1
+### Step 2
 
 Type in the following code and run it:
 
@@ -86,6 +86,6 @@ repeatFor(1 to 5) { e =>
 
 ### Exercise 
 
-Write a program to make the something like the following figure:
+Write a program to make the something like the following figure (notice how the tree is made out of smaller trees; every tree has two smaller trees within it):
 
 ![fractal-tree](fractal-tree.png)
