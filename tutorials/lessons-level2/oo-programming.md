@@ -154,7 +154,7 @@ class Circle(radius: Int, vel: Vector2D) extends Shape {
 val pic1 = new Square(50, Vector2D(1, 2))
 val pic2 = new Circle(25, Vector2D(-1, 2))
 
-val pics = Seq(pic1, pic2)
+val pics = List(pic1, pic2)
 repeatFor(pics) { pic =>
     pic.draw()
     pic.printShape()

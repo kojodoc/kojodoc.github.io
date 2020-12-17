@@ -4,8 +4,8 @@ setSpeed(fast)
 val cb = canvasBounds
 val clr = cm.radialMultipleGradient(
     400, 0, 400,
-    Seq(4.0/10, 5.0/10, 6.0/10, 7.0/10, 8.0/10, 9.0/10, 10.0/10),
-    Seq(cm.violet, cm.indigo, blue, green, yellow, orange, cm.red), false
+    List(4.0/10, 5.0/10, 6.0/10, 7.0/10, 8.0/10, 9.0/10, 10.0/10),
+    List(cm.violet, cm.indigo, blue, green, yellow, orange, cm.red), false
 )
 
 setFillColor(clr)

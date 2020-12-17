@@ -12,10 +12,7 @@
 1. [Object Oriented Programming](oo-programming.html).
 1. [Pictures - responding to the keyboard, joystick, and mouse clicks](pic-events.html).
 1. [Making a game - Hunted](hunted.html).
-1. [Blocks of code and lambdas](code-blocks.html).
-1. [More on the second input to repeatFor](repeat-for.html).
 1. [ArrayBuffers and HashMaps for gaming](abuffer-hmap.html).
-1. [Functional Programming](functional-programming.html).
 1. [Hunted 2 - increasing the number of hunters without any code change](hunted2.html).
 1. [Hunted 3 - adding background and character images](hunted3.html).
 1. [Hunted 4 - putting an envelope around character images for better collision detection](hunted4.html).
@@ -25,6 +22,9 @@
 1. [Hunted 7 - running in iKojo](hunted7-ikojo.html).
 1. [Hunted 8 - using a joystick to make the game mobile friendly](hunted8.html).
 1. [Exporting *Hunted 8* as a web-app that can run standalone on personal computers and on mobile phones](hunted8-export.html).
+1. [Functional Programming](functional-programming.html).
+1. [Blocks of code and lambdas](code-blocks.html).
+1. [More on the second input to repeatFor](repeat-for.html).
 1. [Game refinement project 1 - Dino](dino.html).
 
 * Game refinement project 2 - Shooter
