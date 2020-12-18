@@ -149,7 +149,7 @@ Write a program that does the following:
 * Allows the user to increase the size of the picture by pressing the up arrow.
 * Allows the user to decrease the size of the picture by clicking on it.
 
-You can use the following commands in your solution:
+You can use the following command in your solution:
 * `pic.scale(f)` - changes the size of `pic`. If the given `f` is greater than 1, the size of the picture increases. If `f` is less than 1, the size decreases.
-* `pic.rotate(a`) - rotates `pic` by the given angle `a`.
+
 
