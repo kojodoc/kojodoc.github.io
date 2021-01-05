@@ -11,7 +11,7 @@ This activity has the following desired goals:
 ---
 
 ### Step 1
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 cleari()

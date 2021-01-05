@@ -14,7 +14,7 @@ This activity has the following desired goals:
 
 
 ### Step 1
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 cleari()
@@ -60,7 +60,7 @@ activateCanvas()
 
 ### Step 2
 
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 clear()
@@ -102,7 +102,7 @@ Command descriptions:
 
 ### Step 3
 
-Type in following code and run it:
+Type in the following code and run it:
 
 
 ```scala

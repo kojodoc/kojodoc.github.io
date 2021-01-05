@@ -29,7 +29,7 @@ So now the above images will be in the folder `full/path/to/assets/hunted5-asset
 ---
 
 ### Step 1
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 cleari()
@@ -98,7 +98,7 @@ Function description:
 ---
 
 ### Step 2
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 cleari()

@@ -6,7 +6,7 @@
 
 ### Step 1
 
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 clearOutput()
@@ -28,7 +28,7 @@ printBoth(10, 12)
 
 ### Step 2
 
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 clearOutput()
@@ -46,7 +46,7 @@ printBothV2(10)(12)
 
 ### Step 3
 
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 clearOutput()
@@ -76,7 +76,7 @@ Notice that the `cmd` input to `repeatForBoth` is itself a command. It's type is
 
 ### Step 4
 
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 clearOutput()

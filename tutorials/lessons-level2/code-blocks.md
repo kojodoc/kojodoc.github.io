@@ -16,7 +16,7 @@ This activity has the following desired goals:
 
 ### Step 1
 
-Type in following code and run it:
+Type in the following code and run it:
 ```scala
 val x1 = 3 * 10 + 2
 println(x1)
@@ -44,7 +44,7 @@ println(x1b)
 
 ### Step 2
 
-Type in following code and run it:
+Type in the following code and run it:
 ```scala
 val x2 = { 
     clear()
@@ -61,7 +61,7 @@ println(x2)
 
 ### Step 3
 
-Type in following code and run it in Worksheet mode via *Shift+Enter*:
+Type in the following code and run it in Worksheet mode via *Shift+Enter*:
 ```scala
 val x3 = right(90)
 ```
@@ -72,7 +72,7 @@ val x3 = right(90)
 
 ### Step 4
 
-Type in following code and run it in Worksheet mode via *Shift+Enter*:
+Type in the following code and run it in Worksheet mode via *Shift+Enter*:
 ```scala
 val x4 = forward(100)
 ```
@@ -86,7 +86,7 @@ The unit value `()` is meant to signify *no information* - and this makes sense 
 
 ### Step 5
 
-Type in following code and run it (via *Ctrl+Enter* again):
+Type in the following code and run it (via *Ctrl+Enter* again):
 ```scala
 val x5 = { a: Int =>
     val b = a * 3
@@ -102,7 +102,7 @@ println(x5(10))
 
 ### Step 6
 
-Type in following code and run it:
+Type in the following code and run it:
 ```scala
 def x6(a: Int) = {
     val b = a * 3
@@ -136,7 +136,7 @@ A *named block of code that takes an input* is called a user-defined command or 
 
 ### Step 7
 
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 clearOutput()

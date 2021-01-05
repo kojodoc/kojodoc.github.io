@@ -20,7 +20,7 @@ For the example in this lesson, the assets have been transferred to `https://koj
 ---
 
 ### Step 1
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 cleari()

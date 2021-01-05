@@ -14,7 +14,7 @@ In this lesson, we will use the images from the previous lesson located in the f
 ---
 
 ### Step 1
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 cleari()
@@ -41,7 +41,7 @@ animate {
 ---
 
 ### Step 2
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 cleari()
@@ -82,7 +82,7 @@ animate {
 ---
 
 ### Step 3
-Type in following code and run it:
+Type in the following code and run it:
 
 ```scala
 cleari()
