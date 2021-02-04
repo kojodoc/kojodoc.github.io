@@ -109,6 +109,6 @@ The one big change here is that shape is no longer a command, but is a function.
 
 ### Exercise
 
-Write a program to make the following rectangular grid design (using Pictures):
+Write a program to make a design similar to the following - using Pictures:
 
 <img src="rectangular-grids-ex1.png" width="600"/>
