@@ -9,7 +9,7 @@
 * Picture coordinate systems
 * Picture layout with functions
 * Picture effects
-* Rectangular grids
+* [Rectangular grids](rectangular-grids.html)
 * Rectangular grid based designs - 1
 * Rectangular grid based designs - 2
 * [Drawing vertex based shapes](drawing-vertex-shapes.html)
