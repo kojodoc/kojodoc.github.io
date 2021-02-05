@@ -10,7 +10,7 @@
 * Picture layout with functions
 * Picture effects
 * [Rectangular grids](rectangular-grids.html)
-* Rectangular grid based designs - 1
+* [Rectangular grids - choosing colors from a palette](rectangular-grids-palette.html)
 * Rectangular grid based designs - 2
 * [Drawing vertex based shapes](drawing-vertex-shapes.html)
 * [Drawing vertex based shapes using (r, theta) coordinates](drawing-vertex-rt-shapes.html)
