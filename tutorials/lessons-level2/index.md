@@ -26,11 +26,9 @@
 1. [Blocks of code and lambdas](code-blocks.html).
 1. [More on the second input to repeatFor](repeat-for.html).
 1. [Game refinement project 1 - Dino](dino.html).
+1. [Game refinement project 2 - Car Ride](car-ride.html)
+1. [Sample game - Tic Tac Toe](tic-tac-toe.html)
 
-* Game refinement project 2 - Shooter
-* Game refinement project 3 - Runner
-* Game refinement project 4 - Falling letters
-* [Sample game - Tic Tac Toe](tic-tac-toe.html)
 * Tic Tac Toe, unbeatable (with AI).
 * Final Project
 
