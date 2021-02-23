@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 2 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## Game refinement project 1 - Dino
+## Game refinement project 2 - Car Ride
 
 This activity has the following desired goals:
 * Learning to understand a given game and refine it using images and sounds (**M, T**).
