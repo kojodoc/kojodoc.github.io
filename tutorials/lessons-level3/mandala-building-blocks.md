@@ -9,6 +9,12 @@ This activity has the following desired goals:
 
 ---
 
+* [Building Block 1 - Lotus Petal](#building-block-1---lotus-petal)
+* [Building Block 2 - Diya](#building-block-2---diya)
+* [Building Block 3 - Pointed Petal](#building-block-3---pointed-petal)
+
+---
+
 ### Building Block 1 - Lotus Petal
 
 Type in the following code and run it:
