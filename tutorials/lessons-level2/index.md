@@ -22,14 +22,17 @@
 1. [Hunted 7 - running in iKojo](hunted7-ikojo.html).
 1. [Hunted 8 - using a joystick to make the game mobile friendly](hunted8.html).
 1. [Exporting *Hunted 8* as a web-app that can run standalone on personal computers and on mobile phones](hunted8-export.html).
-1. [Functional Programming](functional-programming.html).
-1. [Blocks of code and lambdas](code-blocks.html).
-1. [More on the second input to repeatFor](repeat-for.html).
 1. [Game refinement project 1 - Dino](dino.html).
 1. [Game refinement project 2 - Car Ride](car-ride.html).
 1. [Sample game - Tic Tac Toe](tic-tac-toe.html).
+1. [Sample game - Recall Power](recall-power.html).
 
 * Tic Tac Toe, unbeatable (with AI).
 * Final Project.
 
+---
 
+#### Optional Topics
+1. [Functional Programming](functional-programming.html).
+1. [Blocks of code and lambdas](code-blocks.html).
+1. [More on the second input to repeatFor](repeat-for.html).
