@@ -13,7 +13,7 @@
 * [Rectangular grids - choosing colors from a palette](rectangular-grids-palette.html)
 * [Rectangular grids - choosing colors from an image](rectangular-grids-image.html)
 * Using AI (Neural Style Transfer) for richer drawings
-* A simulation on a rectangular grid - Conway's game of life
+* [A simulation on a rectangular grid - Conway's game of life](game-of-life.html)
 * [Drawing vertex based shapes](drawing-vertex-shapes.html)
 * [Drawing vertex based shapes using (r, theta) coordinates](drawing-vertex-rt-shapes.html)
 * [Using vertex-shape Pictures to draw shapes](drawing-vertex-rt-shapes-pic.html)
