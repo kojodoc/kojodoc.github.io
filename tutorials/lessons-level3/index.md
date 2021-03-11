@@ -20,7 +20,7 @@
 * [Circular grids](circular-grids.html)
 * Drawing a Mandala
 * [Mandala building blocks](mandala-building-blocks.html)
-* Sample Mandala 1
+* [Sample Mandala 1](mandala-1.html)
 * Sample Mandala 2
 * Sample Mandala 3
 * Sample Mandala 4

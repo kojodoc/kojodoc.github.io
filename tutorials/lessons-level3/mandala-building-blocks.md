@@ -143,7 +143,7 @@ draw(pic)
 
 <img src="diya.png">
 
-**Q1a.** The code above makes one diya. What is its radius? What is its outer radius? What is its direction (theta)? What is it's spread (thetaExtent)?
+**Q2a.** The code above makes one diya. What is its radius? What is its outer radius? What is its direction (theta)? What is it's spread (thetaExtent)?
 
 ---
 
@@ -185,7 +185,6 @@ def pointedPetal(radius: Double, radiusOuter: Double,
     curveVertexRt(radius, theta + tDelta)
 
     endShape()
-
 }
 
 cleari()
@@ -197,7 +196,7 @@ draw(pic)
 
 <img src="pointed-petal.png">
 
-**Q1a.** The code above makes one pointed petal. What is its radius? What is its outer radius? What is its direction (theta)? What is it's spread (thetaExtent)?
+**Q3a.** The code above makes one pointed petal. What is its radius? What is its outer radius? What is its direction (theta)? What is it's spread (thetaExtent)?
 
 ---
 
@@ -212,6 +211,60 @@ Play with the inputs to the `pointedPetal` function above to make different kind
 Make the following circular pattern:
 
 <img src="pointed-petal-circular.png">
+
+---
+
+### Building Block 4 - Rounded Petal
+
+Type in the following code and run it:
+
+```scala
+def roundedPetal(radius: Double, radiusOuter: Double,
+                 theta: Double, thetaExtent: Double) = Picture.fromVertexShape { s =>
+    val tDelta = thetaExtent / 2
+    import s._
+    implicit val s2 = s
+    beginShape()
+
+    curveVertexRt(radius, theta - tDelta)
+    curveVertexRt(radius, theta - tDelta)
+
+    curveVertexRt(radius + 3 * (radiusOuter - radius) / 4, theta - tDelta / 2)
+
+    curveVertexRt(radiusOuter, theta)
+
+    curveVertexRt(radius + 3 * (radiusOuter - radius) / 4, theta + tDelta / 2)
+
+    curveVertexRt(radius, theta + tDelta)
+    curveVertexRt(radius, theta + tDelta)
+
+    endShape()
+}
+
+cleari()
+showAxes()
+showGrid()
+val pic = roundedPetal(150, 250, 0, 40)
+draw(pic)
+```
+
+<img src="rounded-petal.png">
+
+**Q4a.** The code above makes one rounded petal. What is its radius? What is its outer radius? What is its direction (theta)? What is it's spread (thetaExtent)?
+
+---
+
+#### Exploration
+
+Play with the inputs to the `roundedPetal` function above to make different kinds of petals.
+
+---
+
+#### Exercise
+
+Make the following circular pattern:
+
+<img src="rounded-petal-circular.png">
 
 ---
 
