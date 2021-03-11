@@ -12,7 +12,7 @@
 * [Rectangular grids](rectangular-grids.html)
 * [Rectangular grids - choosing colors from a palette](rectangular-grids-palette.html)
 * [Rectangular grids - choosing colors from an image](rectangular-grids-image.html)
-* Using Neural Style transfer
+* Using AI (Neural Style Transfer) for richer drawings
 * A simulation on a rectangular grid - Conway's game of life
 * [Drawing vertex based shapes](drawing-vertex-shapes.html)
 * [Drawing vertex based shapes using (r, theta) coordinates](drawing-vertex-rt-shapes.html)
@@ -30,5 +30,5 @@
 * Sample Mandala 8
 * Sample Mandala 9
 * Sample Mandala 10
-* Artificial Intelligence Fundamentals
+* AI (Artificial Intelligence) Fundamentals
 * Mandala Project
