@@ -5,6 +5,7 @@
 ### Level 3 lesson plans
 
 * Computing essentials review
+* [Drawing with Pictures](drawing-pictures.html)
 * Picture layout
 * Picture coordinate systems
 * Picture layout with functions
@@ -30,5 +31,5 @@
 * Sample Mandala 8
 * Sample Mandala 9
 * Sample Mandala 10
-* AI (Artificial Intelligence) Fundamentals
+* [AI (Artificial Intelligence) Fundamentals](ai-fundamentals.html)
 * Mandala Project
