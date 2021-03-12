@@ -68,3 +68,11 @@ Change the color scheme for the mandala. You can play with the following:
 * Changing pen colors
 * Changing fill colors
 * Applying neural style transfer
+
+Here are some sample colored and style-transferred drawings based on the above mandala:
+
+<img src="m3-style1.png">
+
+---
+
+<img src="m3-style2.png">

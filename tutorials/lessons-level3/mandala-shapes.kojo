@@ -209,12 +209,3 @@ def star(vertexR: Double, vertexTheta: Double) = Picture.fromVertexShape { s =>
     endShape()
 }
 
-cleari()
-showAxes()
-showGrid()
-val pics = ArrayBuffer.empty[Picture]
-repeatFor(0 to 6) { n =>
-    val pic = lotusPetal(150, 200, n * 60, 60)
-    pics.append(pic)
-}
-draw(pics)
