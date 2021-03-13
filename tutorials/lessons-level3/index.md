@@ -6,6 +6,7 @@
 
 * Computing essentials review
 * [Drawing with Pictures](drawing-pictures.html)
+* [Picture Transformations](transforming-pictures.html)
 * Picture layout
 * Picture coordinate systems
 * Picture layout with functions
