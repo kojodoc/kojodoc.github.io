@@ -101,7 +101,7 @@ def roundedPetal(radius: Double, radiusOuter: Double,
     endShape()
 }
 
-def semiCircPetal(radius: Double, theta: Double, thetaExtent: Double) = Picture.fromVertexShape { s =>
+def semiCircularPetal(radius: Double, theta: Double, thetaExtent: Double) = Picture.fromVertexShape { s =>
     val tDelta = thetaExtent / 2
     import s._
     beginShape()
@@ -119,7 +119,6 @@ def semiCircPetal(radius: Double, theta: Double, thetaExtent: Double) = Picture.
     curveVertexRt(radius, theta + tDelta)
 
     endShape()
-
 }
 
 def inscribedTriangle(vertexR: Double, vertexTheta: Double) = Picture.fromVertexShape { s =>

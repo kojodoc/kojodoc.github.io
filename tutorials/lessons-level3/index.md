@@ -21,7 +21,8 @@
 * [Using vertex-shape Pictures to draw shapes](drawing-vertex-rt-shapes-pic.html)
 * [Circular grids](circular-grids.html)
 * Drawing a Mandala
-* [Mandala building blocks](mandala-building-blocks.html)
+* [Mandala building blocks - 1](mandala-building-blocks-1.html)
+* [Mandala building blocks - 2](mandala-building-blocks-2.html)
 * [Sample Mandala 1](mandala-1.html)
 * [Sample Mandala 2](mandala-2.html)
 * [Sample Mandala 3](mandala-3.html)

@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 3 Index</a> | <a href="/modules/modules-index.html">Modules</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## Mandala Building Blocks
+## Mandala Building Blocks - 1
 
 This activity has the following desired goals:
 * Learning about the different pre-defined mandala building blocks (**A, M**).
@@ -12,6 +12,7 @@ This activity has the following desired goals:
 * [Building Block 1 - Lotus Petal](#building-block-1---lotus-petal)
 * [Building Block 2 - Diya](#building-block-2---diya)
 * [Building Block 3 - Pointed Petal](#building-block-3---pointed-petal)
+* [Building Block 4 - Rounded Petal](#building-block-4---rounded-petal)
 
 ---
 
@@ -265,7 +266,3 @@ Play with the inputs to the `roundedPetal` function above to make different kind
 Make the following circular pattern:
 
 <img src="rounded-petal-circular.png">
-
----
-
-More coming...
