@@ -108,4 +108,47 @@ Make the following circular pattern:
 
 ---
 
+### Building Block 7 - Inscribed Square
+
+Type in the following code and run it:
+
+```scala
+def inscribedSquare(vertexR: Double, vertexTheta: Double) = Picture.fromVertexShape { s =>
+    import s._
+    beginShape()
+    vertexRt(vertexR, vertexTheta)
+    vertexRt(vertexR, vertexTheta + 90)
+    vertexRt(vertexR, vertexTheta + 180)
+    vertexRt(vertexR, vertexTheta + 270)
+    vertexRt(vertexR, vertexTheta)
+    endShape()
+}
+
+cleari()
+showAxes()
+showGrid()
+val pic = inscribedSquare(150, 0)
+draw(pic)
+```
+
+<img src="inscribed-square.png">
+
+**Q7a.** The code above makes one inscribed square. What is its circumscribing radius? What is its direction (theta)?
+
+---
+
+#### Exploration
+
+Play with the inputs to the `inscribedSquare` function above to make different kinds of squares.
+
+---
+
+#### Exercise
+
+Make the following circular pattern:
+
+<img src="inscribed-square-circular.png">
+
+---
+
 More building blocks coming soon...
