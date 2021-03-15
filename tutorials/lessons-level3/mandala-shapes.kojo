@@ -142,7 +142,7 @@ def inscribedSquare(vertexR: Double, vertexTheta: Double) = Picture.fromVertexSh
     endShape()
 }
 
-def altar(r: Double, gateRFraction: Double, direction: Double) = Picture {
+def altar(r: Double, gateRFraction: Double, gateTheta: Double) = Picture {
     setHeading(direction)
     hop(r)
     left(90)
@@ -207,4 +207,3 @@ def star(vertexR: Double, vertexTheta: Double) = Picture.fromVertexShape { s =>
     vertexRt(vertexR, vertexTheta)
     endShape()
 }
-

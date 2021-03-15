@@ -151,4 +151,66 @@ Make the following circular pattern:
 
 ---
 
+### Building Block 8 - Altar
+
+Type in the following code and run it:
+
+```scala
+def altar(r: Double, gateRFraction: Double, gateTheta: Double) = Picture {
+    setHeading(gateTheta)
+    hop(r)
+    left(90)
+    val glen = r * gateRFraction
+    hop(glen)
+    repeat(4) {
+        forward(r - glen)
+        left()
+        forward(r - glen)
+        right()
+        forward(r / 10)
+        right()
+        forward(r / 4)
+        left()
+        forward(r / 10)
+        left()
+        forward(r / 4)
+        forward(glen * 2)
+        forward(r / 4)
+        left()
+        forward(r / 10)
+        left()
+        forward(r / 4)
+        right()
+        forward(r / 10)
+        right(90)
+    }
+}
+
+cleari()
+showAxes()
+showGrid()
+val pic = altar(200, 0.1, 0)
+draw(pic)
+```
+
+<img src="altar.png">
+
+**Q8a.** The code above makes an altar. What is its inscribing radius? What is its direction (theta)?
+
+---
+
+#### Exploration
+
+Play with the inputs to the `altar` function above to make different kinds of altars.
+
+---
+
+#### Exercise
+
+Make the following circular pattern:
+
+<img src="altar-exercise.png">
+
+---
+
 More building blocks coming soon...
