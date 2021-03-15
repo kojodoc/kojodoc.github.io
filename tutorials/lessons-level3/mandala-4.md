@@ -21,9 +21,6 @@ Type in the following code and run it:
 ```scala
 // #include /path/to/mandala-shapes.kojo
 
-// #include ~/Dropbox/mandala/shapes.kojo
-
-// Things need to be added to this one 
 cleari()
 setBackground(darkGray)
 
@@ -36,13 +33,13 @@ pics.append(penColor(white) * fillColor(noColor) -> Picture.circle(90))
 
 repeatFor(0 to 8) { n =>
     val pic2 = penColor(white) * fillColor(noColor) ->
-        semiCircPetal(90, n * 45, 45)
+        semiCircularPetal(90, n * 45, 45)
     pics.append(pic2)
 }
 
 repeatFor(0 to 8) { n =>
     val pic2 = penColor(white) * fillColor(noColor) ->
-        openBookThing(90, n * 45, 15)
+        wings(90, n * 45, 15)
     pics.append(pic2)
 }
 

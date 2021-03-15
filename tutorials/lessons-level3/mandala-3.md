@@ -37,7 +37,7 @@ pics.append(penColor(white) * fillColor(noColor) -> Picture.circle(150))
 
 repeatFor(0 to 8) { n =>
     val pic2 = penColor(white) * fillColor(noColor) ->
-        semiCircPetal(150, n * 45, 45)
+        semiCircularPetal(150, n * 45, 45)
     pics.append(pic2)
 }
 
