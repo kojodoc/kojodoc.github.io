@@ -143,7 +143,7 @@ def inscribedSquare(vertexR: Double, vertexTheta: Double) = Picture.fromVertexSh
 }
 
 def altar(r: Double, gateRFraction: Double, gateTheta: Double) = Picture {
-    setHeading(direction)
+    setHeading(gateTheta)
     hop(r)
     left(90)
     val glen = r * gateRFraction
