@@ -6,7 +6,7 @@
 
 Coming soon.  
 In the meantime, check out these links:
-* https://github.com/litan/kojo-ai-2
-* https://github.com/litan/kojo-ai-2/blob/master/doc/style-transfer.md
+* [The Kojo-AI Project](https://github.com/litan/kojo-ai-2).
+* [A style transfer example with Kojo-AI](https://github.com/litan/kojo-ai-2/blob/master/doc/style-transfer.md).
 
 > <img src="/man-at-work.png"/> <br/> *This page is currently under development*.
