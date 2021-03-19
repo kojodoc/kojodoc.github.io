@@ -10,7 +10,7 @@
 * [Picture layout](picture-layout.html)
 * Picture coordinate systems
 * Picture layout with functions
-* Picture effects
+* [Picture effects](picture-effects.html)
 * [Rectangular grids](rectangular-grids.html)
 * [Rectangular grids - choosing colors from a palette](rectangular-grids-palette.html)
 * [Rectangular grids - choosing colors from an image](rectangular-grids-image.html)
