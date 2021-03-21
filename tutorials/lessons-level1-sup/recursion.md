@@ -86,6 +86,19 @@ repeatFor(1 to 5) { e =>
 
 ### Exercise 
 
-Write a program to make the something like the following figure (notice how the tree is made out of smaller trees; every tree has two smaller trees within it):
+**1.** Write a program to make the something like the following figure (notice how the tree is made out of smaller trees; every tree has two smaller trees within it):
 
 ![fractal-tree](fractal-tree.png)
+
+**2.** Write programs to print out the following number sequences:
+
+1. 2 4 6 8 10 12
+2. 2 7 12 17 22 27
+3. 2 4 8 16 32 64
+4. 1 2 3 5 8 13 21 34
+5. 2 5 9 14 20 27
+6. 1 1 2 6 24 120 840
+
+*Hint* – Write functions that are able to generate the above sequences. Then call the functions
+to obtain desired values and print these values out. Some functions are best written using
+recursion. Others can make use of a formula that you discover to represent the given sequence.
