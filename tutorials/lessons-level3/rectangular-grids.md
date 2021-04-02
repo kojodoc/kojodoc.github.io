@@ -109,6 +109,16 @@ The one big change here is that shape is no longer a command, but is a function.
 
 ### Exercise
 
-Write a program to make a design similar to the following - using Pictures:
+Write programs to make designs similar to the following - using Pictures.
+* Feel free to also do turtle-only versions of the drawings, but then convert them to Picture based drawings.
+* For the second and third design below, it might be a good idea to use recursion in some form.
 
 <img src="rectangular-grids-ex1.png" width="600"/>
+
+---
+
+<img src="rectangular-grids-ex2.png" width="600"/>
+
+---
+
+<img src="rectangular-grids-ex3.png" width="600"/>
