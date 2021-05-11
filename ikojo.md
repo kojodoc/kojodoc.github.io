@@ -58,6 +58,7 @@ Here are some examples showing iKojo in action:
 * [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
 * [Collidium](http://ikojo.in/sf/wpduPSw/5)
 * [Tic Tac Toe](http://ikojo.in/sf/WRksphz/1)
+* [Tic Tac Toe - Unbeatable](http://ikojo.in/sf/hRMp9fY/1) - You play `X`, the computer plays `O`.
 * [Flappy Ball](http://ikojo.in/sf/6z0ySUq/1)
 
 **Games** (for *mobile/touch devices*; currently experimental):  
