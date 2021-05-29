@@ -62,8 +62,6 @@ Type in the following code and run it:
 ```scala
 cleari()
 showAxes()
-cleari()
-showAxes()
 val pic1 = Picture.rectangle(100, 100)
 val pic2 = Picture.rectangle(50, 50)
 val pic3 = Picture.rectangle(25, 25)
