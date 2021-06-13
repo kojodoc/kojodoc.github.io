@@ -6,6 +6,4 @@ Did you spot something that can be improved in the documentation? Or do you want
 
 ### License and Copyright information
 
-The contents of this site are licensed under the Creative Commons [CC BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-If you make a contribution, you will retain your copyright on your contribution, but will share the copyright with [The Kogics Foundation](http://wiki.kogics.net/kogics-foundation) (the umbrella not-for-profit organization behind Kojo).
+The contents of this site are licensed under the Creative Commons [CC BY-NC-SA license](/terms.html).

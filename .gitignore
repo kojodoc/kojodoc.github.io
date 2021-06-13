@@ -2,3 +2,5 @@ _site/
 /Gemfile.lock
 /.jekyll-metadata
 # /_config.yml
+.vscode
+.metals
