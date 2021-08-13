@@ -30,7 +30,7 @@ Introductory programming certificate, aesthetic and attractive printable art.
 
 ### Lesson Plans (for grades 6 and above)
 
-* [Explorations with Kojo, Level-1 [PDF]](https://github.com/litan/kojo/releases/download/ebooks/Kojo-Lessons-Level1-120821.pdf) (Version -- August 12, 2021).
+* [Explorations with Kojo, Level-1 [PDF]](https://github.com/litan/kojo/releases/download/ebooks/Kojo-Lessons-Level1-130821.pdf) (Version -- August 13, 2021).
 * [Explorations with Kojo, Level-1 Supplement](/tutorials/lessons-level1-sup/index.html).
 
 ### Activity books for younger children (for grades 3 and above)
