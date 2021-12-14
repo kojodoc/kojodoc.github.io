@@ -72,26 +72,6 @@ For well defined shapes (like rectangles, ellipses, lines, etc.), you can create
 
 The `.` in the function name specifies that the function is being called via an object.
 
----
-
-### Step 3
-
-Type in the following code and run it:
-
-```scala
-cleari()
-showAxes()
-val pic1 = Picture.rectangle(100, 50)
-val pic2 = Picture.circle(50)
-draw(pic1, pic2)
-```
-
-**Q3a.** What does the above code do? Explain to a friend.
-
----
-
-### Explanation
-
 A picture can be created using any one of the functions shown below. As you use these functions, there are a couple of things that you should be aware of:  
 * A newly created picture is located at at the canvas position (0, 0) to begin with. It can then be positioned at any other location by using the `pic.setPosition(x, y)` command or being part of a row, column, or stack of pictures.
 * Normally, a picture's position is the location of it's bottom-left corner. Exceptions to this are the ellipse, the circle, and the arc, which are positioned at their center.

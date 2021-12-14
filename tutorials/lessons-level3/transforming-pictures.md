@@ -71,6 +71,55 @@ Multiple transformations can be combined in the following ways:
 
 ---
 
+### Step 3
+
+Type in the following code and run it
+
+```scala
+clear()
+setSpeed(superFast)
+
+def square(n: Int) {
+    repeat(4) {
+        forward(100)
+        right(90)
+    }
+}
+
+setFillColor(blue)
+square(100)
+
+right(90)
+hop(100)
+left(90)
+
+square(100)
+```
+
+**Q3a.** How can you make the second square not blue?
+
+Now type in the following code and run it:
+
+```scala
+cleari()
+
+def sq = Picture.rectangle(100, 100)
+
+val pic1 = fillColor(blue) -> sq
+val pic2 = sq
+
+val pics = picStack(pic1, trans(100, 0) -> pic2)
+
+draw(pics)
+```
+
+**Q3b.** What do you think the picStack instruction does? Is it a command or function?
+
+**Q3c.** How is the second piece of code (which is picture-graphics based) in this section different from the first piece of code (which is turtle-graphics based)?  
+*Hint.* Think in terms of expression vs command oriented instructions.
+
+---
+
 #### Exercise
 
 Use all the picture transfomation functions listed above to create and transform one or more rectangles.
