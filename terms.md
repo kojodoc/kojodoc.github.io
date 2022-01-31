@@ -12,7 +12,7 @@ The content of this site and the material available via this site (hereinafter c
 
 1. Direct selling is prohibited. Users may not directly sell or profit from the Kojo Learning Material or works derived from this material.
 
-2. Bundling in offerings involving monetary amounts over a certain threshold (as defined later in this clause) is prohibited. Users may not bundle the Kojo Learning Material or works derived from this material - in one or more offering (including but not limited to things like a project, a product, or a service) where the total amount spent or received or budgeted is more than Rs. 50,000 (or equivalent in a different currency).
+2. Bundling in offerings involving monetary amounts over a certain threshold (as defined later in this clause) is prohibited. Users may not bundle the Kojo Learning Material or works derived from this material - in one or more offering(s) (including but not limited to things like a project, a product, a service, or any combination threof) where the total amount spent or received or budgeted is more than Rs. 50,000 (or equivalent in a different currency).
 
 3. Determination of commercial vs. non-commercial purpose is based on the use, not the user.
 
