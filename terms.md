@@ -1,8 +1,8 @@
 <span style="font-size:1.5em"><strong>Terms of Use</strong></span>
 
-Copyright © 2010–2021 Lalit Pant (lalit@kogics.net)
+Copyright © 2010–2022 Lalit Pant (lalit@kogics.net)
 
-The content of this site and the material available via this site (hereinafter called the Kojo Learning Material) is licensed by the copyright holder under the Creative Commons [CC BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The content of this site and the material available via this site (hereinafter called the Kojo Learning Material or the material) is licensed by the copyright holder under the Creative Commons [CC BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/) -- unless otherwise noted in the material.
 
 ---
 
@@ -18,4 +18,4 @@ The content of this site and the material available via this site (hereinafter c
 
    Example - *use* by a not-for-profit entity will be considered commercial if it violates clauses 1 or 2 above, while *use* by a for-profit entity will be considered non-commercial if it is in conformance with clauses 1 and 2 above.
 
-If you have questions about acceptable use of the Kojo Learning Material, please contact us at lalit@kogics.net.
+If you have questions about acceptable use of the Kojo Learning Material under the Creative Commons [CC BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/), please contact us at lalit@kogics.net.
