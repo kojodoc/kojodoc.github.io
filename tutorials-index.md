@@ -16,6 +16,9 @@
 * [Explorations with Kojo, Level-2](tutorials/lessons-level2/index.html).
 * [Explorations with Kojo, Level-3](tutorials/lessons-level3/index.html).
 
+## Worksheets
+* [Level 1 Worksheets](worksheets/level1/index.html)
+
 <a name="books">
 ## Activity books to get going with
 
