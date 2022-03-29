@@ -10,3 +10,5 @@
 <hr/>
 <img src="w2pics/sunflower.png" width="400"/>
 <hr/>
+<img src="w2pics/illusion.png" width="500"/>
+<hr/>
