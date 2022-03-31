@@ -4,6 +4,8 @@
 
 ## Worksheet 3
 
+<img src="w3pics/flower.png" width="400"/>
+<hr/>
 <img src="w3pics/scenery1.png" width="400"/>
 <hr/>
 <img src="w3pics/sunset.png" width="400"/>
