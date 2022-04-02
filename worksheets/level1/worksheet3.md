@@ -10,6 +10,6 @@
 <hr/>
 <img src="w3pics/sunset.png" width="600"/>
 <hr/>
-<img src="w3pics/fantasy-map.png" width="500"/>
 * This is a fantasy map. Create your own -- with mountains, lakes, rivers, towns, etc...
-<hr/>
+
+<img src="w3pics/fantasy-map.png" width="500"/>
