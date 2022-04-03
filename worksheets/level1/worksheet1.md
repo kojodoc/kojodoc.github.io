@@ -12,6 +12,8 @@ For quick access to commonly used turtle commands, you can use the [Turtle Graph
 <hr/>
 <img src="w1pics/duck.png" width="400"/>
 <hr/>
+* Use the `circle(radius)` command, along with other commands as needed, to draw this one.
+
 <img src="w1pics/eyes.png" width="400"/>
 <hr/>
 * Draw a top-view of your house (showing the rooms inside it), keeping in mind its alignment with the compass directions (North, South, etc.).
