@@ -4,6 +4,12 @@
 
 ## Worksheet 3
 
+Make the following drawings in Kojo using what you have learned in the [Level 1 book](/tutorials-index.html#lesson-plans).
+
+For quick access to commonly used turtle commands, you can use the [Turtle Graphics Reference](/reference/turtle.html).
+
+### Worksheet Exercises
+<hr/>
 <img src="w3pics/flower.png" width="600"/>
 <hr/>
 <img src="w3pics/scenery1.png" width="600"/>
