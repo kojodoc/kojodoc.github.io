@@ -33,5 +33,8 @@ This interview provides a quick history and overview of Kojo, and has informatio
 
 * [2020 - A techgig article on programming languages invented by Indian technologists](https://content.techgig.com/independence-day-3-programming-languages-that-were-invented-by-indian-technologists/articleshow/75764949.cms).
 
+* [2021 - Inclusion of Kojo in the Goa coding curriculum](/assets/pdf-books/Goa_ICT_Letter_with_curriculum_June_2021.pdf).  
+The linked curriculum doc has details on how Kojo is meant to be used in grades 7th and 8th.
+
 * [2022 - A list of the top 50 entrepreneurs of Uttarakhand](/assets/pdf-books/Hillmail_April_2022_Spread.pdf).  
 The Kojo work is featured at #23 in the list.
