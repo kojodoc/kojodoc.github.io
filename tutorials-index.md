@@ -15,7 +15,7 @@
 * [Explorations with Kojo, Level-1 Supplement](tutorials/lessons-level1-sup/index.html).
 * [Explorations with Kojo, Level-2](tutorials/lessons-level2/index.html).
 * [Explorations with Kojo, Level-3](tutorials/lessons-level3/index.html).
-* [Explorations with Kojo, Level-1 v2 [PDF]](https://github.com/litan/kojo/releases/download/ebooks/Kojo-Lessons-Level1-v2-270422.pdf) (Version -- Pre-release April 27, 2022).
+* [Explorations with Kojo, Level-1 v2 [PDF]](https://github.com/litan/kojo/releases/download/ebooks/Kojo-Lessons-Level1-v2-270422.pdf) (Version -- Pre-release - April 27, 2022).
 
 ## Worksheets
 * [Level 1 Worksheets](worksheets/level1/index.html)
