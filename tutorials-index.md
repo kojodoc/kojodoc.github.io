@@ -10,7 +10,9 @@
 * [Grid based generative art (part 3)](tutorials/generative-art-grid-part3.html) -- Using colors from an image.
 * [Neural Style Transfer](tutorials/neural-style.html) -- Using deep-learning/AI to transfer the style of an image to your drawing.
 
-## Lesson Plans
+## Activity Books and Lesson Plans
+<a name="lesson-plans">
+<a name="books">
 * [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/getting-started-06-08-18.pdf) (Version -- August 6, 2018).
 * [Introduction to Programming with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/intro-to-programming-180918.pdf) (Version -- September 18, 2018).
 * [Explorations with Kojo, Level-2](tutorials/lessons-level2/index.html).
@@ -18,12 +20,6 @@
 
 ## Worksheets
 * [Level 1 Worksheets](worksheets/level1/index.html)
-
-<a name="books">
-## Activity books to get going with
-
-* [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/getting-started-06-08-18.pdf) (Version -- August 6, 2018).
-* [Introduction to Programming with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/intro-to-programming-180918.pdf) (Version -- September 18, 2018).
 
 ## Learning Modules
 * [Modules Index](/modules/modules-index.html)
