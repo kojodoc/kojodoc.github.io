@@ -28,15 +28,13 @@ Introductory programming certificate, aesthetic and attractive printable art.
 
 ---
 
-### Lesson Plans (for grades 6 and above)
-
-* [Explorations with Kojo, Level-1 [PDF]](https://github.com/litan/kojo/releases/download/ebooks/Kojo-Lessons-Level1-230922.pdf) (Version -- September 23, 2022).
-* [Explorations with Kojo, Level-1 Supplement](/tutorials/lessons-level1-sup/index.html).
-
-### Activity books for younger children (for grades 3 and above)
+### Lesson Plans
 
 * [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/getting-started-06-08-18.pdf) (Version -- August 6, 2018).
 * [Introduction to Programming with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/intro-to-programming-180918.pdf) (Version -- September 18, 2018).
+
+### Activity books for younger children (for grades 3 and above)
+
 
 ### Gallery of Kojo generated art and printed merchandise
 
