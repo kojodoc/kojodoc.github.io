@@ -29,8 +29,8 @@ Introductory programming certificate, aesthetic and attractive printable art.
 ---
 
 ## Activity Books
-* [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/getting-started-06-08-18.pdf) (Version -- August 6, 2018).
-* [Introduction to Programming with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/intro-to-programming-180918.pdf) (Version -- September 18, 2018).
+* [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/getting-started-06-08-18.pdf).
+* [Introduction to Programming with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/intro-to-programming-180918.pdf).
 
 ### Gallery of Kojo generated art and printed merchandise
 

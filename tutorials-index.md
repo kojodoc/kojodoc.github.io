@@ -13,8 +13,8 @@
 ## Activity Books and Lesson Plans
 <a name="lesson-plans">
 <a name="books">
-* [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/getting-started-06-08-18.pdf) (Version -- August 6, 2018).
-* [Introduction to Programming with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/intro-to-programming-180918.pdf) (Version -- September 18, 2018).
+* [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/getting-started-06-08-18.pdf).
+* [Introduction to Programming with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/intro-to-programming-180918.pdf).
 * [Explorations with Kojo, Level-2](tutorials/lessons-level2/index.html).
 * [Explorations with Kojo, Level-3](tutorials/lessons-level3/index.html).
 
