@@ -11,7 +11,7 @@ This page contains descriptions of general purpose utility commands and function
 | `size(w, h)` | sets the size of the canvas to the given width and height. |
 | `cwidth`  | returns the current width of the canvas. |
 | `cheight`  | returns the current height of the canvas. |
-| `originBottomLeft()`  | situates the origin at the bottom left of the canvas. |
+| `originBottomLeft()`  | puts the origin at the bottom left of the canvas. |
 | `setup { drawing code }` | calls the drawing code once at the beginning of your program. |
 | `drawLoop { drawing code }` | calls the drawing code at the default refresh rate, which is 50 times a second. |
 | `setRefreshRate(n)` | sets the refresh rate to `n` times per second. The next time a `clear()` is done, the refresh rate is reset to its default value of 50. |

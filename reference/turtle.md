@@ -39,6 +39,7 @@ Most descriptions include sample code. Copy & paste and then run the sample code
 * [setPenFontSize](#setpenfontsize)
 * [setPenFont](#setpenfont)
 * [setPosition](#setposition)
+* [setHeading](#setheading)
 * [lineTo](#lineto)
 * [beginShape](#beginshape)
 * [vertex](#beginshape)
@@ -192,6 +193,9 @@ write("Hello World")
 
 ### setPosition
 `setPosition(x, y)` - sets the turtle's position to the given `(x, y)`.
+
+### setHeading
+`setHeading(angle)` - sets the direction of the turtle's nose to the given `angle`. `0` is East, `90` is North, etc.
 
 ### lineTo
 `lineTo(x, y)` - moves the turtle to the given `(x, y)`, drawing a line in the process. So this command essentially draws a line from the turtle's current position to the given `(x, y)`.
