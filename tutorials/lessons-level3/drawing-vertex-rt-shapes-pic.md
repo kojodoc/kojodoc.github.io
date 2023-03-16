@@ -33,9 +33,9 @@ val pic = Picture.fromVertexShape { s =>
 draw(pic)
 ```
 
-**Q2a.** Read through the code above and try to understand what it does. What does the above code do? How does it do it?
+**Q1a.** Read through the code above and try to understand what it does. What does the above code do? How does it do it?
 
-**Q2a.** How is the above code different from the very similar code in `Step 2` of the previous lesson?
+**Q1b.** How is the above code different from the very similar code in `Step 2` of the previous lesson?
 
 ---
 

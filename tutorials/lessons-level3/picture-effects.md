@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Level 3 Index</a> | <a href="/modules/modules-index.html">Modules</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-## Picture Layout
+## Picture Effects
 
 This activity has the following desired goals:
 * Learning to apply effects to pictures (**A, M**).
