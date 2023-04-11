@@ -26,18 +26,16 @@
 
 ### Picture Transformation
 
-| Transformation | Object/function | Method/command |
+| Transformation | Object/function | Method/function | Method/command |
 | :--- | :--- | :--- |
-| rotate | `rot(angle) -> pic` | `pic.rotate(angle)` |
-| scale | `scale(f) -> pic` | `pic.scale(f)` |
-| translate (in its local coordinate system) | `trans(x, y) -> pic` | `pic.translate(x, y)` |
-| translate (in its parent's coordinate system) | `offset(x, y) -> pic` | `pic.offset(x, y)` |
-| position at a given location | `offset(x, y) -> pic` (one time) | `pic.setPosition(x, y)` |
-| change pen color | `penColor(color) -> pic` | `pic.setPenColor(color)` |
-| change pen thickness | `penThickness(t) -> pic` | `pic.setPenThickness(t)` |
-| set no pen | `noPen -> pic` | `pic.setNoPen()` | 
-| change fill color | `fillColor(color) -> pic` | `pic.setFillColor(color)` |
-| set opacity | `opac(o) -> pic` | `pic.setOpacity(o)` | 
+| rotate | `rot(angle) -> pic` | `pic.withRotation(angle)` | `pic.rotate(angle)` |
+| scale | `scale(f) -> pic` | `pic.withScaling(f)` | `pic.scale(f)` |
+| translate | `trans(x, y) -> pic` | `pic.withTranslation(x, y)` | `pic.translate(x, y)` |
+| position at a given location | NA | `pic.withPosition(x, y)` | `pic.setPosition(x, y)` |
+| change pen color | `penColor(color) -> pic` | `pic.withPenColor(color)` | `pic.setPenColor(color)` |
+| change pen thickness | `penThickness(t) -> pic` | `pic.withPenThickness(t)` | `pic.setPenThickness(t)` |
+| change fill color | `fillColor(color) -> pic` | `pic.withFillColor(color)` | `pic.setFillColor(color)` |
+| set opacity | `opac(o) -> pic` | `pic.withOpacity(o)` | `pic.setOpacity(o)` | 
 
 ### Picture Layout
 
