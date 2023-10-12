@@ -2,7 +2,7 @@
   <a href="/index.html">Home</a> | <a href="modules-index.html">Modules</a>
 </div>
 
-## Module 2 - Gaming with Picture Graphics
+## Module 2X - Gaming with Picture Graphics
 **Go deeper into programming, math, and physics as you create publishable games**  
 *Around 25 one-hour classes plus projects*
 

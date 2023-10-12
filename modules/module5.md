@@ -2,7 +2,7 @@
   <a href="/index.html">Home</a> | <a href="modules-index.html">Modules</a>
 </div>
 
-## Module 5 - Electronic Circuits and Robots
+## Module 5X - Electronic Circuits and Robots
 **Use Arduino and Raspberry-PI to build smart circuits and robots**  
 *Around 25 one-hour classes plus projects*
 

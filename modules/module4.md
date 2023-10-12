@@ -2,7 +2,7 @@
   <a href="/index.html">Home</a> | <a href="modules-index.html">Modules</a>
 </div>
 
-## Module 4 - Advanced Gaming and Simulations
+## Module 4X - Advanced Gaming and Simulations
 **Create richer games and simulations using more advanced ideas from computer science**  
 *Around 25 one-hour classes plus projects*
 

@@ -2,7 +2,7 @@
   <a href="/index.html">Home</a> | <a href="modules-index.html">Modules</a>
 </div>
 
-## Module 3 - Drawings and Generative Art with Picture Graphics
+## Module 3X - Drawings and Generative Art with Picture Graphics
 **Create richer generative art using functional graphics, math, and AI**  
 *Around 25 one-hour classes plus projects*
 
