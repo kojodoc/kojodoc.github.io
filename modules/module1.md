@@ -27,8 +27,11 @@ Critical thinking, creative thinking, programming, analysis, design, real-word i
 Introductory programming certificate, aesthetic and attractive printable art.
 
 ---
+### Lesson Plans
 
-## Activity Books
+* Explorations with Kojo, Level-1 (ebook)
+
+### Activity Books
 * [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/getting-started-21-01-23.pdf).
 
 ### Gallery of Kojo generated art and printed merchandise
