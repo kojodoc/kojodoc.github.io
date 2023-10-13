@@ -29,7 +29,7 @@ Introductory programming certificate, aesthetic and attractive printable art.
 ---
 ### Lesson Plans
 
-* Explorations with Kojo, Level-1 (ebook)
+* [Explorations with Kojo, Level-1 (Ebook)](https://pantlalit.gumroad.com/l/kojo-lessons-level1).
 
 ### Activity Books
 * [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/getting-started-21-01-23.pdf).
