@@ -3,12 +3,6 @@
 </div>
 
 ## Tutorials and more...
-### Picture Graphics Tutorials
-* [An introduction to Pictures](tutorials/pictures-intro.html).
-* [An introduction to grid based generative art](tutorials/generative-art-grid-intro.html).
-* [Grid based generative art (part 2)](tutorials/generative-art-grid-part2.html) -- Using color and shape palettes.
-* [Grid based generative art (part 3)](tutorials/generative-art-grid-part3.html) -- Using colors from an image.
-* [Neural Style Transfer](tutorials/neural-style.html) -- Using deep-learning/AI to transfer the style of an image to your drawing.
 
 ## Activity Books and Online Lesson Plans
 <a name="lesson-plans">
@@ -30,6 +24,15 @@ To get a copy of any of the following books, send a one line email to `ebook@kog
 
 ## Learning Modules
 * [Modules Index](/modules/modules-index.html)
+
+### Picture Graphics Tutorials
+* [An introduction to Pictures](tutorials/pictures-intro.html).
+* [An introduction to grid based generative art](tutorials/generative-art-grid-intro.html).
+* [Grid based generative art (part 2)](tutorials/generative-art-grid-part2.html) -- Using color and shape palettes.
+* [Grid based generative art (part 3)](tutorials/generative-art-grid-part3.html) -- Using colors from an image.
+* [Neural Style Transfer](tutorials/neural-style.html) -- Using deep-learning/AI to transfer the style of an image to your drawing.
+
+
 
 <br/>
 <br/>
