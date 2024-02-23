@@ -12,7 +12,7 @@
 * [Explorations with Kojo, Level-3](tutorials/lessons-level3/index.html).
 
 ## Structured Lesson Plans
-
+<a name="exploration-books">
 The following ebooks can be bought via Gumroad using the links below. If you are unable to buy the ebook you want, you can request a copy by sending a one line email to `ebook@kogics.net` with the text -- "Please send me a copy of [ebook name]".
 
 * [Explorations with Kojo, Level-1 (Ebook)](https://pantlalit.gumroad.com/l/kojo-lessons-level1) -- Drawing with turtle graphics.
