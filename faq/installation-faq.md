@@ -32,22 +32,30 @@ In a similar way, a silent uninstall can be done by running the uninstaller (fro
 
 Brief notes for now. If you want to do this, get in touch at `kojoinstall@kogics.net`.
 
-- Use the cross-platform Kojo installer
-- After installation, in the Kojo bin directory, make a copy of kojo.cmd called, say, kojo-wt.cmd
-- Put the following into kojo-wt.cmd:  
-```
+*On the Server*
+- Install Kojo on the server PC.
+- Go into the kojo bin directory where kojo.exe is located
+- Copy kojo-wts.cmd (shown below) into this directory
+
+*On each of the client terminals*
+- Go to *My computer* -> *Organize* -> *Folder and search options* -> *View* -> *Show hidden files*, and uncheck *Hide protected OS Files*.
+- From each client access the the location where kojo-wts.cmd is saved.
+- Create a shortcut for kojo-wts.cmd on your desktop (right click -send to desktop -create shortcut)
+- Run this shortcut on the client terminals just as you would double click any other application. This will launch an independent copy of Kojo on the client.
+
+Put the following into kojo-wts.cmd:  
+``` bash
 @echo off
+set JAVA_HOME="..\jre"
 SET kojolibdir="..\lib"
 SET kojojavacp=
 SETLOCAL EnableDelayedExpansion
-echo %kojolibdir%
 FOR %%A IN (%kojolibdir%\*) DO ( 
   SET kojojavacp=!kojojavacp!;%%~A
 )
-echo %kojojavacp%
-call java -cp "%kojojavacp%" -Duser.home=instanceSpecificDir net.kogics.kojo.lite.NewKojoInstance
+echo %USERPROFILE%
+call %JAVA_HOME%\bin\java -cp "%kojojavacp%" -client -Xms128m -Xmx2g -Xss1m --add-opens java.desktop/javax.swing.text.html=ALL-UNNAMED --add-opens java.desktop/sun.awt=ALL-UNNAMED --add-opens java.desktop/sun.swing=ALL-UNNAMED --add-opens java.desktop/sun.swing.table=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -Dsun.java2d.uiScale.enabled=false net.kogics.kojo.lite.Main
 ```
-Where instanceSpecificDir is different for each Kojo instance.
-- Run Kojo using kojo-wt.cmd
+
   
 

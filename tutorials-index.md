@@ -13,9 +13,9 @@
 
 ## Structured Lesson Plans
 * [Explorations with Kojo, Level-1 (Ebook)](https://pantlalit.gumroad.com/l/kojo-lessons-level1) -- Drawing with turtle graphics.
+* [Explorations with Kojo, Level-2 (Ebook)](https://pantlalit.gumroad.com/l/kojo-lessons-level2) -- Richer drawing and generative art with functional picture graphics.
 
-To get a copy of any of the following books, send a one line email to `ebook@kogics.net`.
-* Explorations with Kojo, Level-2 [PDF] -- Richer drawing and generative art with functional picture graphics.
+To get a copy of the following book, send a one line email to `ebook@kogics.net`.
 * Explorations with Kojo, Level-3 [PDF] -- Functional animations, data modeling, OO-simulations, and generative music.
 
 
