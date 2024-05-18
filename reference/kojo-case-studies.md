@@ -9,7 +9,7 @@ Kojo has been around since late 2009. Over the past decade, it has been download
 * [2010 - A Kojo interview with Geertjan Wielenga, a software architect at Sun/Oracle Inc., USA](https://dzone.com/articles/learn-scala-with-kojo).  
 The first Kojo interview, conducted by Geertjan Wielenga a few days after Kojo was announced to the world in February 2010. Geertjan is a software architect at Sun/Oracle.
 
-* [2011 - A Kojo article by Martin Odersky, a German/Swiss computer scientist and the creator of the Scala programming language](https://readwrite.com/2011/10/13/bringing_scalability_to_the_classrooms_of_the_hima/).  
+* [2011 - A Kojo article by Martin Odersky, a German/Swiss computer scientist and the creator of the Scala programming language](https://readwrite.com/bringing_scalability_to_the_classrooms_of_the_hima/).  
 A short note on the development of Kojo by Martin Odersky himself. Martin is a computer science professor at EPFL, Switzerland, and (as mentioned earlier) the creator of the Scala Programming Language.  
 *Note* - EPFL is ranked #14 in the QS World University Rankings 2021.
 
