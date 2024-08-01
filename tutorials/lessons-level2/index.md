@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="/modules/modules-index.html">Modules</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-### Level 2 lesson plans
+### Level 2X lesson plans
 
 1. [Creating Pictures and moving them around on the canvas](creating-moving-pictures.html).
 1. [Keeping Pictures within the stage area](keep-pictures-instage.html).
