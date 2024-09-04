@@ -7,6 +7,7 @@
 This activity has the following desired goals:
 * Learning about object oriented programming (**A, M**).
 * Going through the process of converting a regular structured program to an object oriented program (**A, M**).
+* Understanding the idea of Objects and Message-passing.
 * Understanding Abstraction, Encapsulation, Polymorphism, Inheritance, and Composition (**A, M**).
 * Using the above ideas to create a new class to fit into an existing program  (**M, T**).
 
@@ -40,6 +41,18 @@ animate {
 ```
 
 **Q1a.** What does the above program do? How does it do it?
+
+**Q1b.** In calls or usages like `pic1.translate(vel1)`, what's on the left of the `.` and what's on the right? Can you guess how this might relate to objects and messages being passed to objects?
+
+---
+
+### Explanation
+
+In the above program, various commands are used, one after the other, to carry out the desired functionality. We see examples of the sequencing of commands, repetition (via `animate`), the calling of various picture commands, and the use of one function to do an interesting calculation/computation. The focus is on the flow of control of the program.
+
+Let's focus on one line in the program -- `pic1.translate(vel1)`.
+
+Here the thing to the left of the `.` is an object (a bundle of data and commands/functions that work with that data). The thing to the right of the `.` is a method (a command or function) in the object. Methods in objects work in the context of the data within the object. You can think of the calling of a method in an object as the passing a message to that object.
 
 ---
 
@@ -94,15 +107,20 @@ So what's a class, and how does it relate to object oriented programming? Read o
 * Programming with objects is called object oriented programming.
 * The core ideas in object oriented programming are:
   * Abstraction - Something useful is created with a given name and a way of interacting with it (called its interface).
+  * Message Passing - You interact with an abstraction only by passing messages to it (via method calls).
   * Encapsulation - The implementation of the interface is hidden behind the walls of the abstraction (within the body of the class/object).
-  * Polymorphism - Different types of objects with the same interface can be treated in the same fashion. Ploymorphism literally means - *many forms*, and supports the idea of the same thing (interface) in many forms (implementations).
+  * Polymorphism - Different types of objects with the same interface can be treated in the same fashion. Ploymorphism literally means - *many forms*, and supports the idea of the same thing (interface) in many forms (implementations). So if an interface has a method `makeSound`, and you have a sequence of objects that implement this interface, you can call the `makeSound` method on all these objects, and the exact sound that is made can vary depending on the implementation of this method in the object.
   * Inheritence and composition - to use the functionality of a given class, a new class can inherit from it or use it (by containing an instance of it).
+
+Note how in object-oriented programming, the focus shifts from the flow of control to the flow of messages.
 
   ---
 
 **Q2b.** Can you identify the abstraction in the above code?
 
-**Q2b.** Can you identify the encapsulation in the above code?
+**Q2c.** Can you identify the message-passing in the above code?
+
+**Q2d.** Can you identify the encapsulation in the above code?
 
 ---
 
@@ -171,21 +189,23 @@ animate {
 
 **Q3b.** Can you identify the interface vs implementation in the above code?
 
-**Q3c.** Can you identify the inheritance in the above code?
+**Q3c.** Can you identify the message-passing in the above code?
 
-**Q3d.** Can you identify the composition in the above code?
+**Q3d.** Can you identify the inheritance in the above code?
 
-**Q3e.** Can you identify the polymorphism in the above code?
+**Q3e.** Can you identify the composition in the above code?
+
+**Q3f.** Can you identify the polymorphism in the above code?
 
 ---
 
 ### Explanation
 
-* The core abstraction above is `Shape`. It is defined using a trait, which is similar to an `interface` in Java. The `Shape` abstraction defines the interface via which a user of a Shape can interact with the given shape.
+* The core abstraction above is `Shape`. It is defined using a trait, which is similar to an `interface` in Java. The `Shape` abstraction defines the interface via which a user of a Shape can interact with the given shape, by passing messages to it via the methods defined in the interface.
 * `Shape` has two different implementations - `Square` and `Circle`, each of which `extends` or inherits from `Shape`.
 * `Shape` provides an implementation of `draw` and `move`, which are inherited (and do not need to be defined again) by `Square` and `Circle`.
 * Every shape has a Picture `pic` within it (via composition) when can be used to draw and move the shape on the stage.
-* The two `repeatFor` calls show polymorphism in action, as both `Square` and `Circle` (which are *poly morphs* or different forms of `Shape`) are handled in exactly the same way.
+* The two `repeatFor` calls show polymorphism in action, as both `Square` and `Circle` (which are *poly morphs* or different forms of `Shape`) are handled in exactly the same way through calls (message-passing) to the `draw`, `printShape`, and `move` methods.
 
 --- 
 
