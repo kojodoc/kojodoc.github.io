@@ -35,7 +35,7 @@ A picture can be created using any one of the functions shown below. There are a
 | Function | Description |
 | :--- | :--- |
 | `Picture {turtle drawing code}` | Creates a picture from the given turtle drawing. |
-| `Picture.line(width, height)` | Creates a picture of a line with the given width and height. |
+| `Picture.line(width, height)` | Creates a picture of a line going from (0, 0) to (width, height). |
 | `Picture.rectangle(width, height)` | Creates a picture of a rectangle with the given width and height. |
 | `Picture.circle(radius)` | Creates a picture of a circle with the given radius. The center of the circle is at (0, 0) |
 | `Picture.ellipse(xRadius, yRadius)` | Creates a picture of an ellipse with the given xRadius and yRadius. The center of the ellipse is at (0, 0) |
