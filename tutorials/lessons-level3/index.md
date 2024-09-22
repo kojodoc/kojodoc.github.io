@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="/modules/modules-index.html">Modules</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-### Level 3 lesson plans
+### Level 3X lesson plans
 
 * Computing essentials review
 * [Drawing with Pictures](drawing-pictures.html)
