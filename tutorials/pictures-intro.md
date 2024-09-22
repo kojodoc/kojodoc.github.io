@@ -3,16 +3,16 @@
 </div>
 
 ## An introduction to Pictures
-A picture is a visual element in Kojo. To work with a picture, you do the following:
+A picture is a visual element in Kojo. To work with a picture, you can do the following:
 * [Create the picture](#picture-creation)
-* [Transform it](#picture-transformation) (optional)
-* [Lay it out by aligning it with other pictures](#picture-layout) (optional)
-* [Use functions for powerful layout and transformation](#picture-layout-with-functions) (optional)
-* [Apply effects to it](#picture-effects) (optional)
+* [Transform it](#picture-transformation)
+* [Lay it out by aligning it with other pictures](#picture-layout)
+* [Use functions for powerful layout and transformation](#picture-layout-with-functions)
+* [Apply effects to it](#picture-effects)
 * [Draw it](#picture-drawing)
-* [Animate it as you continue to transform it](#picture-animation) (optional)
-* [Check for collisions with other pictures](#picture-collisions) (optional)
-* [Attach mouse event handlers to it to interact with it](#picture-event-handlers) (optional)
+* [Animate it as you continue to transform it](#picture-animation)
+* [Check for collisions with other pictures](#picture-collisions)
+* [Attach mouse event handlers to it to interact with it](#picture-event-handlers)
 
 The above Picture capabilites enable the following:
 * Functional and Generative art
@@ -70,32 +70,31 @@ draw(pic1, pic2)
 Use all the picture creation functions listed above (except `hgap` and `vgap`) to create and draw pictures.
 
 ### Picture Transformation
-You can transform pictures in the following main ways (via a tranformation object/function or a transformation method/command):
+You can transform pictures in the following main ways (via a tranformation method/function or a transformation method/command):
 
-| Transformation | Object/function | Method/command |
+| Transformation | method/function | Method/command |
 | :--- | :--- | :--- |
-| rotate | `rot(angle) -> pic` | `pic.rotate(angle)` |
-| scale (to make bigger or smaller) | `scale(f) -> pic` | `pic.scale(f)` |
-| translate (in its local coordinate system) | `trans(x, y) -> pic` | `pic.translate(x, y)` |
-| translate (in its parent's coordinate system) | `offset(x, y) -> pic` | `pic.offset(x, y)` |
-| change pen color | `penColor(color) -> pic` | `pic.setPenColor(color)` |
-| change pen thickness | `penThickness(t) -> pic` | `pic.setPenThickness(t)` |
-| set no pen | `noPen -> pic` | `pic.setNoPen()` | 
-| change fill color | `fillColor(color) -> pic` | `pic.setFillColor(color)` |
-| set opacity | `opac(o) -> pic` | `pic.setOpacity(o)` | 
-| position at a given location | | `pic.setPosition(x, y)` |
+| rotate | `pic.withRotation(angle)` | `pic.rotate(angle)` |
+| scale (to make bigger or smaller) | `pic.withScaling(f)` | `pic.scale(f)` |
+| translate  | `pic.withTranslation(x, y)` | `pic.translate(x, y)` |
+| change pen color | `pic.withPenColor(color)` | `pic.setPenColor(color)` |
+| change pen thickness | `pic.withPenThickness(t)` | `pic.setPenThickness(t)` |
+| set no pen | `pic.withNoPen` | `pic.setNoPen()` | 
+| change fill color | `pic.withFillColor(color)` | `pic.setFillColor(color)` |
+| set opacity | `pic.withOpacity(o)` | `pic.setOpacity(o)` | 
+| position at a given location | `pic.withPosition(x, y)` | `pic.setPosition(x, y)` |
 | rotate to a particular heading | | `pic.setRotation(angle)` |
 | rotate to a particular heading (alternative way) | | `pic.setHeading(angle)` |
 | scale to a particular size | | `pic.setScale(scale)` |
 
 As shown above, there are two distinct ways of doing picture transformations:
-* The object/function way, e.g., `trans(100, 0) -> pic` - which is useful while doing functional/compositional graphics. This way of doing transformations can be used only before a picture is drawn (and these transformations are applied when the picture is drawn).
-* The method/command way, e.g.. `pic.translate(100, 0)` - which is useful while doing generative art or gaming. This way of doing transformations can be used before and after a picture is drawn.
+* The method/function way, e.g., `pic.withTranslation(100, 0)` -- which is used to do functional graphics -- to create art. This way of doing transformations can be used only before a picture is drawn (and these transformations are applied when the picture is drawn).
+* The method/command way, e.g.. `pic.translate(100, 0)` - which is used for game development via imperative/structered programming. This way of doing transformations can be used before and after a picture is drawn.
 
 
-Multiple transformations can be combined in the following ways:
-* tranformation objects/functions are combined using `*`, e.g., `trans(100, 0) * rot(45) -> pic`
-* transformation methods/commands are combined by sequential calls, e.g., `pic.translate(100, 0); pic.rotate(45)`
+Multiple transformations can be combined in the following way:
+* chained method calls for functions -- e.g. `pic.withTranslation(100, 0).withRotation(45)`
+* sequential method calls for commands -- e.g., `pic.translate(100, 0); pic.rotate(45)`
 
 
 The following example shows the exact same figure being drawn using the two different ways of doing transformations:
@@ -105,7 +104,10 @@ The following example shows the exact same figure being drawn using the two diff
 ```scala
 cleari()
 showAxes()
-val pic = trans(100, 0) * rot(45) * penColor(blue) -> Picture.rectangle(100, 50)
+val pic = Picture.rectangle(100, 50)
+    .withRotation(45)
+    .withTranslation(100, 0)
+    .withPenColor(blue)
 draw(pic)
 ```
 
@@ -159,8 +161,8 @@ draw(pics)
 cleari()
 showAxes()
 val pic1 = Picture.rectangle(50, 50)
-val pic2 = rot(45) * fillColor(blue) -> Picture.rectangle(100, 50)
-val pic3 = scale(1.5) * penColor(green) -> Picture.rectangle(50, 100)
+val pic2 = Picture.rectangle(100, 50).withRotation(45).withFillColor(blue)
+val pic3 = Picture.rectangle(50, 100).withScaling(1.5).withPenColor(green)
 val pics = picColCentered(pic1, pic2, pic3)
 draw(pics)
 ```
@@ -198,7 +200,7 @@ def p(n: Int): Picture = {
         picStack(Picture.rectangle(n, n), trans(10, 0) * rot(2) -> p(n - 15))
     }
 }
-draw(penColor(blue) * penThickness(3) -> p(250))
+draw(p(250).withPenColor(blue).withPenThickness(3))
 ```
 
 ![fig6](fig6.png)
@@ -213,8 +215,8 @@ Write programs to make the figures shown below using the following instructions:
 * `picColCentered`
 * `picRowCentered`
 * `penColor`
-* `rot`
-* `scale`
+* `givenPic.withRotation`
+* `givenPic.withScaling`
 * `draw`
 
 ![ex1](ex1.png)
@@ -234,11 +236,11 @@ The following example shows you three different coordinate systems in action whe
 
 ```scala
 cleari()
-val pic1 = fillColor(blue) -> Picture.rectangle(60, 50)
-val pic2 = trans(60, 0) * fillColor(green) -> Picture.rectangle(100, 60)
-val pic3 = rot(20) * fillColor(yellow.fadeOut(0.5)) -> Picture.rectangle(50, 100)
-val pics = rot(45) * trans(50, 0) -> picRow(pic1, pic2, pic3)
-drawCentered(pics)
+val pic1 = Picture.rectangle(60, 50).withFillColor(blue).withNoPen
+val pic2 = Picture.rectangle(100, 60).withTranslation(60, 0).withFillColor(green)
+val pic3 = Picture.rectangle(50, 100).withRotation(20).withFillColor(yellow)
+val pics = picRow(pic1, pic2, pic3).withTranslation(50, 0)
+draw(pics)
 showAxes()
 Picture.showAxes(pics, pic2)
 ```
@@ -249,12 +251,12 @@ Picture.showAxes(pics, pic2)
 
 In the figure above, you see the axes for the following coordinate systems:
 * The canvas coordinate system (with axes in gray with a tick spacing of 50 units).
-* The coordinate system for `pics` (where the blue picture is, with axes in black with a tick spacing of 20 units). This coordinate system lives within the coordinate system of its parent - the canvas. Within its parent, `pics.position` is (35.36, 35.36).
-* The coordinate system for `pic2` (where the green picture is, with axes in black with a tick spacing of 20 units). This coordinate system lives within the coordinate system of its parent - `pics`. Within its parent, `pic2.position` is (121.00, 0.00).
+* The coordinate system for `pics` (where the blue picture is, with axes in black with a tick spacing of 20 units). This coordinate system lives within the coordinate system of its parent - the canvas. Within its parent, `pics.position` is (50, 0).
+* The coordinate system for `pic2` (where the green picture is, with axes in black with a tick spacing of 20 units). This coordinate system lives within the coordinate system of its parent - `pics`. Within its parent, `pic2.position` is (60, 0).
 
-### Picture layout with Functions
+### Picture layout with your own functions
 
-Because Pictures are like any other data values, they can be transformed using functions. This is the great benefit of splitting the drawing of pictures into two or more steps - the creation (which just creates the data value), the optional transformation of the data via functions, and the drawing of the final data via a command.
+Because Pictures are like any other data values, they can be transformed using your own functions. This is the great benefit of splitting the drawing of pictures into two or more steps - the creation (which just creates the data value), the optional transformation of the data via functions, and the drawing of the final data via a command.
 
 The example below shows some of this in action with your own transformation functions (which build upon the transformation functions provided by Kojo):
 
@@ -270,8 +272,8 @@ def checker(p1: Picture, p2: Picture) = {
         picRow(p2, p1)
     )
 }
-val pic1 = penColor(cm.darkGray) * fillColor(cm.blue) -> Picture.rectangle(50, 50)
-val pic2 = penColor(cm.darkGray) * fillColor(cm.green) -> Picture.rectangle(50, 50)
+val pic1 = Picture.rectangle(50, 50).withPenColor(cm.darkGray).withFillColor(cm.blue)
+val pic2 = Picture.rectangle(50, 50).withPenColor(cm.darkGray).withFillColor(cm.green)
 val pic = four(checker(pic1, pic2))
 draw(pic)
 ```
@@ -289,8 +291,8 @@ Kojo includes a bunch of [image filters from JH Labs](http://www.jhlabs.com/ip/f
 The general approach while using these filters is to:
 * create the filter - e.g. `val filter = new com.jhlabs.image.WeaveFilter`
 * change the filter parameters as desired - e.g. `filter1.setXGap(10)`
-* apply the effect to a picture - e.g. `val pic2 = effect(filter) -> pic`
-  * multiple effects can be composed together - e.g. `val pic2 = effect(filter1) * effect(filter2) -> pic`
+* apply the effect to a picture - e.g. `val pic2 = pic.withEffect(filter)`
+  * multiple effects can be composed together - e.g. `val pic2 = pic.withEffect(filter1).withEffect(filter2)`
 * draw the picture with effects - `draw(pic2)`
 
 
@@ -300,14 +302,14 @@ The general approach while using these filters is to:
 
 ```scala
 cleari()
-val pic = fillColor(red) -> Picture.rectangle(400, 400)
+val pic = Picture.rectangle(400, 400).withFillColor(red)
 val filter1 = new com.jhlabs.image.WeaveFilter
 filter1.setXGap(10)
 filter1.setXWidth(50)
 val filter2 = new com.jhlabs.image.NoiseFilter
 filter2.setAmount(100)
 filter2.setDensity(1)
-val pic2 = effect(filter1) * effect(filter2) -> pic
+val pic2 = pic.withEffect(filter2).withEffect(filter1)
 drawCentered(pic2)
 ```
 
@@ -317,13 +319,13 @@ drawCentered(pic2)
 
 ```scala
 cleari()
-val pic = penColor(cm.black) * fillColor(cm.darkOliveGreen) -> Picture {
+val pic = Picture {
     val n = mathx.lcm(85, 360)
     repeat(n / 85) {
         forward(250)
         right(85)
     }
-}
+}.withPenColor(cm.black).withFillColor(cm.darkOliveGreen)
 
 val filter1 = new com.jhlabs.image.LightFilter
 val light = new filter1.SpotLight()
@@ -337,7 +339,7 @@ filter1.addLight(light)
 val filter2 = new com.jhlabs.image.NoiseFilter
 filter2.setAmount(30)
 filter2.setDensity(1)
-val pic2 = effect(filter1) * effect(filter2) -> pic
+val pic2 = pic.withEffect(filter2).withEffect(filter1)
 drawCentered(pic2)
 ```
 
@@ -388,7 +390,7 @@ animate {
 
 ---
 
-A few more picture transformations (not mentioned earlier) are useful during animation and gaming:
+A few more picture methods not mentioned earlier are useful during animation and gaming:
 * `pic.invisible()` - hides `pic`.
 * `pic.visible()` - makes hidden `pic` visible again.
 * `pic.erase()` - erases `pic` and removes it from the canvas.
