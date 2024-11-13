@@ -11,6 +11,7 @@
 * [Coding Challenges with Kojo, Level 1 [PDF, v0.9.5]](https://github.com/litan/kojo/releases/download/ebooks/Kojo-Challenges-Level1-0.9.5.pdf).
 * [Explorations with Kojo, Level-2](tutorials/lessons-level2/index.html).
 * [Explorations with Kojo, Level-3](tutorials/lessons-level3/index.html).
+* [Gaming - 1](tutorials/gaming-1/index.html).
 
 ## Structured Lesson Plans
 <a name="exploration-books">
