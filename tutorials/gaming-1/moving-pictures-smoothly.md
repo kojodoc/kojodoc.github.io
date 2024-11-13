@@ -5,9 +5,9 @@
 ## Moving pictures smoothly on the canvas
 
 This activity has the following desired goals:
-* Students will know how to  (**A**).
-* Students will understand (**M**).
-* Students will be able to (**M, T**).
+* Students will know how to use the Standar and libGDX runtimes for their games (**A**).
+* Students will understand how to move game objects at the same speed across slow vs fast computers/runtimes (**M**).
+* Students will be able to move a rectangle with a given speed towards a target(**M, T**).
 
 ---
 

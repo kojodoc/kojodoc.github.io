@@ -9,12 +9,12 @@ To follow along, you need at least Kojo version 2.9.30 and kojo-gaming version 0
 
 1. [Creating Pictures and moving them around on the canvas](creating-moving-pictures.html).
 1. [Moving Pictures smoothly](moving-pictures-smoothly.html).
+1. [Keeping Pictures within the stage area](keeping-pictures-instage.html).
 
 ---
 
 ### WIP
 
-1. [Keeping Pictures within the stage area](keep-pictures-instage.html).
 1. [Canvas bounds](canvas-bounds.html).
 1. [Control flow and notional machine review](../lessons-level1-sup/control-flow.html).
 1. [Picture collisions and bouncing](pic-collisions-bouncing.html).
