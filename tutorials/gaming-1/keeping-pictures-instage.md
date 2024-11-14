@@ -1,5 +1,5 @@
 <div class="nav">
-  <a href="../../index.html">Home</a> | <a href="index.html">Gaming 1 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
+  <a href="../../index.html">Home</a> | <a href="index.html">Gaming-1 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
 ## Keeping Pictures within the stage area

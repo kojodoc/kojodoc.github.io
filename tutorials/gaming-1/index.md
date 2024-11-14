@@ -3,23 +3,21 @@
 </div>
 
 This is work-in-progress.  
-To follow along, you need at least Kojo version 2.9.30 and kojo-gaming version 0.4
+To follow along, you need at least [Kojo version 2.9.30](https://github.com/litan/kojo/releases/tag/2.9.30_pre) and [kojo-gaming version 0.4](https://github.com/litan/kojo-gaming/releases/tag/v0.4.0_rc).
 
 ### Gaming-1 lesson plans
 
 1. [Creating Pictures and moving them around on the canvas](creating-moving-pictures.html).
 1. [Moving Pictures smoothly](moving-pictures-smoothly.html).
 1. [Keeping Pictures within the stage area](keeping-pictures-instage.html).
+1. [Canvas bounds](canvas-bounds.html).
+1. [Picture collisions and bouncing](pic-collisions-bouncing.html).
+1. [Pictures - responding to the keyboard, joystick, and mouse clicks](pic-events.html).
 
 ---
 
 ### WIP
 
-1. [Canvas bounds](canvas-bounds.html).
-1. [Control flow and notional machine review](../lessons-level1-sup/control-flow.html).
-1. [Picture collisions and bouncing](pic-collisions-bouncing.html).
-1. [Object Oriented Programming](oo-programming.html).
-1. [Pictures - responding to the keyboard, joystick, and mouse clicks](pic-events.html).
 1. [Making a game - Hunted](hunted.html).
 1. [ArrayBuffers and HashMaps for gaming](abuffer-hmap.html).
 1. [Hunted 2 - increasing the number of hunters without any code change](hunted2.html).
