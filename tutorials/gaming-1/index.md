@@ -27,4 +27,4 @@ To follow along, you need at least [Kojo version 2.9.30](https://github.com/lita
 1. [Hunted 6 - adding sound](hunted6.html).
 1. [Game refinement project 1 - Dino](dino.html).
 1. [Game refinement project 2 - Car Ride](car-ride.html).
-
+1. Platformer Games
