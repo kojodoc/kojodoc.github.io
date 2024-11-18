@@ -22,9 +22,16 @@ To follow along, you need at least [Kojo version 2.9.30](https://github.com/lita
 1. [Hunted 6 - adding sound](hunted6.html).
 1. [Game refinement project 1 - Dino](dino.html).
 1. [Game refinement project 2 - Car Ride](car-ride.html).
+1. Game Project
+1. [A Platformer Game](platformer1.md).
 
 ---
 
-### WIP
+### Todo
 
-1. Platformer Games
+1. Object Oriented Programming - core ideas.
+1. Redoing Hunted/Dino/Cars using OO ideas.
+1. Game Project.
+1. Using the Tiled Level Editor.
+1. Building Level 2 for the Platformer game.
+1. Game Project.
