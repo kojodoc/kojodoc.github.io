@@ -22,6 +22,7 @@ You can request a copy of the following ebooks by sending a one line email to `e
 * Explorations with Kojo, Level-2 [PDF] -- Richer drawing and generative art with functional picture graphics.
 * Explorations with Kojo, Level-3 [PDF] -- Functional animations, generative music, and more (WIP).
 
+You can also [read these books online via the Kojo Ebooks](https://www.kogics.net/kojo-ebooks#explorations1) page.
 
 ## Worksheets
 * [Level 1 Worksheets](worksheets/level1/index.html)

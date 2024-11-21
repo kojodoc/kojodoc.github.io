@@ -38,3 +38,6 @@ The linked curriculum doc has details on how Kojo is meant to be used in grades 
 
 * [2022 - A list of the top 50 entrepreneurs of Uttarakhand](/assets/pdf-books/Hillmail_April_2022_Spread.pdf).  
 The Kojo work is featured at #23 in the list.
+
+* [2024 - A Kojo usage case study](/assets/pdf/Kojo-Case-Study-April-24.pdf).  
+This was done by students Priya Tyagi and Arnab Samanta from IMT Ghaziabad, under the guidance of Kogics Foundation Trustee Vibha Pant, for our partner REACHA. 
