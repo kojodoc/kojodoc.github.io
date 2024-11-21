@@ -2,8 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="/modules/modules-index.html">Modules</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-This is work-in-progress.  
-To follow along, you need at least [Kojo version 2.9.30](https://github.com/litan/kojo/releases/tag/2.9.30_pre) and [kojo-gaming version 0.4](https://github.com/litan/kojo-gaming/releases/tag/v0.4.0_rc).
+To follow along, you need at least Kojo version 2.9.30 and kojo-gaming version 0.4.
 
 ### Gaming-1 lesson plans
 
