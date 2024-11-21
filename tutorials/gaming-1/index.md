@@ -2,7 +2,7 @@
   <a href="../../index.html">Home</a> | <a href="/modules/modules-index.html">Modules</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-To follow along, you need at least Kojo version 2.9.30 and kojo-gaming version 0.4. 
+To follow along, you need at least Kojo version 2.9.30 and kojo-gaming version 0.4.  
 These versions were released on 21st Nov. 2024.
 
 
