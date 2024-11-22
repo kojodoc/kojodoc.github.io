@@ -2,11 +2,10 @@
   <a href="../../index.html">Home</a> | <a href="/modules/modules-index.html">Modules</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
+### Gaming-1 lesson plans
+
 To follow along, you need at least [Kojo version 2.9.30](https://www.kogics.net/kojo-download) and [kojo-gaming version 0.4](https://github.com/litan/kojo-gaming/releases).  
 These versions were released on 21st Nov. 2024.
-
-
-### Gaming-1 lesson plans
 
 1. [Creating Pictures and moving them around on the canvas](creating-moving-pictures.html).
 1. [Moving Pictures smoothly](moving-pictures-smoothly.html).
