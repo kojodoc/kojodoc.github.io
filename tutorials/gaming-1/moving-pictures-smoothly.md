@@ -70,7 +70,7 @@ animate {
 
 ### Explanation
 
-You might have noticed in the output from step-1 that the moving square moves in a jerky manner (especially on Windows). This is because the Standard Java runtime used by Kojo is not optimized (especially on Windows) for showing animations. To overcome this issues, Kojo provides an option to run your games using a runtime (based on libGDX, LWJGL, and OpenGL) that is higly optimized for animations. This runtime can be activated by adding the following line (via code completion, for convenience) at the top of your script:
+You might have noticed in the output from step-1 that the moving square moves in a slightly jerky manner (especially on Windows). This is because the Standard Java runtime used by Kojo is not optimized (especially on Windows) for showing animations. To overcome this issues, Kojo provides an option to run your games using a runtime (based on libGDX, LWJGL, and OpenGL) that is highly optimized for animations. This runtime can be activated by adding the following line (via code completion, for convenience) at the top of your script:
 
 ```scala
 // #exec template /picgaming
