@@ -138,7 +138,7 @@ activateCanvas()
 
 **Q2a.** Does the code above do the same thing as the code in Step 1?
 
-**Q2a.** How does the above code differ from the code in Step 1?
+**Q2b.** How does the above code differ from the code in Step 1?
 
 ---
 
