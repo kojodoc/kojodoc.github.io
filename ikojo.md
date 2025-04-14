@@ -52,7 +52,7 @@ Here are some examples showing iKojo in action:
 **Games** (for *devices that have a keyboard*. Mobile games are listed further down):
 * [Hunted](http://ikojo.in/sf/KQPttLI/2)
 * [Pong](http://ikojo.in/sf/nOB7vtO/2)
-* [Bugs](http://ikojo.in/sf/OuGi82j/3)
+* [Bugs](http://ikojo.in/sf/OuGi82j/4)
 * [Car Ride](http://ikojo.in/sf/erwlDLW/3)
 * [Lunar Lander](http://ikojo.in/sf/Y3MnOHR/1)
 * [Collidium](http://ikojo.in/sf/wpduPSw/5)
