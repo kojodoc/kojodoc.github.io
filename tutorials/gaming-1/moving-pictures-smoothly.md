@@ -5,7 +5,7 @@
 ## Moving pictures smoothly on the canvas
 
 This activity has the following desired goals:
-* Students will know how to use the Standar and libGDX runtimes for their games (**A**).
+* Students will know how to use the Standard and libGDX runtimes for their games (**A**).
 * Students will understand how to move game objects at the same speed across slow vs fast computers/runtimes (**M**).
 * Students will be able to move a rectangle with a given speed towards a target(**M, T**).
 
@@ -70,13 +70,13 @@ animate {
 
 ### Explanation
 
-You might have noticed in the output from step-1 that the moving square moves in a slightly jerky manner (especially on Windows). This is because the Standard Java runtime used by Kojo is not optimized (especially on Windows) for showing animations. To overcome this issues, Kojo provides an option to run your games using a runtime (based on libGDX, LWJGL, and OpenGL) that is highly optimized for animations. This runtime can be activated by adding the following line (via code completion, for convenience) at the top of your script:
+You might have noticed in the output from step-1 that the moving square moves in a slightly jerky manner (especially on older computers running Windows). To overcome this issue, Kojo provides an option to run your games using a runtime (based on libGDX, LWJGL, and OpenGL) that is highly optimized for gaming. This runtime can be activated by adding the following line (via code completion, for convenience) at the top of your script:
 
 ```scala
 // #exec template /picgaming
 ```
 
-After you run your script in this mode (in `Step 2`), you should find the square (a) moving much more smoothly across the screen, and (b) moving across the screen much faster (in `Step 2` compared to `Step 1`). (a) is good, but (b) is not so good, because you want to be able to prototype your games with the Kojo default runtime, and then move them to the optimized runtime as desired, with similar behavior. You also want your games to run at the same speed on slow vs fast computers.
+After you run your script in this mode (in `Step 2`), you should find the square (a) moving more smoothly across the screen, and (b) moving across the screen much faster (in `Step 2` compared to `Step 1`). (a) is good, but (b) is not so good, because you want to be able to prototype your games with the Kojo default runtime, and then move them to the optimized runtime as desired, with similar behavior. You also want your games to run at the same speed on slow vs fast computers.
 
 ---
 
