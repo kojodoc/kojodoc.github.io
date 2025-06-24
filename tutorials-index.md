@@ -7,7 +7,7 @@
 ## Activity Books and Online Lesson Plans
 <a name="lesson-plans">
 <a name="books">
-* [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/getting-started-26-04-25).
+* [Getting started with Kojo [PDF]](https://github.com/litan/kojo/releases/download/ebooks/getting-started-26-04-25.pdf).
 * [Coding Challenges with Kojo, Level 1 [PDF, v0.9.7]](https://github.com/litan/kojo/releases/download/ebooks/Kojo-Challenges-Level1-0.9.7.pdf).
 * [Gaming - 1](tutorials/gaming-1/index.html).
 <!-- * [Explorations with Kojo, Level-2](tutorials/lessons-level2/index.html). -->
