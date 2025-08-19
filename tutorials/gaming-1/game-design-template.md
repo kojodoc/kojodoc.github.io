@@ -6,19 +6,17 @@ Here's a one-page template for helping you design games:
 
 ## One-Page Game Design Template Items
 
-1. Description — 1 sentence “elevator pitch.”
-1. Experience / Aesthetics / Pillars — 3 short, player-promise bullets.
-1. Nouns (Entities) — ≤6 key objects (player, enemy types, obstacles, items).
-1. Verbs (Actions) — ≤5 core actions (move, dash, shoot, interact…).
+1. Description — One sentence “elevator pitch.”
+1. Experience / Aesthetics / Pillars — Three short, player-promise bullets.
+1. Nouns (Entities) — six or less key objects (player, enemy types, obstacles, etc).
+1. Verbs (Actions) — five or less core actions (move, dash, shoot, interact, etc).
 1. Core Loop — “Do → Earn → Unlock → So that …” in one line.
-1. Win/Lose — Win + fail states + session length (e.g., 60–90 s).
-1. Tuning — 5 named knobs with safe ranges (e.g., hunterSpeedMax 120–220).
-1. Progression — Short (run) / Mid (meta) / Long (mastery) in one line.
-1. Success checks — 2–3 measurable tests (e.g., “first win ≤5 tries; unfair-death reports <5%”).
+1. Win/Lose — Win + Fail conditions + session length (e.g., 60–90 s).
+1. Tuning — Five or less named knobs with safe ranges to tune gameplay.
+1. Progression — How the game progresses (across levels, for example).
+1. Success checks — Two to three measurable tests.
 
-## One-Page Game Design — Example (Kojo: Avoid the Hunters)
-
-*Pre-filled example of the Grade 10 one-page template using the Kojo hunted game.*
+## One-Page Game Design — Example for "Hunted"
 
 ---
 
@@ -55,7 +53,7 @@ Here's a one-page template for helping you design games:
 ---
 
 ### 5) Core Loop (one line)
-**Do** precise dodges → **earn** survival seconds → **unlock** harder presets/arenas **so that** you beat your best run.
+**Do** precise dodges → **earn** survival seconds → **unlock** harder presets **so that** you beat your best run.
 
 ---
 
@@ -81,9 +79,7 @@ Here's a one-page template for helping you design games:
 ---
 
 ### 8) Progression (short / mid / long)
-- **Short (in a run/level):** Survive bounce waves; learn readable lanes; no upgrades.  
-- **Mid (over sessions):** Unlock difficulty presets (Breeze/Default/Storm) and arenas (Open Field → Pillars → Corridors).  
-- **Long (mastery/collection/story):** Optimize paths, increase near-misses, chase personal bests.
+- Enhancement ideas
 
 ---
 
