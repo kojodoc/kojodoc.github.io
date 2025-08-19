@@ -110,7 +110,7 @@ HashMap.empty[Picture, Vector2D]
 <a name="hashmap-addition"/>
 **2.2 Addition of key, value pairs**
 
-* `hm.(key) = value` - adds the pair `(key, value)` to a HashMap called `hm`.
+* `hm(key) = value` - adds the pair `(key, value)` to a HashMap called `hm`.
 
 Assume that you have created a HashMap of `String to Int` called hm1 and a HashMap of `Pictures to Vector2Ds` called hm2, and that you have Pictures called `pic1` and `pic2`.
 
