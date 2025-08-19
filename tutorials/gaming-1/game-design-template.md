@@ -2,6 +2,8 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Gaming-1 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
+*Note -- this page is a work in progress...*
+
 Here's a one-page template for helping you design games:
 
 ## One-Page Game Design Template Items
