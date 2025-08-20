@@ -2,11 +2,9 @@
   <a href="../../index.html">Home</a> | <a href="index.html">Gaming-1 Index</a> | <a href="../../tutorials-index.html">Tutorials</a>
 </div>
 
-*Note -- this page is a work in progress...*
-
 ## MDA framework
 
-* Mechanics → Entities, actions, and rules (what entities can do)
+* Mechanics → Entities, actions, and rules (what you (i.e. entities) can do)
 * Dynamics → Player behavior & system response (what happens)
 * Aesthetics → Feelings & experiences (how it feels)
 
@@ -44,14 +42,14 @@
 
 ---
 
-### 2) Experience / Aesthetics / Pillars (3 player promises)
-- I win by mastering dodge control, not grinding stats.  
-- I can read danger—hunter bounces are predictable and fair.  
+### 2) Experience
+- I win by mastering dodge control.  
+- I can read danger — hunter bounces are predictable and fair.  
 - I can finish a satisfying run in about a minute, with instant retries.
 
 ---
 
-### 3) Nouns / Characters / Entities (≤ 6)
+### 3) Nouns (Entities) (≤ 6)
 
 | Name                     | Role (threat/ally/object)        | Readability notes (shape/color/size)                               |
 |---|---|---|
@@ -64,24 +62,24 @@
 ---
 
 ### 4) Verbs / Actions (≤ 5)
-- **Primary verbs:** Move, Weave, Bait  
+- **Primary verbs:** Move, Weave
 - **Inputs:** Arrow keys (Up/Down/Left/Right)
 
 ---
 
 ### 5) Core Loop (one line)
-**Do** precise dodges → **earn** survival seconds → **unlock** harder presets **so that** you beat your best run.
+**Do** precise dodges → **earn** survival seconds → **so that** you can survive till the end and win.
 
 ---
 
 ### 6) Win / Lose Conditions
 - **Win:** Survive 60 s.  
 - **Lose:** Collide with a hunter or the stage border.  
-- **Session target:** 60–90 s runs; time-to-retry < 2 s.
+- **Session target:** 60s run; time-to-retry < 2 s.
 
 ---
 
-### 7) Tuning (knobs students can change)
+### 7) Tuning (knobs you can change)
 
 | Knob              | What it changes                                   | Default | Safe range |
 |---|---|---:|---|
@@ -101,7 +99,7 @@
 ---
 
 ### 9) Success Checks (make it testable)
-- First-win target: ≤ 5 tries (novice).  
-- Fairness/readability: “unfair deaths” < 5% (post-run prompt).  
-- Pace: median run 60–90 s; time-to-retry < 2 s; ≥ 3 runs/session.
+- First-win target: <= 5 tries (novice).  
+- Fairness/readability: No unfair deaths.  
+- Pace: median run 40s; time-to-retry < 2 s; ≥ 3 runs/session.
 
