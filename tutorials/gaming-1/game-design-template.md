@@ -4,17 +4,24 @@
 
 *Note -- this page is a work in progress...*
 
+## MDA framework
+
+* Mechanics → Entities, actions, and rules (what entities can do)
+* Dynamics → Player behavior & system response (what happens)
+* Aesthetics → Feelings & experiences (how it feels)
+
 ## One-Page Game Design Template Items
 
 1. Description — One sentence “elevator pitch.”
-1. Experience / Aesthetics / Pillars — Three short things we want the player to experience (player-promises).
-1. Nouns (Entities) — six or less key "Things" (player, enemy types, obstacles, etc).
-1. Verbs (Actions) — five or less core "Actions" (move, dash, shoot, interact, etc).
-1. Core Loop — “Do → Earn → Unlock → So that …”.
-1. Win/Lose — Win + Fail conditions. Session length (e.g., 60–90 s).
-1. Tuning — Five or less named knobs with safe ranges to tune gameplay.
-1. Progression — How the game progresses (across levels, for example).
-1. Success checks — Two to three measurable tests (KPIs)
+1. Experience — Three short things we want the player to experience (player-promises). (Aesthetics)
+1. Nouns (Entities) — six or less key "Things" (player, enemy types, obstacles, etc). (Mechanics)
+1. Verbs (Actions) — five or less core "Actions" (move, dash, shoot, interact, etc). (Mechanics)
+1. Core Loop — “Do → Earn → Unlock → So that …”. (Dynamics, caused by Mechanics)
+1. Win/Lose — Win + Fail conditions. (Mechanics)
+1. Session length target (e.g., 60–90 s). (Dynamic/Aesthetic outcome)
+1. Tuning — Five or less named knobs with safe ranges to tune gameplay. (Mechanics (parameters) → Dynamics)
+1. Progression — How the game progresses (across levels, for example). (Mechanics → Dynamics)
+1. Success checks — Two to three measurable tests. (Valildate Aesthetics)
 
 ## A minimal process you can run
 * Write a one-page design.
