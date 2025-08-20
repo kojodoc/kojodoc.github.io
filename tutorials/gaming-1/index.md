@@ -16,7 +16,7 @@ These versions were released on 21st Nov. 2024.
 1. [Making a game - Hunted](hunted.html).
 1. [ArrayBuffers and HashMaps for gaming](abuffer-hmap.html).
 1. [Hunted 2 - increasing the number of hunters without any code change](hunted2.html).
-1. [A template to help with designing games](game-design-template.md).
+1. [A template to help with designing and developing games](game-design-template.md).
 1. [Project - Hunted 2, gameplay improvement](hunted2-improve.html).
 1. [Project - Hunted 2, further gameplay improvement using AI](hunted2-improve-ai.html).
 1. [Hunted 3 - adding background and character images](hunted3.html).

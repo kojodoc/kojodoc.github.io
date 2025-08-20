@@ -4,8 +4,6 @@
 
 *Note -- this page is a work in progress...*
 
-Here's a one-page template for helping you design games:
-
 ## One-Page Game Design Template Items
 
 1. Description — One sentence “elevator pitch.”
