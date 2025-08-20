@@ -5,16 +5,21 @@
 ## Game refinement project 2 - Car Ride
 
 This activity has the following desired goals:
-* Learning to understand a given game and refine it using images and sounds (**M, T**).
-* Practice with exporting a game as a web-app (**M, T**).
+* Learning to understand a given game
+* Understanding the design ideas behind the game
+* Refinining the design ideas
+* Improving the game as per the design ideas and the game-dev process.
+* Adding images and sounds to the game as per the above.
 
 ---
 
 ### Steps to be followed:
 1. Understand the game below.
+1. Write a one-page design sketch for the game
 1. Refine the game-play (make the other cars obstruct myCar more, allow game to continue after a collision with reduced energy, etc).
 1. Add background and character images to the game to make it more attractive.
 1. Implement any other ideas for improvement that you can come up with.
+1. Keep the game-dev process in mind as you do the above.
 
 ---
 
