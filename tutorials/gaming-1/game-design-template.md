@@ -18,6 +18,16 @@ Here's a one-page template for helping you design games:
 1. Progression — How the game progresses (across levels, for example).
 1. Success checks — Two to three measurable tests.
 
+## A minimal process you can run
+* Write a one-page design.
+* Greybox prototype in 3–7 days (no art): test control feel + loop.
+* Vertical slice: 5–10 min of final-quality gameplay proving a pillar.
+* Content ramp: build 3 levels; add UX polish.
+* External playtests every 1–2 weeks; cut features that don’t move KPIs or pillars.
+* Lock content, focus on perf, bugs, onboarding, and accessibility.
+
+---
+
 ## One-Page Game Design — Example for "Hunted"
 
 ---
