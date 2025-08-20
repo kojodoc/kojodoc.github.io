@@ -7,19 +7,19 @@
 ## One-Page Game Design Template Items
 
 1. Description — One sentence “elevator pitch.”
-1. Experience / Aesthetics / Pillars — Three short, player-promise bullets.
-1. Nouns (Entities) — six or less key objects (player, enemy types, obstacles, etc).
-1. Verbs (Actions) — five or less core actions (move, dash, shoot, interact, etc).
-1. Core Loop — “Do → Earn → Unlock → So that …” in one line.
-1. Win/Lose — Win + Fail conditions + session length (e.g., 60–90 s).
+1. Experience / Aesthetics / Pillars — Three short things we want the player to experience (player-promises).
+1. Nouns (Entities) — six or less key "Things" (player, enemy types, obstacles, etc).
+1. Verbs (Actions) — five or less core "Actions" (move, dash, shoot, interact, etc).
+1. Core Loop — “Do → Earn → Unlock → So that …”.
+1. Win/Lose — Win + Fail conditions. Session length (e.g., 60–90 s).
 1. Tuning — Five or less named knobs with safe ranges to tune gameplay.
 1. Progression — How the game progresses (across levels, for example).
-1. Success checks — Two to three measurable tests.
+1. Success checks — Two to three measurable tests (KPIs)
 
 ## A minimal process you can run
 * Write a one-page design.
-* Greybox prototype in 3–7 days (no art): test control feel + loop.
-* Vertical slice: 5–10 min of final-quality gameplay proving a pillar.
+* Greybox prototype in quick time (no art): test control feel + loop.
+* Vertical slice: A playable version of final-quality gameplay proving a promise.
 * Content ramp: build 3 levels; add UX polish.
 * External playtests every 1–2 weeks; cut features that don’t move KPIs or pillars.
 * Lock content, focus on perf, bugs, onboarding, and accessibility.
