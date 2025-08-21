@@ -35,9 +35,6 @@ animate {
         vel = bouncePicOffStage(pic, vel)
     }
 }
-
-cleari()
-drawStage(black)
 ```
 
 **Q1a.** What does the above code do?
