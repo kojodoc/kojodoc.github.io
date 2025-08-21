@@ -23,10 +23,10 @@
 
 ## A minimal process you can run
 * Write a one-page design.
-* Greybox prototype in quick time (no art): test control feel + loop.
-* Vertical slice: A playable version of final-quality gameplay proving a promise.
-* Content ramp: build 3 levels; add UX polish.
-* External playtests every 1–2 weeks; cut features that don’t move KPIs or pillars.
+* Greybox prototype in quick time (no art): test control feel plus core-loop.
+* Vertical slice: A playable version of final-quality gameplay proving a success criteria.
+* Content ramp: build three levels; add visual polish.
+* External playtests every 1–2 weeks; cut features that don’t impact success criteria.
 * Lock content, focus on perf, bugs, onboarding, and accessibility.
 
 ---
@@ -101,5 +101,5 @@
 ### 9) Success Checks (make it testable)
 - First-win target: <= 5 tries (novice).  
 - Fairness/readability: No unfair deaths.  
-- Pace: median run 40s; time-to-retry < 2 s; ≥ 3 runs/session.
+- Pace: median run 40s; time-to-retry < 2 s
 
