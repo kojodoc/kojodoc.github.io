@@ -6,6 +6,8 @@
 
 ## Quickref - ArrayBuffer, HashMap, and HashSet for gaming
 
+*Note* -- An Arraybuffer is a type of sequence (containing a sequence of elements one after the other). In other languages, ArrayBuffers are variously known as Lists, Arrays, Vectors, ArrayLists, etc.
+
 * [1 ArrayBuffer](#arraybuffer)
 * [1.1 Creation](#arraybuffer-creation)
 * [1.2 Addition of elements at the end](#arraybuffer-addition)
@@ -88,6 +90,8 @@ repeatFor(ab2) { p =>
 <a name="hashmap"/>
 **2 HashMap**
 
+*Note* -- A HashMap is a type of Map (mapping a key to a value). In other languages, HashMaps are variously known as Maps, Dictionaries, etc.
+
 A HashMap is a collection of key-value pairs. You can add key-value pairs to a HashMap, and quickly look up the values for given keys.
 
 Here is a pictorial representation of a HashMap:
@@ -141,6 +145,8 @@ pic2.translate(hm2(pic2))
 
 <a name="hashset"/>
 **3 HashSet**
+
+*Note* -- A HashSet is a type of Set (an unordered collection of values).
 
 A HashSet is an unordered collection of objects. Checking if an object is present in a set, or removing an object from a set - is very efficient.
 
