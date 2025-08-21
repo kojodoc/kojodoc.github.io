@@ -9,12 +9,12 @@ This activity has the following desired goals:
 * Using the above idea to improve the game from the previous lesson  (**M, T**).
 
 
-In this lesson, we will use the images from the previous lesson located in the folder `full/path/to/assets/hunted3-assets`.
+In this lesson, we will use the images from the previous lesson located in the folder `hunted3-assets` that you created.
 
 ---
 
 ### Step 1
-Type in the following code and run it:
+Take the following code and save it in a .kojo file inside the `hunted3-assets` folder described above. Then run the code.
 
 ```scala
 // #exec template /picgaming
@@ -22,9 +22,7 @@ Type in the following code and run it:
 cleari()
 drawStage(black)
 
-// change the following line as per the location of the assets folder on your computer
-val assetsDir = "full/path/to/assets/hunted3-assets"
-val pic = Picture.image(s"$assetsDir/player_run1.png")
+val pic = Picture.image("player_run1.png")
 draw(pic)
 
 var vel = Vector2D(50, 100)
@@ -52,13 +50,10 @@ Type in the following code and run it:
 cleari()
 drawStage(black)
 
-// change the following line as per the location of the assets folder on your computer
-val assetsDir = "full/path/to/assets/hunted3-assets"
-
 // The following boundary polygon was made using the "Sprite Boundary Maker" tool from the Tools menu
 val picBoundary = Array(35.2, 3.1, 4.0, 30.1, 26.4, 87.2, 76.9, 103.7, 87.7, 25.5, 49.9, 2.0, 35.2, 3.1)
 
-val pic = Picture.image(s"$assetsDir/player_run1.png", picBoundary)
+val pic = Picture.image("player_run1.png", picBoundary)
 draw(pic)
 
 var vel = Vector2D(50, 100)
@@ -83,10 +78,7 @@ Type in the following code and run it:
 ```scala
 cleari()
 
-// change the following line as per the location of the assets folder on your computer
-val assetsDir = "full/path/to/assets/hunted3-assets"
-
-val pic = Picture.image(s"$assetsDir/player_run1.png")
+val pic = Picture.image("player_run1.png")
 draw(pic)
 
 val picBoundary = Array(35.2, 3.1, 4.0, 30.1, 26.4, 87.2, 76.9, 103.7, 87.7, 25.5, 49.9, 2.0, 35.2, 3.1)

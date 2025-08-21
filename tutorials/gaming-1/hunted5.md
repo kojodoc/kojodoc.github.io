@@ -22,14 +22,12 @@ player_run_sheet.png
 robot_walk_sheet.png
 ```
 
-Uncompress this zip-file and put it under any folder on your computer. Let's call this folder `full/path/to/assets`.
-
-So now the above images will be in the folder `full/path/to/assets/hunted5-assets`.
+Uncompress this zip-file under any folder on your computer. You should now have a folder called `hunted5-assets` inside this folder.
 
 ---
 
 ### Step 1
-Type in the following code and run it:
+Take the following code and save it in a .kojo file inside the `hunted5-assets` folder described above. Then run the code.
 
 ```scala
 // #exec template /picgaming
@@ -40,12 +38,9 @@ val cb = canvasBounds
 
 val picBoundary = Array(35.2, 3.1, 4.0, 30.1, 26.4, 87.2, 76.9, 103.7, 87.7, 25.5, 49.9, 2.0, 35.2, 3.1)
 
-// change the following line as per the location of the assets folder on your computer
-val assetsDir = "full/path/to/assets/hunted5-assets"
-
-val pic1 = Picture.image(s"$assetsDir/player_run0.png", picBoundary)
-val pic2 = Picture.image(s"$assetsDir/player_run1.png", picBoundary)
-val pic3 = Picture.image(s"$assetsDir/player_run2.png", picBoundary)
+val pic1 = Picture.image("player_run0.png", picBoundary)
+val pic2 = Picture.image("player_run1.png", picBoundary)
+val pic3 = Picture.image("player_run2.png", picBoundary)
 
 val player = picBatch(pic1, pic2, pic3)
 player.setPosition(cb.x + cb.width / 2, cb.y + 20)
@@ -101,10 +96,7 @@ val cb = canvasBounds
 
 val picBoundary = Array(35.2, 3.1, 4.0, 30.1, 26.4, 87.2, 76.9, 103.7, 87.7, 25.5, 49.9, 2.0, 35.2, 3.1)
 
-// change the following line as per the location of the assets folder on your computer
-val assetsDir = "full/path/to/assets/hunted5-assets"
-
-val sheet = SpriteSheet(s"$assetsDir/player_run_sheet.png", 96, 128)
+val sheet = SpriteSheet("player_run_sheet.png", 96, 128)
 val pic1 = Picture.image(sheet.imageAt(0, 0), picBoundary)
 val pic2 = Picture.image(sheet.imageAt(1, 0), picBoundary)
 val pic3 = Picture.image(sheet.imageAt(2, 0), picBoundary)

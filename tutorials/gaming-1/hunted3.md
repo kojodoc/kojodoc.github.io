@@ -19,14 +19,12 @@ player_run1.png
 robot_walk4.png
 ```
 
-Uncompress this zip-file and put it under any folder on your computer. Let's call this folder `full/path/to/assets`.
-
-So now the above images will be in the folder `full/path/to/assets/hunted3-assets`.
+Uncompress this zip-file under any folder on your computer. You should now have a folder called `hunted3-assets` inside this folder.
 
 ---
 
 ### Step 1
-Type in the following code and run it:
+Take the following code and save it in a .kojo file inside the `hunted3-assets` folder described above. Then run the code.
 
 ```scala
 // #exec template /picgaming
@@ -34,14 +32,12 @@ Type in the following code and run it:
 cleari()
 drawStage(ColorMaker.hsl(120, 1.00, 0.08))
 val cb = canvasBounds
-// change the following line as per the location of the unzipped assets folder on your computer
-val assetsDir = "full/path/to/assets/hunted3-assets"
 
-val bg = Picture.image(s"$assetsDir/bg.png")
+val bg = Picture.image("bg.png")
 bg.setPosition(cb.x, cb.y)
 draw(bg)
 
-val player = Picture.image(s"$assetsDir/player_run1.png")
+val player = Picture.image("player_run1.png")
 player.setPosition(cb.x + cb.width / 2, cb.y + 20)
 draw(player)
 
@@ -50,7 +46,7 @@ val hunters = ArrayBuffer.empty[Picture]
 val huntersVel = HashMap.empty[Picture, Vector2D]
 
 repeatFor(1 to nh) { n =>
-    val pic = Picture.image(s"$assetsDir/robot_walk4.png")
+    val pic = Picture.image("robot_walk4.png")
     pic.setPosition(cb.x + cb.width / (nh + 2) * n, cb.y + 150 + randomDouble(0, cb.height - 300))
     hunters.append(pic)
     val hv = Vector2D(random(50, 200), random(50, 200))
