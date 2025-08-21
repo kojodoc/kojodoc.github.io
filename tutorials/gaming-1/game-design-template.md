@@ -27,7 +27,7 @@
 * Vertical slice: A playable version of final-quality gameplay proving a success criteria.
 * Content ramp: build three levels; add visual polish.
 * External playtests every 1–2 weeks; cut features that don’t impact success criteria.
-* Lock content, focus on perf, bugs, onboarding, and accessibility.
+* Lock content, focus on stability, performance, bugs, and, onboarding.
 
 ---
 
