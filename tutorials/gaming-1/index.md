@@ -17,13 +17,13 @@ These versions were released on 21st Nov. 2024.
 1. [ArrayBuffers and HashMaps for gaming](abuffer-hmap.html).
 1. [Hunted 2 - increasing the number of hunters without any code change](hunted2.html).
 1. [A template to help with designing and developing games](game-design-template.md).
-1. [Project - Hunted 2, gameplay improvement](hunted2-improve.html).
-1. [Project - Hunted 2, further gameplay improvement using AI](hunted2-improve-ai.html).
 1. [Hunted 3 - adding background and character images](hunted3.html).
 1. [Hunted 4 - putting an envelope around character images for better collision detection](hunted4.html).
 1. [Hunted 5 - using multiple images per character for richer animation](hunted5.html).
 1. [Creating Sprite-sheets via Kojo-animations](sprite-sheet-animations.html).
 1. [Hunted 6 - adding sound](hunted6.html).
+1. [Project - Hunted, gameplay improvement](hunted2-improve.html).
+1. [Project - Hunted, further gameplay improvement using AI](hunted2-improve-ai.html).
 1. [Game refinement project 1 - Dino](dino.html).
 1. [Game refinement project 2 - Car Ride](car-ride.html).
 1. [Game refinement project 3 - Aliens](aliens.md).
@@ -34,9 +34,4 @@ These versions were released on 21st Nov. 2024.
 
 ### Todo
 
-1. Object Oriented Programming - core ideas.
-1. Redoing Hunted/Dino/Cars using OO ideas.
-1. Game Project.
-1. Using the Tiled Level Editor.
-1. Building Level 2 for the Platformer game.
-1. Game Project.
+More lessons coming soon...
