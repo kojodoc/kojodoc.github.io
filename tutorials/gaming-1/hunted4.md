@@ -42,7 +42,7 @@ animate {
 ---
 
 ### Step 2
-Type in the following code and run it:
+Take the following code and save it in a .kojo file inside the `hunted3-assets` folder described above. Then run the code.
 
 ```scala
 // #exec template /picgaming
@@ -73,7 +73,7 @@ animate {
 ---
 
 ### Step 3
-Type in the following code and run it:
+Take the following code and save it in a .kojo file inside the `hunted3-assets` folder described above. Then run the code.
 
 ```scala
 cleari()
