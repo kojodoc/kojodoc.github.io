@@ -11,6 +11,7 @@
 ## One-Page Game Design Template Items
 
 1. Description — One sentence “elevator pitch.”
+1. Game Layout Sketch — A rough sketch of what the game looks like.
 1. Experience — Three short things we want the player to experience (player-promises). (Aesthetics)
 1. Nouns (Entities) — six or less key "Things" (player, enemy types, obstacles, etc). (Mechanics)
 1. Verbs (Actions) — five or less core "Actions" (move, dash, shoot, interact, etc). (Mechanics)
