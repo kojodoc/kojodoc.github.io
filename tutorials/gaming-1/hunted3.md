@@ -101,6 +101,7 @@ animate {
     }
 }
 activateCanvas()
+showGameTime(15, "You Win", green, 30)
 ```
 
 **Q1a.** Which lines in the above code make the hunters bounce off each other?

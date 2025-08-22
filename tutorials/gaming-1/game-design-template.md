@@ -26,7 +26,7 @@
 * Write a one-page design.
 * Greybox prototype in quick time (no art): test control feel plus core-loop.
 * Vertical slice: A playable version of final-quality gameplay proving a success criteria.
-* Content/Challenge ramp: build three levels; add visual polish.
+* Content/Challenge ramp-up: build three levels; add visual polish.
 * External playtests every 1–2 weeks; cut features that don’t impact success criteria.
 * Lock content, focus on stability, performance, bugs, and, onboarding.
 
