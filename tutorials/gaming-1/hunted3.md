@@ -117,6 +117,7 @@ activateCanvas()
 ### Exercise
 
 Extend the above game by using your own assets. You will need three images for this - one for the player, one for the hunters, and one for the background. Some possible sources for these images are the following:
+- Images that you create yourself in Kojo, by drawing something and then exporting it as a png file.
 - Images that you create yourself in a tool like GIMP.
 - Images that you create with the help of AI tools (like DALL-E, Stable Diffusion, ChatGPT, etc).
 - Images that you get off the internet (just to play with for this exercise).
