@@ -7,6 +7,8 @@
 To follow along, you need at least [Kojo version 2.9.30](https://www.kogics.net/kojo-download) and [kojo-gaming version 0.4](https://github.com/litan/kojo-gaming/releases).  
 These versions were released on 21st Nov. 2024.
 
+*Note* -- you need the kojo-gaming extension only if you plan to use picgaming via `// #exec template /picgaming` at the top of your script.
+
 1. [Creating Pictures and moving them around on the canvas](creating-moving-pictures.html).
 1. [Moving Pictures smoothly](moving-pictures-smoothly.html).
 1. [Keeping Pictures within the stage area](keeping-pictures-instage.html).
@@ -33,5 +35,7 @@ These versions were released on 21st Nov. 2024.
 ---
 
 ### Todo
-
-More lessons coming soon...
+* Game Engines
+* A Pictures based lightweight game engine
+* The kojo-gaming game engine
+* More lessons coming soon...
