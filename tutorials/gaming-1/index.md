@@ -35,6 +35,9 @@ These versions were released on 21st Nov. 2024.
 ---
 
 ### Todo
+* Object Oriented Programming (OOP) -- motivation and core ideas
+* Redoing Hunted using OOP
+* Redoing sample games using OOP
 * Game Engines
 * A Pictures based lightweight game engine
 * The kojo-gaming game engine
