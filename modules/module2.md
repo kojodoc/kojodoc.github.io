@@ -30,7 +30,7 @@ Intermediate programming certificate, enjoyable publishable games.
 
 ### Lesson Plans
 
-* [Explorations with Kojo, Level-2](/tutorials/lessons-level2/index.html).
+* [Gaming-1](/tutorials/gaming-1/index.html)
 
 ### Gallery of Kojo created games
 

@@ -6,8 +6,8 @@ These pages describe the Gaming facility within Kojo.
 
 The best way to get going is the following:
 
-* [Structured Learning Module - Basic](/modules/module2.html)
-* [Structured Learning Module - Advanced](/modules/module4.html)
+* [Structured Learning Module - Gaming-1](/modules/module2.html)
+* [Gaming-1 (direct link)](/tutorials/gaming-1/index.html)
 
 You can also go to the [iKojo](ikojo.html) page to check out (and play) [many sample games](ikojo.html#examples).
 
