@@ -29,8 +29,6 @@ This activity has the following desired goals:
 The code for the game is shown below. Study it to fully understand how the game works.
 
 ```scala
-// #exec template /picgaming
-
 // Sample game submitted by Ansh Arora (aarora85@asu.edu)
 
 cleari()
