@@ -54,7 +54,7 @@ FOR %%A IN (%kojolibdir%\*) DO (
   SET kojojavacp=!kojojavacp!;%%~A
 )
 echo %USERPROFILE%
-call %JAVA_HOME%\bin\java -cp "%kojojavacp%" -client -Xms128m -Xmx2g -Xss1m --add-opens java.desktop/javax.swing.text.html=ALL-UNNAMED --add-opens java.desktop/sun.awt=ALL-UNNAMED --add-opens java.desktop/sun.swing=ALL-UNNAMED --add-opens java.desktop/sun.swing.table=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -Dsun.java2d.uiScale.enabled=false net.kogics.kojo.lite.Main
+call %JAVA_HOME%\bin\java -cp "%kojojavacp%" -client -Xms128m -Xmx2g -Xss1m --add-opens java.desktop/javax.swing.text.html=ALL-UNNAMED --add-opens java.desktop/sun.awt=ALL-UNNAMED --add-opens java.desktop/sun.swing=ALL-UNNAMED --add-opens java.desktop/sun.swing.table=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED net.kogics.kojo.lite.Main
 ```
 
   
